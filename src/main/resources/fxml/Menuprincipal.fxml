@@ -41,11 +41,12 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Button layoutX="281.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Salir" />
-            <Button layoutX="547.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Criar Pokemon" />
+            <Button layoutX="252.0" layoutY="254.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="136.0" text="Criar Pokemon" />
             <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Mochila" />
             <Button layoutX="252.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Tienda" />
             <Button layoutX="252.0" layoutY="142.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="Combate" />
             <Button fx:id="btnCaptura" layoutX="252.0" layoutY="215.0" mnemonicParsing="false" onAction="#irAVentanaCaptura" prefHeight="25.0" prefWidth="136.0" text="Captura" />
+            <Button fx:id="btnCaptura1" layoutX="547.0" layoutY="360.0" mnemonicParsing="false" onAction="#irAVentanaCaptura" prefHeight="26.0" prefWidth="79.0" text="Pokedex" />
       </children>
     </AnchorPane>
   </children>
