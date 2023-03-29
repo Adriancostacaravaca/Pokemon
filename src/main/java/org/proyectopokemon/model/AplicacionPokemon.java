@@ -21,9 +21,9 @@ public class AplicacionPokemon extends Application {
 
     public static void main(String[] args) {
 
-        Pokemon pokemonPrueba = new Pokemon("Pikachu","picapica",'H');
+        Pokemon pokemonPrueba = new Pokemon();
 
-        pokemonPrueba.asignarValoresDePokemon();
+        //pokemonPrueba.asignarValoresDePokemon();
 
         System.out.println(pokemonPrueba.toString());
 
