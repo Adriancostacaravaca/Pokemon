@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
+
 public class AplicacionPokemon extends Application {
     @Override
     public void start(Stage stage) throws IOException {
