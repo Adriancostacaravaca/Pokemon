@@ -20,6 +20,15 @@ public class Aplicacion extends Application {
     }
 
     public static void main(String[] args) {
+
+        Pokemon pokemonPrueba = new Pokemon("Pikachu","picapica",'H');
+
+        pokemonPrueba.asignarValoresDePokemon();
+
+        System.out.println(pokemonPrueba.toString());
+
+
+
         launch();
     }
 }
