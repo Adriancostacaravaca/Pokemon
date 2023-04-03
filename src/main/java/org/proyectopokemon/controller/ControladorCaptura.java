@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class ControladorCrianza {
+public class ControladorCaptura {
     @FXML
     private Button btnCriar;
     private Parent root;
@@ -20,7 +20,7 @@ public class ControladorCrianza {
     private Stage stage;
     @FXML
     public void criarPokemon(){
-        System.out.println("Criar Pokemon");
+        System.out.println("Capturar Pokemon");
     }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {

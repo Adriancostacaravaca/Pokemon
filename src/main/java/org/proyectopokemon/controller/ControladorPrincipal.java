@@ -59,7 +59,7 @@ public class ControladorPrincipal {
     private Stage stage;
 
     public void irAVentanaCaptura(ActionEvent event) throws IOException {
-          root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCrianza.fxml")));
+          root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
           scene = new Scene(root, 600, 400);
           stage = (Stage)((Node)event.getSource()).getScene().getWindow();
           stage.setTitle("Capturar Pokemon");
