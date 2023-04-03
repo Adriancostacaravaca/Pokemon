@@ -12,7 +12,6 @@ public class Pokemon {
     private int velocidad;
     private int estamina;
     private int nivel;
-
     private int fertilidad;
     private char sexo;
     private Tipo tipo;
@@ -161,18 +160,6 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return "Pokemon{" +
-                "nombre='" + nombre + '\'' +
-                ", mote='" + mote + '\'' +
-                ", vitalidad=" + vitalidad +
-                ", ataque=" + ataque +
-                ", ataqueEsp=" + ataqueEsp +
-                ", desfensaEsp=" + desfensaEsp +
-                ", velocidad=" + velocidad +
-                ", estamina=" + estamina +
-                ", nivel=" + nivel +
-                ", fertilidad=" + fertilidad +
-                ", sexo=" + sexo +
-                '}';
+        return "Nombre: " + nombre + ", mote: " + mote + ", nivel: " + nivel + ", género: " + sexo;
     }
 }
