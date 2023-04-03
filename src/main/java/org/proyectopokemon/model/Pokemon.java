@@ -13,7 +13,6 @@ public class Pokemon {
     private int estamina;
     private int nivel;
 
-
     private int fertilidad;
     private char sexo;
     private Tipo tipo;

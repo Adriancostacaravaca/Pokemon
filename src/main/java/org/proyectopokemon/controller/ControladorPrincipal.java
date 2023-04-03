@@ -1,7 +1,16 @@
 package org.proyectopokemon.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
 
 public class ControladorPrincipal {
 
@@ -44,9 +53,23 @@ public class ControladorPrincipal {
     public void irAVentanaPokedex(){
         System.out.println("Ir a Pokédex");
     }
-    @FXML
+
+    private Parent root;
+    private Scene scene;
+    private Stage stage;
+
+    public void irAVentanaCaptura(ActionEvent event) throws IOException {
+          root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
+          scene = new Scene(root, 600, 400);
+          stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+          stage.setTitle("Capturar Pokemon");
+          stage.setScene(scene);
+          stage.show();
+    }
+
     public void cerrarPokemon(){
-        System.out.println("Salir");
+        Stage stage = (Stage) btnSalir.getScene().getWindow();
+        stage.close();
     }
 
 }
