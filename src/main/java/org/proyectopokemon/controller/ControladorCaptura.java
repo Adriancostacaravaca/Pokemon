@@ -8,8 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ControladorCaptura {
@@ -18,6 +21,9 @@ public class ControladorCaptura {
     private Parent root;
     private Scene scene;
     private Stage stage;
+
+    protected Pokemon Pokemon;
+
     @FXML
     public void criarPokemon(){
         System.out.println("Capturar Pokemon");
@@ -31,6 +37,22 @@ public class ControladorCaptura {
         stage.setScene(scene);
         stage.show();
     }
+    // CREACIÓN LISTA DE POKEMON A MOSTRAR Y POKEMON CREADOS
+    private List<Pokemon> Pokedex = new ArrayList<>();
+    Pokemon pokemon1 = new Pokemon("Charizard", "Chari",'H');
+    Pokemon pokemon2 = new Pokemon("Mewtwo", "Mew2",'M');
+    Pokemon pokemon3 = new Pokemon("Pikachu", "Pika",'H');
+    Pokemon pokemon4 = new Pokemon("Treecko", "Treek0",'M');
 
+
+    public void mostrarPokemonACapturar() {
+        Pokedex.add(pokemon1);
+        Pokedex.add(pokemon2);
+        Pokedex.add(pokemon3);
+        Pokedex.add(pokemon4);
+        for (int i = 0; i < Pokedex.size(); i++) {
+            System.out.println(Pokedex.get(i));
+        }
+    }
 
 }
