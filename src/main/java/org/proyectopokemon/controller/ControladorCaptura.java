@@ -27,7 +27,7 @@ public class ControladorCaptura {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Capturar Pokemon");
+        stage.setTitle("Pokemon - The Crüe");
         stage.setScene(scene);
         stage.show();
     }
