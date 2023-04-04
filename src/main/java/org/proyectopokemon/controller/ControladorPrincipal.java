@@ -34,6 +34,9 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCombate(){
         pokemon.subirNivel();
+        if (pokemon.getExperiencia() == 0 && pokemon.getNivel() == 3 || pokemon.getNivel() == 6 || pokemon.getNivel() == 9 || pokemon.getNivel() == 12) {
+            pokemon.añadirAtaque();
+        }
         System.out.println("Nivel: " + pokemon.getNivel());
         System.out.println("Vitalidad: " + pokemon.getVitalidad());
         System.out.println("Ataque: " + pokemon.getAtaque());
@@ -63,7 +66,7 @@ public class ControladorPrincipal {
     private Parent root;
     private Scene scene;
     private Stage stage;
-
+    @FXML
     public void irAVentanaCaptura(ActionEvent event) throws IOException {
           root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
           scene = new Scene(root, 600, 400);
@@ -72,7 +75,7 @@ public class ControladorPrincipal {
           stage.setScene(scene);
           stage.show();
     }
-
+    @FXML
     public void cerrarPokemon(){
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();

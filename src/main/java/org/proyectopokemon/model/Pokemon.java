@@ -228,9 +228,9 @@ public class Pokemon {
             System.out.println("Has subido al nivel: " + getNivel());
         }
     }
-
+    // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
     public void añadirAtaque() {
-
+            System.out.println("Has aprendido un nuevo ataque");
     }
 
     @Override
