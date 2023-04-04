@@ -30,7 +30,7 @@ public class ControladorPrincipal {
     private Button btnPokedex;
     @FXML
     private Button btnSalir;
-    Pokemon pokemon = new Pokemon("pija","pika",'H');
+    private Pokemon pokemon = new Pokemon("Pikachu","pika",'H');
     @FXML
     public void irAVentanaCombate(){
         pokemon.subirNivel();

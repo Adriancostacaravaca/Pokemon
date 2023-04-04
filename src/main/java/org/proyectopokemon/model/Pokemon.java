@@ -9,7 +9,7 @@ public class Pokemon {
     private int ataque;
     private int defensa;
     private int ataqueEsp;
-    private int desfensaEsp;
+    private int defensaEsp;
     private int velocidad;
     private int estamina;
     private int nivel;
@@ -24,11 +24,11 @@ public class Pokemon {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
-        this.vitalidad = 50; ;
+        this.vitalidad = 50;
         this.ataque = rd.nextInt(5);
         this.defensa = rd.nextInt(5);
         this.ataqueEsp = rd.nextInt(5);
-        this.desfensaEsp = rd.nextInt(5);
+        this.defensaEsp = rd.nextInt(5);
         this.velocidad = rd.nextInt(5);
         this.estamina = estamina;
         this.nivel = 1;
@@ -77,12 +77,12 @@ public class Pokemon {
         this.ataqueEsp = ataqueEsp;
     }
 
-    public int getDesfensaEsp() {
-        return desfensaEsp;
+    public int getDefensaEsp() {
+        return defensaEsp;
     }
 
-    public void setDesfensaEsp(int desfensaEsp) {
-        this.desfensaEsp = desfensaEsp;
+    public void setDefensaEsp(int defensaEsp) {
+        this.defensaEsp = defensaEsp;
     }
 
     public int getVelocidad() {
@@ -108,7 +108,6 @@ public class Pokemon {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-
     public int getFertilidad() {
         return fertilidad;
     }
@@ -161,8 +160,8 @@ public class Pokemon {
         ataqueEsp = rd.nextInt(100);
         setAtaqueEsp(ataqueEsp);
 
-        desfensaEsp= rd.nextInt(100);
-        setDesfensaEsp(desfensaEsp);
+        defensaEsp= rd.nextInt(100);
+        setDefensaEsp(defensaEsp);
 
         velocidad = rd.nextInt(100);
         setVelocidad(velocidad);
@@ -170,7 +169,7 @@ public class Pokemon {
         estamina = rd.nextInt(100);
         setEstamina(estamina);
     }
-
+    // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE
     public void subirNivel(){
         Random rd = new Random();
         experiencia += 5;
@@ -181,7 +180,7 @@ public class Pokemon {
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
-            desfensaEsp += incremento;
+            defensaEsp += incremento;
             velocidad += incremento;
             setNivel(2);
             setExperiencia(0);
@@ -192,7 +191,7 @@ public class Pokemon {
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
-            desfensaEsp += incremento;
+            defensaEsp += incremento;
             velocidad += incremento;
             setNivel(3);
             setExperiencia(0);
@@ -202,7 +201,7 @@ public class Pokemon {
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
-            desfensaEsp += incremento;
+            defensaEsp += incremento;
             velocidad += incremento;
             setNivel(4);
             setExperiencia(0);
@@ -212,7 +211,7 @@ public class Pokemon {
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
-            desfensaEsp += incremento;
+            defensaEsp += incremento;
             velocidad += incremento;
             setNivel(5);
             setExperiencia(0);
@@ -222,12 +221,16 @@ public class Pokemon {
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
-            desfensaEsp += incremento;
+            defensaEsp += incremento;
             velocidad += incremento;
             setNivel(6);
             setExperiencia(0);
             System.out.println("Has subido al nivel: " + getNivel());
         }
+    }
+
+    public void añadirAtaque() {
+
     }
 
     @Override
