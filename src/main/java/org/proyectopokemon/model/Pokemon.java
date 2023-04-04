@@ -141,6 +141,14 @@ public class Pokemon {
         this.estado = estado;
     }
 
+    public int getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
+    }
+
     public void asignarValoresDePokemon(){
         Random rd = new Random();
 
@@ -166,50 +174,60 @@ public class Pokemon {
     public void subirNivel(){
         Random rd = new Random();
         experiencia += 5;
-        int incremento = rd.nextInt(5);
-        if(experiencia >=10 && experiencia < 20){
-            setNivel(2);;
-        } else if (experiencia > 20 && experiencia < 30) {
+        int incremento = rd.nextInt(4) +1;
+
+        if(this.nivel == 1 && experiencia == 10){
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+            setNivel(2);
+            setExperiencia(0);
+            System.out.println("Has subido al nivel: " + getNivel());
+        }
+        else if(this.nivel == 2 && experiencia == 20){
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
             setNivel(3);
-
-        }else if (experiencia > 30 && experiencia < 40) {
+            setExperiencia(0);
+            System.out.println("Has subido al nivel: " + getNivel());
+        } else if (this.nivel == 3 && experiencia == 30) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
             setNivel(4);
-
-        }else if (experiencia > 40 && experiencia < 50) {
+            setExperiencia(0);
+            System.out.println("Has subido al nivel: " + getNivel());
+        }else if (this.nivel == 4 && experiencia == 40) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
             setNivel(5);
-
+            setExperiencia(0);
+            System.out.println("Has subido al nivel: " + getNivel());
+        }else if (this.nivel == 5 && experiencia == 50) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+            setNivel(6);
+            setExperiencia(0);
+            System.out.println("Has subido al nivel: " + getNivel());
         }
-
-        if(this.nivel == 2){
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            desfensaEsp += incremento;
-            velocidad += incremento;
-        } else if (this.nivel == 3) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            desfensaEsp += incremento;
-            velocidad += incremento;
-        }else if (this.nivel == 4) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            desfensaEsp += incremento;
-            velocidad += incremento;
-        }else if (this.nivel == 5) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            desfensaEsp += incremento;
-            velocidad += incremento;
-        }
-
     }
 
     @Override

@@ -37,6 +37,7 @@ public class ControladorPrincipal {
         System.out.println("Nivel: " + pokemon.getNivel());
         System.out.println("Vitalidad: " + pokemon.getVitalidad());
         System.out.println("Ataque: " + pokemon.getAtaque());
+        System.out.println("Experiencia: " + pokemon.getExperiencia());
     }
     @FXML
     public void irAVentanaTienda(){
