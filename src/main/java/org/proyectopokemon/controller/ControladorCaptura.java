@@ -17,11 +17,13 @@ import java.util.Objects;
 import java.util.Random;
 
 public class ControladorCaptura {
-    @FXML
-    private Button btnCriar;
     private Parent root;
     private Scene scene;
     private Stage stage;
+    @FXML
+    private Button btnVolver;
+    @FXML
+    private Button btnMostrarPokemon;
 
     protected Pokemon Pokemon;
     @FXML

@@ -233,6 +233,10 @@ public class Pokemon {
             System.out.println("Has aprendido un nuevo ataque");
     }
 
+    public void atacarAPokemon(Pokemon pokemon) {
+        pokemon.setVitalidad(pokemon.getVitalidad() - 1);
+    }
+
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", mote: " + mote + ", nivel: " + nivel + ", género: " + sexo;
