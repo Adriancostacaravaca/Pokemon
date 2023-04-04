@@ -7,6 +7,7 @@ public class Pokemon {
     private String mote;
     private int vitalidad;
     private int ataque;
+    private int defensa;
     private int ataqueEsp;
     private int desfensaEsp;
     private int velocidad;
@@ -14,22 +15,26 @@ public class Pokemon {
     private int nivel;
     private int fertilidad;
     private char sexo;
+    private int experiencia;
     private Tipo tipo;
     private Estado estado;
 
 
     public Pokemon(String nombre, String mote,char sexo) {
+        Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
-        this.vitalidad = vitalidad;
-        this.ataque = ataque;
-        this.ataqueEsp = ataqueEsp;
-        this.desfensaEsp = desfensaEsp;
-        this.velocidad = velocidad;
+        this.vitalidad = 50; ;
+        this.ataque = rd.nextInt(5);
+        this.defensa = rd.nextInt(5);
+        this.ataqueEsp = rd.nextInt(5);
+        this.desfensaEsp = rd.nextInt(5);
+        this.velocidad = rd.nextInt(5);
         this.estamina = estamina;
         this.nivel = 1;
         this.fertilidad = 5;
         this.sexo = sexo;
+        this.experiencia = 0;
     }
 
     public String getNombre() {
@@ -156,6 +161,55 @@ public class Pokemon {
 
         estamina = rd.nextInt(100);
         setEstamina(estamina);
+    }
+
+    public void subirNivel(){
+        Random rd = new Random();
+        experiencia += 5;
+        int incremento = rd.nextInt(5);
+        if(experiencia >=10 && experiencia < 20){
+            setNivel(2);;
+        } else if (experiencia > 20 && experiencia < 30) {
+            setNivel(3);
+
+        }else if (experiencia > 30 && experiencia < 40) {
+            setNivel(4);
+
+        }else if (experiencia > 40 && experiencia < 50) {
+            setNivel(5);
+
+        }
+
+        if(this.nivel == 2){
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+        } else if (this.nivel == 3) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+        }else if (this.nivel == 4) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+        }else if (this.nivel == 5) {
+            vitalidad += incremento;
+            ataque +=  incremento;
+            defensa += incremento;
+            ataqueEsp += incremento;
+            desfensaEsp += incremento;
+            velocidad += incremento;
+        }
+
     }
 
     @Override

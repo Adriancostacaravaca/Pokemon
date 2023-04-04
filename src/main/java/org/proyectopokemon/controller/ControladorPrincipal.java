@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -28,10 +30,13 @@ public class ControladorPrincipal {
     private Button btnPokedex;
     @FXML
     private Button btnSalir;
-
+    Pokemon pokemon = new Pokemon("pija","pika",'H');
     @FXML
     public void irAVentanaCombate(){
-        System.out.println("Ir a Combate");
+        pokemon.subirNivel();
+        System.out.println("Nivel: " + pokemon.getNivel());
+        System.out.println("Vitalidad: " + pokemon.getVitalidad());
+        System.out.println("Ataque: " + pokemon.getAtaque());
     }
     @FXML
     public void irAVentanaTienda(){
