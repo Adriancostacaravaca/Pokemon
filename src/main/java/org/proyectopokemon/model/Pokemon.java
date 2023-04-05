@@ -230,10 +230,10 @@ public class Pokemon {
         }
     }
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
-    private List<Movimiento> listaAtaques = new ArrayList<>();
+    private List<Movimiento> listaCuatroAtaques = new ArrayList<>();
 
-    public List<Movimiento> getListaAtaques() {
-        return listaAtaques;
+    public List<Movimiento> getListaCuatroAtaques() {
+        return listaCuatroAtaques;
     }
 
     public void añadirAtaque() {
