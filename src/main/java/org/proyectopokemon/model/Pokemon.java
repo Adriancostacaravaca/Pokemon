@@ -21,6 +21,9 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
 
+    private MovimientoAtaque impactrueno = new MovimientoAtaque("Impactrueno", 2, Tipo.ELECTRICO);
+
+
     public Pokemon(String nombre, String mote,char sexo) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -231,6 +234,10 @@ public class Pokemon {
     }
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
     private List<Movimiento> listaCuatroAtaques = new ArrayList<>();
+
+    public void rellenarListaCuatroAtaques() {
+        listaCuatroAtaques.add(impactrueno);
+    }
 
     public List<Movimiento> getListaCuatroAtaques() {
         return listaCuatroAtaques;

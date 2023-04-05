@@ -68,4 +68,10 @@ public class ControladorCombate {
 
     }
 
+    @FXML
+    public void aprenderMovimiento(){
+        treecko.rellenarListaCuatroAtaques();
+        System.out.println(treecko.getListaCuatroAtaques());
+    }
+
 }
