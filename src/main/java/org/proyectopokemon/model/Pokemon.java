@@ -19,8 +19,6 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
 
-
-
     public Pokemon(String nombre, String mote,char sexo) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -251,7 +249,7 @@ public class Pokemon {
             setEstamina(getEstamina()+5);
             System.out.println("Tu estamina es: " + getEstamina());
         } else if (getEstamina() == 20) {
-            System.out.println("Tu estamina esta a tope, no puedes recuperar más");
+            System.out.println("Tu estamina está llena, no puedes recuperar más");
 
         }
 

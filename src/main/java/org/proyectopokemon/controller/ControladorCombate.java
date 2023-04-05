@@ -54,13 +54,9 @@ public class ControladorCombate {
     }
     @FXML
     public void combatir(){
+        treecko.atacarAPokemon(pikachu);
 
-        if(treecko.getEstamina() <= 0){
-            System.out.println("No puedes realizar más ataques te falta estamina");
-        }else{
-            treecko.atacarAPokemon(pikachu);
-        }
-        System.out.println(pikachu.getVitalidad());
+        System.out.println("Vitalidad de: " + pikachu.getNombre() + ", " + pikachu.getVitalidad());
         System.out.println("Estamina disponible: " + treecko.getEstamina());
     }
     @FXML
