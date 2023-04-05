@@ -2,6 +2,8 @@ package org.proyectopokemon.model;
 
 public abstract class Movimiento {
 
-    String nombre;
+    private String nombre;
+
+    private int turnos;
 
 }
