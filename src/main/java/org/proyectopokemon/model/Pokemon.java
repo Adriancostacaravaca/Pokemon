@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Pokemon {
@@ -228,6 +230,12 @@ public class Pokemon {
         }
     }
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
+    List<Movimiento> listaAtaques = new ArrayList<>();
+
+    public List<Movimiento> getListaAtaques() {
+        return listaAtaques;
+    }
+
     public void añadirAtaque() {
             System.out.println("Has aprendido un nuevo ataque");
     }
