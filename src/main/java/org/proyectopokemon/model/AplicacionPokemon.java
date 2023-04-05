@@ -16,6 +16,7 @@ public class AplicacionPokemon extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         Scene scene = new Scene(root, 650, 400);
         stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

@@ -37,9 +37,10 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCombate(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
-        scene = new Scene(root, 600, 400);
+        scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Combatir Pokemon");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
@@ -51,9 +52,10 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCaptura(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
-        scene = new Scene(root, 600, 400);
+        scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Capturar Pokemon");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
