@@ -8,13 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Pokemon;
+
 
 import java.io.IOException;
 import java.util.Objects;
 
 public class ControladorPrincipal {
-
     @FXML
     private Button btnCombate;
     @FXML
