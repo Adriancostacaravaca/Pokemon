@@ -24,6 +24,9 @@ public class ControladorCombate {
     private Button btnSubirNivel;
     @FXML
     private Button btnCombatir;
+    @FXML
+    private Button btnDescansar;
+
 
     private Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
     private Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
@@ -51,8 +54,22 @@ public class ControladorCombate {
     }
     @FXML
     public void combatir(){
-        treecko.atacarAPokemon(pikachu);
+
+        if(treecko.getEstamina() <= 0){
+            System.out.println("No puedes realizar más ataques te falta estamina");
+        }else{
+            treecko.atacarAPokemon(pikachu);
+        }
         System.out.println(pikachu.getVitalidad());
+        System.out.println("Estamina disponible: " + treecko.getEstamina());
+    }
+    @FXML
+    public void descansar(){
+        treecko.descansar();
+        if(treecko.getEstamina() < 20){
+            System.out.println("Has recuperado 5 de estamina");
+        }
+
     }
 
 }

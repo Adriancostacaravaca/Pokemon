@@ -43,6 +43,7 @@
             <Button fx:id="btnSubirNivel" layoutX="257.0" layoutY="175.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="25.0" prefWidth="136.0" text="Subir Nivel" />
             <Button fx:id="btnCombatir" layoutX="257.0" layoutY="143.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="136.0" text="Combatir" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
+            <Button fx:id="btnDescansar" layoutX="257.0" layoutY="209.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="136.0" text="Descansar" />
          </children></AnchorPane>
   </children>
 </VBox>

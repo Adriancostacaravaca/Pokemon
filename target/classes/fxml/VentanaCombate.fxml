@@ -40,9 +40,10 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnSubirNivel" layoutX="270.0" layoutY="151.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="25.0" prefWidth="100.0" text="Subir Nivel" />
-            <Button fx:id="btnCombatir" layoutX="270.0" layoutY="188.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="100.0" text="Combatir" />
+            <Button fx:id="btnSubirNivel" layoutX="257.0" layoutY="175.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="25.0" prefWidth="136.0" text="Subir Nivel" />
+            <Button fx:id="btnCombatir" layoutX="257.0" layoutY="143.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="136.0" text="Combatir" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
+            <Button fx:id="btnDescansar" layoutX="257.0" layoutY="209.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="136.0" text="Descansar" />
          </children></AnchorPane>
   </children>
 </VBox>

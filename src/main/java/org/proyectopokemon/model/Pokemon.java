@@ -20,6 +20,7 @@ public class Pokemon {
     private Estado estado;
 
 
+
     public Pokemon(String nombre, String mote,char sexo) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -30,7 +31,7 @@ public class Pokemon {
         this.ataqueEsp = rd.nextInt(5);
         this.defensaEsp = rd.nextInt(5);
         this.velocidad = rd.nextInt(5);
-        this.estamina = estamina;
+        this.estamina = 20;
         this.nivel = 1;
         this.fertilidad = 5;
         this.sexo = sexo;
@@ -234,7 +235,26 @@ public class Pokemon {
     }
 
     public void atacarAPokemon(Pokemon pokemon) {
-        pokemon.setVitalidad(pokemon.getVitalidad() - 1);
+
+        if(estamina <= 0){
+            System.out.println("Necesitas descansar para realizar otro ataque");
+        }else {
+            pokemon.setVitalidad(pokemon.getVitalidad() - 1);
+            this.estamina -= 5;
+        }
+    }
+    public void descansar(){
+        if(getEstamina() <= 0){
+            setEstamina(0);
+        }
+        if(getEstamina() >= 0 && getEstamina() < 20){
+            setEstamina(getEstamina()+5);
+            System.out.println("Tu estamina es: " + getEstamina());
+        } else if (getEstamina() == 20) {
+            System.out.println("Tu estamina esta a tope, no puedes recuperar más");
+
+        }
+
     }
 
     @Override
