@@ -54,15 +54,15 @@ public class ControladorCombate {
     }
     @FXML
     public void combatir(){
-        treecko.atacarAPokemon(pikachu);
+        pikachu.atacarAPokemon(treecko);
 
-        System.out.println("Vitalidad de: " + pikachu.getNombre() + ", " + pikachu.getVitalidad());
-        System.out.println("Estamina disponible: " + treecko.getEstamina());
+        System.out.println("Vitalidad de: " + treecko.getNombre() + ", " + treecko.getVitalidad());
+        System.out.println("Estamina disponible: " + pikachu.getEstamina());
     }
     @FXML
     public void descansar(){
-        treecko.descansar();
-        if(treecko.getEstamina() < 20){
+        pikachu.descansar();
+        if(pikachu.getEstamina() < 20){
             System.out.println("Has recuperado 5 de estamina");
         }
 
@@ -70,8 +70,22 @@ public class ControladorCombate {
 
     @FXML
     public void aprenderMovimiento(){
-        treecko.rellenarListaCuatroAtaques();
-        System.out.println(treecko.getListaCuatroAtaques());
+        pikachu.rellenarListaCuatroAtaques();
+        if(pikachu.getNivel() == 1){
+            System.out.println(pikachu.getListaCuatroAtaques().get(0));
+        } else if (pikachu.getNivel() == 2) {
+            for(int i = 0; i < 2;i++){
+                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+            }
+        } else if (pikachu.getNivel() == 3) {
+            for(int i = 0; i < 3;i++){
+                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+            }
+        } else if (pikachu.getNivel() == 4) {
+            for(int i = 0; i < 3;i++){
+                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+            }
+        }
     }
 
 }

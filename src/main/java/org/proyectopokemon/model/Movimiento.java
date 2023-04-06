@@ -1,12 +1,15 @@
 package org.proyectopokemon.model;
 
-import java.util.List;
-
- public abstract class Movimiento {
+public abstract class Movimiento {
 
     protected String nombre;
 
     protected int turnos;
 
 
-}
+     public Movimiento(String nombre,int turnos) {
+         this.nombre = nombre;
+         this.turnos = turnos;
+
+     }
+ }

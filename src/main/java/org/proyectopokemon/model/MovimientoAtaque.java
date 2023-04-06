@@ -7,12 +7,9 @@ public class MovimientoAtaque extends Movimiento{
 
     private Tipo tipo;
 
-    public MovimientoAtaque() {
 
-    }
-
-    public MovimientoAtaque(String nombre, int potencia, Tipo tipo) {
-        this.nombre = nombre;
+    public MovimientoAtaque(String nombre,int turnos, int potencia, Tipo tipo) {
+        super(nombre,turnos);
         this.potencia = potencia;
         this.tipo = tipo;
     }
