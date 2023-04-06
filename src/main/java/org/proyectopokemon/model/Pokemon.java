@@ -26,11 +26,11 @@ public class Pokemon {
         this.nombre = nombre;
         this.mote = mote;
         this.vitalidad = 50;
-        this.ataque = rd.nextInt(5);
-        this.defensa = rd.nextInt(5);
-        this.ataqueEsp = rd.nextInt(5);
-        this.defensaEsp = rd.nextInt(5);
-        this.velocidad = rd.nextInt(5);
+        this.ataque = rd.nextInt(10) + 1;
+        this.defensa = rd.nextInt(10) + 1;
+        this.ataqueEsp = rd.nextInt(10) + 1;
+        this.defensaEsp = rd.nextInt(10) + 1;
+        this.velocidad = rd.nextInt(10) + 1;
         this.estamina = 20;
         this.nivel = 1;
         this.fertilidad = 5;
