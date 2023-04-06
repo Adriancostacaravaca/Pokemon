@@ -21,9 +21,6 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
 
-
-
-
     public Pokemon(String nombre, String mote,char sexo) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -152,27 +149,6 @@ public class Pokemon {
         this.experiencia = experiencia;
     }
 
-    public void asignarValoresDePokemon(){
-        Random rd = new Random();
-
-        vitalidad = rd.nextInt(100);
-        setVitalidad(vitalidad);
-
-        ataque = rd.nextInt(100);
-        setAtaque(ataque);
-
-        ataqueEsp = rd.nextInt(100);
-        setAtaqueEsp(ataqueEsp);
-
-        defensaEsp= rd.nextInt(100);
-        setDefensaEsp(defensaEsp);
-
-        velocidad = rd.nextInt(100);
-        setVelocidad(velocidad);
-
-        estamina = rd.nextInt(100);
-        setEstamina(estamina);
-    }
     // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE
     public void subirNivel(){
         Random rd = new Random();
@@ -232,14 +208,17 @@ public class Pokemon {
             System.out.println("Has subido al nivel: " + getNivel());
         }
     }
+
+    //CREAMOS UNA CLASE DE TODOS LOS MOVIMIENTOS
+    MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
+
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
     private List<Movimiento> listaCuatroAtaques = new ArrayList<>();
-    //CREAMOS UNA CLASE DE TODOS LOS MOVIMIENTOS
-    ListaMovimientos listaMovimientos = new ListaMovimientos();
+
     public void rellenarListaCuatroAtaques() {
-        listaCuatroAtaques.add(listaMovimientos.impactrueno);
-        listaCuatroAtaques.add(listaMovimientos.chispa);
-        listaCuatroAtaques.add(listaMovimientos.chispazo);
+        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.impactrueno);
+        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispa);
+        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispazo);
     }
 
     public List<Movimiento> getListaCuatroAtaques() {
