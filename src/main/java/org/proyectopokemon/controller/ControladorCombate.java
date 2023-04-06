@@ -26,6 +26,8 @@ public class ControladorCombate {
     private Button btnCombatir;
     @FXML
     private Button btnDescansar;
+    @FXML
+    private Button btnAprenderMovimiento;
 
 
     private Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
@@ -37,6 +39,16 @@ public class ControladorCombate {
         scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void irAVentanaElegirMovimiento(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Combatir Pokemon");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
