@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class ControladorCombate {
     @FXML
     private Button btnAprenderMovimiento;
 
-
+    Entrenador entrenador = new Entrenador("Entrenador Pokemon");
     private Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
     private Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
 
@@ -98,6 +99,10 @@ public class ControladorCombate {
                 System.out.println(pikachu.getListaCuatroAtaques().get(i));
             }
         }
+    }
+
+    @FXML public void getCaja() {
+        entrenador.getCaja();
     }
 
 }

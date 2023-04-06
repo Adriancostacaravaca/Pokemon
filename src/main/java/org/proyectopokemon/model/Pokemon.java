@@ -38,6 +38,7 @@ public class Pokemon {
         this.experiencia = 0;
     }
 
+
     public String getNombre() {
         return nombre;
     }
