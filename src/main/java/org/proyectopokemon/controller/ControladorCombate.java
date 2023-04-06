@@ -30,7 +30,7 @@ public class ControladorCombate {
     @FXML
     private Button btnAprenderMovimiento;
 
-    Entrenador entrenador = new Entrenador("Entrenador Pokemon");
+    private Entrenador entrenador = new Entrenador("Entrenador Pokemon");
     private Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
     private Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
 
@@ -101,8 +101,9 @@ public class ControladorCombate {
         }
     }
 
-    @FXML public void getCaja() {
-        entrenador.getCaja();
+    @FXML public void verCajaEntrenador() {
+        entrenador.moverACaja(treecko);
+        entrenador.mostrarCaja();
     }
 
 }

@@ -20,9 +20,8 @@ public class Entrenador {
 
     public void moverACaja(Pokemon pokemonAMover) {
         caja.add(pokemonAMover);
-        System.out.println(equipoPrincipal);
     }
-    public List<Pokemon> getCaja() {
-        return caja;
+    public void mostrarCaja(){
+        System.out.println(caja);
     }
 }
