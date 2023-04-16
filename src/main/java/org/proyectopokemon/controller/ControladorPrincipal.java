@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class ControladorPrincipal {
+
     @FXML
     private Button btnCombate;
     @FXML
@@ -33,6 +34,7 @@ public class ControladorPrincipal {
     private Scene scene;
     private Stage stage;
 
+
     @FXML
     public void irAVentanaCombate(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
@@ -42,10 +44,19 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+
     }
     @FXML
-    public void irAVentanaTienda(){
-        System.out.println("Ir a ventana Tienda");
+    public void irAVentanaTienda(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaTienda.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Combatir Pokemon");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+
     }
 
     @FXML
