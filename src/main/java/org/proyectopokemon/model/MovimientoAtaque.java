@@ -13,6 +13,22 @@ public class MovimientoAtaque extends Movimiento{
         this.tipo = tipo;
     }
 
+    public int getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(int potencia) {
+        this.potencia = potencia;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
         return nombre;

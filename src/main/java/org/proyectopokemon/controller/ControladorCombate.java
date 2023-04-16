@@ -31,7 +31,7 @@ public class ControladorCombate {
     private Button btnAprenderMovimiento;
 
     private Entrenador entrenador = new Entrenador("Entrenador Pokemon");
-    private Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
+    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
     private Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
 
     @FXML

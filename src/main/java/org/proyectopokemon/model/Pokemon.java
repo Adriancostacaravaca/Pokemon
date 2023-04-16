@@ -20,6 +20,7 @@ public class Pokemon {
     private int experiencia;
     private Tipo tipo;
     private Estado estado;
+    private List<MovimientoAtaque> listaMovimientosDisp = new ArrayList<>();
 
     public Pokemon(String nombre, String mote,char sexo) {
         Random rd = new Random();
@@ -148,6 +149,14 @@ public class Pokemon {
 
     public void setExperiencia(int experiencia) {
         this.experiencia = experiencia;
+    }
+
+    public List<MovimientoAtaque> getListaMovimientosDisp() {
+        return listaMovimientosDisp;
+    }
+
+    public void setListaMovimientosDisp(List<MovimientoAtaque> listaMovimientosDisp) {
+        this.listaMovimientosDisp = listaMovimientosDisp;
     }
 
     // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE
