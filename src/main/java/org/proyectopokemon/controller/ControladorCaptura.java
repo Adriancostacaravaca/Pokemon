@@ -42,10 +42,9 @@ public class ControladorCaptura {
     @FXML
     public void mostrarPokemonACapturar() {
         Random rd = new Random();
-        pokedex.Pokedex.add(pokedex.pikachu);
-        for (int i = 0; i < pokedex.Pokedex.size(); i++) {
-            System.out.println(pokedex.getPokedex());
-        }
+        pokedex.Pokedex.clear();
+        pokedex.rellenarPokedex();
+        System.out.println(pokedex.getPokedex());
     }
 
 }
