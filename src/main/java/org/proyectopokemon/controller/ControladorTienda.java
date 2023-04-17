@@ -82,14 +82,7 @@ public class ControladorTienda {
             //el movimiento en la caja o no, si no es asi lo añadimos si no es asi se procede con la compra
             if (compraHecha) {
                 actualizarDinero();
-                System.out.println("Compra hecha");
-                for (Objeto i : entrenadorPrincipal.getCajaObjetos()) {
-                    if (objetoSelect == i) {
-                        System.out.println("Ya tienes este objeto");
-                    } else {
-                        entrenadorPrincipal.getCajaObjetos().add(objetoSelect);
-                    }
-                }
+                entrenadorPrincipal.getCajaObjetos().add(objetoSelect);
             } else {
                 System.out.println("Te falta dinero");
             }
