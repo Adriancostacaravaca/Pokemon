@@ -8,17 +8,16 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
 
+    private List<Pokemon> equipoPrincipal;
     Random rd = new Random();
     public Entrenador(String nombre) {
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201)+800;
-
+        this.equipoPrincipal = new ArrayList<>();
     }
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
     public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
-
-    private List<Pokemon> equipoPrincipal = new ArrayList<>();
     private List<Pokemon> caja = new ArrayList<>();
     private List<Objeto> cajaObjetos = new ArrayList<>();
 
