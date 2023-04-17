@@ -79,8 +79,14 @@ public class ControladorPrincipal {
         System.out.println("Ir a Mochila");
     }
     @FXML
-    public void irAVentanaPokedex(){
-        System.out.println("Ir a Pokédex");
+    public void irAVentanaPokedex(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaPokedex.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Capturar Pokemon");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
