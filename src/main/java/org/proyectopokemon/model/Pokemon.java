@@ -219,7 +219,7 @@ public class Pokemon {
         }
     }
 
-    //CREAMOS UNA CLASE DE TODOS LOS MOVIMIENTOS
+    // CREAMOS UNA CLASE QUE CONTIENE TODOS LOS MOVIMIENTOS
     MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
 
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES

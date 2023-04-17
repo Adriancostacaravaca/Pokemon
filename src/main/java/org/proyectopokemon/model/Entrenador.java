@@ -8,7 +8,6 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
 
-    Pokemon pokemon;
     Random rd = new Random();
     public Entrenador(String nombre) {
         this.nombre = nombre;
@@ -30,7 +29,7 @@ public class Entrenador {
         System.out.println(caja);
     }
 
-    //realizamos la comprobacion para saber si tenemos o no dinero disponible
+    // COMPROBACIÓN DE SI TENEMOS DINERO O NO
     public boolean comprar(Objeto objeto){
         if(pokedollar >= objeto.getCoste()){
             pokedollar -= objeto.getCoste();

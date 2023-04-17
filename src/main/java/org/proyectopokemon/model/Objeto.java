@@ -8,7 +8,7 @@ public class Objeto {
     private int coste;
     private String descripcion;
 
-    //Creo un objeto
+    // CREACIÓN DE OBJETO
     public Objeto(String nombre, double aumenta, double disminuye, int coste,String descripcion){
         this.nombre = nombre;
         this.aumenta = aumenta;

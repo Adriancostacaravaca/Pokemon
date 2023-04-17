@@ -47,11 +47,11 @@ public class ControladorTienda {
         stage.show();
 
     }
-    //Actualizamos el dinero mediante un metodo
+    // ACTUALIZAMOS NUESTRO DINERO MEDIANTE UN MÉTODO
     public void actualizarDinero(){
         lblDinero.setText("Dinero: " + entrenadorPrincipal.getPokedollar());
     }
-    //Utilizamos initizalize que sirve para que al momento de entrar en la escena se ejecute el metodo
+    // UTILIZAMOS INITIALIZE PARA EJECUTAR EL MÉTODO UNA VEZ ENTRAMOS EN LA ESCENA
     public void initialize() {
         objetosTienda.add(new Objeto("Pesa",0.2,0.2,250, "Aumenta el ataque y la defensa un 20%, pero disminuye su velocidad un 20%"));
         objetosTienda.add(new Objeto("Pluma",0.3,0.2,250, "Aumenta la velocidad un 30%, pero disminuye la defensa y la defensa\n" +
@@ -65,7 +65,7 @@ public class ControladorTienda {
         //Con este metodo podemos personalizar la apariencia de las listas en este caso una listView
         listaObjetos.setCellFactory(new TiendaCeldas());
 
-        //Este codigo habilita o desahabilita el boton comprar si se ah seleccionado o no un elemento de la lista
+        //Este codigo habilita o desahabilita el boton comprar si se HA seleccionado o no un elemento de la lista
 
         listaObjetos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null) {
