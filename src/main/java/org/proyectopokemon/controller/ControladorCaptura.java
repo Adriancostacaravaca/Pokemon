@@ -37,7 +37,7 @@ public class ControladorCaptura {
         stage.setScene(scene);
         stage.show();
     }
-    // CREACIÓN LISTA DE POKEMON A MOSTRAR Y POKEMON CREADOS
+    // MOSTRAR POKEMON CREADOS
 
     @FXML
     public void mostrarPokemonACapturar() {
