@@ -223,15 +223,15 @@ public class Pokemon {
     MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
 
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
-    private List<Movimiento> listaCuatroAtaques = new ArrayList<>();
+    private List<MovimientoAtaque> listaCuatroAtaques = new ArrayList<>();
 
-    public void rellenarListaCuatroAtaques() {
+   /* public void rellenarListaCuatroAtaques() {
         listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.impactrueno);
         listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispa);
         listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispazo);
-    }
+    }*/
 
-    public List<Movimiento> getListaCuatroAtaques() {
+    public List<MovimientoAtaque> getListaCuatroAtaques() {
         return listaCuatroAtaques;
     }
 

@@ -43,30 +43,16 @@ public class ControladorCombate {
         stage.show();
     }
     @FXML
-    public void irAVentanaElegirMovimiento(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-    }
-    @FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
         if (pokedex.pikachu.getExperiencia() == 0 && (pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12)) {
-            try{
-                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
-                scene = new Scene(root, 650, 400);
-                stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-                stage.setTitle("Combatir Pokemon");
-                stage.setResizable(false);
-                stage.setScene(scene);
-                stage.show();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
+            scene = new Scene(root, 650, 400);
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            stage.setTitle("Combatir Pokemon");
+            stage.setResizable(false);
+            stage.setScene(scene);
+            stage.show();
         }
         System.out.println("Nivel: " + pokedex.pikachu.getNivel());
         System.out.println("Vitalidad: " + pokedex.pikachu.getVitalidad());
@@ -91,7 +77,7 @@ public class ControladorCombate {
 
     @FXML
     public void aprenderMovimiento(){
-        pokedex.pikachu.rellenarListaCuatroAtaques();
+        //pokedex.pikachu.rellenarListaCuatroAtaques();
         if(pokedex.pikachu.getNivel() == 1){
             System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(0));
         } else if (pokedex.pikachu.getNivel() == 2) {

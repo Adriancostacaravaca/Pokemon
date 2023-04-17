@@ -15,10 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
-import org.proyectopokemon.model.MovimientoAtaque;
-import org.proyectopokemon.model.Objeto;
-import org.proyectopokemon.model.Pokemon;
-import org.proyectopokemon.model.Tipo;
+import org.proyectopokemon.model.*;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -29,13 +26,14 @@ public class ControladorElegirMovimiento {
     private Stage stage;
     @FXML
     private Button btnVolver;
-    private MovimientoAtaque movimientoAtaque;
-    private Pokemon pokemon;
+
     @FXML
     private Button btnAprender;
-    ObservableList<MovimientoAtaque> movimientos = FXCollections.observableArrayList();
     @FXML
     private ListView<MovimientoAtaque> opcionesMovimientos;
+
+    Pokedex pokedex = new Pokedex();
+    MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -49,12 +47,9 @@ public class ControladorElegirMovimiento {
     }
 
     public void initialize() {
-        movimientos.add(new MovimientoAtaque("Impactrueno",1,15, Tipo.ELECTRICO));
-        movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));
-        movimientos.add(new MovimientoAtaque("Chispazo",1,20,Tipo.ELECTRICO));
-        opcionesMovimientos.setItems(movimientos);
+        movimientosDisponiblesParaPokemon.añadirMovimientos();
+        opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
         opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
-
 
         opcionesMovimientos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null) {
@@ -66,9 +61,18 @@ public class ControladorElegirMovimiento {
     }
 
     @FXML
-    public void aprender(){
+    public void aprender(ActionEvent event) throws IOException{
         MovimientoAtaque movimientoSelected = opcionesMovimientos.getSelectionModel().getSelectedItem();
-        pokemon.getListaCuatroAtaques().add(movimientoSelected);
+        pokedex.pikachu.getListaCuatroAtaques().add(movimientoSelected);
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+
     }
 
 }
