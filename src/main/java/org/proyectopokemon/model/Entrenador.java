@@ -16,6 +16,9 @@ public class Entrenador {
 
     }
 
+    // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
+    public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
+
     private List<Pokemon> equipoPrincipal = new ArrayList<>();
     private List<Pokemon> caja = new ArrayList<>();
     private List<Objeto> cajaObjetos = new ArrayList<>();

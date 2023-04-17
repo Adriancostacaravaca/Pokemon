@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
@@ -29,10 +30,7 @@ public class ControladorCombate {
     private Button btnDescansar;
     @FXML
     private Button btnAprenderMovimiento;
-
-    private Entrenador entrenador = new Entrenador("Entrenador Pokemon");
-    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
-    private Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
+    private Pokedex pokedex = new Pokedex();
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -56,26 +54,26 @@ public class ControladorCombate {
     }
     @FXML
     public void subirNivel(){
-        pikachu.subirNivel();
-        if (pikachu.getExperiencia() == 0 && pikachu.getNivel() == 3 || pikachu.getNivel() == 6 || pikachu.getNivel() == 9 || pikachu.getNivel() == 12) {
-            pikachu.añadirAtaque();
+        pokedex.pikachu.subirNivel();
+        if (pokedex.pikachu.getExperiencia() == 0 && pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12) {
+            pokedex.pikachu.añadirAtaque();
         }
-        System.out.println("Nivel: " + pikachu.getNivel());
-        System.out.println("Vitalidad: " + pikachu.getVitalidad());
-        System.out.println("Ataque: " + pikachu.getAtaque());
-        System.out.println("Experiencia: " + pikachu.getExperiencia());
+        System.out.println("Nivel: " + pokedex.pikachu.getNivel());
+        System.out.println("Vitalidad: " + pokedex.pikachu.getVitalidad());
+        System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
+        System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
     }
     @FXML
     public void combatir(){
-        pikachu.atacarAPokemon(treecko);
+        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
 
-        System.out.println("Vitalidad de: " + treecko.getNombre() + ", " + treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pikachu.getEstamina());
+        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
+        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
     }
     @FXML
     public void descansar(){
-        pikachu.descansar();
-        if(pikachu.getEstamina() < 20){
+        pokedex.pikachu.descansar();
+        if(pokedex.pikachu.getEstamina() < 20){
             System.out.println("Has recuperado 5 de estamina");
         }
 
@@ -83,27 +81,27 @@ public class ControladorCombate {
 
     @FXML
     public void aprenderMovimiento(){
-        pikachu.rellenarListaCuatroAtaques();
-        if(pikachu.getNivel() == 1){
-            System.out.println(pikachu.getListaCuatroAtaques().get(0));
-        } else if (pikachu.getNivel() == 2) {
+        pokedex.pikachu.rellenarListaCuatroAtaques();
+        if(pokedex.pikachu.getNivel() == 1){
+            System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(0));
+        } else if (pokedex.pikachu.getNivel() == 2) {
             for(int i = 0; i < 2;i++){
-                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
             }
-        } else if (pikachu.getNivel() == 3) {
+        } else if (pokedex.pikachu.getNivel() == 3) {
             for(int i = 0; i < 3;i++){
-                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
             }
-        } else if (pikachu.getNivel() == 4) {
+        } else if (pokedex.pikachu.getNivel() == 4) {
             for(int i = 0; i < 3;i++){
-                System.out.println(pikachu.getListaCuatroAtaques().get(i));
+                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
             }
         }
     }
 
     @FXML public void verCajaEntrenador() {
-        entrenador.moverACaja(treecko);
-        entrenador.mostrarCaja();
+        Entrenador.jugadorEntrenador.moverACaja(pokedex.treecko);
+        Entrenador.jugadorEntrenador.mostrarCaja();
     }
 
 }
