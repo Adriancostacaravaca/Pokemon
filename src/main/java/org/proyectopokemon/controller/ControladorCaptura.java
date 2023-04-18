@@ -7,9 +7,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Pokedex;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.model.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,7 +25,15 @@ public class ControladorCaptura {
     private Button btnVolver;
     @FXML
     private Button btnMostrarPokemon;
+    @FXML
+    private Label lblPokemon;
+    @FXML
+    private Label lblIntentos;
+
     private Pokedex pokedex = new Pokedex();
+    private Captura captura = new Captura();
+    private Entrenador entrenador =new Entrenador("");
+
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -38,13 +46,38 @@ public class ControladorCaptura {
         stage.show();
     }
     // MOSTRAR POKEMON CREADOS
+    public void actualizarPokeballs() {
+        lblIntentos.setText("Pokeballs disponibles: " + entrenador.getPokeballs());
+    }
 
     @FXML
     public void mostrarPokemonACapturar() {
-        Random rd = new Random();
-        pokedex.Pokedex.clear();
         pokedex.rellenarPokedex();
-        System.out.println(pokedex.getPokedex());
+        lblPokemon.setText(pokedex.presentarPokemonAzar().getNombre());
+    }
+
+    public void initialize(){
+        actualizarPokeballs();
+    }
+
+    @FXML
+    public void capturar() {
+        if (pokedex.presentarPokemonAzar() != null) {
+            boolean capturaHecha = entrenador.capturar(pokedex.presentarPokemonAzar());
+            if (capturaHecha) {
+                actualizarPokeballs();
+                captura.añadirALista(pokedex.presentarPokemonAzar());
+                for (Pokemon i:
+                        entrenador.getCaja()) {
+                    System.out.println(entrenador.getCaja().toString());
+                }
+            } else {
+                System.out.println(entrenador.getCaja().toString());
+                System.out.println("No tienes suficiente Pokeballs");
+            }
+        }
+        actualizarPokeballs();
+
     }
 
 }
