@@ -40,4 +40,15 @@ public class Objeto {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    @Override
+    public String toString() {
+        return "Objeto{" +
+                "nombre='" + nombre + '\'' +
+                ", aumenta=" + aumenta +
+                ", disminuye=" + disminuye +
+                ", coste=" + coste +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
 }

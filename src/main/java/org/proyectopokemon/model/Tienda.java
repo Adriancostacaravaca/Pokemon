@@ -27,7 +27,6 @@ public class Tienda {
         objetosTienda.add(new Objeto("Baston",0.2,0.15,350,"Aumenta la estamina un 20%, pero disminuye un 15% la velocidad"));
         objetosTienda.add(new Objeto("Pilas",0.5,0.3,300,"Aumenta la recuperación de estamina en un 50%, pero disminuye la defensa\n" +
                 "especial un 30%"));
-
-
+        objetosTienda.add(new Objeto("Pokeball",0,0,50,"Sirve para capturar pokemons"));
     }
 }

@@ -15,6 +15,7 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
 import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Mochila;
 import org.proyectopokemon.model.Objeto;
 import org.proyectopokemon.model.Tienda;
 
@@ -35,6 +36,7 @@ public class ControladorTienda {
     @FXML
     private Label lblDinero;
     Tienda tienda = new Tienda();
+    Mochila mochila = new Mochila();
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -80,6 +82,12 @@ public class ControladorTienda {
             //el movimiento en la caja o no, si no es asi lo añadimos si no es asi se procede con la compra
             if (compraHecha) {
                 actualizarDinero();
+                mochila.añadirAMochila(objetoSelect);
+                for (Objeto i:
+                     mochila.getMochila()) {
+                    System.out.println(mochila.getMochila().toString());
+
+                }
             } else {
                 System.out.println("No tienes suficiente Pokedólares para comprar ese objeto");
             }
