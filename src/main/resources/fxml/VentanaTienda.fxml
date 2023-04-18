@@ -46,7 +46,7 @@
          <children>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
             <ListView fx:id="listaObjetos" layoutX="13.0" layoutY="88.0" prefHeight="198.0" prefWidth="614.0" />
-            <Text layoutX="191.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movimientos" textAlignment="CENTER" underline="true" wrappingWidth="258.13671875">
+            <Text layoutX="191.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objetos" textAlignment="CENTER" underline="true" wrappingWidth="258.13671875">
                <font>
                   <Font size="30.0" />
                </font>

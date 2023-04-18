@@ -93,6 +93,7 @@ public class ControladorPrincipal {
     public void cerrarPokemon(){
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();
+        System.out.println("Pokémon cerrado. ¡Esperamos que vuelvas pronto!.");
     }
 
 }

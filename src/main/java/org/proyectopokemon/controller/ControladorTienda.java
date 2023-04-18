@@ -29,8 +29,6 @@ public class ControladorTienda {
     private Button btnVolver;
     @FXML
     private Button btnComprar;
-    //Creamos una observanle list para que asi se pueda enlazar con nuestra listViwe
-
     @FXML
     private ListView<Objeto> listaObjetos;
     private Entrenador entrenadorPrincipal = new Entrenador("Juan");
@@ -52,7 +50,7 @@ public class ControladorTienda {
 
     // ACTUALIZAMOS NUESTRO DINERO MEDIANTE UN MÉTODO
     public void actualizarDinero() {
-        lblDinero.setText("Dinero: " + entrenadorPrincipal.getPokedollar());
+        lblDinero.setText("Pokedólares: " + entrenadorPrincipal.getPokedollar());
     }
 
     // UTILIZAMOS INITIALIZE PARA EJECUTAR EL MÉTODO UNA VEZ ENTRAMOS EN LA ESCENA
@@ -83,7 +81,7 @@ public class ControladorTienda {
             if (compraHecha) {
                 actualizarDinero();
             } else {
-                System.out.println("Te falta dinero");
+                System.out.println("No tienes suficiente Pokedólares para comprar ese objeto");
             }
         }
 
