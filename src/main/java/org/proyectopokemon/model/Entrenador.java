@@ -32,11 +32,13 @@ public class Entrenador {
     public boolean comprar(Objeto objeto){
         if(pokedollar >= objeto.getCoste()){
             pokedollar -= objeto.getCoste();
+            getCajaObjetos().add(objeto);
             return true;
         }else {
             return false;
         }
     }
+
 
     public int getPokedollar() {
         return pokedollar;

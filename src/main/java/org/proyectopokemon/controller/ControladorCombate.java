@@ -81,7 +81,6 @@ public class ControladorCombate {
         if(pokedex.pikachu.getNivel() == 1){
             System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(0));
         } else if (pokedex.pikachu.getNivel() == 2) {
-
             for(int i = 0; i < 2;i++){
                 System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
             }
