@@ -55,8 +55,12 @@ public class Entrenador {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
                 caja.add(pokemon);
                 pokeballs -= 1;
-                opcion = true;
-            } else {
+            }
+            else if (this.pokeballs == 0) {
+                System.out.println("No hay ningún pokemon disponible para ser capturado");
+                opcion = false;
+            }
+            else {
                 System.out.println("Has fallado");
                 pokeballs -= 1;
                 opcion = false;
