@@ -9,6 +9,12 @@ public class Entrenador {
     private int pokedollar;
     private int pokeballs;
     private List<Pokemon> equipoPrincipal;
+    private List<Pokemon> caja = new ArrayList<>();
+    private List<Objeto> cajaObjetos = new ArrayList<>();
+
+    // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
+    public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
+
     Random rd = new Random();
 
     public Entrenador(String nombre) {
@@ -18,13 +24,18 @@ public class Entrenador {
         this.pokeballs = 5;
     }
 
-    // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
-    public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
-    private List<Pokemon> caja = new ArrayList<>();
-    private List<Objeto> cajaObjetos = new ArrayList<>();
-
     public void moverACaja(Pokemon pokemonAMover) {
+        comprobarCaja(caja, pokemonAMover);
         caja.add(pokemonAMover);
+    }
+
+    public void comprobarCaja(List<Pokemon> lista, Pokemon p) {
+        for (int i = 0; i < lista.size() ; i++) {
+            if (caja.get(i).getNombre() == p.getNombre()) {
+                lista.remove(p);
+                System.out.println("Ya existe el Pokemon " +  p.getNombre() + " en tu caja");
+            }
+        }
     }
 
     public void mostrarCaja() {
@@ -73,31 +84,16 @@ public class Entrenador {
         return pokedollar;
     }
 
-    public void setPokedollar(int pokedollar) {
-        this.pokedollar = pokedollar;
-    }
-
     public List<Pokemon> getCaja() {
         return caja;
-    }
-
-    public void setCaja(List<Pokemon> caja) {
-        this.caja = caja;
     }
 
     public List<Objeto> getCajaObjetos() {
         return cajaObjetos;
     }
 
-    public void setCajaObjetos(List<Objeto> cajaObjetos) {
-        this.cajaObjetos = cajaObjetos;
-    }
-
     public int getPokeballs() {
         return pokeballs;
     }
 
-    public void setPokeballs(int pokeballs) {
-        this.pokeballs = pokeballs;
-    }
 }

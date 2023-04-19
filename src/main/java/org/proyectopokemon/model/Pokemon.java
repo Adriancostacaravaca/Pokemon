@@ -40,7 +40,6 @@ public class Pokemon {
         this.tipo = tipo;
     }
 
-
     public String getNombre() {
         return nombre;
     }
