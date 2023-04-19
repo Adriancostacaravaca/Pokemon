@@ -16,7 +16,7 @@ public class Entrenador {
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
-        this.pokeballs = 100;
+        this.pokeballs = 5;
     }
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
@@ -57,6 +57,10 @@ public class Entrenador {
         }
         else if (pokemon == null) {
             System.out.println("No hay ningún pokemon disponible para ser capturado");
+            return false;
+        }
+        else if (this.pokeballs == 0) {
+            System.out.println("No tienes más Pokéballs, compra más para poder seguir capturando");
             return false;
         }
         else{
