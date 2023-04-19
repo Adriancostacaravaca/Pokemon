@@ -16,7 +16,7 @@ public class Entrenador {
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
-        this.pokeballs = 3;
+        this.pokeballs = 100;
     }
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
@@ -46,6 +46,7 @@ public class Entrenador {
     }
 
     public boolean capturar(Pokemon pokemon) {
+
         Random rd = new Random();
         int numero = 3;
         int numeroAzar = rd.nextInt(3) + 1;
@@ -53,6 +54,10 @@ public class Entrenador {
             caja.add(pokemon);
             pokeballs -= 1;
             return true;
+        }
+        else if (pokemon == null) {
+            System.out.println("No hay ningún pokemon disponible para ser capturado");
+            return false;
         }
         else{
             System.out.println("Has fallado");

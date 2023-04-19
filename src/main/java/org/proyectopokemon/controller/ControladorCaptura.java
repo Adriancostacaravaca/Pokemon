@@ -31,9 +31,9 @@ public class ControladorCaptura {
     private Label lblIntentos;
 
     private Pokedex pokedex = new Pokedex();
-    private Captura captura = new Captura();
     private Entrenador entrenador = new Entrenador("");
 
+    private Pokemon p;
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -52,8 +52,13 @@ public class ControladorCaptura {
     }
 
     @FXML
+    public void nuevoPokemonACapturar(){
+        p = pokedex.presentarPokemonAzar();
+    }
+    @FXML
     public void mostrarPokemonACapturar() {
-        lblPokemon.setText(pokedex.presentarPokemonAzar().getNombre());
+        nuevoPokemonACapturar();
+        lblPokemon.setText(p.getNombre());
     }
 
     public void initialize() {
@@ -61,19 +66,16 @@ public class ControladorCaptura {
         actualizarPokeballs();
     }
 
+
     @FXML
     public void capturar() {
 
-        boolean capturaHecha = entrenador.capturar(pokedex.presentarPokemonAzar());
+        boolean capturaHecha = entrenador.capturar(p);
 
         if (capturaHecha) {
-            captura.añadirALista(pokedex.presentarPokemonAzar());
             System.out.println(entrenador.getCaja().toString());
         }
 
-        else if (pokedex.getPokedex().size() == 0) {
-            System.out.println("No hay ningún pokemon disponible para ser capturado");
-        }
         actualizarPokeballs();
     }
 }

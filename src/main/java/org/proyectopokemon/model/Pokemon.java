@@ -249,15 +249,10 @@ public class Pokemon {
         }
     }
     public void descansar(){
-        if(getEstamina() <= 0){
-            setEstamina(0);
-        }
-        if(getEstamina() >= 0 && getEstamina() < 20){
-            setEstamina(getEstamina()+5);
-            System.out.println("Tu estamina es: " + getEstamina());
-        } else if (getEstamina() == 20) {
-            System.out.println("Tu estamina está llena, no puedes recuperar más");
+        this.estamina = 20;
 
+        if (getEstamina() == 20) {
+            System.out.println("Tu estamina está llena, no puedes recuperar más");
         }
 
     }
