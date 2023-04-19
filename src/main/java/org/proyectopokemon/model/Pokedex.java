@@ -33,4 +33,5 @@ public class Pokedex {
         int numAzar = rd.nextInt(pokedex.size());
         return pokedex.get(numAzar);
     }
+
 }

@@ -32,19 +32,20 @@ public class ControladorCaptura {
 
     private Pokedex pokedex = new Pokedex();
     private Captura captura = new Captura();
-    private Entrenador entrenador =new Entrenador("");
+    private Entrenador entrenador = new Entrenador("");
 
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 650, 400);
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
+
     // MOSTRAR POKEMON CREADOS
     public void actualizarPokeballs() {
         lblIntentos.setText("Pokeballs disponibles: " + entrenador.getPokeballs());
@@ -52,32 +53,31 @@ public class ControladorCaptura {
 
     @FXML
     public void mostrarPokemonACapturar() {
-        pokedex.rellenarPokedex();
         lblPokemon.setText(pokedex.presentarPokemonAzar().getNombre());
     }
 
-    public void initialize(){
+    public void initialize() {
+        pokedex.rellenarPokedex();
         actualizarPokeballs();
     }
 
     @FXML
     public void capturar() {
-        if (pokedex.presentarPokemonAzar() != null) {
-            boolean capturaHecha = entrenador.capturar(pokedex.presentarPokemonAzar());
-            if (capturaHecha) {
-                actualizarPokeballs();
-                captura.añadirALista(pokedex.presentarPokemonAzar());
-                for (Pokemon i:
-                        entrenador.getCaja()) {
-                    System.out.println(entrenador.getCaja().toString());
-                }
-            } else {
-                System.out.println(entrenador.getCaja().toString());
-                System.out.println("Intentalo de nuevo o compra mas pokeballs");
-            }
+
+        boolean capturaHecha = entrenador.capturar(pokedex.presentarPokemonAzar());
+
+        if (capturaHecha) {
+            captura.añadirALista(pokedex.presentarPokemonAzar());
+            System.out.println(entrenador.getCaja().toString());
+        }
+
+        else if (pokedex.getPokedex().size() == 0) {
+            System.out.println("No hay ningún pokemon disponible para ser capturado");
         }
         actualizarPokeballs();
-
     }
-
 }
+
+
+
+

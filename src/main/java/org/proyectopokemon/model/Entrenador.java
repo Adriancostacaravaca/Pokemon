@@ -53,7 +53,9 @@ public class Entrenador {
             caja.add(pokemon);
             pokeballs -= 1;
             return true;
-        }else{
+        }
+        else{
+            System.out.println("Has fallado");
             pokeballs -= 1;
             return false;
         }
