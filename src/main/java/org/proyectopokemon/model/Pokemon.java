@@ -22,7 +22,7 @@ public class Pokemon {
     private Estado estado;
     private List<MovimientoAtaque> listaMovimientosDisp = new ArrayList<>();
 
-    public Pokemon(String nombre, String mote,char sexo) {
+    public Pokemon(String nombre, String mote,char sexo, Tipo tipo) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
@@ -37,23 +37,12 @@ public class Pokemon {
         this.fertilidad = 5;
         this.sexo = sexo;
         this.experiencia = 0;
+        this.tipo = tipo;
     }
 
 
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getMote() {
-        return mote;
-    }
-
-    public void setMote(String mote) {
-        this.mote = mote;
     }
 
     public int getVitalidad() {
@@ -68,95 +57,16 @@ public class Pokemon {
         return ataque;
     }
 
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
-    }
-
-    public int getAtaqueEsp() {
-        return ataqueEsp;
-    }
-
-    public void setAtaqueEsp(int ataqueEsp) {
-        this.ataqueEsp = ataqueEsp;
-    }
-
-    public int getDefensaEsp() {
-        return defensaEsp;
-    }
-
-    public void setDefensaEsp(int defensaEsp) {
-        this.defensaEsp = defensaEsp;
-    }
-
-    public int getVelocidad() {
-        return velocidad;
-    }
-
-    public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
-    }
-
     public int getEstamina() {
         return estamina;
-    }
-
-    public void setEstamina(int estamina) {
-        this.estamina = estamina;
     }
 
     public int getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
-        this.nivel = nivel;
-    }
-    public int getFertilidad() {
-        return fertilidad;
-    }
-
-    public void setFertilidad(int fertilidad) {
-        this.fertilidad = fertilidad;
-    }
-
-    public char getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
-    }
-
-    public Tipo getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
-    }
-
-    public Estado getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Estado estado) {
-        this.estado = estado;
-    }
-
     public int getExperiencia() {
         return experiencia;
-    }
-
-    public void setExperiencia(int experiencia) {
-        this.experiencia = experiencia;
-    }
-
-    public List<MovimientoAtaque> getListaMovimientosDisp() {
-        return listaMovimientosDisp;
-    }
-
-    public void setListaMovimientosDisp(List<MovimientoAtaque> listaMovimientosDisp) {
-        this.listaMovimientosDisp = listaMovimientosDisp;
     }
 
     // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE
@@ -165,78 +75,25 @@ public class Pokemon {
         experiencia += 5;
         int incremento = rd.nextInt(4) +1;
 
-        if(this.nivel == 1 && experiencia == 10){
+        if(this.experiencia == this.nivel*10){
             vitalidad += incremento;
             ataque +=  incremento;
             defensa += incremento;
             ataqueEsp += incremento;
             defensaEsp += incremento;
             velocidad += incremento;
-            setNivel(2);
-            setExperiencia(0);
+            this.nivel++;
+            this.experiencia = 0;
             System.out.println("Has subido al nivel: " + getNivel());
         }
-        else if(this.nivel == 2 && experiencia == 20){
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            defensaEsp += incremento;
-            velocidad += incremento;
-            setNivel(3);
-            setExperiencia(0);
-            System.out.println("Has subido al nivel: " + getNivel());
-        } else if (this.nivel == 3 && experiencia == 30) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            defensaEsp += incremento;
-            velocidad += incremento;
-            setNivel(4);
-            setExperiencia(0);
-            System.out.println("Has subido al nivel: " + getNivel());
-        }else if (this.nivel == 4 && experiencia == 40) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            defensaEsp += incremento;
-            velocidad += incremento;
-            setNivel(5);
-            setExperiencia(0);
-            System.out.println("Has subido al nivel: " + getNivel());
-        }else if (this.nivel == 5 && experiencia == 50) {
-            vitalidad += incremento;
-            ataque +=  incremento;
-            defensa += incremento;
-            ataqueEsp += incremento;
-            defensaEsp += incremento;
-            velocidad += incremento;
-            setNivel(6);
-            setExperiencia(0);
-            System.out.println("Has subido al nivel: " + getNivel());
-        }
-    }
 
-    // CREAMOS UNA CLASE QUE CONTIENE TODOS LOS MOVIMIENTOS
-    MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
+    }
 
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
     private List<MovimientoAtaque> listaCuatroAtaques = new ArrayList<>();
 
-   /* public void rellenarListaCuatroAtaques() {
-        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.impactrueno);
-        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispa);
-        listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.chispazo);
-    }*/
-
     public List<MovimientoAtaque> getListaCuatroAtaques() {
         return listaCuatroAtaques;
-    }
-
-    public void añadirAtaque() {
-            System.out.println("Has aprendido un nuevo ataque");
     }
 
     public void atacarAPokemon(Pokemon pokemon) {

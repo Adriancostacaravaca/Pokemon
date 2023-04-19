@@ -8,7 +8,6 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
     private int pokeballs;
-
     private List<Pokemon> equipoPrincipal;
     Random rd = new Random();
 
@@ -23,8 +22,6 @@ public class Entrenador {
     public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
     private List<Pokemon> caja = new ArrayList<>();
     private List<Objeto> cajaObjetos = new ArrayList<>();
-
-    Pokedex pokedex = new Pokedex();
 
     public void moverACaja(Pokemon pokemonAMover) {
         caja.add(pokemonAMover);
@@ -71,7 +68,6 @@ public class Entrenador {
         }
         return opcion;
     }
-
 
     public int getPokedollar() {
         return pokedollar;

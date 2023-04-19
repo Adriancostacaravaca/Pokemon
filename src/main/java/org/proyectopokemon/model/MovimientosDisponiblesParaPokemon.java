@@ -11,10 +11,6 @@ public class MovimientosDisponiblesParaPokemon {
         return movimientos;
     }
 
-    public void setMovimientos(ObservableList<MovimientoAtaque> movimientos) {
-        this.movimientos = movimientos;
-    }
-
     public void añadirMovimientos(){
         movimientos.add(new MovimientoAtaque("Impactrueno",1,15, Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));

@@ -21,24 +21,12 @@ public class Objeto {
         return nombre;
     }
 
-    public double getAumenta() {
-        return aumenta;
-    }
-
-    public double getDisminuye() {
-        return disminuye;
-    }
-
     public int getCoste() {
         return coste;
     }
 
     public String getDescripcion() {
         return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
     }
 
     @Override

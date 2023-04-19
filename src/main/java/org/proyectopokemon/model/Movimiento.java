@@ -9,15 +9,4 @@ public abstract class Movimiento {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getTurnos() {
-        return turnos;
-    }
-
-    public void setTurnos(int turnos) {
-        this.turnos = turnos;
-    }
 }

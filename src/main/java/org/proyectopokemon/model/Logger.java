@@ -8,7 +8,6 @@ import java.util.Date;
 
 public class Logger {
     private static String outputPath = "src/main/logs/";
-
     private static BufferedWriter bufferedWriter;
 
     public static void create() throws IOException {

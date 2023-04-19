@@ -7,13 +7,13 @@ import java.util.Random;
 public class Pokedex {
 
     public List<Pokemon> pokedex = new ArrayList<>();
-    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
-    public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
-    public Pokemon bulbasaur = new Pokemon("Bulbasaur", "Bulbasaur", 'M');
-    public Pokemon charmander = new Pokemon("Charmander", "Charmander", 'M');
-    public Pokemon caterpie = new Pokemon("Caterpie", "Caterpie", 'M');
-    public Pokemon squirtle = new Pokemon("Squirtle", "Squirtle", 'M');
-    public Pokemon rattata = new Pokemon("Rattata", "Rattata", 'M');
+    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H', Tipo.ELECTRICO);
+    public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M', Tipo.PLANTA);
+    public Pokemon bulbasaur = new Pokemon("Bulbasaur", "Bulbasaur", 'M', Tipo.PLANTA);
+    public Pokemon charmander = new Pokemon("Charmander", "Charmander", 'M', Tipo.FUEGO);
+    public Pokemon caterpie = new Pokemon("Caterpie", "Caterpie", 'M', Tipo.BICHO);
+    public Pokemon squirtle = new Pokemon("Squirtle", "Squirtle", 'M', Tipo.AGUA);
+    public Pokemon rattata = new Pokemon("Rattata", "Rattata", 'M', Tipo.NORMAL);
 
     public void rellenarPokedex() {
         pokedex.add(pikachu);
