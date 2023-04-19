@@ -51,13 +51,16 @@ public class Entrenador {
         int numero = 3;
         int numeroAzar = rd.nextInt(3) + 1;
         boolean opcion = true;
+        if (pokemon == null) {
+            System.out.println("No hay ningún pokemon disponible para ser capturado");
+        }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
                 caja.add(pokemon);
                 pokeballs -= 1;
             }
             else if (this.pokeballs == 0) {
-                System.out.println("No hay ningún pokemon disponible para ser capturado");
+                System.out.println("No tienes suficiente Pokéballs para poder capturar un Pokémon");
                 opcion = false;
             }
             else {
