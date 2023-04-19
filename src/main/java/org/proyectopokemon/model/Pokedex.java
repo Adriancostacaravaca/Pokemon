@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Pokedex {
 
-    public List<Pokemon> Pokedex = new ArrayList<>();
+    public List<Pokemon> pokedex = new ArrayList<>();
     public Pokemon pikachu = new Pokemon("Pikachu","pika",'H');
     public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M');
     public Pokemon bulbasaur = new Pokemon("Bulbasaur", "Bulbasaur", 'M');
@@ -16,21 +16,21 @@ public class Pokedex {
     public Pokemon rattata = new Pokemon("Rattata", "Rattata", 'M');
 
     public void rellenarPokedex() {
-        Pokedex.add(pikachu);
-        Pokedex.add(treecko);
-        Pokedex.add(bulbasaur);
-        Pokedex.add(charmander);
-        Pokedex.add(caterpie);
-        Pokedex.add(squirtle);
-        Pokedex.add(rattata);
+        pokedex.add(pikachu);
+        pokedex.add(treecko);
+        pokedex.add(bulbasaur);
+        pokedex.add(charmander);
+        pokedex.add(caterpie);
+        pokedex.add(squirtle);
+        pokedex.add(rattata);
     }
     public List<Pokemon> getPokedex() {
-        return Pokedex;
+        return pokedex;
     }
 
     public Pokemon presentarPokemonAzar(){
         Random rd = new Random();
-        int numAzar = rd.nextInt(Pokedex.size());
-        return Pokedex.get(numAzar);
+        int numAzar = rd.nextInt(pokedex.size());
+        return pokedex.get(numAzar);
     }
 }

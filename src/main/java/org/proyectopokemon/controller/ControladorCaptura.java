@@ -73,7 +73,7 @@ public class ControladorCaptura {
                 }
             } else {
                 System.out.println(entrenador.getCaja().toString());
-                System.out.println("No tienes suficiente Pokeballs");
+                System.out.println("Intentalo de nuevo o compra mas pokeballs");
             }
         }
         actualizarPokeballs();

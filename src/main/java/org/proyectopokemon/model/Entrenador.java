@@ -11,9 +11,10 @@ public class Entrenador {
 
     private List<Pokemon> equipoPrincipal;
     Random rd = new Random();
+
     public Entrenador(String nombre) {
         this.nombre = nombre;
-        this.pokedollar = rd.nextInt(201)+800;
+        this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
         this.pokeballs = 3;
     }
@@ -28,29 +29,31 @@ public class Entrenador {
     public void moverACaja(Pokemon pokemonAMover) {
         caja.add(pokemonAMover);
     }
-    public void mostrarCaja(){
+
+    public void mostrarCaja() {
         System.out.println(caja);
     }
 
     // COMPROBACIÓN DE SI TENEMOS DINERO O NO
-    public boolean comprar(Objeto objeto){
-        if(pokedollar >= objeto.getCoste()){
+    public boolean comprar(Objeto objeto) {
+        if (pokedollar >= objeto.getCoste()) {
             pokedollar -= objeto.getCoste();
             getCajaObjetos().add(objeto);
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
-    public boolean capturar(Pokemon pokemon){
+    public boolean capturar(Pokemon pokemon) {
         Random rd = new Random();
         int numero = 3;
-        if(((rd.nextInt(3)+1) == numero) && pokeballs > 0){
+        int numeroAzar = rd.nextInt(3) + 1;
+        if ((numero == numeroAzar) && this.pokeballs > 0){
             caja.add(pokemon);
             pokeballs -= 1;
             return true;
-        }else {
+        }else{
             pokeballs -= 1;
             return false;
         }
