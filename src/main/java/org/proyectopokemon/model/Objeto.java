@@ -9,7 +9,7 @@ public class Objeto {
     private String descripcion;
 
     // CREACIÓN DE OBJETO
-    public Objeto(String nombre, double aumenta, double disminuye, int coste,String descripcion){
+    public Objeto(String nombre, double aumenta, double disminuye, int coste, String descripcion){
         this.nombre = nombre;
         this.aumenta = aumenta;
         this.disminuye = disminuye;

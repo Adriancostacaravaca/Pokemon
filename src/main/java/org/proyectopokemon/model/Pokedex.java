@@ -24,9 +24,6 @@ public class Pokedex {
         pokedex.add(squirtle);
         pokedex.add(rattata);
     }
-    public List<Pokemon> getPokedex() {
-        return pokedex;
-    }
 
     public Pokemon presentarPokemonAzar(){
         Random rd = new Random();

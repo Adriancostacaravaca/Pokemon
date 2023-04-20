@@ -9,6 +9,10 @@ import org.proyectopokemon.controller.factories.TiendaCeldas;
 
 public class Tienda {
     ObservableList<Objeto> objetosTienda = FXCollections.observableArrayList();
+    public Tienda(){
+
+    }
+
     public ObservableList<Objeto> getObjetosTienda() {
         return objetosTienda;
     }

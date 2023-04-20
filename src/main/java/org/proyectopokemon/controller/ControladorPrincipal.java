@@ -99,6 +99,18 @@ public class ControladorPrincipal {
     }
 
     @FXML
+    public void IrAVentanaEntrenamiento(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEntrenamiento.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Entrenar Pokemon");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
     public void cerrarPokemon() {
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();

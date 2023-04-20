@@ -47,6 +47,7 @@
             <Button fx:id="btnCombate" layoutX="257.0" layoutY="143.0" mnemonicParsing="false" onAction="#irAVentanaCombate" prefHeight="25.0" prefWidth="136.0" text="Combate" />
             <Button fx:id="btnCaptura" layoutX="257.0" layoutY="208.0" mnemonicParsing="false" onAction="#irAVentanaCaptura" prefHeight="25.0" prefWidth="136.0" text="Captura" />
             <Button fx:id="btnPokedex" layoutX="557.0" layoutY="361.0" mnemonicParsing="false" onAction="#irAVentanaPokedex" prefHeight="26.0" prefWidth="79.0" text="Pokedex" />
+            <Button fx:id="btnEntrenarPokemon" layoutX="258.0" layoutY="273.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="26.0" prefWidth="136.0" text="Entrenar Pokemon" />
       </children>
     </AnchorPane>
   </children>

@@ -24,6 +24,22 @@ public class Entrenador {
         this.pokeballs = 5;
     }
 
+    public int getPokedollar() {
+        return pokedollar;
+    }
+
+    public List<Pokemon> getCaja() {
+        return caja;
+    }
+
+    public List<Objeto> getCajaObjetos() {
+        return cajaObjetos;
+    }
+
+    public int getPokeballs() {
+        return pokeballs;
+    }
+
     public void moverACaja(Pokemon pokemonAMover) {
         comprobarCaja(caja, pokemonAMover);
         caja.add(pokemonAMover);
@@ -80,20 +96,8 @@ public class Entrenador {
         return opcion;
     }
 
-    public int getPokedollar() {
-        return pokedollar;
-    }
+    public void entrenarAPokemon(Pokemon pokemon) {
 
-    public List<Pokemon> getCaja() {
-        return caja;
-    }
-
-    public List<Objeto> getCajaObjetos() {
-        return cajaObjetos;
-    }
-
-    public int getPokeballs() {
-        return pokeballs;
     }
 
 }
