@@ -7,9 +7,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -29,11 +32,18 @@ public class ControladorPrincipal {
     private Button btnPokedex;
     @FXML
     private Button btnSalir;
+    @FXML
+    private ImageView imagenPokemon;
 
     private Parent root;
     private Scene scene;
     private Stage stage;
 
+    public void initialize() {
+        File f = new File("imagenes\\Pokemon.png");
+        Image image = new Image(f.toURI().toString());
+        imagenPokemon.setImage(image);
+    }
 
     @FXML
     public void irAVentanaCombate(ActionEvent event) throws IOException {
