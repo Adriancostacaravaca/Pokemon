@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -20,9 +22,10 @@ public class Pokemon {
     private int experiencia;
     private Tipo tipo;
     private Estado estado;
+    private Image image;
     private List<MovimientoAtaque> listaMovimientosDisp = new ArrayList<>();
 
-    public Pokemon(String nombre, String mote,char sexo, Tipo tipo) {
+    public Pokemon(String nombre, String mote, char sexo, Tipo tipo, Image image) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
@@ -38,6 +41,7 @@ public class Pokemon {
         this.sexo = sexo;
         this.experiencia = 0;
         this.tipo = tipo;
+        this.image = image;
     }
 
     public String getNombre() {
@@ -66,6 +70,10 @@ public class Pokemon {
 
     public int getExperiencia() {
         return experiencia;
+    }
+
+    public Image getImage() {
+        return image;
     }
 
     // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE

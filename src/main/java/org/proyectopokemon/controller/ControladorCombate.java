@@ -42,6 +42,21 @@ public class ControladorCombate {
         stage.show();
     }
     @FXML
+    public void irCombatir(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Combatir Pokemon2");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+        /*pokedex.pikachu.atacarAPokemon(pokedex.treecko);
+
+        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
+        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());*/
+    }
+    @FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
         if (pokedex.pikachu.getExperiencia() == 0 && (pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12)) {
@@ -58,13 +73,7 @@ public class ControladorCombate {
         System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
         System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
     }
-    @FXML
-    public void combatir(){
-        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
 
-        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
-    }
     @FXML
     public void descansar(){
         pokedex.pikachu.descansar();

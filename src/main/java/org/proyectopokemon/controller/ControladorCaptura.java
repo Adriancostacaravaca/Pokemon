@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.*;
 
@@ -29,6 +30,9 @@ public class ControladorCaptura {
     private Label lblPokemon;
     @FXML
     private Label lblIntentos;
+
+    @FXML
+    private ImageView imgPokemonAzar;
 
     private Pokedex pokedex = new Pokedex();
     private Entrenador entrenador = new Entrenador("");
@@ -55,10 +59,13 @@ public class ControladorCaptura {
     public void nuevoPokemonACapturar(){
         p = pokedex.presentarPokemonAzar();
     }
+
+
     @FXML
     public void mostrarPokemonACapturar() {
         nuevoPokemonACapturar();
         lblPokemon.setText(p.getNombre());
+        imgPokemonAzar.setImage(p.getImage());
     }
 
     public void initialize() {
