@@ -33,7 +33,15 @@ public class ControladorBienvenida {
     private Label lblContraseña;
     @FXML
     private TextField txtContraseña;
+    @FXML
+    private ImageView imagenUsuario;
     private Login login = new Login();
+
+    public void initialize() {
+        File f = new File("src/main/resources/imagenes/iconoUsuario.png");
+        Image image = new Image(f.toURI().toString());
+        imagenUsuario.setImage(image);
+    }
 
     @FXML
     public void irAVentanaAplicacion(ActionEvent event) throws IOException {

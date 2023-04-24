@@ -18,7 +18,7 @@ public class Pokedex {
     Image caterpieImg = new Image(fCaterpie.toURI().toURL().toString());
     File fCharmander = new File("src/main/resources/imagenes/charmander.png");
     Image charmanderImg = new Image(fCharmander.toURI().toURL().toString());
-    File fPikachu = new File("src/main/resources/imagenes/pikachu1.png");
+    File fPikachu = new File("src/main/resources/imagenes/pikachu.png");
     Image pikachuImg = new Image(fPikachu.toURI().toURL().toString());
     File fRattata = new File("src/main/resources/imagenes/rattata.png");
     Image rattataImg = new Image(fRattata.toURI().toURL().toString());
