@@ -4,13 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Pokedex {
 
-    public List<Pokemon> pokedexx = new ArrayList<>();
     private Image pikachuImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
     private Image treeckoImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
     private Image bulbasurImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
