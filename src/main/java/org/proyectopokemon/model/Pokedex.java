@@ -11,15 +11,15 @@ import java.util.Random;
 public class Pokedex {
 
     public List<Pokemon> pokedexx = new ArrayList<>();
-    private Image pikachuImg = new Image("imagenes\\pikachu1.png");
-    private Image treeckoImg = new Image("imagenes\\treecko.png");
-    private Image bulbasurImg = new Image("imagenes\\bulbasur.png");
-    private Image charmanderImg = new Image("imagenes\\charmander.png");
-    private Image caterpieImg = new Image("imagenes\\caterpie.png");
-    private Image squirtleImg = new Image("imagenes\\squirtle.png");
-    private Image rattataImg = new Image("imagenes\\rattata.png");
+    private Image pikachuImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image treeckoImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image bulbasurImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image charmanderImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image caterpieImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image squirtleImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
+    private Image rattataImg = new Image("C:\\Users\\AdriánCostaCaravaca\\Desktop\\Pokémon\\Pokemon\\imagenes\\bulbasur.png");
 
-    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H', Tipo.ELECTRICO, pikachuImg );
+    public Pokemon pikachu = new Pokemon("Pikachu","pika",'H', Tipo.ELECTRICO, pikachuImg);
     public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M', Tipo.PLANTA, treeckoImg);
     public Pokemon bulbasaur = new Pokemon("Bulbasaur", "Bulbasaur", 'M', Tipo.PLANTA, bulbasurImg);
     public Pokemon charmander = new Pokemon("Charmander", "Charmander", 'M', Tipo.FUEGO, charmanderImg);

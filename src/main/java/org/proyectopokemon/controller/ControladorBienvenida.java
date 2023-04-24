@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Login;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,8 +33,11 @@ public class ControladorBienvenida {
     private Label lblContraseña;
     @FXML
     private TextField txtContraseña;
+    private Login login = new Login();
+
     @FXML
     public void irAVentanaAplicacion(ActionEvent event) throws IOException {
+        System.out.println(login.comprobarCredenciales(txtUsuario, txtContraseña));
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -43,6 +47,7 @@ public class ControladorBienvenida {
         stage.show();
 
     }
+
 
 
 }
