@@ -12,6 +12,7 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorCombate {
@@ -29,7 +30,11 @@ public class ControladorCombate {
     private Button btnDescansar;
     @FXML
     private Button btnAprenderMovimiento;
-    private Pokedex pokedex = new Pokedex();
+    private Pokedex pokedex;
+
+    public void initialize() throws MalformedURLException {
+        pokedex = new Pokedex();
+    }
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -51,10 +56,10 @@ public class ControladorCombate {
         stage.setScene(scene);
         stage.show();
 
-        /*pokedex.pikachu.atacarAPokemon(pokedex.treecko);
+        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
 
         System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());*/
+        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
     }
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{

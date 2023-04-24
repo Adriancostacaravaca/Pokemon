@@ -8,7 +8,7 @@ public class Entrenamiento {
     private String nombre;
     private int nivel;
     private String descripcion;
-    private Pokedex pokedex = new Pokedex();
+    private Pokedex pokedex;// = new Pokedex();
     ObservableList<Entrenamiento> entrenamientos = FXCollections.observableArrayList();
 
     public Entrenamiento(String nombre, String descripcion) {

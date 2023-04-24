@@ -16,6 +16,7 @@ import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorCombate2 {
@@ -30,7 +31,6 @@ public class ControladorCombate2 {
     private Label lblMiEntrenador;
     @FXML
     private Label lblEntranadorRival;
-
     @FXML
     private Button btnPelear;
     @FXML
@@ -44,19 +44,10 @@ public class ControladorCombate2 {
     @FXML
     private ListView<Pokemon> ListViewPokemones;
 
-    Pokedex pokedex = new Pokedex();
+    private Pokedex pokedex;
 
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-
-    }
-    public void initialize() {
+    public void initialize() throws MalformedURLException {
+        pokedex = new Pokedex();
         pokedex.rellenarPokedex();
         ListViewPokemones.setItems(pokedex.getPokedex());
         ListViewPokemones.setCellFactory(new ElegirPokemonCeldas());
@@ -68,5 +59,16 @@ public class ControladorCombate2 {
                 btnPelear.setDisable(true);
             }
         });
+    }
+
+    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
     }
 }
