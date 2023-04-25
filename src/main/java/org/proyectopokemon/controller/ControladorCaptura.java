@@ -40,6 +40,7 @@ public class ControladorCaptura {
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
         actualizarPokeballs();
+        mostrarPokemonACapturar();
     }
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {

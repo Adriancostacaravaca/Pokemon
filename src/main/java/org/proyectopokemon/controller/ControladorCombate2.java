@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
 import org.proyectopokemon.controller.factories.ElegirPokemonCeldas;
@@ -31,6 +32,10 @@ public class ControladorCombate2 {
     private Label lblMiEntrenador;
     @FXML
     private Label lblEntranadorRival;
+    @FXML
+    private ImageView imagenP1;
+    @FXML
+    private ImageView imagenP2;
     @FXML
     private Button btnPelear;
     @FXML
