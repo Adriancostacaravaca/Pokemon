@@ -9,7 +9,7 @@ public class Login {
 
     public boolean comprobarCredenciales(TextField txtFldUsuario, TextField txtFldContraseña, Label lblComprobacion) {
 
-        if (txtFldUsuario.getText().equals("Hola") && txtFldContraseña.getText().equals("hola")) {
+        if (txtFldUsuario.getText().equals("1") && txtFldContraseña.getText().equals("1")) {
             this.login = true;
         }
         else if (txtFldUsuario.getText().isEmpty() || txtFldContraseña.getText().isEmpty()) {
