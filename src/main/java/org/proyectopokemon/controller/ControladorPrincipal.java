@@ -35,6 +35,7 @@ public class ControladorPrincipal {
     @FXML
     private ImageView imagenPokemon;
 
+
     private Parent root;
     private Scene scene;
     private Stage stage;
