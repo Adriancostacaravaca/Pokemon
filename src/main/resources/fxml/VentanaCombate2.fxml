@@ -51,10 +51,10 @@
             <ImageView fitHeight="71.0" fitWidth="82.0" layoutX="21.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fitHeight="71.0" fitWidth="82.0" layoutX="527.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="btnAtaque1" layoutX="307.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
-            <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="200.0" layoutX="107.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="imagenP2" fitHeight="150.0" fitWidth="200.0" layoutX="365.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
-            <ProgressBar layoutX="5.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
-            <ProgressBar layoutX="465.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
+            <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imagenP2" fitHeight="150.0" fitWidth="200.0" layoutX="393.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar layoutX="-36.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
+            <ProgressBar layoutX="534.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
             <Button fx:id="btnAtaque2" layoutX="461.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque3" layoutX="307.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque4" layoutX="461.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />

@@ -55,16 +55,6 @@ public class ControladorCombate2 {
         pokedex.rellenarPokedex();
         PokemonACombatir();
         }
-    @FXML
-    public void PokemonAzar(){
-        p = pokedex.presentarPokemonAzar();
-    }
-    @FXML
-    public void PokemonACombatir() {
-        PokemonAzar();
-        imagenP1.setImage(pokedex.pikachu.getImage());
-        imagenP2.setImage(pokedex.squirtle.getImage());
-    }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -74,6 +64,16 @@ public class ControladorCombate2 {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    public void PokemonAzar(){
+        p = pokedex.presentarPokemonAzar();
+    }
+    @FXML
+    public void PokemonACombatir() {
+        PokemonAzar();
+        imagenP1.setImage(pokedex.pikachu.getImage());
+        imagenP2.setImage(pokedex.squirtle.getImage());
     }
 
     public void combatir() {
