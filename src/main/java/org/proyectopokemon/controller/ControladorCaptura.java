@@ -28,7 +28,8 @@ public class ControladorCaptura {
     private Label lblPokemon;
     @FXML
     private Label lblIntentos;
-
+    @FXML
+    private Label lblComprobacion;
     @FXML
     private ImageView imgPokemonAzar;
     private Pokedex pokedex;
@@ -71,9 +72,10 @@ public class ControladorCaptura {
     @FXML
     public void capturar() {
 
-        boolean capturaHecha = entrenador.capturar(p);
+        boolean capturaHecha = entrenador.capturar(p, lblComprobacion);
 
         if (capturaHecha) {
+            lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
             System.out.println(entrenador.getCaja().toString());
         }
 
