@@ -49,10 +49,10 @@
                <font>
                   <Font size="20.0" />
                </font></Label>
-            <Label fx:id="lblIntentos" alignment="CENTER" layoutX="464.0" layoutY="360.0" prefHeight="26.0" prefWidth="154.0" />
+            <Label fx:id="lblIntentos" alignment="CENTER" layoutX="472.0" layoutY="361.0" prefHeight="26.0" prefWidth="154.0" />
             <Button fx:id="btnCapturar" layoutX="249.0" layoutY="309.0" mnemonicParsing="false" onAction="#capturar" prefHeight="25.0" prefWidth="142.0" text="¡Capturar!" />
             <ImageView fx:id="imgPokemonAzar" cache="true" cacheHint="QUALITY" fitHeight="129.0" fitWidth="165.0" layoutX="238.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="lblComprobacion" layoutX="306.0" layoutY="344.0" />
+            <Label fx:id="lblComprobacion" layoutX="249.0" layoutY="344.0" prefHeight="17.0" prefWidth="384.0" />
          </children>
     </AnchorPane>
   </children>
