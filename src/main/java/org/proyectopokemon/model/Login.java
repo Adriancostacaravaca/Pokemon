@@ -1,14 +1,25 @@
 package org.proyectopokemon.model;
 
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Login {
 
-    public boolean comprobarCredenciales(TextField txtFldUsuario, TextField txtFldContraseña) {
+    private boolean login;
 
-        if (txtFldUsuario.equals(txtFldUsuario) && txtFldContraseña.equals(txtFldContraseña)) {
-            return true;
+    public boolean comprobarCredenciales(TextField txtFldUsuario, TextField txtFldContraseña, Label lblComprobacion) {
+
+        if (txtFldUsuario.getText().equals("Hola") && txtFldContraseña.getText().equals("hola")) {
+            this.login = true;
         }
-        return false;
+        else if (txtFldUsuario.getText().isEmpty() || txtFldContraseña.getText().isEmpty()) {
+            this.login = false;
+            lblComprobacion.setText("Rellena correctamente los campos");
+        }
+        else {
+            this.login = false;
+            lblComprobacion.setText("Error");
+        }
+        return login;
     }
 }

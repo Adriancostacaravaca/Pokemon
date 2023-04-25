@@ -13,7 +13,7 @@ import java.util.Objects;
 public class AplicacionPokemon extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaBienvenida.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaLogin.fxml")));
         Scene scene = new Scene(root, 400, 450);
         stage.setTitle("Pokemon - The Crüe");
         stage.setResizable(false);
