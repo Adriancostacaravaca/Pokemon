@@ -47,7 +47,7 @@ public class ControladorCombate {
         stage.show();
     }
     @FXML
-    public void irCombatir(ActionEvent event) throws IOException{
+    public void irACombatir(ActionEvent event) throws IOException{
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -56,10 +56,6 @@ public class ControladorCombate {
         stage.setScene(scene);
         stage.show();
 
-        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
-
-        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
     }
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
@@ -77,15 +73,6 @@ public class ControladorCombate {
         System.out.println("Vitalidad: " + pokedex.pikachu.getVitalidad());
         System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
         System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
-    }
-
-    @FXML
-    public void descansar(){
-        pokedex.pikachu.descansar();
-        if(pokedex.pikachu.getEstamina() < 20){
-            System.out.println("Has recuperado 5 de estamina");
-        }
-
     }
 
     @FXML
@@ -108,9 +95,15 @@ public class ControladorCombate {
         }
     }
 
-    @FXML public void verCajaEntrenador() {
+    @FXML
+    public void verCajaEntrenador() {
         Entrenador.jugadorEntrenador.moverACaja(pokedex.treecko);
         Entrenador.jugadorEntrenador.mostrarCaja();
+    }
+
+    @FXML
+    public void comprobarVentaja() {
+        System.out.println(pokedex.pikachu.comprobarVentaja(pokedex.bulbasaur));
     }
 
 }

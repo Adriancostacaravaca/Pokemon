@@ -41,25 +41,13 @@ public class ControladorCombate2 {
     private Button btnAtaque3;
     @FXML
     private Button btnAtaque4;
-    @FXML
-    private ListView<Pokemon> ListViewPokemones;
-
     private Pokedex pokedex;
+
 
     public void initialize() throws MalformedURLException {
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
-        ListViewPokemones.setItems(pokedex.getPokedex());
-        ListViewPokemones.setCellFactory(new ElegirPokemonCeldas());
-
-        ListViewPokemones.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            if (newSelection != null) {
-                btnPelear.setDisable(false);
-            } else {
-                btnPelear.setDisable(true);
-            }
-        });
-    }
+        }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -69,6 +57,21 @@ public class ControladorCombate2 {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
 
+    public void combatir() {
+        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
+
+        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
+        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina()); // FIXME: REVISAR
+
+    }
+
+    @FXML
+    public void descansar(){
+        pokedex.pikachu.descansar();
+        if(pokedex.pikachu.getEstamina() < 20){
+            System.out.println("Has recuperado 5 de estamina");
+        }
     }
 }
