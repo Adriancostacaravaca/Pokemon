@@ -20,7 +20,7 @@ import org.proyectopokemon.model.Login;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorLogin {
@@ -42,32 +42,21 @@ public class ControladorLogin {
     private Label lblComprobacion;
     @FXML
     private ImageView imagenUsuario;
-    @FXML
-    private Button btnMusica;
     private Login login = new Login();
-    @FXML
-    private MediaView mediaView;
 
     public void initialize() {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
+        musicaInicio();
     }
+
+    // MÚSICA DEL LOGIN
 
     @FXML
     private void musicaInicio() {
-        if (mediaView.getMediaPlayer() == null) {
-            try {
-                String fileName = getClass().getResource("src/main/resources/musica/pokemonLogin.mp3").toURI().getPath();
-                Media media = new Media(fileName);
-                MediaPlayer player = new MediaPlayer(media);
-                mediaView.setMediaPlayer(player);
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
-            }
-        }
-
-        mediaView.getMediaPlayer().play();
+        Media m = new Media(Paths.get("src/main/resources/musica/pokemonLogin.mp3").toUri().toString());
+        new MediaPlayer(m).play();
     }
 
     @FXML
