@@ -54,6 +54,7 @@ public class ControladorLogin {
         imagenUsuario.setImage(image);
     }
 
+    // FIXME: INTELLIJ NO RECONOCE LOS ARCHIVOS .MP3
     @FXML
     private void musicaInicio() {
         if (mediaView.getMediaPlayer() == null) {
