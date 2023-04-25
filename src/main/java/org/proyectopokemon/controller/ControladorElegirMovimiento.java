@@ -18,6 +18,7 @@ import org.proyectopokemon.controller.factories.TiendaCeldas;
 import org.proyectopokemon.model.*;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorElegirMovimiento {
@@ -26,27 +27,14 @@ public class ControladorElegirMovimiento {
     private Stage stage;
     @FXML
     private Button btnVolver;
-
     @FXML
     private Button btnAprender;
     @FXML
     private ListView<MovimientoAtaque> opcionesMovimientos;
-
-    Pokedex pokedex = new Pokedex();
+    Pokedex pokedex;
     MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
-
-    @FXML
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void initialize() {
+    public void initialize() throws MalformedURLException {
+        pokedex = new Pokedex();
         movimientosDisponiblesParaPokemon.añadirMovimientos();
         opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
         opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
@@ -58,6 +46,17 @@ public class ControladorElegirMovimiento {
                 btnAprender.setDisable(true);
             }
         });
+    }
+
+    @FXML
+    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

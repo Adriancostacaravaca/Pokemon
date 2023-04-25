@@ -40,7 +40,7 @@ public class ControladorPrincipal {
     private Stage stage;
 
     public void initialize() {
-        File f = new File("imagenes\\Pokemon.png");
+        File f = new File("src/main/resources/imagenes/Logo.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
         Image image = new Image(f.toURI().toString());
         imagenPokemon.setImage(image);
     }

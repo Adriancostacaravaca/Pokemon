@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import javafx.scene.control.Label;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -69,14 +71,14 @@ public class Entrenador {
         }
     }
 
-    public boolean capturar(Pokemon pokemon) {
+    public boolean capturar(Pokemon pokemon, Label lblComprobacion) {
 
         Random rd = new Random();
-        int numero = 3;
-        int numeroAzar = rd.nextInt(3) + 1;
+        int numero = 2;
+        int numeroAzar = rd.nextInt(2) + 1;
         boolean opcion = true;
         if (pokemon == null) {
-            System.out.println("No hay ningún pokemon disponible para ser capturado");
+            lblComprobacion.setText("No hay ningún pokemon disponible para ser capturado");
         }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
@@ -84,20 +86,16 @@ public class Entrenador {
                 pokeballs -= 1;
             }
             else if (this.pokeballs == 0) {
-                System.out.println("No tienes suficiente Pokéballs para poder capturar un Pokémon");
+                lblComprobacion.setText("No tienes suficiente Pokéballs para poder capturar un Pokémon");
                 opcion = false;
             }
             else {
-                System.out.println("Has fallado");
+                lblComprobacion.setText("Has fallado");
                 pokeballs -= 1;
                 opcion = false;
             }
         }
         return opcion;
-    }
-
-    public void entrenarAPokemon(Pokemon pokemon) {
-
     }
 
 }

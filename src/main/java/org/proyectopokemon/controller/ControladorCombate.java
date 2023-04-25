@@ -12,6 +12,7 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorCombate {
@@ -29,7 +30,11 @@ public class ControladorCombate {
     private Button btnDescansar;
     @FXML
     private Button btnAprenderMovimiento;
-    private Pokedex pokedex = new Pokedex();
+    private Pokedex pokedex;
+
+    public void initialize() throws MalformedURLException {
+        pokedex = new Pokedex();
+    }
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -40,6 +45,21 @@ public class ControladorCombate {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    public void irCombatir(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Combatir Pokemon2");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
+
+        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
+        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
     }
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
@@ -58,13 +78,7 @@ public class ControladorCombate {
         System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
         System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
     }
-    @FXML
-    public void combatir(){
-        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
 
-        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina());
-    }
     @FXML
     public void descansar(){
         pokedex.pikachu.descansar();

@@ -38,6 +38,21 @@ public class ControladorTienda {
     Tienda tienda = new Tienda();
     Mochila mochila = new Mochila();
 
+    public void initialize() {
+        tienda.añadirObjetosATienda();
+        listaObjetos.setItems(tienda.getObjetosTienda());
+        listaObjetos.setCellFactory(new TiendaCeldas());
+
+        listaObjetos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+            if (newSelection != null) {
+                btnComprar.setDisable(false);
+            } else {
+                btnComprar.setDisable(true);
+            }
+        });
+        actualizarDinero();
+    }
+
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -56,20 +71,6 @@ public class ControladorTienda {
     }
 
     // UTILIZAMOS INITIALIZE PARA EJECUTAR EL MÉTODO UNA VEZ ENTRAMOS EN LA ESCENA
-    public void initialize() {
-        tienda.añadirObjetosATienda();
-        listaObjetos.setItems(tienda.getObjetosTienda());
-        listaObjetos.setCellFactory(new TiendaCeldas());
-
-        listaObjetos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            if (newSelection != null) {
-                btnComprar.setDisable(false);
-            } else {
-                btnComprar.setDisable(true);
-            }
-        });
-        actualizarDinero();
-    }
 
     @FXML
     public void comprar() {
