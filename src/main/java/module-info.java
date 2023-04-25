@@ -1,7 +1,7 @@
 module Pokemon {
     requires javafx.fxml;
     requires javafx.controls;
-    requires java.sql;
+    requires javafx.media;
 
     opens org.proyectopokemon.model;
     opens org.proyectopokemon.controller;
