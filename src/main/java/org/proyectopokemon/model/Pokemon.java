@@ -78,6 +78,25 @@ public class Pokemon {
         return tipo;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setMote(String mote) {
+        this.mote = mote;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
     // MÉTODO PARA COMPROBAR VENTAJA
 
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;

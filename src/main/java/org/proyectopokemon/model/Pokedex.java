@@ -58,4 +58,6 @@ public class Pokedex {
     public ObservableList<Pokemon> getPokedex() {
         return pokedex;
     }
+
+
 }
