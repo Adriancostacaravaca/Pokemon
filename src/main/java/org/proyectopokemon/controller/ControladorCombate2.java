@@ -32,9 +32,9 @@ public class ControladorCombate2 {
     @FXML
     private Button btnVolver;
     @FXML
-    private Label lblMiEntrenador;
+    private Label lblMiPokemon;
     @FXML
-    private Label lblEntranadorRival;
+    private Label lblPokemonRival;
     @FXML
     private ImageView imagenP1;
     @FXML
@@ -59,7 +59,8 @@ public class ControladorCombate2 {
         musicaCombate();
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
-        PokemonACombatir();
+        pokemonACombatir();
+        mostrarNombresPokemon();
         }
 
     @FXML
@@ -77,15 +78,24 @@ public class ControladorCombate2 {
         stage.show();
         mediaPlayer.stop();
     }
+
+    // MOSTRAMOS LOS NOMBRES DE LOS POKEMON ENCIMA DE SU IMAGEN
+    // FIXME: MUESTRA EL NOMBRE DE UN POKEMON PORQUE SOLO CREAMOS UN OBJETO POKEMON
     @FXML
-    public void PokemonAzar(){
+    public void mostrarNombresPokemon(){
+            lblMiPokemon.setText(p.getNombre());
+            lblPokemonRival.setText(p.getNombre());
+    }
+
+    @FXML
+    public void pokemonAzar(){
         p = pokedex.presentarPokemonAzar();
     }
     @FXML
-    public void PokemonACombatir() {
-        PokemonAzar();
-        imagenP1.setImage(pokedex.pikachu.getImage());
-        imagenP2.setImage(pokedex.squirtle.getImage());
+    public void pokemonACombatir() {
+        pokemonAzar();
+        imagenP1.setImage(p.getImage());
+        imagenP2.setImage(p.getImage());
     }
 
     public void combatir() {
