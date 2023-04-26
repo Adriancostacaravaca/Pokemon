@@ -15,7 +15,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 import org.proyectopokemon.model.Login;
 
 import java.io.File;
