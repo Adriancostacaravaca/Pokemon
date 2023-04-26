@@ -24,8 +24,8 @@ public class AplicacionPokemon extends Application {
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/pokemon";
-        String usuario = "root";
-        String password = "";
+        String usuario = "fran";
+        String password = "wAhFXBd5..fYemr";
         String consulta = "SELECT * FROM pokedex";
         try {
             Connection connection = DriverManager.getConnection(url, usuario, password);
