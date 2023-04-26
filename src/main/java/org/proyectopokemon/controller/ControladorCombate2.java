@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -53,7 +54,13 @@ public class ControladorCombate2 {
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
-
+    @FXML
+    private ProgressBar vitalidadMiPokemon = new ProgressBar();
+    private double progress;
+    @FXML
+    private Label lblMiPokemonVitalidad;
+    @FXML
+    private Label lblMiPokemonEstamina;
 
     public void initialize() throws MalformedURLException {
         musicaCombate();
@@ -98,18 +105,24 @@ public class ControladorCombate2 {
         imagenP2.setImage(p.getImage());
     }
 
+    @FXML
+    public void mostrarVidaEnProgressBar(){
+        progress += 0.1;
+        vitalidadMiPokemon.setProgress(progress);
+    }
+
     public void combatir() {
-        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
-
-        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina()); // FIXME: REVISAR
-
+        mostrarVidaEnProgressBar();
+        p.atacarAPokemon(p);
+        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
     }
 
     @FXML
     public void descansar(){
-        pokedex.pikachu.descansar();
-        if(pokedex.pikachu.getEstamina() < 20){
+        p.descansar();
+        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
+        if(p.getEstamina() < 20){
             System.out.println("Has recuperado 5 de estamina");
         }
     }

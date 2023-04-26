@@ -47,17 +47,19 @@
             <Button fx:id="btnPelear" layoutX="276.0" layoutY="21.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
             <Label fx:id="lblMiPokemon" layoutX="116.0" layoutY="25.0" prefHeight="17.0" prefWidth="121.0" />
             <Label fx:id="lblPokemonRival" alignment="CENTER_RIGHT" layoutX="384.0" layoutY="25.0" prefHeight="17.0" prefWidth="121.0" />
-            <Button fx:id="btnAtaque1" layoutX="307.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="200.0" layoutX="66.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imagenP2" fitHeight="150.0" fitWidth="200.0" layoutX="393.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" />
-            <ProgressBar layoutX="-36.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
-            <ProgressBar layoutX="534.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="90.0" />
+            <ProgressBar fx:id="vitalidadMiPokemon" layoutX="-36.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="270.0" />
+            <ProgressBar fx:id="vitalidadPokemonRival" layoutX="534.0" layoutY="162.0" prefHeight="18.0" prefWidth="150.0" progress="0.0" rotate="270.0" />
+            <Button fx:id="btnAtaque1" layoutX="307.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque2" layoutX="461.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque3" layoutX="307.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque4" layoutX="461.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnPelear1" layoutX="169.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Cambiar Pokemon" />
             <Button fx:id="btnPelear11" layoutX="169.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Mochila" />
             <Button fx:id="btnDescansar" layoutX="169.0" layoutY="299.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="128.0" text="Descansar" />
+            <Label fx:id="lblMiPokemonVitalidad" layoutX="66.0" layoutY="246.0" prefHeight="17.0" prefWidth="273.0" />
+            <Label fx:id="lblMiPokemonEstamina" layoutX="66.0" layoutY="269.0" prefHeight="17.0" prefWidth="273.0" />
          </children></AnchorPane>
   </children>
 </VBox>
