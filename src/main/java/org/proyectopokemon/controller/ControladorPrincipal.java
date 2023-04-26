@@ -9,11 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorPrincipal {
@@ -34,7 +37,8 @@ public class ControladorPrincipal {
     private Button btnSalir;
     @FXML
     private ImageView imagenPokemon;
-
+    private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaMenuPrincipal.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
     private Parent root;
     private Scene scene;
@@ -44,6 +48,12 @@ public class ControladorPrincipal {
         File f = new File("src/main/resources/imagenes/Logo.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
         Image image = new Image(f.toURI().toString());
         imagenPokemon.setImage(image);
+        musicaMenuPrincipal();
+    }
+
+    @FXML
+    private void musicaMenuPrincipal() {
+        mediaPlayer.play();
     }
 
     @FXML
@@ -55,7 +65,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-
+        mediaPlayer.stop();
     }
 
     @FXML
@@ -67,8 +77,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-
-
+        mediaPlayer.stop();
     }
 
     @FXML
@@ -80,6 +89,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     @FXML
@@ -96,6 +106,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     @FXML
@@ -107,6 +118,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     @FXML
@@ -118,7 +130,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-
+        mediaPlayer.stop();
     }
 
     @FXML

@@ -1,7 +1,11 @@
 package org.proyectopokemon.model;
 
+import javafx.fxml.FXML;
 import javafx.scene.image.Image;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
+import java.nio.file.Paths;
 import java.util.*;
 
 public class Pokemon {
@@ -21,7 +25,10 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
     private Image image;
+
     private List<MovimientoAtaque> listaMovimientosDisp = new ArrayList<>();
+    private Media efectoSubidaNivel = new Media(Paths.get("src/main/resources/musica/efectoSubidaNivel.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(efectoSubidaNivel);
 
     public Pokemon(String nombre, String mote, char sexo, Tipo tipo, Image image) {
         Random rd = new Random();
@@ -267,8 +274,13 @@ public class Pokemon {
             this.nivel++;
             this.experiencia = 0;
             System.out.println("Has subido al nivel: " + getNivel());
+            efectoSubidaNivel();
         }
 
+    }
+    @FXML
+    private void efectoSubidaNivel() {
+        mediaPlayer.play();
     }
 
     // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES

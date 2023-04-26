@@ -14,8 +14,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import org.proyectopokemon.model.Login;
 
 import java.io.File;
@@ -43,20 +43,20 @@ public class ControladorLogin {
     @FXML
     private ImageView imagenUsuario;
     private Login login = new Login();
+    private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaLogin.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
     public void initialize() {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
-        musicaInicio();
+        musicaLogin();
     }
 
     // MÚSICA DEL LOGIN
-
     @FXML
-    private void musicaInicio() {
-        Media m = new Media(Paths.get("src/main/resources/musica/pokemonLogin.mp3").toUri().toString());
-        new MediaPlayer(m).play();
+    private void musicaLogin() {
+        mediaPlayer.play();
     }
 
     @FXML
@@ -69,6 +69,7 @@ public class ControladorLogin {
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
+            mediaPlayer.stop();
         }
     }
 }

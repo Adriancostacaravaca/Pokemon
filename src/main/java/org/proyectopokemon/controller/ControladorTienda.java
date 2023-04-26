@@ -12,6 +12,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
 import org.proyectopokemon.model.Entrenador;
@@ -20,6 +22,7 @@ import org.proyectopokemon.model.Objeto;
 import org.proyectopokemon.model.Tienda;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorTienda {
@@ -35,8 +38,10 @@ public class ControladorTienda {
     private Entrenador entrenadorPrincipal = new Entrenador("Juan");
     @FXML
     private Label lblDinero;
-    Tienda tienda = new Tienda();
-    Mochila mochila = new Mochila();
+    private Tienda tienda = new Tienda();
+    private Mochila mochila = new Mochila();
+    private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
 
     public void initialize() {
         tienda.añadirObjetosATienda();
@@ -51,6 +56,12 @@ public class ControladorTienda {
             }
         });
         actualizarDinero();
+        musicaTienda();
+    }
+
+    @FXML
+    private void musicaTienda() {
+        mediaPlayer.play();
     }
 
     @FXML
@@ -62,7 +73,7 @@ public class ControladorTienda {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-
+        mediaPlayer.stop();
     }
 
     // ACTUALIZAMOS NUESTRO DINERO MEDIANTE UN MÉTODO

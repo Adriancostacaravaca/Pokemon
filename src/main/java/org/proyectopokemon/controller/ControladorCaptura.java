@@ -9,11 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.*;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorCaptura {
@@ -35,12 +38,20 @@ public class ControladorCaptura {
     private Pokedex pokedex;
     private Entrenador entrenador = new Entrenador("");
     private Pokemon p;
+    private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaCaptura);
 
     public void initialize() throws MalformedURLException {
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
         actualizarPokeballs();
         mostrarPokemonACapturar();
+        musicaCaptura();
+    }
+
+    @FXML
+    private void musicaCaptura() {
+        mediaPlayer.play();
     }
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -51,6 +62,7 @@ public class ControladorCaptura {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     // MOSTRAR POKEMON CREADOS
@@ -72,7 +84,6 @@ public class ControladorCaptura {
 
     @FXML
     public void capturar() {
-
         boolean capturaHecha = entrenador.capturar(p, lblComprobacion);
 
         if (capturaHecha) {
