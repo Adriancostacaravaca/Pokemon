@@ -68,6 +68,7 @@ public class ControladorCombate2 {
         pokedex.rellenarPokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
+        mostrarEstaminaYVitalidad();
         }
 
     @FXML
@@ -111,17 +112,21 @@ public class ControladorCombate2 {
         vitalidadMiPokemon.setProgress(progress);
     }
 
+    public void mostrarEstaminaYVitalidad(){
+        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
+    }
+
     public void combatir() {
         mostrarVidaEnProgressBar();
         p.atacarAPokemon(p);
-        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
+        mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
         p.descansar();
-        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
+        mostrarEstaminaYVitalidad();
         if(p.getEstamina() < 20){
             System.out.println("Has recuperado 5 de estamina");
         }

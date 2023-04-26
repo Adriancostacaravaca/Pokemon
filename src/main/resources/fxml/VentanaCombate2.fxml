@@ -46,8 +46,8 @@
          <children>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
             <Button fx:id="btnPelear" layoutX="305.0" layoutY="21.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
-            <Label fx:id="lblMiPokemon" layoutX="129.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" />
-            <Label fx:id="lblPokemonRival" alignment="CENTER_RIGHT" layoutX="420.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" />
+            <Label fx:id="lblMiPokemon" alignment="CENTER" layoutX="69.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
+            <Label fx:id="lblPokemonRival" alignment="CENTER" layoutX="451.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
             <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="150.0" layoutX="54.0" layoutY="96.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
                <effect>
                   <DropShadow />
@@ -65,8 +65,8 @@
             <Button fx:id="btnPelear1" layoutX="169.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Cambiar Pokemon" />
             <Button fx:id="btnPelear11" layoutX="169.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Mochila" />
             <Button fx:id="btnDescansar" layoutX="169.0" layoutY="299.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="128.0" text="Descansar" />
-            <Label fx:id="lblMiPokemonVitalidad" layoutX="66.0" layoutY="246.0" prefHeight="17.0" prefWidth="273.0" />
-            <Label fx:id="lblMiPokemonEstamina" layoutX="66.0" layoutY="269.0" prefHeight="17.0" prefWidth="273.0" />
+            <Label fx:id="lblMiPokemonVitalidad" layoutX="54.0" layoutY="253.0" prefHeight="17.0" prefWidth="273.0" />
+            <Label fx:id="lblMiPokemonEstamina" layoutX="54.0" layoutY="276.0" prefHeight="17.0" prefWidth="273.0" />
          </children></AnchorPane>
   </children>
 </VBox>
