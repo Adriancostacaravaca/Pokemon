@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mochila {
-    private List<Objeto> mochila;
-    public Mochila(){
+    private static List<Objeto> mochila;
+    public  Mochila(){
         mochila = new ArrayList<>();
     }
     public List<Objeto> getMochila() {
