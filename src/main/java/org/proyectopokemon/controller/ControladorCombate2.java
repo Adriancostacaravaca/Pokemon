@@ -9,7 +9,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
 import org.proyectopokemon.controller.factories.ElegirPokemonCeldas;
@@ -18,6 +21,7 @@ import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorCombate2 {
@@ -29,9 +33,9 @@ public class ControladorCombate2 {
     @FXML
     private Button btnVolver;
     @FXML
-    private Label lblMiEntrenador;
+    private Label lblMiPokemon;
     @FXML
-    private Label lblEntranadorRival;
+    private Label lblPokemonRival;
     @FXML
     private ImageView imagenP1;
     @FXML
@@ -48,13 +52,29 @@ public class ControladorCombate2 {
     private Button btnAtaque4;
     private Pokedex pokedex;
     private Pokemon p;
-
+    private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
+    @FXML
+    private ProgressBar vitalidadMiPokemon = new ProgressBar();
+    private double progress;
+    @FXML
+    private Label lblMiPokemonVitalidad;
+    @FXML
+    private Label lblMiPokemonEstamina;
 
     public void initialize() throws MalformedURLException {
+        musicaCombate();
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
-        PokemonACombatir();
+        pokemonACombatir();
+        mostrarNombresPokemon();
+        mostrarEstaminaYVitalidad();
         }
+
+    @FXML
+    private void musicaCombate() {
+        mediaPlayer.play();
+    }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -64,30 +84,50 @@ public class ControladorCombate2 {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
+
+    // MOSTRAMOS LOS NOMBRES DE LOS POKEMON ENCIMA DE SU IMAGEN
+    // FIXME: MUESTRA EL NOMBRE DE UN POKEMON PORQUE SOLO CREAMOS UN OBJETO POKEMON
     @FXML
-    public void PokemonAzar(){
+    public void mostrarNombresPokemon(){
+            lblMiPokemon.setText(p.getNombre());
+            lblPokemonRival.setText(p.getNombre());
+    }
+
+    @FXML
+    public void pokemonAzar(){
         p = pokedex.presentarPokemonAzar();
     }
     @FXML
-    public void PokemonACombatir() {
-        PokemonAzar();
-        imagenP1.setImage(pokedex.pikachu.getImage());
-        imagenP2.setImage(pokedex.squirtle.getImage());
+    public void pokemonACombatir() {
+        pokemonAzar();
+        imagenP1.setImage(p.getImage());
+        imagenP2.setImage(p.getImage());
+    }
+
+    @FXML
+    public void mostrarVidaEnProgressBar(){
+        progress += 0.1;
+        vitalidadMiPokemon.setProgress(progress);
+    }
+
+    public void mostrarEstaminaYVitalidad(){
+        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
     }
 
     public void combatir() {
-        pokedex.pikachu.atacarAPokemon(pokedex.treecko);
-
-        System.out.println("Vitalidad de: " + pokedex.treecko.getNombre() + ", " + pokedex.treecko.getVitalidad());
-        System.out.println("Estamina disponible: " + pokedex.pikachu.getEstamina()); // FIXME: REVISAR
-
+        mostrarVidaEnProgressBar();
+        p.atacarAPokemon(p);
+        mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
-        pokedex.pikachu.descansar();
-        if(pokedex.pikachu.getEstamina() < 20){
+        p.descansar();
+        mostrarEstaminaYVitalidad();
+        if(p.getEstamina() < 20){
             System.out.println("Has recuperado 5 de estamina");
         }
     }

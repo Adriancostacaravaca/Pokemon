@@ -35,10 +35,6 @@ public class AplicacionPokemon extends Application {
         } catch (SQLException e) {
             System.out.println("Error");
         }
-
         launch();
-
-
-
     }
 }
