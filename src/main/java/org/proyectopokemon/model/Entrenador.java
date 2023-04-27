@@ -16,14 +16,13 @@ public class Entrenador {
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
     public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
-
     Random rd = new Random();
 
     public Entrenador(String nombre) {
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
-        this.pokeballs = 5;
+        this.pokeballs = 10;
     }
 
     public int getPokedollar() {

@@ -35,7 +35,6 @@ public class ControladorElegirMovimiento {
         movimientosDisponiblesParaPokemon.añadirMovimientos();
         opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
         opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
-
         opcionesMovimientos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null) {
                 btnAprender.setDisable(false);
@@ -59,7 +58,6 @@ public class ControladorElegirMovimiento {
     @FXML
     public void aprender(ActionEvent event) throws IOException{
         MovimientoAtaque movimientoSelected = opcionesMovimientos.getSelectionModel().getSelectedItem();
-        pokedex.pikachu.getListaCuatroAtaques().add(movimientoSelected);
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

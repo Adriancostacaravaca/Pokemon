@@ -22,6 +22,7 @@ public class Pokemon {
     private int fertilidad;
     private char sexo;
     private int experiencia;
+    private static List<MovimientosDisponiblesParaPokemon> listaCuatroAtaques;
     private Tipo tipo;
     private Estado estado;
     private Image image;
@@ -45,6 +46,7 @@ public class Pokemon {
         this.experiencia = 0;
         this.tipo = tipo;
         this.image = image;
+        this.listaCuatroAtaques = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -92,7 +94,6 @@ public class Pokemon {
     }
 
     // MÉTODO PARA COMPROBAR VENTAJA
-
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;
     private static HashMap<Tipo, List<Tipo>> tablaFuertes;
 
@@ -270,10 +271,7 @@ public class Pokemon {
         mediaPlayer.play();
     }
 
-    // LISTA DE CUATRO ATAQUES DEL POKEMON
-    private static List<MovimientoAtaque> listaCuatroAtaques = new ArrayList<>();
-
-    public List<MovimientoAtaque> getListaCuatroAtaques() {
+    public List<MovimientosDisponiblesParaPokemon> getListaCuatroAtaques() {
         return listaCuatroAtaques;
     }
 
