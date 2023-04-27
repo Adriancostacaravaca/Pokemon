@@ -44,13 +44,13 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="34.0" prefWidth="75.0" text="Menú" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="69.0" prefHeight="18.0" prefWidth="380.0" text="¿Que movimiento nuevo deseas aprender?">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="39.0" prefHeight="45.0" prefWidth="601.0" text="¿Que movimiento nuevo deseas aprender?" textAlignment="CENTER">
                <font>
-                  <Font size="19.0" />
+                  <Font size="30.0" />
                </font>
             </Label>
-            <Button fx:id="btnAprender" layoutX="273.0" layoutY="269.0" mnemonicParsing="false" onAction="#aprender" prefHeight="26.0" prefWidth="75.0" text="Aprender" />
-            <ListView fx:id="opcionesMovimientos" layoutX="133.0" layoutY="106.0" orientation="HORIZONTAL" prefHeight="142.0" prefWidth="355.0" />
+            <Button fx:id="btnAprender" layoutX="283.0" layoutY="317.0" mnemonicParsing="false" onAction="#aprender" prefHeight="26.0" prefWidth="75.0" text="Aprender" />
+            <ListView fx:id="opcionesMovimientos" layoutX="93.0" layoutY="100.0" orientation="HORIZONTAL" prefHeight="200.0" prefWidth="455.0" />
          </children></AnchorPane>
   </children>
 </VBox>
