@@ -55,6 +55,7 @@ public class ControladorCombate {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+
     }
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{

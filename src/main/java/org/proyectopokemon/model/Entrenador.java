@@ -14,7 +14,7 @@ public class Entrenador {
     private static List<Pokemon> caja;
     private List<Objeto> cajaObjetos = new ArrayList<>();
 
-    // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
+    // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL Y DEL RIVAL
     public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Jugador");
     public static Entrenador rivalEntrenador = new Entrenador("Entrenador Rival");
     Random rd = new Random();
@@ -97,10 +97,6 @@ public class Entrenador {
             }
         }
         return opcion;
-    }
-
-    public static List<Pokemon> getEquipoPrincipal() {
-        return equipoPrincipal;
     }
 
 
