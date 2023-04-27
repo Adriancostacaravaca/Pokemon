@@ -55,7 +55,6 @@ public class ControladorCombate {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-
     }
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
@@ -76,28 +75,7 @@ public class ControladorCombate {
     }
 
     @FXML
-    public void aprenderMovimiento(){
-        //pokedex.pikachu.rellenarListaCuatroAtaques();
-        if(pokedex.pikachu.getNivel() == 1){
-            System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(0));
-        } else if (pokedex.pikachu.getNivel() == 2) {
-            for(int i = 0; i < 2;i++){
-                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
-            }
-        } else if (pokedex.pikachu.getNivel() == 3) {
-            for(int i = 0; i < 3;i++){
-                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
-            }
-        } else if (pokedex.pikachu.getNivel() == 4) {
-            for(int i = 0; i < 3;i++){
-                System.out.println(pokedex.pikachu.getListaCuatroAtaques().get(i));
-            }
-        }
-    }
-
-    @FXML
     public void verCajaEntrenador() {
-        Entrenador.jugadorEntrenador.moverACaja(pokedex.treecko);
         Entrenador.jugadorEntrenador.mostrarCaja();
     }
 

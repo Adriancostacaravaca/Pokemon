@@ -36,7 +36,6 @@ public class ControladorCaptura {
     @FXML
     private ImageView imgPokemonAzar;
     private Pokedex pokedex;
-    private Entrenador entrenador = new Entrenador("");
     private Pokemon p;
     private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCaptura);
@@ -67,7 +66,7 @@ public class ControladorCaptura {
 
     // MOSTRAR POKEMON CREADOS
     public void actualizarPokeballs() {
-        lblIntentos.setText("Pokeballs disponibles: " + entrenador.getPokeballs());
+        lblIntentos.setText("Pokeballs disponibles: " + Entrenador.jugadorEntrenador.getPokeballs());
     }
 
     @FXML
@@ -84,13 +83,12 @@ public class ControladorCaptura {
 
     @FXML
     public void capturar() {
-        boolean capturaHecha = entrenador.capturar(p, lblComprobacion);
+        boolean capturaHecha = Entrenador.jugadorEntrenador.capturar(p, lblComprobacion);
 
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
-            System.out.println(entrenador.getCaja().toString());
+            System.out.println(Entrenador.jugadorEntrenador.getCaja().toString());
         }
-
         actualizarPokeballs();
     }
 }

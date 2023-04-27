@@ -56,7 +56,7 @@
                <effect>
                   <DropShadow />
                </effect></ImageView>
-            <Label fx:id="lblComprobacion" layoutX="249.0" layoutY="344.0" prefHeight="17.0" prefWidth="384.0" />
+            <Label fx:id="lblComprobacion" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="344.0" prefHeight="17.0" prefWidth="384.0" />
          </children>
     </AnchorPane>
   </children>
