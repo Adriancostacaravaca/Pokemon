@@ -8,13 +8,14 @@ public class Mochila {
     public  Mochila(){
         mochila = new ArrayList<>();
     }
+    public void añadirAMochila(Objeto objetoComprado){
+        mochila.add(objetoComprado);
+    }
     public List<Objeto> getMochila() {
         return mochila;
     }
 
 
-    public void añadirAMochila(Objeto objetoComprado){
-        mochila.add(objetoComprado);
-    }
+
 
 }
