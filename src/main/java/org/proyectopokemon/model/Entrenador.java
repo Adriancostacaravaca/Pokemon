@@ -10,7 +10,7 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
     private int pokeballs;
-    private List<Pokemon> equipoPrincipal;
+    private static List<Pokemon> equipoPrincipal;
     private List<Pokemon> caja = new ArrayList<>();
     private List<Objeto> cajaObjetos = new ArrayList<>();
 

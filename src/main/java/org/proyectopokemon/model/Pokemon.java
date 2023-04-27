@@ -25,8 +25,6 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
     private Image image;
-
-    private List<MovimientoAtaque> listaMovimientosDisp = new ArrayList<>();
     private Media efectoSubidaNivel = new Media(Paths.get("src/main/resources/musica/efectoSubidaNivel.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(efectoSubidaNivel);
 
@@ -89,21 +87,10 @@ public class Pokemon {
         this.nombre = nombre;
     }
 
-    public void setMote(String mote) {
-        this.mote = mote;
-    }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
-    }
-
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
-    }
-
     public void setImage(Image image) {
         this.image = image;
     }
+
     // MÉTODO PARA COMPROBAR VENTAJA
 
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;
@@ -283,8 +270,8 @@ public class Pokemon {
         mediaPlayer.play();
     }
 
-    // AÑADIMOS EN LA LISTA DE ATAQUES UN NUEVO MOVIMIENTO CADA 3 NIVELES
-    private List<MovimientoAtaque> listaCuatroAtaques = new ArrayList<>();
+    // LISTA DE CUATRO ATAQUES DEL POKEMON
+    private static List<MovimientoAtaque> listaCuatroAtaques = new ArrayList<>();
 
     public List<MovimientoAtaque> getListaCuatroAtaques() {
         return listaCuatroAtaques;
