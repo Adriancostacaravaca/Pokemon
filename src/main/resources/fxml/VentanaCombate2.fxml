@@ -44,8 +44,8 @@
   <children>
     <AnchorPane fx:id="objetos" maxWidth="-Infinity" prefHeight="400.0" prefWidth="905.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnPelear" layoutX="305.0" layoutY="21.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
+            <Button fx:id="btnPelear" layoutX="301.0" layoutY="22.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
             <Label fx:id="lblMiPokemon" alignment="CENTER" layoutX="69.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
             <Label fx:id="lblPokemonRival" alignment="CENTER" layoutX="451.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
             <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="150.0" layoutX="54.0" layoutY="96.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">

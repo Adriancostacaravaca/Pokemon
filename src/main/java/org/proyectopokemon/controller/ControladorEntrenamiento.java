@@ -25,8 +25,7 @@ public class ControladorEntrenamiento {
 
     @FXML
     private Button btnSeleccionar;
-
-    Entrenamiento entrenamiento = new Entrenamiento();
+    private Entrenamiento entrenamiento = new Entrenamiento();
     @FXML
     private ListView<Entrenamiento> listaEntrenamiento;
 

@@ -10,20 +10,19 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
     private int pokeballs;
-    private List<Pokemon> equipoPrincipal;
+    private static List<Pokemon> equipoPrincipal;
     private List<Pokemon> caja = new ArrayList<>();
     private List<Objeto> cajaObjetos = new ArrayList<>();
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL
     public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Pokemon");
-
     Random rd = new Random();
 
     public Entrenador(String nombre) {
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
-        this.pokeballs = 5;
+        this.pokeballs = 10;
     }
 
     public int getPokedollar() {
