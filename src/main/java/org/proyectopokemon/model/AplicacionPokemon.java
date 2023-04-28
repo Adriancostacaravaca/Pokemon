@@ -24,17 +24,20 @@ public class AplicacionPokemon extends Application {
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/pokemon";
-        String usuario = "fran";
-        String password = "wAhFXBd5..fYemr";
+        String usuario = "root";
+        String password = "";
         String consulta = "SELECT * FROM pokedex";
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, usuario, password);
-            Statement statement = connection.createStatement();
-            ResultSet resultado = statement.executeQuery(consulta);
-            System.out.println(resultado);
+            //Statement statement = connection.createStatement();
+            //ResultSet resultado = statement.executeQuery(consulta);
+            System.out.println("Conectado");
         } catch (SQLException e) {
             System.out.println("Error");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
-        launch();
+        // launch();
     }
 }
