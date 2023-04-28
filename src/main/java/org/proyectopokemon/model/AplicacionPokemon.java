@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
+import com.github.oscar0812.pokeapi.utils.Client;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,6 +29,10 @@ public class AplicacionPokemon extends Application {
         String usuario = "root";
         String password = "";
         String consulta = "SELECT * FROM pokedex";
+        Client Client = null;
+        NamedAPIResourceList listaPokemones = Client.getGenerationList(151,1);
+        System.out.println(listaPokemones);
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, usuario, password);
@@ -42,6 +48,6 @@ public class AplicacionPokemon extends Application {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        launch();
+
     }
 }
