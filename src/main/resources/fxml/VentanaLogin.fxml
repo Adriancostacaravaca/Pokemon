@@ -48,12 +48,12 @@
             <Button fx:id="btnEntrar" layoutX="156.0" layoutY="381.0" mnemonicParsing="false" onAction="#irAVentanaAplicacion" prefHeight="25.0" prefWidth="79.0" text="Entrar" />
             <TextField fx:id="txtUsuario" layoutX="126.0" layoutY="252.0" />
             <Label fx:id="lblUsuario" layoutX="125.0" layoutY="235.0" prefHeight="17.0" prefWidth="70.0" text="Usuario" />
-            <Label fx:id="lblContraseña" layoutX="126.0" layoutY="302.0" prefHeight="17.0" prefWidth="90.0" text="Contraseña" />
+            <Label fx:id="lblContrasenya" layoutX="126.0" layoutY="302.0" prefHeight="17.0" prefWidth="90.0" text="Contraseña" />
             <ImageView fx:id="imagenUsuario" fitHeight="150.0" fitWidth="149.0" layoutX="126.0" layoutY="56.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect></ImageView>
-            <PasswordField fx:id="txtContraseña" layoutX="127.0" layoutY="319.0" />
+            <PasswordField fx:id="txtContrasenya" layoutX="127.0" layoutY="319.0" />
             <Label fx:id="lblComprobacion" layoutX="127.0" layoutY="355.0" prefHeight="17.0" prefWidth="242.0" textFill="RED" />
          </children>
     </AnchorPane>

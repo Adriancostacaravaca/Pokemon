@@ -34,9 +34,9 @@ public class ControladorLogin {
     @FXML
     private TextField txtUsuario;
     @FXML
-    private Label lblContraseña;
+    private Label lblContrasenya;
     @FXML
-    private PasswordField txtContraseña;
+    private PasswordField txtContrasenya;
     @FXML
     private Label lblComprobacion;
     @FXML
@@ -60,7 +60,7 @@ public class ControladorLogin {
 
     @FXML
     public void irAVentanaAplicacion(ActionEvent event) throws IOException {
-        if (login.comprobarCredenciales(txtUsuario, txtContraseña, lblComprobacion)) {
+        if (login.comprobarCredenciales(txtUsuario, txtContrasenya, lblComprobacion)) {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
             scene = new Scene(root, 650, 400);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
