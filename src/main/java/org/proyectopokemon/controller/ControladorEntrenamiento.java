@@ -8,11 +8,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirEntrenamientoCeldas;
 import org.proyectopokemon.model.Entrenamiento;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorEntrenamiento {
@@ -28,6 +31,8 @@ public class ControladorEntrenamiento {
     private Entrenamiento entrenamiento = new Entrenamiento();
     @FXML
     private ListView<Entrenamiento> listaEntrenamiento;
+    private Media musicaEntrenamiento = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaEntrenamiento);
 
     public void initialize() {
         entrenamiento.añadirEntrenamientos();
@@ -43,14 +48,15 @@ public class ControladorEntrenamiento {
         });
     }
     @FXML
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
+    public void volverAVentanaAnterior(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
         scene = new Scene(root, 650, 400);
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     public void entrenar() {

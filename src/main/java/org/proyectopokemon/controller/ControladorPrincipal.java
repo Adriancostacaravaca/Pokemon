@@ -24,11 +24,7 @@ public class ControladorPrincipal {
     @FXML
     private Button btnCombate;
     @FXML
-    private Button btnTienda;
-    @FXML
     private Button btnCaptura;
-    @FXML
-    private Button btnCriarPokemon;
     @FXML
     private Button btnMochila;
     @FXML
@@ -69,18 +65,6 @@ public class ControladorPrincipal {
     }
 
     @FXML
-    public void irAVentanaTienda(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaTienda.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-        mediaPlayer.stop();
-    }
-
-    @FXML
     public void irAVentanaCaptura(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
         scene = new Scene(root, 650, 400);
@@ -93,8 +77,14 @@ public class ControladorPrincipal {
     }
 
     @FXML
-    public void IrAVentanaCrianza() {
-        System.out.println("Ir a Crianza");
+    public void irAVentanaCentroPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -115,18 +105,6 @@ public class ControladorPrincipal {
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Capturar Pokemon");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-        mediaPlayer.stop();
-    }
-
-    @FXML
-    public void IrAVentanaEntrenamiento(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEntrenamiento.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Entrenar Pokemon");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

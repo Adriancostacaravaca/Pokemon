@@ -73,8 +73,8 @@ public class ControladorTienda {
     }
 
     @FXML
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
+    public void volverAVentanaAnterior(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");

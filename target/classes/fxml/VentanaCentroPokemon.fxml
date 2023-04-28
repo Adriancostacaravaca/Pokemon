@@ -33,24 +33,18 @@
 -->
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorEntrenamiento">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCentroPokemon">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
-            <ListView fx:id="listaEntrenamiento" layoutX="27.0" layoutY="100.0" prefHeight="200.0" prefWidth="579.0" />
-            <Button fx:id="btnSeleccionar" layoutX="251.0" layoutY="310.0" mnemonicParsing="false" onAction="#entrenar" prefHeight="25.0" prefWidth="138.0" text="Seleccionar" />
-            <Label layoutX="217.0" layoutY="39.0" text="Entrenamientos" textAlignment="CENTER">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
-         </children></AnchorPane>
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
+            <Button fx:id="btnTienda" layoutX="252.0" layoutY="155.0" mnemonicParsing="false" onAction="#irAVentanaTienda" prefHeight="25.0" prefWidth="136.0" text="Tienda" />
+            <Button fx:id="btnCriarPokemon" layoutX="252.0" layoutY="187.0" mnemonicParsing="false" onAction="#IrAVentanaCrianza" prefHeight="26.0" prefWidth="136.0" text="Criar Pokemon" />
+            <Button fx:id="btnEntrenarPokemon" layoutX="252.0" layoutY="219.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="26.0" prefWidth="136.0" text="Entrenar Pokemon" />
+         </children>
+    </AnchorPane>
   </children>
 </VBox>

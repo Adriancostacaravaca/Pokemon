@@ -43,13 +43,11 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
             <Button fx:id="btnSalir" layoutX="286.0" layoutY="362.0" mnemonicParsing="false" onAction="#cerrarPokemon" prefHeight="25.0" prefWidth="79.0" text="Salir" />
-            <Button fx:id="btnCriarPokemon" layoutX="257.0" layoutY="241.0" mnemonicParsing="false" onAction="#IrAVentanaCrianza" prefHeight="26.0" prefWidth="136.0" text="Criar Pokemon" />
             <Button fx:id="btnMochila" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#irAVentanaMochila" prefHeight="25.0" prefWidth="79.0" text="Mochila" />
-            <Button fx:id="btnTienda" layoutX="257.0" layoutY="175.0" mnemonicParsing="false" onAction="#irAVentanaTienda" prefHeight="25.0" prefWidth="136.0" text="Tienda" />
-            <Button fx:id="btnCombate" layoutX="257.0" layoutY="143.0" mnemonicParsing="false" onAction="#irAVentanaCombate" prefHeight="25.0" prefWidth="136.0" text="Combate" />
-            <Button fx:id="btnCaptura" layoutX="257.0" layoutY="208.0" mnemonicParsing="false" onAction="#irAVentanaCaptura" prefHeight="25.0" prefWidth="136.0" text="Captura" />
+            <Button fx:id="btnTienda" layoutX="258.0" layoutY="187.0" mnemonicParsing="false" onAction="#irAVentanaCentroPokemon" prefHeight="25.0" prefWidth="136.0" text="Centro Pokémon" />
+            <Button fx:id="btnCombate" layoutX="258.0" layoutY="155.0" mnemonicParsing="false" onAction="#irAVentanaCombate" prefHeight="25.0" prefWidth="136.0" text="Combate" />
+            <Button fx:id="btnCaptura" layoutX="258.0" layoutY="220.0" mnemonicParsing="false" onAction="#irAVentanaCaptura" prefHeight="25.0" prefWidth="136.0" text="Captura" />
             <Button fx:id="btnPokedex" layoutX="557.0" layoutY="361.0" mnemonicParsing="false" onAction="#irAVentanaPokedex" prefHeight="26.0" prefWidth="79.0" text="Pokedex" />
-            <Button fx:id="btnEntrenarPokemon" layoutX="258.0" layoutY="273.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="26.0" prefWidth="136.0" text="Entrenar Pokemon" />
             <ImageView fx:id="imagenPokemon" fitHeight="110.0" fitWidth="205.0" layoutX="223.0" layoutY="14.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
