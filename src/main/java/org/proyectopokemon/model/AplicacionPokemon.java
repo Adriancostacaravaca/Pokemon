@@ -30,14 +30,18 @@ public class AplicacionPokemon extends Application {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, usuario, password);
-            //Statement statement = connection.createStatement();
-            //ResultSet resultado = statement.executeQuery(consulta);
+            Statement statement = connection.createStatement();
+            ResultSet resultado = statement.executeQuery(consulta);
+
+            while(resultado.next()){
+                System.out.println(resultado.getString("NOMBRE"));
+            }
             System.out.println("Conectado");
         } catch (SQLException e) {
             System.out.println("Error");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        // launch();
+        launch();
     }
 }
