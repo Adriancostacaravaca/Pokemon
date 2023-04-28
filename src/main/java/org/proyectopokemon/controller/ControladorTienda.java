@@ -12,6 +12,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -21,6 +23,7 @@ import org.proyectopokemon.model.Mochila;
 import org.proyectopokemon.model.Objeto;
 import org.proyectopokemon.model.Tienda;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Objects;
@@ -38,6 +41,8 @@ public class ControladorTienda {
     private Entrenador entrenadorPrincipal = new Entrenador("Juan");
     @FXML
     private Label lblDinero;
+    @FXML
+    private ImageView imagenProfesorOak;
     private Tienda tienda = new Tienda();
     private Mochila mochila = new Mochila();
     private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
@@ -56,6 +61,9 @@ public class ControladorTienda {
             }
         });
         actualizarDinero();
+        File f = new File("src/main/resources/imagenes/ProfesorOak.png");
+        Image image = new Image(f.toURI().toString());
+        imagenProfesorOak.setImage(image);
         musicaTienda();
     }
 

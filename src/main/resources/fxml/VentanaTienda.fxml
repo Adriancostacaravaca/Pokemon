@@ -35,6 +35,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -45,14 +47,19 @@
     <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <ListView fx:id="listaObjetos" layoutX="13.0" layoutY="88.0" prefHeight="198.0" prefWidth="614.0" />
+            <ListView fx:id="listaObjetos" layoutX="247.0" layoutY="88.0" prefHeight="236.0" prefWidth="380.0" />
             <Text layoutX="191.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tienda Pokémon" textAlignment="CENTER" wrappingWidth="258.13671875">
                <font>
                   <Font size="30.0" />
                </font>
             </Text>
-            <Button fx:id="btnComprar" layoutX="282.0" layoutY="302.0" mnemonicParsing="false" onAction="#comprar" prefHeight="25.0" prefWidth="75.0" text="Comprar" />
+            <Button fx:id="btnComprar" layoutX="400.0" layoutY="336.0" mnemonicParsing="false" onAction="#comprar" prefHeight="25.0" prefWidth="75.0" text="Comprar" />
             <Label fx:id="lblDinero" layoutX="511.0" layoutY="360.0" prefHeight="26.0" prefWidth="114.0" />
+            <ImageView fx:id="imagenProfesorOak" fitHeight="236.0" fitWidth="190.0" layoutX="31.0" layoutY="88.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
          </children></AnchorPane>
   </children>
 </VBox>

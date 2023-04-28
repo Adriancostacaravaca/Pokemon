@@ -46,7 +46,7 @@ public class ControladorLogin {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
     public void initialize() {
-        File f = new File("src/main/resources/imagenes/iconoUsuario.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
+        File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
         musicaLogin();
