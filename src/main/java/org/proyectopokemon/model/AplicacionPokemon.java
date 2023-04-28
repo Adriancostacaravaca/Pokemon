@@ -48,6 +48,7 @@ public class AplicacionPokemon extends Application {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+        launch();
 
     }
 }
