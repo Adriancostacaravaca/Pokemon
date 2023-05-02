@@ -57,7 +57,7 @@ public class ControladorPrincipal {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon");
+        stage.setTitle("Combate Pokemon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -69,7 +69,7 @@ public class ControladorPrincipal {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Capturar Pokemon");
+        stage.setTitle("Capturar Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -81,7 +81,7 @@ public class ControladorPrincipal {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Centro Pokémon");
+        stage.setTitle("Centro Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -93,7 +93,7 @@ public class ControladorPrincipal {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaMochila.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon");
+        stage.setTitle("Mochila - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -105,7 +105,7 @@ public class ControladorPrincipal {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaPokedex.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Capturar Pokemon");
+        stage.setTitle("Pokédex - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -116,7 +116,7 @@ public class ControladorPrincipal {
     public void cerrarPokemon() {
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();
-        System.out.println("Pokémon cerrado. ¡Esperamos que vuelvas pronto!.");
+        System.out.println("Pokémon cerrado. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.");
     }
 
 }

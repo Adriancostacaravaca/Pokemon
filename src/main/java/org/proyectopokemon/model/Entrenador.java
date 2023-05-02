@@ -33,8 +33,12 @@ public class Entrenador {
         return pokedollar;
     }
 
-    public List<Pokemon> getCaja() {
+    public static List<Pokemon> getCaja() {
         return caja;
+    }
+
+    public static List<Pokemon> getEquipoPrincipal() {
+        return equipoPrincipal;
     }
 
     public List<Objeto> getCajaObjetos() {
@@ -45,22 +49,24 @@ public class Entrenador {
         return pokeballs;
     }
 
-    public void moverACaja(Pokemon pokemonAMover) {
-        comprobarCaja(caja, pokemonAMover);
-        caja.add(pokemonAMover);
-    }
-
-    public void comprobarCaja(List<Pokemon> lista, Pokemon p) {
-        for (int i = 0; i < lista.size() ; i++) {
-            if (caja.get(i).getNombre() == p.getNombre()) {
-                lista.remove(p);
-                System.out.println("Ya existe el Pokemon " +  p.getNombre() + " en tu caja");
-            }
+    public void mostrarEquipo() {
+        System.out.println("EQUIPO DEL ENTRENADOR:");
+        if (miEntrenador.getEquipoPrincipal().size() == 0) {
+            System.out.println("El equipo del entrenador está vacío");
+        }
+        for (int i = 0; i < miEntrenador.getEquipoPrincipal().size(); i++) {
+            System.out.println(miEntrenador.getEquipoPrincipal().get(i));
         }
     }
 
     public void mostrarCaja() {
-        System.out.println(caja);
+        System.out.println("CAJA DEL ENTRENADOR:");
+        if (miEntrenador.getCaja().size() == 0) {
+            System.out.println("La caja del entrenador está vacía");
+        }
+        for (int i = 0; i < miEntrenador.getCaja().size(); i++) {
+            System.out.println(miEntrenador.getCaja().get(i));
+        }
     }
 
     // COMPROBACIÓN DE SI TENEMOS DINERO O NO
