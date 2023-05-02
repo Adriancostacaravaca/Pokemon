@@ -36,6 +36,17 @@ public class ControladorMochila {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    public void IrAVentanaEquipoPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEquipoPokemon.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Equipo Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+        verEquipoEntrenador();
+    }
 
     @FXML
     public void verEquipoEntrenador() {
