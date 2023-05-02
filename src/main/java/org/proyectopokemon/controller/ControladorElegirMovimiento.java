@@ -30,7 +30,7 @@ public class ControladorElegirMovimiento {
     private ListView<MovimientoAtaque> opcionesMovimientos;
     private Pokedex pokedex;
     MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
-    public void initialize() throws MalformedURLException {
+    public void initialize() {
         pokedex = new Pokedex();
         movimientosDisponiblesParaPokemon.añadirMovimientos();
         opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());

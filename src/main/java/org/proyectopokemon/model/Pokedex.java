@@ -1,31 +1,32 @@
 package org.proyectopokemon.model;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
 
 import java.io.File;
-import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Pokedex {
 
-    public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
+    //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
+
+    private List<Pokemon> pokedex = new ArrayList<>();
 
     File fBulbasur = new File("src/main/resources/imagenes/Bulbasaur.png");
-    Image bulbasaurImg = new Image(fBulbasur.toURI().toURL().toString());
+    Image bulbasaurImg = new Image(fBulbasur.toURI().toString());
     File fCaterpie = new File("src/main/resources/imagenes/Caterpie.png");
-    Image caterpieImg = new Image(fCaterpie.toURI().toURL().toString());
+    Image caterpieImg = new Image(fCaterpie.toURI().toString());
     File fCharmander = new File("src/main/resources/imagenes/Charmander.png");
-    Image charmanderImg = new Image(fCharmander.toURI().toURL().toString());
+    Image charmanderImg = new Image(fCharmander.toURI().toString());
     File fPikachu = new File("src/main/resources/imagenes/Pikachu.png");
-    Image pikachuImg = new Image(fPikachu.toURI().toURL().toString());
+    Image pikachuImg = new Image(fPikachu.toURI().toString());
     File fRattata = new File("src/main/resources/imagenes/Rattata.png");
-    Image rattataImg = new Image(fRattata.toURI().toURL().toString());
+    Image rattataImg = new Image(fRattata.toURI().toString());
     File fSquirtle = new File("src/main/resources/imagenes/Squirtle.png");
-    Image squirtleImg = new Image(fSquirtle.toURI().toURL().toString());
+    Image squirtleImg = new Image(fSquirtle.toURI().toString());
     File fTreecko = new File("src/main/resources/imagenes/Treecko.png");
-    Image treeckoImg = new Image(fTreecko.toURI().toURL().toString());
+    Image treeckoImg = new Image(fTreecko.toURI().toString());
 
     public Pokemon pikachu = new Pokemon("Pikachu","pika",'H', Tipo.ELECTRICO, pikachuImg);
     public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M', Tipo.PLANTA, treeckoImg);
@@ -36,7 +37,7 @@ public class Pokedex {
     public Pokemon rattata = new Pokemon("Rattata", "Rattata", 'M', Tipo.NORMAL, rattataImg);
 
 
-    public Pokedex() throws MalformedURLException {
+    public Pokedex(){
     }
 
     public void rellenarPokedex() {
@@ -53,10 +54,6 @@ public class Pokedex {
         Random rd = new Random();
         int numAzar = rd.nextInt(pokedex.size());
         return pokedex.get(numAzar);
-    }
-
-    public ObservableList<Pokemon> getPokedex() {
-        return pokedex;
     }
 
 

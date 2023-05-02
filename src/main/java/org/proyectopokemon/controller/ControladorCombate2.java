@@ -62,7 +62,7 @@ public class ControladorCombate2 {
     @FXML
     private Label lblMiPokemonEstamina;
 
-    public void initialize() throws MalformedURLException {
+    public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();

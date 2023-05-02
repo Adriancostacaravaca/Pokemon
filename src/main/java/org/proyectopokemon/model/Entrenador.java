@@ -15,11 +15,11 @@ public class Entrenador {
     private List<Objeto> cajaObjetos = new ArrayList<>();
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL Y DEL RIVAL
-    public static Entrenador jugadorEntrenador = new Entrenador("Entrenador Jugador");
-    public static Entrenador rivalEntrenador = new Entrenador("Entrenador Rival");
-    Random rd = new Random();
+    public static Entrenador miEntrenador = new Entrenador("Entrenador Jugador");
+    public static Entrenador rivalEntrenador1 = new Entrenador("Entrenador Rival");
 
     public Entrenador(String nombre) {
+        Random rd = new Random();
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
         this.equipoPrincipal = new ArrayList<>();
@@ -83,7 +83,7 @@ public class Entrenador {
         }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
-                caja.add(pokemon);
+                miEntrenador.caja.add(pokemon);
                 pokeballs -= 1;
             }
             else if (this.pokeballs == 0) {
@@ -98,6 +98,5 @@ public class Entrenador {
         }
         return opcion;
     }
-
 
 }

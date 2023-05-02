@@ -40,7 +40,7 @@ public class ControladorCaptura {
     private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCaptura);
 
-    public void initialize() throws MalformedURLException {
+    public void initialize() {
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
         actualizarPokeballs();
@@ -66,7 +66,7 @@ public class ControladorCaptura {
 
     // MOSTRAR POKEMON CREADOS
     public void actualizarPokeballs() {
-        lblIntentos.setText("Pokeballs disponibles: " + Entrenador.jugadorEntrenador.getPokeballs());
+        lblIntentos.setText("Pokeballs disponibles: " + Entrenador.miEntrenador.getPokeballs());
     }
 
     @FXML
@@ -83,11 +83,11 @@ public class ControladorCaptura {
 
     @FXML
     public void capturar() {
-        boolean capturaHecha = Entrenador.jugadorEntrenador.capturar(p, lblComprobacion);
+        boolean capturaHecha = Entrenador.miEntrenador.capturar(p, lblComprobacion);
 
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
-            System.out.println(Entrenador.jugadorEntrenador.getCaja().toString());
+            System.out.println(Entrenador.miEntrenador.getCaja().toString());
         }
         actualizarPokeballs();
     }

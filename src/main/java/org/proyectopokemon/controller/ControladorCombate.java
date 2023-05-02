@@ -32,7 +32,7 @@ public class ControladorCombate {
     private Button btnAprenderMovimiento;
     private Pokedex pokedex;
 
-    public void initialize() throws MalformedURLException {
+    public void initialize() {
         pokedex = new Pokedex();
     }
 
@@ -77,7 +77,7 @@ public class ControladorCombate {
 
     @FXML
     public void verCajaEntrenador() {
-        Entrenador.jugadorEntrenador.mostrarCaja();
+        Entrenador.miEntrenador.mostrarCaja();
     }
 
     @FXML
