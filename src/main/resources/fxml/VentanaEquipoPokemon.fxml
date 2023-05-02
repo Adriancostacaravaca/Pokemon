@@ -38,18 +38,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorMochila">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorEquipoPokemon">
   <children>
-    <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnRevisarCajaPokemon" layoutX="243.0" layoutY="194.0" mnemonicParsing="false" onAction="#verCajaEntrenador" prefHeight="25.0" prefWidth="155.0" text="Revisar caja Pokémon" />
-            <Button fx:id="btnRevisarEquipoPokemon" layoutX="243.0" layoutY="159.0" mnemonicParsing="false" onAction="#IrAVentanaEquipoPokemon" prefHeight="25.0" prefWidth="155.0" text="Revisar equipo Pokémon" />
-            <Label fx:id="lblMochila" alignment="CENTER" layoutX="218.0" layoutY="26.0" prefHeight="45.0" prefWidth="205.0" text="Tu mochila">
+            <Label fx:id="lblTuEquipo" alignment="CENTER" layoutX="217.0" layoutY="26.0" prefHeight="45.0" prefWidth="207.0" text="Tu equipo">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
+            <Button fx:id="btnPokemon1" layoutX="51.0" layoutY="123.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnPokemon3" layoutX="424.0" layoutY="123.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnPokemon2" layoutX="237.0" layoutY="123.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnPokemon4" layoutX="51.0" layoutY="217.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnPokemon6" layoutX="424.0" layoutY="217.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnPokemon5" layoutX="237.0" layoutY="217.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="166.0" text="Button" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
          </children></AnchorPane>
   </children>
 </VBox>

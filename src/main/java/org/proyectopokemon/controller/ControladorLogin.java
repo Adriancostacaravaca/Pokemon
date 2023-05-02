@@ -64,7 +64,7 @@ public class ControladorLogin {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
             scene = new Scene(root, 650, 400);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setTitle("The Crüe - Menú Principal");
+            stage.setTitle("Menú Principal - The Crüe");
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
