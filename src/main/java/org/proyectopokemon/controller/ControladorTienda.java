@@ -38,7 +38,6 @@ public class ControladorTienda {
     private Button btnComprar;
     @FXML
     private ListView<Objeto> listaObjetos;
-    private Entrenador entrenadorPrincipal = new Entrenador("Juan");
     @FXML
     private Label lblDinero;
     @FXML
@@ -86,10 +85,8 @@ public class ControladorTienda {
 
     // ACTUALIZAMOS NUESTRO DINERO MEDIANTE UN MÉTODO
     public void actualizarDinero() {
-        lblDinero.setText("Pokedólares: " + entrenadorPrincipal.getPokedollar());
+        lblDinero.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
     }
-
-    // UTILIZAMOS INITIALIZE PARA EJECUTAR EL MÉTODO UNA VEZ ENTRAMOS EN LA ESCENA
 
     @FXML
     public void comprar() {
@@ -97,7 +94,7 @@ public class ControladorTienda {
         Objeto objetoSelect = listaObjetos.getSelectionModel().getSelectedItem();
         //Comprobamos que no sea nulo
         if (objetoSelect != null) {
-            boolean compraHecha = entrenadorPrincipal.comprar(objetoSelect);
+            boolean compraHecha = Entrenador.miEntrenador.comprar(objetoSelect);
             //Si la compra ese verdadera actualizamos el dinero, ademas comprobamos si ya tenemos
             //el movimiento en la caja o no, si no es asi lo añadimos si no es asi se procede con la compra
             if (compraHecha) {

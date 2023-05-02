@@ -35,7 +35,7 @@ public class ControladorCentroPokemon {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaTienda.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon");
+        stage.setTitle("Tienda Pokemon");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
