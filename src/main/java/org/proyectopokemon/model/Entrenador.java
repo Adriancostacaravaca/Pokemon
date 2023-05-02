@@ -10,6 +10,8 @@ public class Entrenador {
     private String nombre;
     private int pokedollar;
     private int pokeballs;
+
+    // CREAMOS EQUIPO Y CAJA DEL ENTRENADOR
     private static List<Pokemon> equipoPrincipal;
     private static List<Pokemon> caja;
     private List<Objeto> cajaObjetos = new ArrayList<>();
