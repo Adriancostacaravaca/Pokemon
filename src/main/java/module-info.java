@@ -4,6 +4,7 @@ module Pokemon {
     requires javafx.media;
     requires java.sql;
     requires pokeapi;
+    requires json;
 
     opens org.proyectopokemon.model;
     opens org.proyectopokemon.controller;
