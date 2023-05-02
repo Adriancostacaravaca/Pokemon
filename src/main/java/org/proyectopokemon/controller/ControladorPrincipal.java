@@ -85,6 +85,7 @@ public class ControladorPrincipal {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     @FXML
