@@ -41,6 +41,8 @@ public class ControladorTienda {
     @FXML
     private Label lblDinero;
     @FXML
+    private Label lblTienda;
+    @FXML
     private ImageView imagenProfesorOak;
     private Tienda tienda = new Tienda();
     private Mochila mochila = new Mochila();

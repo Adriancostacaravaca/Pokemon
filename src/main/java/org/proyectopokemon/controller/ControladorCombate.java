@@ -26,10 +26,6 @@ public class ControladorCombate {
     private Button btnSubirNivel;
     @FXML
     private Button btnCombatir;
-    @FXML
-    private Button btnDescansar;
-    @FXML
-    private Button btnAprenderMovimiento;
     private Pokedex pokedex;
 
     public void initialize() {
@@ -73,11 +69,6 @@ public class ControladorCombate {
         System.out.println("Vitalidad: " + pokedex.pikachu.getVitalidad());
         System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
         System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
-    }
-
-    @FXML
-    public void verCajaEntrenador() {
-        Entrenador.miEntrenador.mostrarCaja();
     }
 
     @FXML

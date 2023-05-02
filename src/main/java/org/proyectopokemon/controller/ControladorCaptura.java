@@ -87,7 +87,6 @@ public class ControladorCaptura {
 
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
-            System.out.println(Entrenador.miEntrenador.getCaja().toString());
         }
         actualizarPokeballs();
     }

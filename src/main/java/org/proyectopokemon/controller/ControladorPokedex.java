@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +19,10 @@ public class ControladorPokedex {
     private Stage stage;
     @FXML
     private Button btnVolver;
+    @FXML
+    private Button btnRevisar;
+    @FXML
+    private Label lblPokedex;
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
