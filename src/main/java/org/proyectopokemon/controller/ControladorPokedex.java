@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -23,6 +25,10 @@ public class ControladorPokedex {
     private Button btnRevisar;
     @FXML
     private Label lblPokedex;
+    @FXML
+    private ListView listViewPokemon;
+    @FXML
+    private ImageView imageViewPokemon;
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
