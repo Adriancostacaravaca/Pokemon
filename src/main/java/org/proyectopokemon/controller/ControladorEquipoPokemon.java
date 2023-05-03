@@ -48,6 +48,7 @@ public class ControladorEquipoPokemon {
     }
 
     public void initialize(){
+
         btnPokemon1.setText(Entrenador.getEquipoPrincipal().get(0).getNombre());
         btnPokemon2.setText(Entrenador.getEquipoPrincipal().get(1).getNombre());
         btnPokemon3.setText(Entrenador.getEquipoPrincipal().get(2).getNombre());
