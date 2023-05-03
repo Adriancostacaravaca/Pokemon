@@ -1,11 +1,7 @@
 package org.proyectopokemon.model;
 
-import javafx.fxml.FXML;
 import javafx.scene.image.Image;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 
-import java.nio.file.Paths;
 import java.util.*;
 
 public class Pokemon {
@@ -50,6 +46,8 @@ public class Pokemon {
         this.image = image;
         this.listaCuatroAtaques = new ArrayList<>();
     }
+
+
 
     public String getNombre() {
         return nombre;

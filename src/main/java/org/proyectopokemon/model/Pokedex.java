@@ -11,7 +11,7 @@ public class Pokedex {
 
     //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
 
-    private List<Pokemon> pokedex = new ArrayList<>();
+    private static List<Pokemon> pokedex = new ArrayList<>();
 
     File fBulbasur = new File("src/main/resources/imagenes/Bulbasaur.png");
     Image bulbasaurImg = new Image(fBulbasur.toURI().toString());
