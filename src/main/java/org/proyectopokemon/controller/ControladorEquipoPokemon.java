@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -44,6 +45,15 @@ public class ControladorEquipoPokemon {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void initialize(){
+        btnPokemon1.setText(Entrenador.getEquipoPrincipal().get(0).getNombre());
+        btnPokemon2.setText(Entrenador.getEquipoPrincipal().get(1).getNombre());
+        btnPokemon3.setText(Entrenador.getEquipoPrincipal().get(2).getNombre());
+        btnPokemon4.setText(Entrenador.getEquipoPrincipal().get(3).getNombre());
+        btnPokemon5.setText(Entrenador.getEquipoPrincipal().get(4).getNombre());
+        btnPokemon6.setText(Entrenador.getEquipoPrincipal().get(5).getNombre());
     }
 
 
