@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
 
 import java.util.ArrayList;
@@ -12,8 +14,8 @@ public class Entrenador {
     private int pokeballs;
 
     // CREAMOS EQUIPO Y CAJA DEL ENTRENADOR
-    private static List<Pokemon> equipoPrincipal;
-    private static List<Pokemon> caja;
+    private static ObservableList<Pokemon> equipoPrincipal = FXCollections.observableArrayList();
+    private static ObservableList<Pokemon> caja = FXCollections.observableArrayList();
     private List<Objeto> cajaObjetos = new ArrayList<>();
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL Y DEL RIVAL
@@ -24,20 +26,23 @@ public class Entrenador {
         Random rd = new Random();
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
-        this.equipoPrincipal = new ArrayList<>();
-        this.caja = new ArrayList<>();
+        this.cajaObjetos = new ArrayList<>();
         this.pokeballs = 20;
+    }
+
+    public static Entrenador getMiEntrenador() {
+        return miEntrenador;
     }
 
     public int getPokedollar() {
         return pokedollar;
     }
 
-    public static List<Pokemon> getCaja() {
+    public static ObservableList<Pokemon> getCaja() {
         return caja;
     }
 
-    public static List<Pokemon> getEquipoPrincipal() {
+    public static ObservableList<Pokemon> getEquipoPrincipal() {
         return equipoPrincipal;
     }
 
@@ -100,7 +105,6 @@ public class Entrenador {
         }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
-                moverAEquipo(pokemon);
                 miEntrenador.caja.add(pokemon);
                 pokeballs -= 1;
             }
@@ -117,8 +121,14 @@ public class Entrenador {
         return opcion;
     }
 
-    public void moverAEquipo(Pokemon pokemon){
+    public void moverEquipoACaja(Pokemon pokemon){
+        equipoPrincipal.remove(pokemon);
+        caja.add(pokemon);
+    }
+    public void moverCajaAEquipo(Pokemon pokemon){
+        caja.remove(pokemon);
         equipoPrincipal.add(pokemon);
     }
+
 
 }

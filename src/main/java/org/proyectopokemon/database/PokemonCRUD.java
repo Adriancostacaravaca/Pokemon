@@ -1,12 +1,11 @@
-package org.proyectopokemon.model.database;
+package org.proyectopokemon.database;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class PokemonCRUD {
 
-    public static void IngresarDatos() {
-
+    public static void ingresarDatos() {
 
         try {
             String consulta = "INSERT INTO pokedex (ID_POKEMON ,NOM_POKEMON) VALUES(?,?)";

@@ -1,4 +1,4 @@
-package org.proyectopokemon.model.database;
+package org.proyectopokemon.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
