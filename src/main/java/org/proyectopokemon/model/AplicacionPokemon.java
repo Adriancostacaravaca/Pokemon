@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.database.PokemonCRUD;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -23,8 +22,6 @@ public class AplicacionPokemon extends Application {
     }
 
     public static void main(String[] args) {
-        PokemonCRUD.IngresarDatos();
         launch();
-
     }
 }
