@@ -37,7 +37,7 @@ public class ControladorCombate {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
+        stage.setTitle("Menú Principal - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -47,7 +47,7 @@ public class ControladorCombate {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Combatir Pokemon2");
+        stage.setTitle("Combate Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -60,7 +60,7 @@ public class ControladorCombate {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
             scene = new Scene(root, 650, 400);
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            stage.setTitle("Combatir Pokemon");
+            stage.setTitle("Elegir nueva habilidad - The Crüe");
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();

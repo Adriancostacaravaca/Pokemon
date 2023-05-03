@@ -27,6 +27,10 @@ public class ControladorCentroPokemon {
     private Button btnTienda;
     @FXML
     private Button btnEntrenarPokemon;
+    @FXML
+    private Button btnMoverAEquipo;
+    @FXML
+    private Button btnMoverACaja;
     private Media musicaCentroPokemon = new Media(Paths.get("src/main/resources/musica/musicaMenuPrincipal.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCentroPokemon);
 
@@ -35,7 +39,7 @@ public class ControladorCentroPokemon {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaTienda.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Tienda Pokemon");
+        stage.setTitle("Tienda Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -49,7 +53,7 @@ public class ControladorCentroPokemon {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
+        stage.setTitle("Menú Principal - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -60,7 +64,7 @@ public class ControladorCentroPokemon {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEntrenamiento.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Entrenar Pokemon");
+        stage.setTitle("Entrenamiento Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
