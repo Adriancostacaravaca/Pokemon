@@ -14,9 +14,9 @@ public class Entrenador {
     private int pokeballs;
 
     // CREAMOS EQUIPO Y CAJA DEL ENTRENADOR
-    private static ObservableList<Pokemon> equipoPrincipal = FXCollections.observableArrayList();
-    private static ObservableList<Pokemon> caja = FXCollections.observableArrayList();
-    private List<Objeto> cajaObjetos = new ArrayList<>();
+    private ObservableList<Pokemon> equipoPrincipal;
+    private ObservableList<Pokemon> caja;
+    private List<Objeto> cajaObjetos;
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL Y DEL RIVAL
     public static Entrenador miEntrenador = new Entrenador("Entrenador Jugador");
@@ -28,21 +28,19 @@ public class Entrenador {
         this.pokedollar = rd.nextInt(201) + 800;
         this.cajaObjetos = new ArrayList<>();
         this.pokeballs = 20;
-    }
-
-    public static Entrenador getMiEntrenador() {
-        return miEntrenador;
+        this.equipoPrincipal = FXCollections.observableArrayList();
+        this.caja = FXCollections.observableArrayList();
     }
 
     public int getPokedollar() {
         return pokedollar;
     }
 
-    public static ObservableList<Pokemon> getCaja() {
+    public ObservableList<Pokemon> getCaja() {
         return caja;
     }
 
-    public static ObservableList<Pokemon> getEquipoPrincipal() {
+    public ObservableList<Pokemon> getEquipoPrincipal() {
         return equipoPrincipal;
     }
 

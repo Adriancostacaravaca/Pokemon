@@ -43,8 +43,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="34.0" prefWidth="75.0" text="Menú" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="39.0" prefHeight="45.0" prefWidth="601.0" text="¿Que movimiento nuevo deseas aprender?" textAlignment="CENTER">
+            <Label fx:id="lblMovimientoNuevo" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="39.0" prefHeight="45.0" prefWidth="601.0" text="¿Que movimiento nuevo deseas aprender?" textAlignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>

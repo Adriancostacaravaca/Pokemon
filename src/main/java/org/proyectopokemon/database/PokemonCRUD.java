@@ -1,4 +1,4 @@
-package org.proyectopokemon.database;
+/*package org.proyectopokemon.database;
 
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
@@ -45,3 +45,4 @@ public class PokemonCRUD {
 
 }
 
+*/
