@@ -8,7 +8,7 @@ public class Mochila {
     public  Mochila(){
         mochila = new ArrayList<>();
     }
-    public void añadirAMochila(Objeto objetoComprado){
+    public void anyadirAMochila(Objeto objetoComprado){
         mochila.add(objetoComprado);
     }
     public List<Objeto> getMochila() {

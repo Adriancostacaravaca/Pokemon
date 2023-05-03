@@ -32,7 +32,7 @@ public class ControladorElegirMovimiento {
     MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
     public void initialize() {
         pokedex = new Pokedex();
-        movimientosDisponiblesParaPokemon.añadirMovimientos();
+        movimientosDisponiblesParaPokemon.anyadirMovimientos();
         opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
         opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
         opcionesMovimientos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {

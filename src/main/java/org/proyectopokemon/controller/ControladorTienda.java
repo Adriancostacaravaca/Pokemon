@@ -39,7 +39,7 @@ public class ControladorTienda {
     @FXML
     private ListView<Objeto> listaObjetos;
     @FXML
-    private Label lblDinero;
+    private Label lblPokedolares;
     @FXML
     private Label lblTienda;
     @FXML
@@ -85,9 +85,9 @@ public class ControladorTienda {
         mediaPlayer.stop();
     }
 
-    // ACTUALIZAMOS NUESTRO DINERO MEDIANTE UN MÉTODO
+    // ACTUALIZAMOS NUESTRO DINERO
     public void actualizarDinero() {
-        lblDinero.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
+        lblPokedolares.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
     }
 
     @FXML
@@ -101,7 +101,7 @@ public class ControladorTienda {
             //el movimiento en la caja o no, si no es asi lo añadimos si no es asi se procede con la compra
             if (compraHecha) {
                 actualizarDinero();
-                mochila.añadirAMochila(objetoSelect);
+                mochila.anyadirAMochila(objetoSelect);
                 for (Objeto i:
                      mochila.getMochila()) {
                     System.out.println(mochila.getMochila().toString());

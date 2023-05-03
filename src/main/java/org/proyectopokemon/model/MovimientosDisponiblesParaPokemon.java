@@ -11,7 +11,7 @@ public class MovimientosDisponiblesParaPokemon {
         return movimientos;
     }
 
-    public void añadirMovimientos(){
+    public void anyadirMovimientos(){
         movimientos.add(new MovimientoAtaque("Impactrueno",1,15, Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispazo",1,20,Tipo.ELECTRICO));
