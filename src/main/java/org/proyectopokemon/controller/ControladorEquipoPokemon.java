@@ -48,12 +48,12 @@ public class ControladorEquipoPokemon {
     }
 
     public void initialize(){
-        btnPokemon1.setText(Entrenador.getEquipoPrincipal().get(0).getNombre());
-        btnPokemon2.setText(Entrenador.getEquipoPrincipal().get(1).getNombre());
-        btnPokemon3.setText(Entrenador.getEquipoPrincipal().get(2).getNombre());
-        btnPokemon4.setText(Entrenador.getEquipoPrincipal().get(3).getNombre());
-        btnPokemon5.setText(Entrenador.getEquipoPrincipal().get(4).getNombre());
-        btnPokemon6.setText(Entrenador.getEquipoPrincipal().get(5).getNombre());
+        btnPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
+        btnPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre());
+        btnPokemon3.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre());
+        btnPokemon4.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre());
+        btnPokemon5.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre());
+        btnPokemon6.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre());
     }
 
 

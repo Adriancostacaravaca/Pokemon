@@ -55,10 +55,10 @@ public class ControladorIntercambio {
         lblIntercambio.setText("Intercambio");
         lblCaja.setText("Caja");
         lblMiEquipo.setText("Mi equipo principal");
-        listViewCaja.setItems(Entrenador.getCaja());
+        listViewCaja.setItems(Entrenador.miEntrenador.getCaja());
         listViewCaja.setCellFactory(new CajaCeldas());
 
-        listViewEquipo.setItems((ObservableList<Pokemon>) Entrenador.getEquipoPrincipal());
+        listViewEquipo.setItems((ObservableList<Pokemon>) Entrenador.miEntrenador.getEquipoPrincipal());
         listViewEquipo.setCellFactory(new EquipoPrincipalCeldas());
 
         listViewCaja.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
