@@ -81,7 +81,6 @@ public class Entrenador {
     }
 
     public boolean capturar(Pokemon pokemon, Label lblComprobacion) {
-
         Random rd = new Random();
         int numero = 2;
         int numeroAzar = rd.nextInt(2) + 1;
@@ -91,6 +90,7 @@ public class Entrenador {
         }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
+                moverAEquipo(pokemon);
                 miEntrenador.caja.add(pokemon);
                 pokeballs -= 1;
             }
@@ -105,6 +105,10 @@ public class Entrenador {
             }
         }
         return opcion;
+    }
+
+    public void moverAEquipo(Pokemon pokemon){
+        equipoPrincipal.add(pokemon);
     }
 
 }
