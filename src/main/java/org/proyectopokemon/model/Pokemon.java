@@ -47,6 +47,7 @@ public class Pokemon {
         this.listaCuatroAtaques = new ArrayList<>();
     }
 
+    public Pokemon(){}
 
 
     public String getNombre() {
