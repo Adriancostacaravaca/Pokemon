@@ -8,11 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorCombate {
@@ -53,7 +51,7 @@ public class ControladorCombate {
         stage.show();
 
     }
-    @FXML
+    /*@FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
         if (pokedex.pikachu.getExperiencia() == 0 && (pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12)) {
@@ -75,5 +73,5 @@ public class ControladorCombate {
     public void comprobarVentaja() {
         System.out.println(pokedex.pikachu.comprobarVentaja(pokedex.bulbasaur));
     }
-
+*/
 }

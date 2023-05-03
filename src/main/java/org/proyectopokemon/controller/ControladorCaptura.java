@@ -12,10 +12,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.*;
+import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Pokedex;
+import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Paths;
 import java.util.Objects;
 
@@ -42,7 +43,7 @@ public class ControladorCaptura {
 
     public void initialize() {
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
+        //pokedex.rellenarPokedex();
         actualizarPokeballs();
         mostrarPokemonACapturar();
         musicaCaptura();

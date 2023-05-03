@@ -27,7 +27,7 @@ public class Pokemon {
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;
     private static HashMap<Tipo, List<Tipo>> tablaFuertes;
 
-    public Pokemon(String nombre, String mote, char sexo, Tipo tipo, Image image) {
+    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;

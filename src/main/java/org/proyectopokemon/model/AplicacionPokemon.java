@@ -5,8 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.proyectopokemon.database.PokemonCRUD;
 
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class AplicacionPokemon extends Application {
@@ -22,6 +24,14 @@ public class AplicacionPokemon extends Application {
     }
 
     public static void main(String[] args) {
+        System.out.println(Tipo.valueOf("AGUA"));
+        LinkedList<Pokemon> miLista = (LinkedList<Pokemon>) PokemonCRUD.readPokemon();
+        for (Pokemon p:miLista) {
+            Pokedex.getPokedex().add(p);
+        }
+        System.out.println(Pokedex.getPokedex().toString());
+        PokemonCRUD.updatePokemon();
+
         launch();
     }
 }

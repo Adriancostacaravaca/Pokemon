@@ -8,19 +8,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
-import org.proyectopokemon.controller.factories.ElegirPokemonCeldas;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Paths;
 import java.util.Objects;
 
@@ -65,7 +61,7 @@ public class ControladorCombate2 {
     public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
+        //pokedex.rellenarPokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();

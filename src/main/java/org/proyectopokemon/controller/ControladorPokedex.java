@@ -11,6 +11,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
+import org.proyectopokemon.model.Pokedex;
+import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -26,7 +29,7 @@ public class ControladorPokedex {
     @FXML
     private Label lblPokedex;
     @FXML
-    private ListView listViewPokemon;
+    private ListView<Pokemon> listViewPokemon;
     @FXML
     private ImageView imageViewPokemon;
 
@@ -39,5 +42,10 @@ public class ControladorPokedex {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void initialize(){
+        listViewPokemon.setItems(Pokedex.getPokedex());
+        listViewPokemon.setCellFactory(new EquipoPrincipalCeldas());
     }
 }
