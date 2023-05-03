@@ -44,16 +44,16 @@
     <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnCajaAEquipo" layoutX="242.0" layoutY="204.0" mnemonicParsing="false" onAction="#equipoACaja" prefHeight="25.0" prefWidth="155.0" text="&lt;&lt;" />
-            <Button fx:id="btnEquipoACaja" layoutX="242.0" layoutY="171.0" mnemonicParsing="false" onAction="#cajaAEquipo" prefHeight="25.0" prefWidth="155.0" text="&gt;&gt;" />
-            <Label fx:id="lblIntercambio" alignment="CENTER" layoutX="217.0" layoutY="30.0" prefHeight="45.0" prefWidth="205.0" text="Tu mochila">
+            <Button fx:id="btnCajaAEquipo" layoutX="242.0" layoutY="234.0" mnemonicParsing="false" onAction="#equipoACaja" prefHeight="25.0" prefWidth="155.0" text="&lt;&lt;" />
+            <Button fx:id="btnEquipoACaja" layoutX="242.0" layoutY="201.0" mnemonicParsing="false" onAction="#cajaAEquipo" prefHeight="25.0" prefWidth="155.0" text="&gt;&gt;" />
+            <Label fx:id="lblIntercambio" alignment="CENTER" layoutX="217.0" layoutY="26.0" prefHeight="45.0" prefWidth="205.0" text="Tu mochila">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <ListView fx:id="listViewCaja" layoutX="52.0" layoutY="104.0" prefHeight="251.0" prefWidth="170.0" />
-            <ListView fx:id="listViewEquipo" layoutX="423.0" layoutY="104.0" prefHeight="251.0" prefWidth="194.0" />
-            <Label fx:id="lblCaja" alignment="CENTER" layoutX="56.0" layoutY="76.0" prefHeight="18.0" prefWidth="162.0" text="Label" />
+            <ListView fx:id="listViewCaja" layoutX="28.0" layoutY="104.0" prefHeight="251.0" prefWidth="182.0" />
+            <ListView fx:id="listViewEquipo" layoutX="432.0" layoutY="104.0" prefHeight="251.0" prefWidth="182.0" />
+            <Label fx:id="lblCaja" alignment="CENTER" layoutX="28.0" layoutY="76.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
             <Label fx:id="lblMiEquipo" alignment="CENTER" layoutX="432.0" layoutY="76.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
          </children></AnchorPane>
   </children>

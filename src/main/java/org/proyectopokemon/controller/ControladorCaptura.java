@@ -28,6 +28,8 @@ public class ControladorCaptura {
     @FXML
     private Button btnMostrarPokemon;
     @FXML
+    private Button btnCapturar;
+    @FXML
     private Label lblPokemon;
     @FXML
     private Label lblIntentos;
@@ -79,6 +81,7 @@ public class ControladorCaptura {
         nuevoPokemonACapturar();
         lblPokemon.setText(p.getNombre());
         imgPokemonAzar.setImage(p.getImage());
+        btnCapturar.setDisable(false);
     }
 
     @FXML
@@ -87,7 +90,9 @@ public class ControladorCaptura {
 
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
+            btnCapturar.setDisable(true);
         }
+
         actualizarPokeballs();
     }
 }

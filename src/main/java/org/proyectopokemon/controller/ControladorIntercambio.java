@@ -54,7 +54,7 @@ public class ControladorIntercambio {
     public void initialize() {
         lblIntercambio.setText("Intercambio");
         lblCaja.setText("Caja");
-        lblMiEquipo.setText("Mi equipo principal");
+        lblMiEquipo.setText("Mi equipo");
         listViewCaja.setItems(Entrenador.miEntrenador.getCaja());
         listViewCaja.setCellFactory(new CajaCeldas());
 

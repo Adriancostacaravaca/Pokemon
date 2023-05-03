@@ -15,7 +15,7 @@ public class CajaCeldas implements Callback<ListView<Pokemon>, ListCell<Pokemon>
                 if (empty || pokemon == null) {
                     setText(null);
                 } else {
-                    setText("Nombre: " + pokemon.getNombre() + "\n");
+                    setText(pokemon.getNombre() + "\n");
                 }
             }
         };

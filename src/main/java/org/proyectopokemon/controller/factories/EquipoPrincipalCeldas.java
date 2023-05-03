@@ -15,7 +15,7 @@ public class EquipoPrincipalCeldas implements Callback<ListView<Pokemon>, ListCe
                 if (empty || pokemon == null) {
                     setText(null);
                 } else {
-                    setText("Nombre: " + pokemon.getNombre() + "\n");
+                    setText(pokemon.getNombre() + "\n");
                 }
             }
         };
