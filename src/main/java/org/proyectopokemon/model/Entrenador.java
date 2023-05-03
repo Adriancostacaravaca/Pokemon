@@ -84,6 +84,16 @@ public class Entrenador {
             return false;
         }
     }
+    // FIXME: AÑADIR DOS POKEMON A LA CRIANZA
+    public void criar(){
+        if (Entrenador.miEntrenador.getPokedollar() >= 800) {
+            System.out.println("Crianza realizada");
+            pokedollar -= 800;
+        }
+        else if (Entrenador.miEntrenador.getPokedollar() < 800) {
+            System.out.println("No tienes suficiente Pokedólares para realizar la crianza");
+        }
+    }
 
     public boolean capturar(Pokemon pokemon, Label lblComprobacion) {
         Random rd = new Random();
