@@ -12,9 +12,13 @@ public class Pokedex {
     //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
 
     private static ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
+    private static ObservableList<Pokemon> pokedexx = FXCollections.observableArrayList();
 
     public static ObservableList<Pokemon> getPokedex() {
         return pokedex;
+    }
+    public static ObservableList<Pokemon> getPokedexx() {
+        return pokedexx;
     }
 
     File fBulbasur = new File("src/main/resources/imagenes/Bulbasaur.png");
@@ -32,13 +36,13 @@ public class Pokedex {
     File fTreecko = new File("src/main/resources/imagenes/Treecko.png");
     Image treeckoImg = new Image(fTreecko.toURI().toString());
 
-    /*public Pokemon pikachu = new Pokemon("Pikachu","pika",'H', Tipo.ELECTRICO, pikachuImg);
-    public Pokemon treecko = new Pokemon("Treecko", "treek0", 'M', Tipo.PLANTA, treeckoImg);
-    public Pokemon bulbasaur = new Pokemon("Bulbasaur", "Bulbasaur", 'M', Tipo.PLANTA, bulbasaurImg);
-    public Pokemon charmander = new Pokemon("Charmander", "Charmander", 'M', Tipo.FUEGO, charmanderImg);
-    public Pokemon caterpie = new Pokemon("Caterpie", "Caterpie", 'M', Tipo.BICHO, caterpieImg);
-    public Pokemon squirtle = new Pokemon("Squirtle", "Squirtle", 'M', Tipo.AGUA, squirtleImg);
-    public Pokemon rattata = new Pokemon("Rattata", "Rattata", 'M', Tipo.NORMAL, rattataImg);
+    public Pokemon pikachu = new Pokemon("Pikachu",Tipo.ELECTRICO, Tipo.ELECTRICO, pikachuImg);
+    public Pokemon treecko = new Pokemon("Treecko", Tipo.PLANTA, Tipo.PLANTA, treeckoImg);
+    public Pokemon bulbasaur = new Pokemon("Bulbasaur",Tipo.PLANTA, Tipo.PLANTA, bulbasaurImg);
+    public Pokemon charmander = new Pokemon("Charmander", Tipo.FUEGO, Tipo.FUEGO, charmanderImg);
+    public Pokemon caterpie = new Pokemon("Caterpie", Tipo.BICHO, Tipo.BICHO, caterpieImg);
+    public Pokemon squirtle = new Pokemon("Squirtle", Tipo.AGUA, Tipo.AGUA, squirtleImg);
+    public Pokemon rattata = new Pokemon("Rattata", Tipo.NORMAL, Tipo.NORMAL, rattataImg);
 
 
     public Pokedex(){
@@ -53,7 +57,7 @@ public class Pokedex {
         pokedex.add(squirtle);
         pokedex.add(rattata);
     }
-*/
+
    public Pokemon presentarPokemonAzar(){
         Random rd = new Random();
         int numAzar = rd.nextInt(pokedex.size());
