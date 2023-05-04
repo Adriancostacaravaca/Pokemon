@@ -2,35 +2,33 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 04-05-2023 a las 13:34:20
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.1.17
+-- Host: 127.0.0.1
+-- Generation Time: May 04, 2023 at 08:35 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
--- Base de datos: `pokemon`
+-- Database: `pokemon`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `entrenador`
+-- Table structure for table `entrenador`
 --
 
 CREATE TABLE `entrenador` (
-  `ID_ENTRENADOR` int(11) NOT NULL,
-  `USUARIO` varchar(20) NOT NULL,
-  `CONTRASENYA` varchar(20) NOT NULL
+  `ID_ENTRENADOR` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `mochila`
+-- Table structure for table `mochila`
 --
 
 CREATE TABLE `mochila` (
@@ -41,7 +39,7 @@ CREATE TABLE `mochila` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `objetos`
+-- Table structure for table `objetos`
 --
 
 CREATE TABLE `objetos` (
@@ -53,7 +51,7 @@ CREATE TABLE `objetos` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `pokedex`
+-- Table structure for table `pokedex`
 --
 
 CREATE TABLE `pokedex` (
@@ -65,7 +63,7 @@ CREATE TABLE `pokedex` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `pokedex`
+-- Dumping data for table `pokedex`
 --
 
 INSERT INTO `pokedex` (`NUM_POKEDEX`, `NOM_POKEMON`, `TIPO1`, `TIPO2`, `IMG_URL`) VALUES
@@ -224,7 +222,7 @@ INSERT INTO `pokedex` (`NUM_POKEDEX`, `NOM_POKEMON`, `TIPO1`, `TIPO2`, `IMG_URL`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `pokemon`
+-- Table structure for table `pokemon`
 --
 
 CREATE TABLE `pokemon` (
@@ -244,18 +242,18 @@ CREATE TABLE `pokemon` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `entrenador`
+-- Indexes for table `entrenador`
 --
 ALTER TABLE `entrenador`
   ADD PRIMARY KEY (`ID_ENTRENADOR`),
   ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
 
 --
--- Indices de la tabla `mochila`
+-- Indexes for table `mochila`
 --
 ALTER TABLE `mochila`
   ADD PRIMARY KEY (`ID_ENTRENADOR`),
@@ -263,21 +261,21 @@ ALTER TABLE `mochila`
   ADD KEY `ID_OBJETO` (`ID_OBJETO`);
 
 --
--- Indices de la tabla `objetos`
+-- Indexes for table `objetos`
 --
 ALTER TABLE `objetos`
   ADD PRIMARY KEY (`ID_OBJETO`),
   ADD KEY `ID_OBJETO` (`ID_OBJETO`);
 
 --
--- Indices de la tabla `pokedex`
+-- Indexes for table `pokedex`
 --
 ALTER TABLE `pokedex`
   ADD PRIMARY KEY (`NUM_POKEDEX`),
   ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`);
 
 --
--- Indices de la tabla `pokemon`
+-- Indexes for table `pokemon`
 --
 ALTER TABLE `pokemon`
   ADD PRIMARY KEY (`ID_POKEMON`),
@@ -285,18 +283,18 @@ ALTER TABLE `pokemon`
   ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `mochila`
+-- Constraints for table `mochila`
 --
 ALTER TABLE `mochila`
   ADD CONSTRAINT `mochila_ibfk_1` FOREIGN KEY (`ID_ENTRENADOR`) REFERENCES `entrenador` (`ID_ENTRENADOR`) ON UPDATE CASCADE,
   ADD CONSTRAINT `mochila_ibfk_2` FOREIGN KEY (`ID_OBJETO`) REFERENCES `objetos` (`ID_OBJETO`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `pokemon`
+-- Constraints for table `pokemon`
 --
 ALTER TABLE `pokemon`
   ADD CONSTRAINT `pokemon_ibfk_1` FOREIGN KEY (`NUM_POKEDEX`) REFERENCES `pokedex` (`NUM_POKEDEX`) ON UPDATE CASCADE,
