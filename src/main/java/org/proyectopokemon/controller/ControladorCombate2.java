@@ -8,15 +8,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
+import org.proyectopokemon.controller.factories.ElegirPokemonCeldas;
+import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.nio.file.Paths;
 import java.util.Objects;
 
@@ -58,10 +63,11 @@ public class ControladorCombate2 {
     @FXML
     private Label lblMiPokemonEstamina;
 
+    // FIXME: SI NO HAY UN POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LA IMAGEN Y EL NOMBRE ¿TRYCATCH?
     public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
-        //pokedex.rellenarPokedex();
+        pokedex.rellenarPokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
@@ -96,10 +102,9 @@ public class ControladorCombate2 {
     }
 
     // MOSTRAMOS LOS NOMBRES DE LOS POKEMON ENCIMA DE SU IMAGEN
-    // FIXME: MUESTRA EL NOMBRE DE UN POKEMON PORQUE SOLO CREAMOS UN OBJETO POKEMON
     @FXML
     public void mostrarNombresPokemon(){
-            lblMiPokemon.setText(p.getNombre());
+            lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
             lblPokemonRival.setText(p.getNombre());
     }
 
@@ -110,7 +115,7 @@ public class ControladorCombate2 {
     @FXML
     public void pokemonACombatir() {
         pokemonAzar();
-        imagenP1.setImage(p.getImage());
+        imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
         imagenP2.setImage(p.getImage());
     }
 
