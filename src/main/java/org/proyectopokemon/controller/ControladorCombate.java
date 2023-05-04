@@ -51,7 +51,7 @@ public class ControladorCombate {
         stage.show();
 
     }
-    /*@FXML
+    @FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
         if (pokedex.pikachu.getExperiencia() == 0 && (pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12)) {
@@ -73,5 +73,5 @@ public class ControladorCombate {
     public void comprobarVentaja() {
         System.out.println(pokedex.pikachu.comprobarVentaja(pokedex.bulbasaur));
     }
-*/
+
 }
