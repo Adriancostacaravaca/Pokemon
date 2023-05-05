@@ -33,6 +33,8 @@ public class ControladorPrincipal {
     private Button btnSalir;
     @FXML
     private ImageView imagenPokemon;
+    @FXML
+    private ImageView imageViewFondo;
     private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaMenuPrincipal.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
@@ -41,9 +43,12 @@ public class ControladorPrincipal {
     private Stage stage;
 
     public void initialize() {
-        File f = new File("src/main/resources/imagenes/Logo.png"); // FIXME: RESPONSIVE, CAMBIAR ATRIBUTO PRESERVE RATIO EN SCENE BUILDER
+        File f = new File("src/main/resources/imagenes/Logo.png");
+        File x = new File("src/main/resources/imagenes/FondoPrincipal.jpg");
         Image image = new Image(f.toURI().toString());
+        Image imagePrincipal = new Image(x.toURI().toString());
         imagenPokemon.setImage(image);
+        imageViewFondo.setImage(imagePrincipal);
         musicaMenuPrincipal();
     }
 
