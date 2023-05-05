@@ -51,6 +51,10 @@ public class ControladorCombate2 {
     private Button btnAtaque3;
     @FXML
     private Button btnAtaque4;
+    @FXML
+    private Button btnDescansar;
+    @FXML
+    private Button btnCambiarPokemon;
     private Pokedex pokedex;
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
