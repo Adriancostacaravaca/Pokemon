@@ -43,12 +43,12 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnPokemon1" layoutX="144.0" layoutY="261.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon3" layoutX="476.0" layoutY="261.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon2" layoutX="310.0" layoutY="261.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon4" layoutX="144.0" layoutY="327.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon6" layoutX="476.0" layoutY="327.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon5" layoutX="310.0" layoutY="327.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon1" layoutX="144.0" layoutY="261.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon3" layoutX="476.0" layoutY="261.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon2" layoutX="310.0" layoutY="261.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon4" layoutX="144.0" layoutY="327.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon6" layoutX="476.0" layoutY="327.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btnPokemon5" layoutX="310.0" layoutY="327.0" mnemonicParsing="false" onAction="#motrarImg" prefHeight="59.0" prefWidth="150.0" text="Button" />
             <ImageView fx:id="imageViewPokemon1" fitHeight="150.0" fitWidth="162.0" layoutX="63.0" layoutY="68.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
