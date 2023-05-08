@@ -1,11 +1,7 @@
 package org.proyectopokemon.model;
 
-import javafx.fxml.FXML;
 import javafx.scene.image.Image;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 
-import java.nio.file.Paths;
 import java.util.*;
 
 public class Pokemon {
@@ -26,10 +22,12 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
     private Image image;
-    private Media efectoSubidaNivel = new Media(Paths.get("src/main/resources/musica/efectoSubidaNivel.mp3").toUri().toString());
-    private MediaPlayer mediaPlayer = new MediaPlayer(efectoSubidaNivel);
 
-    public Pokemon(String nombre, String mote, char sexo, Tipo tipo, Image image) {
+    // MÉTODO PARA COMPROBAR VENTAJA
+    private static HashMap<Tipo, List<Tipo>> tablaDebiles;
+    private static HashMap<Tipo, List<Tipo>> tablaFuertes;
+
+    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2,Image image) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
@@ -48,6 +46,9 @@ public class Pokemon {
         this.image = image;
         this.listaCuatroAtaques = new ArrayList<>();
     }
+
+    public Pokemon(){}
+
 
     public String getNombre() {
         return nombre;
@@ -92,10 +93,6 @@ public class Pokemon {
     public void setImage(Image image) {
         this.image = image;
     }
-
-    // MÉTODO PARA COMPROBAR VENTAJA
-    private static HashMap<Tipo, List<Tipo>> tablaDebiles;
-    private static HashMap<Tipo, List<Tipo>> tablaFuertes;
 
     public static HashMap<Tipo, List<Tipo>> getTablaDebiles(){
         if (tablaDebiles == null) {
@@ -238,6 +235,8 @@ public class Pokemon {
         return tablaFuertes;
     }
 
+    // MÉTODO PARA COMPROBAR VENTAJA ENTRE DOS POKÉMON
+    // FIXME: HAY QUE COMPROBAR EL TIPO DEL POKÉMON Y EL TIPO DEL ATAQUE PARA AMBOS CASOS DE ATAQUE (JUGADOR/RIVAL)
     public float comprobarVentaja(Pokemon p2) {
         if (getTablaDebiles().get(this.getTipo()).contains(p2.getTipo()))
             return 2.0f;
@@ -262,13 +261,8 @@ public class Pokemon {
             this.nivel++;
             this.experiencia = 0;
             System.out.println("Has subido al nivel: " + getNivel());
-            efectoSubidaNivel();
         }
 
-    }
-    @FXML
-    private void efectoSubidaNivel() {
-        mediaPlayer.play();
     }
 
     public List<MovimientosDisponiblesParaPokemon> getListaCuatroAtaques() {

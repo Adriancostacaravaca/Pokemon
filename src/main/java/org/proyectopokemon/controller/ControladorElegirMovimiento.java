@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
@@ -23,16 +24,16 @@ public class ControladorElegirMovimiento {
     Scene scene;
     Stage stage;
     @FXML
-    private Button btnVolver;
+    private Label lblMovimientoNuevo;
     @FXML
     private Button btnAprender;
     @FXML
     private ListView<MovimientoAtaque> opcionesMovimientos;
     private Pokedex pokedex;
-    MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
+    private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
     public void initialize() {
         pokedex = new Pokedex();
-        movimientosDisponiblesParaPokemon.añadirMovimientos();
+        movimientosDisponiblesParaPokemon.anyadirMovimientos();
         opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
         opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
         opcionesMovimientos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
@@ -44,17 +45,7 @@ public class ControladorElegirMovimiento {
         });
     }
 
-    @FXML
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-    }
-
+    // FIXME: NO FUNCIONA
     @FXML
     public void aprender(ActionEvent event) throws IOException{
         MovimientoAtaque movimientoSelected = opcionesMovimientos.getSelectionModel().getSelectedItem();

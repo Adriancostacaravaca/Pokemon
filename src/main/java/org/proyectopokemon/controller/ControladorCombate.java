@@ -8,11 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorCombate {

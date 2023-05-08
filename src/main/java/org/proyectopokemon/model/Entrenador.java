@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
 
 import java.util.ArrayList;
@@ -12,9 +14,9 @@ public class Entrenador {
     private int pokeballs;
 
     // CREAMOS EQUIPO Y CAJA DEL ENTRENADOR
-    private static List<Pokemon> equipoPrincipal;
-    private static List<Pokemon> caja;
-    private List<Objeto> cajaObjetos = new ArrayList<>();
+    private ObservableList<Pokemon> equipoPrincipal;
+    private ObservableList<Pokemon> caja;
+    private List<Objeto> cajaObjetos;
 
     // CREAMOS ENTRENADOR DEL JUGADOR PRINCIPAL Y DEL RIVAL
     public static Entrenador miEntrenador = new Entrenador("Entrenador Jugador");
@@ -24,20 +26,21 @@ public class Entrenador {
         Random rd = new Random();
         this.nombre = nombre;
         this.pokedollar = rd.nextInt(201) + 800;
-        this.equipoPrincipal = new ArrayList<>();
-        this.caja = new ArrayList<>();
+        this.cajaObjetos = new ArrayList<>();
         this.pokeballs = 20;
+        this.equipoPrincipal = FXCollections.observableArrayList();
+        this.caja = FXCollections.observableArrayList();
     }
 
     public int getPokedollar() {
         return pokedollar;
     }
 
-    public static List<Pokemon> getCaja() {
+    public ObservableList<Pokemon> getCaja() {
         return caja;
     }
 
-    public static List<Pokemon> getEquipoPrincipal() {
+    public ObservableList<Pokemon> getEquipoPrincipal() {
         return equipoPrincipal;
     }
 
@@ -79,6 +82,16 @@ public class Entrenador {
             return false;
         }
     }
+    // FIXME: AÑADIR DOS POKEMON A LA CRIANZA
+    public void criar(){
+        if (Entrenador.miEntrenador.getPokedollar() >= 800) {
+            System.out.println("Crianza realizada");
+            pokedollar -= 800;
+        }
+        else if (Entrenador.miEntrenador.getPokedollar() < 800) {
+            System.out.println("No tienes suficiente Pokedólares para realizar la crianza");
+        }
+    }
 
     public boolean capturar(Pokemon pokemon, Label lblComprobacion) {
         Random rd = new Random();
@@ -90,7 +103,6 @@ public class Entrenador {
         }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
-                moverAEquipo(pokemon);
                 miEntrenador.caja.add(pokemon);
                 pokeballs -= 1;
             }
@@ -107,8 +119,14 @@ public class Entrenador {
         return opcion;
     }
 
-    public void moverAEquipo(Pokemon pokemon){
+    public void moverEquipoACaja(Pokemon pokemon){
+        equipoPrincipal.remove(pokemon);
+        caja.add(pokemon);
+    }
+    public void moverCajaAEquipo(Pokemon pokemon){
+        caja.remove(pokemon);
         equipoPrincipal.add(pokemon);
     }
+
 
 }

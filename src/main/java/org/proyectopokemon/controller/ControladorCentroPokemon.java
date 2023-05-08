@@ -45,8 +45,15 @@ public class ControladorCentroPokemon {
         stage.show();
     }
     @FXML
-    public void IrAVentanaCrianza() {
-        System.out.println("Ir a Crianza");
+    public void IrAVentanaCrianza(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCrianza.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Crianza Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+        mediaPlayer.stop();
     }
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -62,6 +69,17 @@ public class ControladorCentroPokemon {
     @FXML
     public void IrAVentanaEntrenamiento(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEntrenamiento.fxml")));
+        scene = new Scene(root, 650, 400);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Entrenamiento Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+        mediaPlayer.stop();
+    }
+    @FXML
+    public void IrAVentanaIntercambio(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaIntercambioEntreCajaYEquipo.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Entrenamiento Pokémon - The Crüe");

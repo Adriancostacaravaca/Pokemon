@@ -12,8 +12,6 @@ import org.proyectopokemon.model.Pokemon;
 public class ElegirPokemonCeldas implements Callback<ListView<Pokemon>, ListCell<Pokemon>> {
     private final ImageView imageView = new ImageView();
 
-
-
     private final HBox hbox = new HBox(imageView);
 
 

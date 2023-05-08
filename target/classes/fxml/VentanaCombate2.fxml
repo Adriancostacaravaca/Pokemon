@@ -44,6 +44,7 @@
   <children>
     <AnchorPane fx:id="objetos" maxWidth="-Infinity" prefHeight="400.0" prefWidth="905.0" VBox.vgrow="ALWAYS">
          <children>
+            <Label fx:id="lblMiPokemonVitalidad" layoutX="54.0" layoutY="253.0" prefHeight="17.0" prefWidth="273.0" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
             <Button fx:id="btnPelear" layoutX="301.0" layoutY="22.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
             <Label fx:id="lblMiPokemon" alignment="CENTER" layoutX="69.0" layoutY="75.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
@@ -62,10 +63,8 @@
             <Button fx:id="btnAtaque2" layoutX="461.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque3" layoutX="307.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque4" layoutX="461.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
-            <Button fx:id="btnPelear1" layoutX="169.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Cambiar Pokemon" />
-            <Button fx:id="btnPelear11" layoutX="169.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Mochila" />
-            <Button fx:id="btnDescansar" layoutX="169.0" layoutY="299.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="128.0" text="Descansar" />
-            <Label fx:id="lblMiPokemonVitalidad" layoutX="54.0" layoutY="253.0" prefHeight="17.0" prefWidth="273.0" />
+            <Button fx:id="btnCambiarPokemon" layoutX="173.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Cambiar Pokemon" />
+            <Button fx:id="btnDescansar" layoutX="173.0" layoutY="330.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="128.0" text="Descansar" />
             <Label fx:id="lblMiPokemonEstamina" layoutX="54.0" layoutY="276.0" prefHeight="17.0" prefWidth="273.0" />
          </children></AnchorPane>
   </children>
