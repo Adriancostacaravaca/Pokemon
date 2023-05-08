@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -16,6 +17,7 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Objects;
@@ -38,6 +40,8 @@ public class ControladorCaptura {
     private Label lblComprobacion;
     @FXML
     private ImageView imgPokemonAzar;
+    @FXML
+    private ImageView imageViewFondo;
     private Pokedex pokedex;
     private Pokemon p;
     private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
@@ -49,6 +53,9 @@ public class ControladorCaptura {
         actualizarPokeballs();
         mostrarPokemonACapturar();
         musicaCaptura();
+        File x = new File("src/main/resources/imagenes/FondoPrincipal.jpg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
     }
 
     @FXML
@@ -83,6 +90,7 @@ public class ControladorCaptura {
         lblPokemon.setText(p.getNombre());
         imgPokemonAzar.setImage(p.getImage());
         btnCapturar.setDisable(false);
+        lblComprobacion.setText(" ");
     }
 
     @FXML
