@@ -32,23 +32,19 @@ public class ControladorCombate {
     private Label lblErrorEquipoVacio;
     private Pokedex pokedex;
 
-    private List<Button> botones;
-
     public void initialize() {
         pokedex = new Pokedex();
-        botones = new ArrayList<>();
-        botones.add(btnCombatir);
-        btnCombatir.setDisable(true);
-        lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
 
-        // RECORRE EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
+        // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
-        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            if(Entrenador.miEntrenador.getEquipoPrincipal().get(0) != null){
-                botones.get(0).setDisable(false);
-                lblErrorEquipoVacio.setText(" ");
-            }
+        if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 1){
+            btnCombatir.setDisable(true);
+            lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
+        }else {
+            btnCombatir.setDisable(false);
+            lblErrorEquipoVacio.setText(" ");
         }
+
     }
 
     @FXML
