@@ -90,9 +90,11 @@ public class ControladorCrianza {
     public void criar() throws IOException {
         Entrenador.miEntrenador.criar();
         actualizarDinero();
-        if(imageViewPokemon1 == null || imageViewPokemon2 == null){
+        if(imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null){
             System.out.println("Selecciona un pokemon para continuar");
         }else{
+            Entrenador.miEntrenador.criar();
+            actualizarDinero();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root,500,200);
