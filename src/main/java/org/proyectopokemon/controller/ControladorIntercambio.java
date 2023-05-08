@@ -86,6 +86,7 @@ public class ControladorIntercambio {
     @FXML
     public void cajaAEquipo(){
         Pokemon pokemonSelect = listViewCaja.getSelectionModel().getSelectedItem();
+
         Entrenador.miEntrenador.moverCajaAEquipo(pokemonSelect);
     }
 }

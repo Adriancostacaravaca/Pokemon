@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -34,6 +35,13 @@ public class ControladorCentroPokemon {
     private Media musicaCentroPokemon = new Media(Paths.get("src/main/resources/musica/musicaMenuPrincipal.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCentroPokemon);
 
+    public void initialize(){
+        if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 2){
+            btnCriarPokemon.setDisable(true);
+        }else {
+            btnCriarPokemon.setDisable(false);
+        }
+    }
     @FXML
     public void irAVentanaTienda(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaTienda.fxml")));

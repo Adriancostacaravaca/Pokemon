@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ControladorCrianza {
@@ -45,15 +47,24 @@ public class ControladorCrianza {
     private Label lblCoste;
     @FXML
     private Label lblPokedolares;
+    private List<Button> botones;
 
     public void initialize() {
-        btnPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-        btnPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre());
-        btnPokemon3.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre());
-        btnPokemon4.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre());
-        btnPokemon5.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre());
-        btnPokemon6.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre());
-        actualizarDinero();
+        botones = new ArrayList<>();
+        botones.add(btnPokemon1);
+        botones.add(btnPokemon2);
+        botones.add(btnPokemon3);
+        botones.add(btnPokemon4);
+        botones.add(btnPokemon5);
+        botones.add(btnPokemon6);
+
+        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
+            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+                botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
+            }else{
+                System.out.println("error");
+            }
+        }
     }
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
@@ -77,6 +88,16 @@ public class ControladorCrianza {
     public void criar(){
         Entrenador.miEntrenador.criar();
         actualizarDinero();
+    }
+
+    public void motrarImg(){
+        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
+            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+                imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getImage());
+            }else{
+                System.out.println("error");
+            }
+        }
     }
 
 }
