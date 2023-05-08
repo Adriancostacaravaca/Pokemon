@@ -35,49 +35,52 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCombate2">
   <children>
     <AnchorPane fx:id="objetos" maxWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" VBox.vgrow="ALWAYS">
          <children>
             <ImageView fx:id="imageViewFondo" fitHeight="402.0" fitWidth="677.0" layoutX="-1.0" pickOnBounds="true" />
-            <Label fx:id="lblMiPokemonVitalidad" layoutX="54.0" layoutY="253.0" prefHeight="17.0" prefWidth="273.0" />
+            <Label fx:id="lblMiPokemon" alignment="CENTER" layoutX="21.0" layoutY="35.0" prefHeight="45.0" prefWidth="190.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label fx:id="lblMiPokemonVitalidad" layoutX="55.0" layoutY="261.0" prefHeight="17.0" prefWidth="273.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
             <Button fx:id="btnPelear" layoutX="301.0" layoutY="22.0" mnemonicParsing="false" onAction="#combatir" prefHeight="25.0" prefWidth="75.0" text="¡Pelear!" />
-            <Label fx:id="lblMiPokemon" alignment="CENTER" layoutX="56.0" layoutY="67.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
-            <Label fx:id="lblPokemonRival" alignment="CENTER" layoutX="476.0" layoutY="67.0" prefHeight="17.0" prefWidth="121.0" textAlignment="CENTER" />
+            <Label fx:id="lblPokemonRival" alignment="CENTER" layoutX="441.0" layoutY="35.0" prefHeight="45.0" prefWidth="190.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
             <ImageView fx:id="imagenP1" fitHeight="150.0" fitWidth="150.0" layoutX="41.0" layoutY="96.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
                <effect>
                   <DropShadow />
-               </effect>
-               <image>
-                  <Image url="@../imagenes/Bulbasaur.png" />
-               </image></ImageView>
+               </effect></ImageView>
             <ImageView fx:id="imagenP2" fitHeight="150.0" fitWidth="150.0" layoutX="461.0" layoutY="96.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
-               </effect>
-               <image>
-                  <Image url="@../imagenes/Caterpie.png" />
-               </image></ImageView>
+               </effect></ImageView>
             <Button fx:id="btnAtaque1" layoutX="307.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque2" layoutX="461.0" layoutY="293.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque3" layoutX="307.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnAtaque4" layoutX="461.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="150.0" />
             <Button fx:id="btnCambiarPokemon" layoutX="173.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Cambiar Pokemon" />
             <Button fx:id="btnDescansar" layoutX="173.0" layoutY="330.0" mnemonicParsing="false" onAction="#descansar" prefHeight="25.0" prefWidth="128.0" text="Descansar" />
-            <Label fx:id="lblMiPokemonEstamina" layoutX="54.0" layoutY="276.0" prefHeight="17.0" prefWidth="273.0" />
+            <Label fx:id="lblMiPokemonEstamina" layoutX="55.0" layoutY="284.0" prefHeight="17.0" prefWidth="273.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <ImageView fx:id="imageViewVS" fitHeight="70.0" fitWidth="75.0" layoutX="290.0" layoutY="136.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>
-               <image>
-                  <Image url="@../imagenes/ImagenVS.png" />
-               </image>
             </ImageView>
          </children></AnchorPane>
   </children>

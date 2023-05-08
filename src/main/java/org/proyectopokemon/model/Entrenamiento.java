@@ -19,7 +19,7 @@ public class Entrenamiento {
 
     }
 
-    public void añadirEntrenamientos(){
+    public void anyadirEntrenamientos(){
         entrenamientos.add(new Entrenamiento("Entrenamiento Pesado",
                 "Se aumentan las estadísticas de defensa, defensa especial y vitalidad de tu Pokemon en 5 puntos"));
         entrenamientos.add(new Entrenamiento("Entrenamiento Furioso",
