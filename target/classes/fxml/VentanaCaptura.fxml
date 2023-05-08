@@ -64,7 +64,18 @@
             <ImageView fx:id="imgPokemonAzar" cache="true" cacheHint="QUALITY" fitHeight="150.0" fitWidth="150.0" layoutX="245.0" layoutY="99.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
-               </effect></ImageView>
+               </effect>
+               <image>
+                  <Image url="@../imagenes/Bulbasaur.png" />
+               </image></ImageView>
+            <ImageView fx:id="imageViewHierba" cache="true" cacheHint="QUALITY" fitHeight="45.0" fitWidth="174.0" layoutX="233.0" layoutY="212.0" pickOnBounds="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../imagenes/hierba.png" />
+               </image>
+            </ImageView>
             <Label fx:id="lblComprobacion" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="344.0" prefHeight="17.0" prefWidth="384.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
