@@ -48,6 +48,7 @@ public class ControladorEquipoPokemon {
     }
 
     // FIXME: SI NO HAY UN EQUIPO DE 6 POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LOS BUTTONS CON UN SETTEXT Y EL NOMBRE ¿TRYCATCH?
+    // FIXME: CALCULAR EL SIZE Y HABILITAR BOTONES CONFORME AL TAMAÑO DEL EQUIPO
     public void initialize(){
         btnPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
         //btnPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre());
