@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -20,6 +21,7 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Paths;
@@ -55,6 +57,10 @@ public class ControladorCombate2 {
     private Button btnDescansar;
     @FXML
     private Button btnCambiarPokemon;
+    @FXML
+    private ImageView imageViewFondo;
+    @FXML
+    private ImageView imageViewVS;
     private Pokedex pokedex;
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
@@ -75,6 +81,12 @@ public class ControladorCombate2 {
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
+        File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
+        Image imagePrincipal = new Image(y.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
+        File x = new File("src/main/resources/imagenes/ImagenVS.png");
+        Image imageVS = new Image(x.toURI().toString());
+        imageViewVS.setImage(imageVS);
         }
 
     @FXML

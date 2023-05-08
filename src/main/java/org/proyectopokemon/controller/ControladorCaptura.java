@@ -42,6 +42,8 @@ public class ControladorCaptura {
     private ImageView imgPokemonAzar;
     @FXML
     private ImageView imageViewFondo;
+    @FXML
+    private ImageView imageViewHierba;
     private Pokedex pokedex;
     private Pokemon p;
     private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
@@ -54,8 +56,11 @@ public class ControladorCaptura {
         mostrarPokemonACapturar();
         musicaCaptura();
         File x = new File("src/main/resources/imagenes/FondoPrincipal.jpg");
+        File y = new File("src/main/resources/imagenes/Hierba.png");
         Image imagePrincipal = new Image(x.toURI().toString());
+        Image imageHierba = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
+        imageViewHierba.setImage(imageHierba);
     }
 
     @FXML
