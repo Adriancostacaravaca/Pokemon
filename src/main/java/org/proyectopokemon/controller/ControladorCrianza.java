@@ -8,15 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import org.proyectopokemon.controller.factories.TiendaCeldas;
 import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Objeto;
-import org.proyectopokemon.model.Pokedex;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -52,6 +47,12 @@ public class ControladorCrianza {
     private Label lblPokedolares;
 
     public void initialize() {
+        btnPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
+        btnPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre());
+        btnPokemon3.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre());
+        btnPokemon4.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre());
+        btnPokemon5.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre());
+        btnPokemon6.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre());
         actualizarDinero();
     }
     @FXML

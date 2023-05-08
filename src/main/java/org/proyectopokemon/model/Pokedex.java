@@ -7,6 +7,13 @@ import javafx.scene.image.Image;
 import java.io.File;
 import java.util.Random;
 
+/**
+ * Clase Pokemon Principal de mi Pokemon
+ * @author festr ;
+ * @version 1.0.0
+ *
+ */
+
 public class Pokedex {
 
     //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
