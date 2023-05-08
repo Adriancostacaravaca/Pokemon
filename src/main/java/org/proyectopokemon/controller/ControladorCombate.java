@@ -7,10 +7,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ControladorCombate {
@@ -24,10 +28,27 @@ public class ControladorCombate {
     private Button btnSubirNivel;
     @FXML
     private Button btnCombatir;
+    @FXML
+    private Label lblErrorEquipoVacio;
     private Pokedex pokedex;
+
+    private List<Button> botones;
 
     public void initialize() {
         pokedex = new Pokedex();
+        botones = new ArrayList<>();
+        botones.add(btnCombatir);
+        btnCombatir.setDisable(true);
+        lblErrorEquipoVacio.setText("No hay ningun Pokemon en tu equipo");
+
+        // RECORRE EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
+
+        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
+            if(Entrenador.miEntrenador.getEquipoPrincipal().get(0) != null){
+                botones.get(0).setDisable(false);
+                lblErrorEquipoVacio.setText(" ");
+            }
+        }
     }
 
     @FXML
