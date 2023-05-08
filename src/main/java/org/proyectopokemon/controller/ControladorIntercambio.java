@@ -81,12 +81,13 @@ public class ControladorIntercambio {
     @FXML
     public void equipoACaja(){
         Pokemon pokemonSelect = listViewEquipo.getSelectionModel().getSelectedItem();
+        Objects.requireNonNull(pokemonSelect,"No puede ser nulo");
         Entrenador.miEntrenador.moverEquipoACaja(pokemonSelect);
     }
     @FXML
     public void cajaAEquipo(){
         Pokemon pokemonSelect = listViewCaja.getSelectionModel().getSelectedItem();
-
+        Objects.requireNonNull(pokemonSelect,"No puede ser null");
         Entrenador.miEntrenador.moverCajaAEquipo(pokemonSelect);
     }
 }
