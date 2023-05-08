@@ -73,7 +73,6 @@ public class ControladorCombate2 {
     @FXML
     private Label lblMiPokemonEstamina;
 
-    // FIXME: SI NO HAY UN POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LA IMAGEN Y EL NOMBRE ¿TRYCATCH?
     public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
@@ -117,7 +116,6 @@ public class ControladorCombate2 {
         mediaPlayer.stop();
     }
 
-    // MOSTRAMOS LOS NOMBRES DE LOS POKEMON ENCIMA DE SU IMAGEN
     @FXML
     public void mostrarNombresPokemon(){
             lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());

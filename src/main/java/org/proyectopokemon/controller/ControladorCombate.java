@@ -39,7 +39,7 @@ public class ControladorCombate {
         botones = new ArrayList<>();
         botones.add(btnCombatir);
         btnCombatir.setDisable(true);
-        lblErrorEquipoVacio.setText("No hay ningun Pokemon en tu equipo");
+        lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
 
         // RECORRE EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
