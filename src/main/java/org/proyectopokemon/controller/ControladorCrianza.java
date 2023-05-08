@@ -93,6 +93,7 @@ public class ControladorCrianza {
         if(imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null){
             System.out.println("Selecciona un pokemon para continuar");
         }else{
+            //FIXME: COMPROBAR QUE SE HAYAN SELECCIONADO 2 POKEMONES PARA CRIAR
             Entrenador.miEntrenador.criar();
             actualizarDinero();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
