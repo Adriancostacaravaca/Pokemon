@@ -93,7 +93,7 @@ public class ControladorCrianza {
 
     public void motrarImg1() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(0).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre()){
             imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
         }
@@ -101,7 +101,7 @@ public class ControladorCrianza {
 
     public void motrarImg2() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 2) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(1).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre()){
             imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getImage());
         }
@@ -109,7 +109,7 @@ public class ControladorCrianza {
 
     public void motrarImg3() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 3) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(2).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre()){
             imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getImage());
         }
@@ -117,7 +117,7 @@ public class ControladorCrianza {
 
     public void motrarImg4() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 4) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(3).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre()){
             imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getImage());
         }
@@ -125,7 +125,7 @@ public class ControladorCrianza {
 
     public void motrarImg5() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 5) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(4).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre()){
             imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getImage());
         }
@@ -133,7 +133,7 @@ public class ControladorCrianza {
 
     public void motrarImg6() {
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 6) {
-            System.out.println("Error");
+            System.out.println("No hay ningun pokemon aqui");
         }else if (botones.get(5).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre()){
             imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getImage());
         }
