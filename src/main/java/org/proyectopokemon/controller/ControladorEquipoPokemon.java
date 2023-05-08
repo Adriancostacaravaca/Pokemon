@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ControladorEquipoPokemon {
@@ -36,6 +38,7 @@ public class ControladorEquipoPokemon {
     @FXML
     private Button btnVolver;
 
+    private List<Button> botones;
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaMochila.fxml")));
@@ -49,12 +52,23 @@ public class ControladorEquipoPokemon {
 
     // FIXME: SI NO HAY UN EQUIPO DE 6 POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LOS BUTTONS CON UN SETTEXT Y EL NOMBRE ¿TRYCATCH?
     public void initialize(){
-        btnPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-        //btnPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre());
-        //btnPokemon3.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre());
-        //btnPokemon4.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre());
-        //btnPokemon5.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre());
-        //btnPokemon6.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre());
+        botones = new ArrayList<>();
+        botones.add(btnPokemon1);
+        botones.add(btnPokemon2);
+        botones.add(btnPokemon3);
+        botones.add(btnPokemon4);
+        botones.add(btnPokemon5);
+        botones.add(btnPokemon6);
+
+        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
+            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+                botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
+            }else{
+                System.out.println("error");
+            }
+        }
+
+
     }
 
 
