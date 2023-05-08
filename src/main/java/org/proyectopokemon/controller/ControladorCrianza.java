@@ -51,12 +51,12 @@ public class ControladorCrianza {
 
     public void initialize() {
         botones = new ArrayList<>();
-        botones.add(btnPokemon1);
-        botones.add(btnPokemon2);
-        botones.add(btnPokemon3);
-        botones.add(btnPokemon4);
-        botones.add(btnPokemon5);
-        botones.add(btnPokemon6);
+        botones.add(this.btnPokemon1);
+        botones.add(this.btnPokemon2);
+        botones.add(this.btnPokemon3);
+        botones.add(this.btnPokemon4);
+        botones.add(this.btnPokemon5);
+        botones.add(this.btnPokemon6);
 
         for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
             if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){

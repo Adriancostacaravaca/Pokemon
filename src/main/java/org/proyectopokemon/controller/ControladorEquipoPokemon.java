@@ -51,12 +51,12 @@ public class ControladorEquipoPokemon {
 
     public void initialize(){
         botones = new ArrayList<>();
-        botones.add(btnPokemon1);
-        botones.add(btnPokemon2);
-        botones.add(btnPokemon3);
-        botones.add(btnPokemon4);
-        botones.add(btnPokemon5);
-        botones.add(btnPokemon6);
+        botones.add(this.btnPokemon1);
+        botones.add(this.btnPokemon2);
+        botones.add(this.btnPokemon3);
+        botones.add(this.btnPokemon4);
+        botones.add(this.btnPokemon5);
+        botones.add(this.btnPokemon6);
 
         // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
 
