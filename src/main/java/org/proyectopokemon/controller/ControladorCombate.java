@@ -34,6 +34,7 @@ public class ControladorCombate {
 
     public void initialize() {
         pokedex = new Pokedex();
+        pokedex.rellenarPokedex();
 
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
@@ -89,6 +90,11 @@ public class ControladorCombate {
     @FXML
     public void comprobarVentaja() {
         System.out.println(pokedex.pikachu.comprobarVentaja(pokedex.bulbasaur));
+    }
+
+    @FXML
+    public void rellenarEquipoRival(){
+        Entrenador.miEntrenador.rellenarEquipoRival();
     }
 
 }

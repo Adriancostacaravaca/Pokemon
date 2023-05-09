@@ -19,13 +19,9 @@ public class Pokedex {
     //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
 
     private static ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
-    private static ObservableList<Pokemon> pokedexx = FXCollections.observableArrayList();
 
     public static ObservableList<Pokemon> getPokedex() {
         return pokedex;
-    }
-    public static ObservableList<Pokemon> getPokedexx() {
-        return pokedexx;
     }
 
     File fBulbasur = new File("src/main/resources/imagenes/Bulbasaur.png");

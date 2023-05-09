@@ -128,5 +128,14 @@ public class Entrenador {
         equipoPrincipal.add(pokemon);
     }
 
+    public void rellenarEquipoRival(){
+        Random rd = new Random();
+        int azar = rd.nextInt(Pokedex.getPokedex().size());
+        for (int i = 0; i < Pokedex.getPokedex().size(); i++) {
+            if (rivalEntrenador1.getEquipoPrincipal().size() < 6) {
+            rivalEntrenador1.getEquipoPrincipal().add(Pokedex.getPokedex().get(azar));}
+        }
+        System.out.println(rivalEntrenador1.getEquipoPrincipal());
+    }
 
 }

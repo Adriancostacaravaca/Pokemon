@@ -67,7 +67,6 @@ public class ControladorCombate2 {
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
     private ProgressBar vitalidadMiPokemon = new ProgressBar();
-    private double progress;
     @FXML
     private Label lblMiPokemonVitalidad;
     @FXML
@@ -77,6 +76,7 @@ public class ControladorCombate2 {
         musicaCombate();
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
+        Entrenador.rivalEntrenador1.rellenarEquipoRival();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
@@ -119,43 +119,29 @@ public class ControladorCombate2 {
     @FXML
     public void mostrarNombresPokemon(){
             lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-            lblPokemonRival.setText(p.getNombre());
+            lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
     }
 
-    @FXML
-    public void pokemonAzar(){
-        p = pokedex.presentarPokemonAzar();
-    }
     @FXML
     public void pokemonACombatir() {
-        pokemonAzar();
         imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
-        imagenP2.setImage(p.getImage());
-    }
-
-    @FXML
-    public void mostrarVidaEnProgressBar(){
-        progress += 0.1;
-        vitalidadMiPokemon.setProgress(progress);
+        imagenP2.setImage(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getImage());
     }
 
     public void mostrarEstaminaYVitalidad(){
-        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
+        lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
     }
 
     public void combatir() {
-        mostrarVidaEnProgressBar();
-        p.atacarAPokemon(p);
+        Entrenador.miEntrenador.getEquipoPrincipal().get(0).atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0));
         mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
-        p.descansar();
+        Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
         mostrarEstaminaYVitalidad();
-        if(p.getEstamina() < 20){
-            System.out.println("Has recuperado 5 de estamina");
-        }
+
     }
 }
