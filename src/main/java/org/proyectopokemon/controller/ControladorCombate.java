@@ -35,7 +35,7 @@ public class ControladorCombate {
     public void initialize() {
         pokedex = new Pokedex();
         pokedex.rellenarPokedex();
-
+        Entrenador.rivalEntrenador1.rellenarEquipoRival();
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
         if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 1){
@@ -86,15 +86,15 @@ public class ControladorCombate {
         System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
         System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
     }
-
+    // FIXME: PETA EL HASHMAP POR ALGÚN MOTIVO QUE DESCONOZCO - ADRIAN
     @FXML
     public void comprobarVentaja() {
-        System.out.println(pokedex.pikachu.comprobarVentaja(pokedex.bulbasaur));
+        System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).comprobarVentaja(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0)));
     }
 
     @FXML
-    public void rellenarEquipoRival(){
-        Entrenador.miEntrenador.rellenarEquipoRival();
+    public void comprobarEquipoRival(){
+        System.out.println(Entrenador.rivalEntrenador1.getEquipoPrincipal());
     }
 
 }

@@ -135,7 +135,6 @@ public class Entrenador {
             if (rivalEntrenador1.getEquipoPrincipal().size() < 6) {
             rivalEntrenador1.getEquipoPrincipal().add(Pokedex.getPokedex().get(azar));}
         }
-        System.out.println(rivalEntrenador1.getEquipoPrincipal());
     }
 
 }

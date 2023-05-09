@@ -75,8 +75,6 @@ public class ControladorCombate2 {
     public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
-        Entrenador.rivalEntrenador1.rellenarEquipoRival();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
@@ -142,6 +140,5 @@ public class ControladorCombate2 {
     public void descansar(){
         Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
         mostrarEstaminaYVitalidad();
-
     }
 }
