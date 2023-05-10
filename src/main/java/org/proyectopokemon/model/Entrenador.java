@@ -129,9 +129,9 @@ public class Entrenador {
     }
 
     public void rellenarEquipoRival(){
-        Random rd = new Random();
-        int azar = rd.nextInt(Pokedex.getPokedex().size());
         for (int i = 0; i < Pokedex.getPokedex().size(); i++) {
+            Random rd = new Random();
+            int azar = rd.nextInt(Pokedex.getPokedex().size());
             if (rivalEntrenador1.getEquipoPrincipal().size() < 6) {
             rivalEntrenador1.getEquipoPrincipal().add(Pokedex.getPokedex().get(azar));}
         }
