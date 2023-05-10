@@ -33,8 +33,10 @@
 -->
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCombate">
   <children>
@@ -44,6 +46,12 @@
             <Button fx:id="btnCombatir" layoutX="257.0" layoutY="157.0" mnemonicParsing="false" onAction="#irACombatir" prefHeight="25.0" prefWidth="136.0" text="Combatir" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
             <Button fx:id="btnComprobar" layoutX="257.0" layoutY="221.0" mnemonicParsing="false" onAction="#comprobarVentaja" prefHeight="25.0" prefWidth="136.0" text="Comprobar Ventaja" />
+            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="171.0" layoutY="117.0" prefHeight="17.0" prefWidth="308.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnComprobarEquipoRival" layoutX="257.0" layoutY="253.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="25.0" prefWidth="136.0" text="Equipo Rival" />
          </children></AnchorPane>
   </children>
 </VBox>

@@ -47,7 +47,7 @@ public class ControladorTienda {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
 
     public void initialize() {
-        tienda.añadirObjetosATienda();
+        tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());
 

@@ -17,7 +17,7 @@ public class Tienda {
         return objetosTienda;
     }
 
-    public void añadirObjetosATienda(){
+    public void anyadirObjetosATienda(){
         objetosTienda.add(new Objeto("Pesa",0.2,0.2,250, "Aumenta el ataque y la defensa un 20%, pero disminuye la velocidad un 20%"));
         objetosTienda.add(new Objeto("Pluma",0.3,0.2,250, "Aumenta la velocidad un 30%, pero disminuye la defensa y la defensa\n" +
                 "especial un 20%"));

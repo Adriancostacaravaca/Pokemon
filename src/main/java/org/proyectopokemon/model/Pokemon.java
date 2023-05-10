@@ -4,6 +4,13 @@ import javafx.scene.image.Image;
 
 import java.util.*;
 
+/**
+ * @author AdrianCosta
+ * @author FranEstrada
+ * @version 1.0
+ *
+ */
+
 public class Pokemon {
     private String nombre;
     private String mote;
@@ -27,6 +34,14 @@ public class Pokemon {
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;
     private static HashMap<Tipo, List<Tipo>> tablaFuertes;
 
+    /**
+     * CONSTRUCTOR DE POKEMON PASANDO LOS PARAMETROS LISTADOS DEBAJO
+     * @param nombre NOMBRE DEL POKEMON, NO PUEDE SER NULL
+     * @param tipo1 PRIMER TIPO DEL POKEMON, NO PUEDE SER NULL
+     * @param tipo2 PRIMER TIPO DEL POKEMON, PUEDE SER NULL
+     * @param image IMAGEN REFERENTE AL POKEMON
+     */
+
     public Pokemon(String nombre, Tipo tipo1, Tipo tipo2,Image image) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -46,6 +61,10 @@ public class Pokemon {
         this.image = image;
         this.listaCuatroAtaques = new ArrayList<>();
     }
+
+    /**
+     * CONSTRUCTOR DE POKEMON VACIO
+     */
 
     public Pokemon(){}
 
@@ -94,7 +113,7 @@ public class Pokemon {
         this.image = image;
     }
 
-    public static HashMap<Tipo, List<Tipo>> getTablaDebiles(){
+    private static HashMap<Tipo, List<Tipo>> getTablaDebiles(){
         if (tablaDebiles == null) {
             tablaDebiles = new HashMap<>();
             // DEBILES FRENTE AL TIPO AGUA
@@ -138,7 +157,7 @@ public class Pokemon {
             tablaDebiles.get(Tipo.PLANTA).add(Tipo.AGUA);
             tablaDebiles.get(Tipo.PLANTA).add(Tipo.ROCA);
             tablaDebiles.get(Tipo.PLANTA).add(Tipo.TIERRA);
-            // DEBILES FRENTE AL TIPO PSÍQUICO
+            // DEBILES FRENTE AL TIPO PSIQUICO
             tablaDebiles.put(Tipo.PSIQUICO, new LinkedList<>());
             tablaDebiles.get(Tipo.PSIQUICO).add(Tipo.LUCHA);
             tablaDebiles.get(Tipo.PSIQUICO).add(Tipo.VENENO);
@@ -167,7 +186,7 @@ public class Pokemon {
         return tablaDebiles;
     }
 
-    public static HashMap<Tipo, List<Tipo>> getTablaFuertes() {
+    private static HashMap<Tipo, List<Tipo>> getTablaFuertes() {
         if (tablaFuertes == null) {
             tablaFuertes = new HashMap<>();
             // FUERTES FRENTE AL TIPO AGUA
@@ -210,7 +229,7 @@ public class Pokemon {
             tablaFuertes.get(Tipo.PLANTA).add(Tipo.PLANTA);
             tablaFuertes.get(Tipo.PLANTA).add(Tipo.VENENO);
             tablaFuertes.get(Tipo.PLANTA).add(Tipo.VOLADOR);
-            // DEBILES FRENTE AL TIPO PSÍQUICO
+            // DEBILES FRENTE AL TIPO PSIQUICO
             tablaFuertes.put(Tipo.PSIQUICO, new LinkedList<>());
             tablaFuertes.get(Tipo.PSIQUICO).add(Tipo.PSIQUICO);
             // DEBILES FRENTE AL TIPO ROCA
@@ -236,6 +255,12 @@ public class Pokemon {
     }
 
     // MÉTODO PARA COMPROBAR VENTAJA ENTRE DOS POKÉMON
+
+    /**
+     * METODO PARA COMPROBAR LA VENTAJA ENTRE DOS POKEMON
+     * @param p2 EL POKEMON CON EL QUE VAMOS A COMPARARNOS
+     * @return DEVUELVE EL VALOR DE LA VENTAJA O DESVENTAJA
+     */
     // FIXME: HAY QUE COMPROBAR EL TIPO DEL POKÉMON Y EL TIPO DEL ATAQUE PARA AMBOS CASOS DE ATAQUE (JUGADOR/RIVAL)
     public float comprobarVentaja(Pokemon p2) {
         if (getTablaDebiles().get(this.getTipo()).contains(p2.getTipo()))
@@ -245,7 +270,10 @@ public class Pokemon {
         return 1.0f;
     }
 
-    // MÉTODO PARA SUBIR DE NIVEL CADA VEZ QUE GANAS UN COMBATE
+    /**
+     * METODO PARA OBTENER EXPERIENCIA Y SUBIR DE NIVEL CADA VEZ QUE SE GANA UN COMBATE
+     */
+
     public void subirNivel(){
         Random rd = new Random();
         experiencia += 5;
@@ -279,7 +307,9 @@ public class Pokemon {
         }
     }
 
-    // MÉTODO PARA DESCANSAR Y PODER RECUPERAR ESTAMINA
+    /**
+     * METODO PARA DESCANSAR Y PODER RECUPERAR ESTAMINA
+     */
 
     public void descansar(){
         this.estamina = 20;

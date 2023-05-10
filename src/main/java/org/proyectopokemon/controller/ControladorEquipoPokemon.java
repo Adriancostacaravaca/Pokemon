@@ -37,7 +37,6 @@ public class ControladorEquipoPokemon {
     private Button btnPokemon6;
     @FXML
     private Button btnVolver;
-
     private List<Button> botones;
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
@@ -50,25 +49,22 @@ public class ControladorEquipoPokemon {
         stage.show();
     }
 
-    // FIXME: SI NO HAY UN EQUIPO DE 6 POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LOS BUTTONS CON UN SETTEXT Y EL NOMBRE ¿TRYCATCH?
     public void initialize(){
         botones = new ArrayList<>();
-        botones.add(btnPokemon1);
-        botones.add(btnPokemon2);
-        botones.add(btnPokemon3);
-        botones.add(btnPokemon4);
-        botones.add(btnPokemon5);
-        botones.add(btnPokemon6);
+        botones.add(this.btnPokemon1);
+        botones.add(this.btnPokemon2);
+        botones.add(this.btnPokemon3);
+        botones.add(this.btnPokemon4);
+        botones.add(this.btnPokemon5);
+        botones.add(this.btnPokemon6);
+
+        // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
 
         for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
             if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
-            }else{
-                System.out.println("error");
             }
         }
-
-
     }
 
 

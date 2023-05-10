@@ -35,7 +35,7 @@ public class ControladorEntrenamiento {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaEntrenamiento);
 
     public void initialize() {
-        entrenamiento.añadirEntrenamientos();
+        entrenamiento.anyadirEntrenamientos();
         listaEntrenamiento.setItems(entrenamiento.getEntrenamientos());
         listaEntrenamiento.setCellFactory(new ElegirEntrenamientoCeldas());
 

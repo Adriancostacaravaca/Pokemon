@@ -42,7 +42,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <ImageView fx:id="imageViewFondo" fitHeight="402.0" fitWidth="656.0" layoutX="-2.0" pickOnBounds="true" />
+            <ImageView fx:id="imageViewFondo" fitHeight="402.0" fitWidth="656.0" layoutX="-1.0" pickOnBounds="true" />
             <Button fx:id="btnSalir" layoutX="286.0" layoutY="362.0" mnemonicParsing="false" onAction="#cerrarPokemon" prefHeight="25.0" prefWidth="79.0" text="Salir" />
             <Button fx:id="btnMochila" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#irAVentanaMochila" prefHeight="25.0" prefWidth="79.0" text="Mochila" />
             <Button fx:id="btnTienda" layoutX="258.0" layoutY="187.0" mnemonicParsing="false" onAction="#irAVentanaCentroPokemon" prefHeight="25.0" prefWidth="136.0" text="Centro Pokémon" />

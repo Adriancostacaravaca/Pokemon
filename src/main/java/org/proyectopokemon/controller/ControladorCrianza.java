@@ -8,7 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
 
@@ -46,26 +49,31 @@ public class ControladorCrianza {
     @FXML
     private Label lblCoste;
     @FXML
+    private Text txtPokemon1;
+    @FXML
+    private Text txtPokemon2;
+    @FXML
     private Label lblPokedolares;
     private List<Button> botones;
 
     public void initialize() {
         botones = new ArrayList<>();
-        botones.add(btnPokemon1);
-        botones.add(btnPokemon2);
-        botones.add(btnPokemon3);
-        botones.add(btnPokemon4);
-        botones.add(btnPokemon5);
-        botones.add(btnPokemon6);
+        botones.add(this.btnPokemon1);
+        botones.add(this.btnPokemon2);
+        botones.add(this.btnPokemon3);
+        botones.add(this.btnPokemon4);
+        botones.add(this.btnPokemon5);
+        botones.add(this.btnPokemon6);
 
-        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+        for (int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++) {
+            if (Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null) {
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
-            }else{
+            } else {
                 System.out.println("error");
             }
         }
     }
+
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
@@ -85,18 +93,71 @@ public class ControladorCrianza {
     }
 
     // MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON
-    public void criar(){
+    public void criar() throws IOException {
         Entrenador.miEntrenador.criar();
         actualizarDinero();
+        if(imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null){
+            System.out.println("Selecciona un pokemon para continuar");
+        }else{
+            //FIXME: COMPROBAR QUE SE HAYAN SELECCIONADO 2 POKEMONES PARA CRIAR
+            Entrenador.miEntrenador.criar();
+            actualizarDinero();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root,500,200);
+            Stage stage2 = new Stage();
+            stage2.initModality(Modality.APPLICATION_MODAL);
+            stage2.setScene(scene);
+            stage2.showAndWait();
+        }
+
     }
 
-    public void motrarImg(){
-        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
-                imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getImage());
-            }else{
-                System.out.println("error");
-            }
+    public void mostrarImg1() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(0).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre()){
+            imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
+        }
+    }
+
+    public void mostrarImg2() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 2) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(1).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre()){
+            imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(1).getImage());
+        }
+    }
+
+    public void mostrarImg3() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 3) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(2).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre()){
+            imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(2).getImage());
+        }
+    }
+
+    public void mostrarImg4() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 4) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(3).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre()){
+            imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(3).getImage());
+        }
+    }
+
+    public void mostrarImg5() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 5) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(4).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre()){
+            imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(4).getImage());
+        }
+    }
+
+    public void mostrarImg6() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 6) {
+            System.out.println("No hay ningun pokemon aqui");
+        }else if (botones.get(5).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre()){
+            imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getImage());
         }
     }
 

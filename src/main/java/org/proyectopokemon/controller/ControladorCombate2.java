@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -20,6 +21,7 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Paths;
@@ -55,26 +57,33 @@ public class ControladorCombate2 {
     private Button btnDescansar;
     @FXML
     private Button btnCambiarPokemon;
+    @FXML
+    private ImageView imageViewFondo;
+    @FXML
+    private ImageView imageViewVS;
     private Pokedex pokedex;
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
     private ProgressBar vitalidadMiPokemon = new ProgressBar();
-    private double progress;
     @FXML
     private Label lblMiPokemonVitalidad;
     @FXML
     private Label lblMiPokemonEstamina;
 
-    // FIXME: SI NO HAY UN POKEMON, PETA, PORQUE NO RECONOCE Y ENTONCES NO RELLENA LA IMAGEN Y EL NOMBRE ¿TRYCATCH?
     public void initialize(){
         musicaCombate();
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
+        File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
+        Image imagePrincipal = new Image(y.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
+        File x = new File("src/main/resources/imagenes/ImagenVS.png");
+        Image imageVS = new Image(x.toURI().toString());
+        imageViewVS.setImage(imageVS);
         }
 
     @FXML
@@ -105,47 +114,31 @@ public class ControladorCombate2 {
         mediaPlayer.stop();
     }
 
-    // MOSTRAMOS LOS NOMBRES DE LOS POKEMON ENCIMA DE SU IMAGEN
     @FXML
     public void mostrarNombresPokemon(){
             lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-            lblPokemonRival.setText(p.getNombre());
+            lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
     }
 
-    @FXML
-    public void pokemonAzar(){
-        p = pokedex.presentarPokemonAzar();
-    }
     @FXML
     public void pokemonACombatir() {
-        pokemonAzar();
         imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
-        imagenP2.setImage(p.getImage());
-    }
-
-    @FXML
-    public void mostrarVidaEnProgressBar(){
-        progress += 0.1;
-        vitalidadMiPokemon.setProgress(progress);
+        imagenP2.setImage(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getImage());
     }
 
     public void mostrarEstaminaYVitalidad(){
-        lblMiPokemonEstamina.setText("Estamina: " + p.getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + p.getVitalidad());
+        lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
     }
 
     public void combatir() {
-        mostrarVidaEnProgressBar();
-        p.atacarAPokemon(p);
+        Entrenador.miEntrenador.getEquipoPrincipal().get(0).atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0));
         mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
-        p.descansar();
+        Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
         mostrarEstaminaYVitalidad();
-        if(p.getEstamina() < 20){
-            System.out.println("Has recuperado 5 de estamina");
-        }
     }
 }
