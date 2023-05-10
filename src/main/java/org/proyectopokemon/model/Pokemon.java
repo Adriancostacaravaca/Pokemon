@@ -302,7 +302,7 @@ public class Pokemon {
         if(estamina <= 0){
             System.out.println("Necesitas descansar para realizar otro ataque");
         }else {
-            pokemon.setVitalidad(pokemon.getVitalidad() - 1);
+            pokemon.setVitalidad(pokemon.getVitalidad() - 5);
             this.estamina -= 5;
         }
     }

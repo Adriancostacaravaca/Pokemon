@@ -71,6 +71,10 @@ public class ControladorCombate2 {
     private Label lblMiPokemonVitalidad;
     @FXML
     private Label lblMiPokemonEstamina;
+    @FXML
+    private Label lblRivalPokemonVitalidad;
+    @FXML
+    private Label lblRivalPokemonEstamina;
 
     public void initialize(){
         musicaCombate();
@@ -129,6 +133,8 @@ public class ControladorCombate2 {
     public void mostrarEstaminaYVitalidad(){
         lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getEstamina());
         lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
+        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getEstamina());
+        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getVitalidad());
     }
 
     public void combatir() {
