@@ -51,6 +51,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
+            <Button fx:id="btnComprobarEquipoRival" layoutX="257.0" layoutY="253.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="25.0" prefWidth="136.0" text="Equipo Rival" />
          </children></AnchorPane>
   </children>
 </VBox>
