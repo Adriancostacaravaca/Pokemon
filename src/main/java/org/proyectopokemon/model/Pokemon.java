@@ -39,10 +39,10 @@ public class Pokemon {
      * @param nombre NOMBRE DEL POKEMON, NO PUEDE SER NULL
      * @param tipo1 PRIMER TIPO DEL POKEMON, NO PUEDE SER NULL
      * @param tipo2 PRIMER TIPO DEL POKEMON, PUEDE SER NULL
-     * @param image IMAGEN REFERENTE AL POKEMON
+     //* @param image IMAGEN REFERENTE AL POKEMON
      */
 
-    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2,Image image) {
+    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2, Image image) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;

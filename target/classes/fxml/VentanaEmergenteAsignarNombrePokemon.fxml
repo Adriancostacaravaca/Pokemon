@@ -42,16 +42,16 @@
 
 <VBox prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorVentanaEmergente">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="200.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="273.0" prefWidth="246.0" VBox.vgrow="ALWAYS">
       <children>
-            <ImageView fx:id="imageViewFondo" fitHeight="281.0" fitWidth="459.0" layoutX="52.0" layoutY="88.0" pickOnBounds="true" />
+            <ImageView fx:id="imageViewFondo" fitHeight="281.0" fitWidth="459.0" layoutX="63.0" layoutY="88.0" pickOnBounds="true" />
             <ImageView fx:id="imagenPokemon" fitHeight="110.0" fitWidth="205.0" layoutX="223.0" layoutY="14.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect></ImageView>
             <Label fx:id="lblAsignarNombre" alignment="CENTER" layoutX="166.0" layoutY="54.0" prefHeight="18.0" prefWidth="327.0" />
             <TextField fx:id="txtFieldNombrePokemon" layoutX="208.0" layoutY="88.0" prefHeight="26.0" prefWidth="219.0" />
-            <Button fx:id="btnHecho" layoutX="292.0" layoutY="137.0" mnemonicParsing="false" text="¡Hecho!" />
+            <Button fx:id="btnHecho" layoutX="292.0" layoutY="137.0" mnemonicParsing="false" onAction="#anyadirPokemonNuevoACaja" text="¡Hecho!" />
       </children>
     </AnchorPane>
   </children>

@@ -4,6 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Pokemon;
 
 public class ControladorVentanaEmergente {
 
@@ -18,7 +21,11 @@ public class ControladorVentanaEmergente {
         lblAsignarNombre.setText("¡Asignale un nombre a tu pokemon!");
     }
 
-    public void añadirPokemonNuevoACaja(){
-
+    public void anyadirPokemonNuevoACaja(){
+        String nombre = txtFieldNombrePokemon.getText();
+        Pokemon p = new Pokemon(nombre, null,null,null);
+        Entrenador.miEntrenador.getCaja().add(p);
+        Stage stage = (Stage) btnHecho.getScene().getWindow();
+        stage.close();
     }
 }

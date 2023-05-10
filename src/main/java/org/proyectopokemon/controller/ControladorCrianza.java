@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
@@ -94,9 +93,7 @@ public class ControladorCrianza {
 
     // MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON
     public void criar() throws IOException {
-        Entrenador.miEntrenador.criar();
-        actualizarDinero();
-        if(imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null){
+        if(imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null ){
             System.out.println("Selecciona un pokemon para continuar");
         }else{
             //FIXME: COMPROBAR QUE SE HAYAN SELECCIONADO 2 POKEMONES PARA CRIAR
@@ -106,6 +103,7 @@ public class ControladorCrianza {
             Parent root = loader.load();
             Scene scene = new Scene(root,500,200);
             Stage stage2 = new Stage();
+            stage2.setResizable(false);
             stage2.initModality(Modality.APPLICATION_MODAL);
             stage2.setScene(scene);
             stage2.showAndWait();
@@ -160,5 +158,7 @@ public class ControladorCrianza {
             imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(5).getImage());
         }
     }
+
+
 
 }
