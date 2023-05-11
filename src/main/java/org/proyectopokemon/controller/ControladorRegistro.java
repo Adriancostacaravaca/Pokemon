@@ -39,30 +39,33 @@ public class ControladorRegistro {
     private PasswordField txtContrasenya;
     @FXML
     private ImageView imagenUsuario;
+    @FXML
+    private Label lblComprobacion;
     private Login login = new Login();
+    private boolean registroCorrecto = false;
 
     public void initialize() {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
     }
+
     @FXML
     public void irAVentanaLogin(ActionEvent event) throws IOException {
-        registrarUsuario();
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaLogin.fxml")));
-        scene = new Scene(root, 400, 450);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Login - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
+        if (login.comprobarRegistro(txtUsuario, txtContrasenya, lblComprobacion)) {
+            registrarUsuario();
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaLogin.fxml")));
+            scene = new Scene(root, 400, 450);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setTitle("Login - The Crüe");
+            stage.setResizable(false);
+            stage.setScene(scene);
+            stage.show();
+        }
     }
 
-    public void registrarUsuario(){
+    public void registrarUsuario() {
         login.setUsuario(this.txtUsuario.getText());
         login.setContrasenya(this.txtContrasenya.getText());
-        System.out.println("Te has registrado");
     }
-
-
 }

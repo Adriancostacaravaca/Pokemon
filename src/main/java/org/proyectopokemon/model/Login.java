@@ -8,6 +8,7 @@ public class Login {
     private static String usuario;
     private static String contrasenya;
     private boolean login;
+    private boolean registro;
 
     public boolean comprobarCredenciales(TextField txtFldUsuario, TextField txtFldContrasenya, Label lblComprobacion) {
 
@@ -32,4 +33,16 @@ public class Login {
     public void setContrasenya(String contrasenya) {
         this.contrasenya = contrasenya;
     }
+
+    public boolean comprobarRegistro(TextField txtFldUsuario, TextField txtFldContrasenya, Label lbl){
+        if (txtFldUsuario.getText().isEmpty() || txtFldContrasenya.getText().isEmpty()) {
+            this.login = false;
+            lbl.setText("No puedes introducir campos vacíos");
+        }
+        else {
+            this.login = true;
+        }
+        return login;
+    }
+
 }
