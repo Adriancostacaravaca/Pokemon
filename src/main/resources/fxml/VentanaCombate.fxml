@@ -38,20 +38,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCombate">
+<VBox prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCombate">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnSubirNivel" layoutX="257.0" layoutY="189.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="25.0" prefWidth="136.0" text="Subir Nivel" />
-            <Button fx:id="btnCombatir" layoutX="257.0" layoutY="157.0" mnemonicParsing="false" onAction="#irACombatir" prefHeight="25.0" prefWidth="136.0" text="Combatir" />
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnComprobar" layoutX="257.0" layoutY="221.0" mnemonicParsing="false" onAction="#comprobarVentaja" prefHeight="25.0" prefWidth="136.0" text="Comprobar Ventaja" />
-            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="171.0" layoutY="117.0" prefHeight="17.0" prefWidth="308.0" textFill="RED">
+            <Button fx:id="btnSubirNivel" layoutX="326.0" layoutY="232.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="36.0" prefWidth="136.0" text="Subir Nivel" />
+            <Button fx:id="btnCombatir" layoutX="326.0" layoutY="190.0" mnemonicParsing="false" onAction="#irACombatir" prefHeight="36.0" prefWidth="136.0" text="Combatir" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
+            <Button fx:id="btnComprobar" layoutX="326.0" layoutY="275.0" mnemonicParsing="false" onAction="#comprobarVentaja" prefHeight="36.0" prefWidth="136.0" text="Comprobar Ventaja" />
+            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="240.0" layoutY="161.0" prefHeight="17.0" prefWidth="308.0" textFill="RED">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Button fx:id="btnComprobarEquipoRival" layoutX="257.0" layoutY="253.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="25.0" prefWidth="136.0" text="Equipo Rival" />
+            <Button fx:id="btnComprobarEquipoRival" layoutX="326.0" layoutY="318.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="36.0" prefWidth="136.0" text="Equipo Rival" />
          </children></AnchorPane>
   </children>
 </VBox>

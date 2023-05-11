@@ -36,15 +36,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCentroPokemon">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCentroPokemon">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnTienda" layoutX="243.0" layoutY="124.0" mnemonicParsing="false" onAction="#irAVentanaTienda" prefHeight="25.0" prefWidth="155.0" text="Tienda" />
-            <Button fx:id="btnCriarPokemon" layoutX="243.0" layoutY="156.0" mnemonicParsing="false" onAction="#IrAVentanaCrianza" prefHeight="26.0" prefWidth="155.0" text="Criar Pokemon" />
-            <Button fx:id="btnEntrenarPokemon" layoutX="243.0" layoutY="188.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="26.0" prefWidth="155.0" text="Entrenar Pokemon" />
-            <Button fx:id="btnMoverAEquipo" layoutX="243.0" layoutY="220.0" mnemonicParsing="false" onAction="#IrAVentanaIntercambio" prefHeight="25.0" prefWidth="155.0" text="Mover a Equipo" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
+            <Button fx:id="btnTienda" layoutX="317.0" layoutY="190.0" mnemonicParsing="false" onAction="#irAVentanaTienda" prefHeight="36.0" prefWidth="155.0" text="Tienda" />
+            <Button fx:id="btnCriarPokemon" layoutX="317.0" layoutY="320.0" mnemonicParsing="false" onAction="#IrAVentanaCrianza" prefHeight="36.0" prefWidth="155.0" text="Criar Pokemon" />
+            <Button fx:id="btnEntrenarPokemon" layoutX="317.0" layoutY="233.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="36.0" prefWidth="155.0" text="Entrenar Pokemon" />
+            <Button fx:id="btnMoverAEquipo" layoutX="317.0" layoutY="276.0" mnemonicParsing="false" onAction="#IrAVentanaIntercambio" prefHeight="36.0" prefWidth="155.0" text="Mover a Equipo" />
          </children>
     </AnchorPane>
   </children>

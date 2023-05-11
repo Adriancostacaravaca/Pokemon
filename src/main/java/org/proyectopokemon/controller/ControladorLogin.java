@@ -41,8 +41,6 @@ public class ControladorLogin {
     private Label lblComprobacion;
     @FXML
     private ImageView imagenUsuario;
-    @FXML
-    private ImageView imagenPk1;
     private Login login = new Login();
     private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaLogin.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
@@ -51,9 +49,6 @@ public class ControladorLogin {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
-        File y = new File("src/main/resources/imagenes/PokeballConSombra.png");
-        Image imagen2 = new Image(y.toURI().toString());
-        imagenPk1.setImage(imagen2);
         musicaLogin();
     }
 
@@ -67,7 +62,7 @@ public class ControladorLogin {
     public void irAVentanaAplicacion(ActionEvent event) throws IOException {
         if (login.comprobarCredenciales(txtUsuario, txtContrasenya, lblComprobacion)) {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-            scene = new Scene(root, 650, 400);
+            scene = new Scene(root, 788, 477);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Menú Principal - The Crüe");
             stage.setResizable(false);

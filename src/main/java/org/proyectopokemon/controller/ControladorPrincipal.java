@@ -60,7 +60,7 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCombate(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Combate Pokemon - The Crüe");
         stage.setResizable(false);
@@ -72,7 +72,7 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCaptura(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCaptura.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Capturar Pokémon - The Crüe");
         stage.setResizable(false);
@@ -84,7 +84,7 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaCentroPokemon(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCentroPokemon.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Centro Pokémon - The Crüe");
         stage.setResizable(false);
@@ -96,7 +96,7 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaMochila (ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaMochila.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Mochila - The Crüe");
         stage.setResizable(false);
@@ -108,7 +108,7 @@ public class ControladorPrincipal {
     @FXML
     public void irAVentanaPokedex(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaPokedex.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokédex - The Crüe");
         stage.setResizable(false);

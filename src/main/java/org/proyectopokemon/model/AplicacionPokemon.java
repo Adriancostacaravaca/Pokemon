@@ -14,7 +14,7 @@ public class AplicacionPokemon extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaRegistro.fxml")));
-        Scene scene = new Scene(root, 459, 533);
+        Scene scene = new Scene(root, 419, 491);
         stage.setTitle("Registro - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
@@ -28,8 +28,7 @@ public class AplicacionPokemon extends Application {
             Pokedex.getPokedexx().add(p);
         }
         System.out.println(Pokedex.getPokedex().toString());
-        PokemonCRUD.updatePokemon();
-*/
+        PokemonCRUD.updatePokemon();*/
         launch();
     }
 }
