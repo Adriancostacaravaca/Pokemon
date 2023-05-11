@@ -14,7 +14,7 @@ public class AplicacionPokemon extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaRegistro.fxml")));
-        Scene scene = new Scene(root, 400, 450);
+        Scene scene = new Scene(root, 459, 533);
         stage.setTitle("Registro - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);

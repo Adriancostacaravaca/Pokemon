@@ -40,6 +40,8 @@ public class ControladorRegistro {
     @FXML
     private ImageView imagenUsuario;
     @FXML
+    private ImageView imagenPk1;
+    @FXML
     private Label lblComprobacion;
     private Login login = new Login();
     private boolean registroCorrecto = false;
@@ -48,6 +50,9 @@ public class ControladorRegistro {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
+        File y = new File("src/main/resources/imagenes/PokeballConSombra.png");
+        Image imagen2 = new Image(y.toURI().toString());
+        imagenPk1.setImage(imagen2);
     }
 
     @FXML
@@ -55,7 +60,7 @@ public class ControladorRegistro {
         if (login.comprobarRegistro(txtUsuario, txtContrasenya, lblComprobacion)) {
             registrarUsuario();
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaLogin.fxml")));
-            scene = new Scene(root, 400, 450);
+            scene = new Scene(root, 459, 533);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Login - The Crüe");
             stage.setResizable(false);

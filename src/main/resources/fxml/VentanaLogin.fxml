@@ -37,28 +37,37 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorLogin">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="533.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorLogin">
   <children>
-    <AnchorPane maxHeight="450.0" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="535.0" maxWidth="459.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="459.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnEntrar" layoutX="156.0" layoutY="381.0" mnemonicParsing="false" onAction="#irAVentanaAplicacion" prefHeight="25.0" prefWidth="79.0" text="Entrar" />
-            <TextField fx:id="txtUsuario" layoutX="126.0" layoutY="252.0" />
-            <Label fx:id="lblUsuario" layoutX="125.0" layoutY="235.0" prefHeight="17.0" prefWidth="70.0" text="Usuario" />
-            <Label fx:id="lblContrasenya" layoutX="126.0" layoutY="302.0" prefHeight="17.0" prefWidth="90.0" text="Contraseña" />
-            <ImageView fx:id="imagenUsuario" fitHeight="150.0" fitWidth="149.0" layoutX="126.0" layoutY="56.0" pickOnBounds="true">
+            <Button fx:id="btnEntrar" layoutX="173.0" layoutY="418.0" mnemonicParsing="false" onAction="#irAVentanaAplicacion" prefHeight="25.0" prefWidth="115.0" text="Entrar" />
+            <TextField fx:id="txtUsuario" layoutX="154.0" layoutY="291.0" />
+            <Label fx:id="lblUsuario" layoutX="153.0" layoutY="274.0" prefHeight="17.0" prefWidth="70.0" text="Usuario" />
+            <Label fx:id="lblContrasenya" layoutX="154.0" layoutY="341.0" prefHeight="17.0" prefWidth="90.0" text="Contraseña" />
+            <ImageView fx:id="imagenUsuario" fitHeight="150.0" fitWidth="149.0" layoutX="154.0" layoutY="93.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect></ImageView>
-            <PasswordField fx:id="txtContrasenya" layoutX="127.0" layoutY="319.0" />
-            <Label fx:id="lblComprobacion" layoutX="127.0" layoutY="355.0" prefHeight="17.0" prefWidth="242.0" textFill="RED">
+            <PasswordField fx:id="txtContrasenya" layoutX="155.0" layoutY="358.0" />
+            <Label fx:id="lblComprobacion" alignment="CENTER" layoutX="109.0" layoutY="391.0" prefHeight="17.0" prefWidth="242.0" textFill="RED">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
+            <ImageView fx:id="imagenPk1" fitHeight="175.0" fitWidth="216.0" layoutX="-17.0" layoutY="356.0" pickOnBounds="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../imagenes/PokeballConSombra.png" />
+               </image>
+            </ImageView>
          </children>
     </AnchorPane>
   </children>
