@@ -5,11 +5,13 @@ import javafx.scene.control.TextField;
 
 public class Login {
 
+    private static String usuario;
+    private static String contrasenya;
     private boolean login;
 
     public boolean comprobarCredenciales(TextField txtFldUsuario, TextField txtFldContrasenya, Label lblComprobacion) {
 
-        if (txtFldUsuario.getText().equals("1") && txtFldContrasenya.getText().equals("1")) {
+        if (txtFldUsuario.getText().equals(this.usuario) && txtFldContrasenya.getText().equals(this.contrasenya)) {
             this.login = true;
         }
         else if (txtFldUsuario.getText().isEmpty() || txtFldContrasenya.getText().isEmpty()) {
@@ -21,5 +23,13 @@ public class Login {
             lblComprobacion.setText("Error");
         }
         return login;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public void setContrasenya(String contrasenya) {
+        this.contrasenya = contrasenya;
     }
 }
