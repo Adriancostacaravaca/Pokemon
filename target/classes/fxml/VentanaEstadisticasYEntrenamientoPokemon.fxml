@@ -37,22 +37,29 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorEstadisticasYEntrenamientoPokemon">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Label fx:id="lblNombre" alignment="TOP_LEFT" layoutX="64.0" layoutY="260.0" prefHeight="17.0" prefWidth="128.0" text="Nombre" />
-            <Label fx:id="lblVitalidad" alignment="TOP_LEFT" layoutX="64.0" layoutY="306.0" prefHeight="17.0" prefWidth="128.0" text="Vitalidad" />
-            <Label fx:id="lblAtaque" alignment="TOP_LEFT" layoutX="64.0" layoutY="283.0" prefHeight="17.0" prefWidth="128.0" text="Ataque" />
-            <Label fx:id="lblDefensa" alignment="TOP_LEFT" layoutX="64.0" layoutY="329.0" prefHeight="17.0" prefWidth="128.0" text="Defensa" />
-            <Label fx:id="lblVelocidad" alignment="TOP_LEFT" layoutX="64.0" layoutY="352.0" prefHeight="17.0" prefWidth="128.0" text="Velocidad" />
+            <Label fx:id="lblNombre" alignment="TOP_LEFT" layoutX="102.0" layoutY="30.0" prefHeight="17.0" prefWidth="128.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <Label fx:id="lblDefensa" alignment="TOP_LEFT" layoutX="38.0" layoutY="318.0" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="lblAtaque" alignment="TOP_LEFT" layoutX="38.0" layoutY="295.0" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="lblVitalidad" alignment="TOP_LEFT" layoutX="38.0" layoutY="341.0" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="lblVelocidad" alignment="TOP_LEFT" layoutX="38.0" layoutY="364.0" prefHeight="17.0" prefWidth="128.0" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
-            <ImageView fx:id="imageViewPokemon" fitHeight="177.0" fitWidth="191.0" layoutX="64.0" layoutY="62.0" pickOnBounds="true" />
-            <Button fx:id="btnEnt3" layoutX="497.0" layoutY="244.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="170.0" text="Button" />
-            <Button fx:id="btnEnt1" layoutX="497.0" layoutY="156.0" mnemonicParsing="false" onAction="#aplicarEnt1" prefHeight="36.0" prefWidth="170.0" text="Button" />
-            <Button fx:id="btnEnt2" layoutX="497.0" layoutY="200.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="170.0" text="Button" />
-            <Button fx:id="btnEnt4" layoutX="497.0" layoutY="287.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="170.0" text="Button" />
+            <ImageView fx:id="imageViewPokemon" fitHeight="177.0" fitWidth="191.0" layoutX="57.0" layoutY="93.0" pickOnBounds="true" />
+            <Button fx:id="btnEnt3" layoutX="497.0" layoutY="244.0" mnemonicParsing="false" onAction="#aplicarEntFuncional" prefHeight="36.0" prefWidth="170.0" text="Entrenamiento Funcional" />
+            <Button fx:id="btnEnt1" layoutX="497.0" layoutY="156.0" mnemonicParsing="false" onAction="#aplicarEntPesado" prefHeight="36.0" prefWidth="170.0" text="Entrenamiento Pesado" />
+            <Button fx:id="btnEnt2" layoutX="497.0" layoutY="200.0" mnemonicParsing="false" onAction="#aplicarEntFurioso" prefHeight="36.0" prefWidth="170.0" text="Entrenamiento Furioso" />
+            <Button fx:id="btnEnt4" layoutX="497.0" layoutY="287.0" mnemonicParsing="false" onAction="#aplicarEntOnirico" prefHeight="36.0" prefWidth="170.0" text="Entrenamiento Onírico" />
+            <Label fx:id="lblDefensaEsp" alignment="TOP_LEFT" layoutX="166.0" layoutY="318.0" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="lblAtaqueEsp" alignment="TOP_LEFT" layoutX="166.0" layoutY="295.0" prefHeight="17.0" prefWidth="128.0" />
+            <Label fx:id="lblNivel" alignment="TOP_LEFT" layoutX="166.0" layoutY="341.0" prefHeight="17.0" prefWidth="128.0" />
          </children></AnchorPane>
   </children>
 </VBox>

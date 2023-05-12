@@ -31,7 +31,13 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     @FXML
     private Label lblDefensa;
     @FXML
+    private Label lblAtaqueEsp;
+    @FXML
+    private Label lblDefensaEsp;
+    @FXML
     private Label lblVelocidad;
+    @FXML
+    private Label lblNivel;
     @FXML
     private ImageView imageViewPokemon;
     @FXML
@@ -62,16 +68,34 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     }
 
     public void actualizarEstadisticas(){
-        lblNombre.setText("Nombre: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-        lblVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
+        lblNombre.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
         lblAtaque.setText("Ataque: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaque());
         lblDefensa.setText("Defensa: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa());
+        lblAtaqueEsp.setText("Ataque Especial: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaqueEsp());
+        lblDefensaEsp.setText("Defensa Especial: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensaEsp());
+        lblVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
         lblVelocidad.setText("Velocidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVelocidad());
+        lblNivel.setText("Nivel: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNivel());
         imageViewPokemon.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
     }
     @FXML
-    public void aplicarEnt1(){
-        entrenamiento.aplicarEnt1();
+    public void aplicarEntPesado(){
+        entrenamiento.aplicarEntPesado();
+        actualizarEstadisticas();
+    }
+    @FXML
+    public void aplicarEntFurioso(){
+        entrenamiento.aplicarEntFurioso();
+        actualizarEstadisticas();
+    }
+    @FXML
+    public void aplicarEntFuncional(){
+        entrenamiento.aplicarEntFuncional();
+        actualizarEstadisticas();
+    }
+    @FXML
+    public void aplicarEntOnirico(){
+        entrenamiento.aplicarEntOnirico();
         actualizarEstadisticas();
     }
 

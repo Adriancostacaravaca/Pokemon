@@ -81,6 +81,34 @@ public class Pokemon {
         this.vitalidad = vitalidad;
     }
 
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+    public void setDefensaEsp(int defensaEsp) {
+        this.defensaEsp = defensaEsp;
+    }
+
+    public int getDefensaEsp() {
+        return defensaEsp;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
+
+    public void setAtaqueEsp(int ataqueEsp) {
+        this.ataqueEsp = ataqueEsp;
+    }
+
+    public int getAtaqueEsp() {
+        return ataqueEsp;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
+
     public int getAtaque() {
         return ataque;
     }
@@ -111,6 +139,9 @@ public class Pokemon {
 
     public int getVelocidad() {
         return velocidad;
+    }
+    public List<MovimientosDisponiblesParaPokemon> getListaCuatroAtaques() {
+        return listaCuatroAtaques;
     }
 
     public void setNombre(String nombre) {
@@ -303,10 +334,6 @@ public class Pokemon {
             System.out.println("Has subido al nivel: " + getNivel());
         }
 
-    }
-
-    public List<MovimientosDisponiblesParaPokemon> getListaCuatroAtaques() {
-        return listaCuatroAtaques;
     }
 
     public void atacarAPokemon(Pokemon pokemon) {
