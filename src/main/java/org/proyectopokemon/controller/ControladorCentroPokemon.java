@@ -36,7 +36,7 @@ public class ControladorCentroPokemon {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCentroPokemon);
 
     public void initialize(){
-        if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 4){
+        if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 2){
             btnCriarPokemon.setDisable(true);
         }else {
             btnCriarPokemon.setDisable(false);
