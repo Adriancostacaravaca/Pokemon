@@ -1,7 +1,5 @@
 package org.proyectopokemon.controller;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,10 +11,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
-import org.proyectopokemon.model.*;
+import org.proyectopokemon.model.Movimiento;
+import org.proyectopokemon.model.MovimientosDisponiblesParaPokemon;
+import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.Objects;
 
 public class ControladorElegirMovimiento {
@@ -28,7 +27,7 @@ public class ControladorElegirMovimiento {
     @FXML
     private Button btnAprender;
     @FXML
-    private ListView<MovimientoAtaque> opcionesMovimientos;
+    private ListView<Movimiento> opcionesMovimientos;
     private Pokedex pokedex;
     private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
     public void initialize() {
@@ -48,7 +47,7 @@ public class ControladorElegirMovimiento {
     // FIXME: NO FUNCIONA
     @FXML
     public void aprender(ActionEvent event) throws IOException{
-        MovimientoAtaque movimientoSelected = opcionesMovimientos.getSelectionModel().getSelectedItem();
+        Movimiento movimientoSelected = opcionesMovimientos.getSelectionModel().getSelectedItem();
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
         scene = new Scene(root, 650, 400);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

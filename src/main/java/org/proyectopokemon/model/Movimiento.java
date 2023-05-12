@@ -1,6 +1,6 @@
 package org.proyectopokemon.model;
 
-public abstract class Movimiento {
+public class Movimiento {
 
     protected String nombre;
     protected int turnos;
