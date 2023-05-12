@@ -105,6 +105,14 @@ public class Pokemon {
         return tipo;
     }
 
+    public int getDefensa() {
+        return defensa;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

@@ -32,15 +32,23 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorEstadisticasYEntrenamientoPokemon">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Label fx:id="lblNombre" alignment="CENTER" layoutX="71.0" layoutY="316.0" prefHeight="17.0" prefWidth="128.0" text="Nombre: " />
+            <Label fx:id="lblNombre" alignment="TOP_LEFT" layoutX="64.0" layoutY="260.0" prefHeight="17.0" prefWidth="128.0" text="Nombre" />
+            <Label fx:id="lblVitalidad" alignment="TOP_LEFT" layoutX="64.0" layoutY="306.0" prefHeight="17.0" prefWidth="128.0" text="Vitalidad" />
+            <Label fx:id="lblAtaque" alignment="TOP_LEFT" layoutX="64.0" layoutY="283.0" prefHeight="17.0" prefWidth="128.0" text="Ataque" />
+            <Label fx:id="lblDefensa" alignment="TOP_LEFT" layoutX="64.0" layoutY="332.0" prefHeight="17.0" prefWidth="128.0" text="Defensa" />
+            <Label fx:id="lblVelocidad" alignment="TOP_LEFT" layoutX="64.0" layoutY="359.0" prefHeight="17.0" prefWidth="128.0" text="Velocidad" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
+            <ImageView fx:id="imageViewPokemon" fitHeight="177.0" fitWidth="191.0" layoutX="64.0" layoutY="62.0" pickOnBounds="true" />
          </children></AnchorPane>
   </children>
 </VBox>
