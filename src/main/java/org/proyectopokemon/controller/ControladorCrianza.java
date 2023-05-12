@@ -126,7 +126,7 @@ public class ControladorCrianza {
             vaciarSeleccionados();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
             Parent root = loader.load();
-            Scene scene = new Scene(root, 500, 200);
+            Scene scene = new Scene(root, 500, 250);
             Stage stage2 = new Stage();
             stage2.setResizable(false);
             stage2.initModality(Modality.APPLICATION_MODAL);

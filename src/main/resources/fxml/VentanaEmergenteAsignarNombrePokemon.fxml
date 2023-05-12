@@ -38,13 +38,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="150.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorVentanaEmergente">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorVentanaEmergente">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="218.0" prefWidth="428.0" VBox.vgrow="ALWAYS">
       <children>
-            <Label fx:id="lblAsignarNombre" alignment="CENTER" layoutX="166.0" layoutY="54.0" prefHeight="18.0" prefWidth="327.0" />
-            <TextField fx:id="txtFieldNombrePokemon" layoutX="137.0" layoutY="68.0" prefHeight="26.0" prefWidth="219.0" />
-            <Button fx:id="btnHecho" layoutX="218.0" layoutY="107.0" mnemonicParsing="false" onAction="#nombrarPokemon" text="¡Hecho!" />
+            <Label fx:id="lblAsignarNombre" alignment="CENTER" layoutX="87.0" layoutY="80.0" prefHeight="18.0" prefWidth="327.0" />
+            <TextField fx:id="txtFieldNombrePokemon" layoutX="141.0" layoutY="107.0" prefHeight="26.0" prefWidth="219.0" />
+            <Button fx:id="btnHecho" layoutX="222.0" layoutY="146.0" mnemonicParsing="false" onAction="#nombrarPokemon" text="¡Hecho!" />
       </children>
     </AnchorPane>
   </children>
