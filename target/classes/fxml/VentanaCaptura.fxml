@@ -40,32 +40,32 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCaptura">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCaptura">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fx:id="imageViewFondo" fitHeight="402.0" fitWidth="656.0" pickOnBounds="true" />
-            <Button fx:id="btnMostrarPokemon" layoutX="249.0" layoutY="268.0" mnemonicParsing="false" onAction="#mostrarPokemonACapturar" prefHeight="25.0" prefWidth="142.0" text="Mostrar Pokémon" />
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Label fx:id="lblPokemon" alignment="CENTER" layoutX="213.0" layoutY="41.0" prefHeight="18.0" prefWidth="214.0" textAlignment="CENTER" textFill="WHITE">
+            <ImageView fx:id="imageViewFondo" fitHeight="477.0" fitWidth="788.0" pickOnBounds="true" />
+            <Button fx:id="btnMostrarPokemon" layoutX="322.0" layoutY="293.0" mnemonicParsing="false" onAction="#mostrarPokemonACapturar" prefHeight="36.0" prefWidth="142.0" text="Mostrar Pokémon" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
+            <Label fx:id="lblPokemon" alignment="CENTER" layoutX="287.0" layoutY="65.0" prefHeight="18.0" prefWidth="214.0" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font></Label>
-            <Label fx:id="lblIntentos" alignment="CENTER" layoutX="443.0" layoutY="361.0" prefHeight="26.0" prefWidth="199.0" textFill="WHITE">
+            <Label fx:id="lblIntentos" alignment="CENTER" layoutX="557.0" layoutY="432.0" prefHeight="26.0" prefWidth="199.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Label>
-            <Button fx:id="btnCapturar" layoutX="249.0" layoutY="309.0" mnemonicParsing="false" onAction="#capturar" prefHeight="25.0" prefWidth="142.0" text="¡Capturar!" />
-            <ImageView fx:id="imgPokemonAzar" cache="true" cacheHint="QUALITY" fitHeight="150.0" fitWidth="150.0" layoutX="245.0" layoutY="99.0" pickOnBounds="true">
+            <Button fx:id="btnCapturar" layoutX="322.0" layoutY="334.0" mnemonicParsing="false" onAction="#capturar" prefHeight="36.0" prefWidth="142.0" text="¡Capturar!" />
+            <ImageView fx:id="imgPokemonAzar" cache="true" cacheHint="QUALITY" fitHeight="150.0" fitWidth="150.0" layoutX="319.0" layoutY="123.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect></ImageView>
-            <ImageView fx:id="imageViewHierba" cache="true" cacheHint="QUALITY" fitHeight="45.0" fitWidth="174.0" layoutX="233.0" layoutY="212.0" pickOnBounds="true">
+            <ImageView fx:id="imageViewHierba" cache="true" cacheHint="QUALITY" fitHeight="45.0" fitWidth="174.0" layoutX="307.0" layoutY="238.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>
             </ImageView>
-            <Label fx:id="lblComprobacion" alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="344.0" prefHeight="17.0" prefWidth="384.0" textFill="WHITE">
+            <Label fx:id="lblComprobacion" alignment="CENTER" contentDisplay="CENTER" layoutX="201.0" layoutY="378.0" prefHeight="17.0" prefWidth="384.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>

@@ -41,18 +41,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorPokedex">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorPokedex">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Label fx:id="lblPokedex" alignment="CENTER" layoutX="234.0" layoutY="26.0" prefHeight="45.0" prefWidth="173.0" text="Pokédex" textAlignment="CENTER">
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
+            <Label fx:id="lblPokedex" alignment="CENTER" layoutX="308.0" layoutY="28.0" prefHeight="45.0" prefWidth="173.0" text="Pokédex" textAlignment="CENTER">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <ListView fx:id="listViewPokemon" layoutX="52.0" layoutY="100.0" prefHeight="227.0" prefWidth="200.0" />
-            <ImageView fx:id="imageViewPokemon" fitHeight="171.0" fitWidth="186.0" layoutX="374.0" layoutY="128.0" pickOnBounds="true">
+            <ListView fx:id="listViewPokemon" layoutX="54.0" layoutY="103.0" prefHeight="291.0" prefWidth="244.0" />
+            <ImageView fx:id="imageViewPokemon" fitHeight="209.0" fitWidth="221.0" layoutX="481.0" layoutY="134.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>

@@ -39,22 +39,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorIntercambio">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorIntercambio">
   <children>
     <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="25.0" prefWidth="75.0" text="Menú" />
-            <Button fx:id="btnCajaAEquipo" layoutX="242.0" layoutY="234.0" mnemonicParsing="false" onAction="#equipoACaja" prefHeight="25.0" prefWidth="155.0" text="&lt;&lt;" />
-            <Button fx:id="btnEquipoACaja" layoutX="242.0" layoutY="201.0" mnemonicParsing="false" onAction="#cajaAEquipo" prefHeight="25.0" prefWidth="155.0" text="&gt;&gt;" />
-            <Label fx:id="lblIntercambio" alignment="CENTER" layoutX="217.0" layoutY="26.0" prefHeight="45.0" prefWidth="205.0" text="Tu mochila">
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Volver" />
+            <Button fx:id="btnCajaAEquipo" layoutX="317.0" layoutY="247.0" mnemonicParsing="false" onAction="#equipoACaja" prefHeight="36.0" prefWidth="155.0" text="&lt;&lt;" />
+            <Button fx:id="btnEquipoACaja" layoutX="317.0" layoutY="195.0" mnemonicParsing="false" onAction="#cajaAEquipo" prefHeight="36.0" prefWidth="155.0" text="&gt;&gt;" />
+            <Label fx:id="lblIntercambio" alignment="CENTER" layoutX="290.0" layoutY="28.0" prefHeight="45.0" prefWidth="205.0">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <ListView fx:id="listViewCaja" layoutX="28.0" layoutY="104.0" prefHeight="251.0" prefWidth="182.0" />
-            <ListView fx:id="listViewEquipo" layoutX="432.0" layoutY="104.0" prefHeight="251.0" prefWidth="182.0" />
-            <Label fx:id="lblCaja" alignment="CENTER" layoutX="28.0" layoutY="76.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
-            <Label fx:id="lblMiEquipo" alignment="CENTER" layoutX="432.0" layoutY="76.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
+            <ListView fx:id="listViewCaja" layoutX="100.0" layoutY="122.0" prefHeight="251.0" prefWidth="182.0" />
+            <ListView fx:id="listViewEquipo" layoutX="504.0" layoutY="122.0" prefHeight="251.0" prefWidth="182.0" />
+            <Label fx:id="lblCaja" alignment="CENTER" layoutX="101.0" layoutY="96.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
+            <Label fx:id="lblMiEquipo" alignment="CENTER" layoutX="505.0" layoutY="96.0" prefHeight="18.0" prefWidth="182.0" text="Label" />
          </children></AnchorPane>
   </children>
 </VBox>

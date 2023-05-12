@@ -40,31 +40,31 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCrianza">
+<VBox prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCrianza">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <Text fx:id="txtPokemon1" layoutX="77.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="133.13671875" />
-            <Button fx:id="btnPokemon1" layoutX="144.0" layoutY="261.0" mnemonicParsing="false" onAction="#mostrarImg1" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon3" layoutX="476.0" layoutY="261.0" mnemonicParsing="false" onAction="#mostrarImg3" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon2" layoutX="310.0" layoutY="261.0" mnemonicParsing="false" onAction="#mostrarImg2" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon4" layoutX="144.0" layoutY="327.0" mnemonicParsing="false" onAction="#mostrarImg4" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon6" layoutX="476.0" layoutY="327.0" mnemonicParsing="false" onAction="#mostrarImg6" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <Button fx:id="btnPokemon5" layoutX="310.0" layoutY="327.0" mnemonicParsing="false" onAction="#mostrarImg5" prefHeight="59.0" prefWidth="150.0" text="Button" />
-            <ImageView fx:id="imageViewPokemon1" fitHeight="150.0" fitWidth="162.0" layoutX="63.0" layoutY="68.0" pickOnBounds="true">
+            <Button fx:id="btnPokemon1" layoutX="178.0" layoutY="289.0" mnemonicParsing="false" onAction="#mostrarImg1" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <Button fx:id="btnPokemon3" layoutX="582.0" layoutY="289.0" mnemonicParsing="false" onAction="#mostrarImg3" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <Button fx:id="btnPokemon2" layoutX="381.0" layoutY="289.0" mnemonicParsing="false" onAction="#mostrarImg2" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <Button fx:id="btnPokemon4" layoutX="178.0" layoutY="381.0" mnemonicParsing="false" onAction="#mostrarImg4" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <Button fx:id="btnPokemon6" layoutX="582.0" layoutY="381.0" mnemonicParsing="false" onAction="#mostrarImg6" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <Button fx:id="btnPokemon5" layoutX="381.0" layoutY="381.0" mnemonicParsing="false" onAction="#mostrarImg5" prefHeight="82.0" prefWidth="192.0" text="Button" />
+            <ImageView fx:id="imageViewPokemon1" fitHeight="173.0" fitWidth="192.0" layoutX="63.0" layoutY="75.0" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>
             </ImageView>
-            <ImageView fx:id="imageViewPokemon2" fitHeight="150.0" fitWidth="162.0" layoutX="418.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+            <ImageView fx:id="imageViewPokemon2" fitHeight="173.0" fitWidth="192.0" layoutX="535.0" layoutY="75.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>
             </ImageView>
-            <Button fx:id="btnCriar" layoutX="282.0" layoutY="143.0" mnemonicParsing="false" onAction="#criar" prefHeight="25.0" prefWidth="77.0" text="Criar" />
-            <Label fx:id="lblCoste" layoutX="14.0" layoutY="291.0" prefHeight="17.0" prefWidth="150.0" />
-            <Label fx:id="lblPokedolares" layoutX="14.0" layoutY="311.0" prefHeight="17.0" prefWidth="150.0" />
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="25.0" prefWidth="75.0" text="Volver" />
+            <Button fx:id="btnCriar" layoutX="339.0" layoutY="162.0" mnemonicParsing="false" onAction="#criar" prefHeight="36.0" prefWidth="111.0" text="Criar" />
+            <Label fx:id="lblCoste" layoutX="20.0" layoutY="289.0" prefHeight="17.0" prefWidth="150.0" />
+            <Label fx:id="lblPokedolares" layoutX="20.0" layoutY="309.0" prefHeight="17.0" prefWidth="150.0" />
+            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
             <Text fx:id="txtPokemon2" layoutX="432.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="133.13671875" />
          </children>
     </AnchorPane>

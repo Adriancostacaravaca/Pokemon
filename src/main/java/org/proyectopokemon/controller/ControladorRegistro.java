@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Objects;
 
-public class ControladorLogin {
+public class ControladorRegistro {
 
     private Parent root;
     private Scene scene;
@@ -38,37 +38,34 @@ public class ControladorLogin {
     @FXML
     private PasswordField txtContrasenya;
     @FXML
-    private Label lblComprobacion;
-    @FXML
     private ImageView imagenUsuario;
+    @FXML
+    private Label lblComprobacion;
     private Login login = new Login();
-    private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaLogin.mp3").toUri().toString());
-    private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
+    private boolean registroCorrecto = false;
 
     public void initialize() {
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
-        musicaLogin();
-    }
-
-    // MÚSICA DEL LOGIN
-    @FXML
-    private void musicaLogin() {
-        mediaPlayer.play();
     }
 
     @FXML
-    public void irAVentanaAplicacion(ActionEvent event) throws IOException {
-        if (login.comprobarCredenciales(txtUsuario, txtContrasenya, lblComprobacion)) {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-            scene = new Scene(root, 788, 477);
+    public void irAVentanaLogin(ActionEvent event) throws IOException {
+        if (login.comprobarRegistro(txtUsuario, txtContrasenya, lblComprobacion)) {
+            registrarUsuario();
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaLogin.fxml")));
+            scene = new Scene(root, 419, 491);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setTitle("Menú Principal - The Crüe");
+            stage.setTitle("Login - The Crüe");
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
-            mediaPlayer.stop();
         }
+    }
+
+    public void registrarUsuario() {
+        login.setUsuario(this.txtUsuario.getText());
+        login.setContrasenya(this.txtContrasenya.getText());
     }
 }

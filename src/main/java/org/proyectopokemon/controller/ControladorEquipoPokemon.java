@@ -41,7 +41,7 @@ public class ControladorEquipoPokemon {
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaMochila.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Centro Pokémon - The Crüe");
         stage.setResizable(false);

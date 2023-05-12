@@ -70,7 +70,7 @@ public class ControladorCaptura {
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Menú Principal - The Crüe");
         stage.setResizable(false);

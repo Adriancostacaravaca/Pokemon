@@ -71,6 +71,10 @@ public class ControladorCombate2 {
     private Label lblMiPokemonVitalidad;
     @FXML
     private Label lblMiPokemonEstamina;
+    @FXML
+    private Label lblRivalPokemonVitalidad;
+    @FXML
+    private Label lblRivalPokemonEstamina;
 
     public void initialize(){
         musicaCombate();
@@ -92,20 +96,9 @@ public class ControladorCombate2 {
     }
 
     @FXML
-    public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
-        scene = new Scene(root, 650, 400);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-        mediaPlayer.stop();
-    }
-    @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
-        scene = new Scene(root, 650, 400);
+        scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");
         stage.setResizable(false);
@@ -129,6 +122,8 @@ public class ControladorCombate2 {
     public void mostrarEstaminaYVitalidad(){
         lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getEstamina());
         lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
+        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getEstamina());
+        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getVitalidad());
     }
 
     public void combatir() {
