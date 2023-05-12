@@ -47,32 +47,31 @@
                   <Font size="30.0" />
                </font>
             </Label>
-            <Button fx:id="btnPokemon1" layoutX="67.0" layoutY="118.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon1" layoutX="68.0" layoutY="135.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnPokemon3" layoutX="507.0" layoutY="118.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon3" layoutX="508.0" layoutY="135.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnPokemon2" layoutX="287.0" layoutY="118.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon2" layoutX="288.0" layoutY="135.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnPokemon4" layoutX="67.0" layoutY="225.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon4" layoutX="68.0" layoutY="242.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnPokemon6" layoutX="507.0" layoutY="225.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon6" layoutX="508.0" layoutY="242.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnPokemon5" layoutX="287.0" layoutY="225.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Button">
+            <Button fx:id="btnPokemon5" layoutX="288.0" layoutY="242.0" mnemonicParsing="false" onAction="#irAVentanaElegirPokemonAEntrenar" prefHeight="101.0" prefWidth="214.0" text="Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
-            <Button fx:id="btnEntrenar" layoutX="339.0" layoutY="364.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="111.0" text="Entrenar" />
          </children></AnchorPane>
   </children>
 </VBox>
