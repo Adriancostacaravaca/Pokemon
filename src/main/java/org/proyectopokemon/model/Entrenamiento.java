@@ -1,42 +1,27 @@
 package org.proyectopokemon.model;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
+import javafx.scene.image.Image;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Entrenamiento {
 
-    private String nombre;
+    private String nombreEntrenamiento;
     private String descripcion;
-    private ObservableList<Entrenamiento> entrenamientos = FXCollections.observableArrayList();
+    private List<Entrenamiento> entrenamientos = new ArrayList<>();
 
-    public Entrenamiento(String nombre, String descripcion) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
+    public Entrenamiento(String nombreEntrenamiento) {
+        this.nombreEntrenamiento = nombreEntrenamiento;
     }
-    public Entrenamiento(){
+    public Entrenamiento() {
 
-    }
-
-    public void anyadirEntrenamientos(){
-        entrenamientos.add(new Entrenamiento("Entrenamiento Pesado",
-                "Se aumentan las estadísticas de defensa, defensa especial y vitalidad de tu Pokemon en 5 puntos"));
-        entrenamientos.add(new Entrenamiento("Entrenamiento Furioso",
-                "Se aumentan las estadísticas de ataque, ataque especial y velocidad de tu Pokemon en 5 puntos"));
-        entrenamientos.add(new Entrenamiento("Entrenamiento Funcional",
-                "Se aumentan las estadísticas de velocidad, ataque, defensa y vitalidad de tu Pokemon en 5 puntos"));
-        entrenamientos.add(new Entrenamiento("Entrenamiento Onírico",
-                "Se aumentan las estadísticas de velocidad, ataque especial, defensa especial de tu Pokemon en 5 puntos"));
     }
 
-    public ObservableList<Entrenamiento> getEntrenamientos() {
-        return entrenamientos;
+
+    public void aplicarEnt1(){
+        Entrenador.miEntrenador.getEquipoPrincipal().get(0).setVitalidad(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad() + 5);
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
 }

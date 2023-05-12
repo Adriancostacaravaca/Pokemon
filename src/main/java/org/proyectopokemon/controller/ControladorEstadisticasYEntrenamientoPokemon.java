@@ -10,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.Entrenamiento;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -42,15 +44,10 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Button btnEnt3;
     @FXML
     private Button btnEnt4;
-
+    private Entrenamiento entrenamiento = new Entrenamiento();
 
     public void initialize(){
-      lblNombre.setText("Nombre: " + ControladorElegirPokemonAEntrenar.getNombre());
-      lblVitalidad.setText("Vitalidad: " + ControladorElegirPokemonAEntrenar.getVitalidad());
-      lblAtaque.setText("Ataque: " + ControladorElegirPokemonAEntrenar.getAtaque());
-      lblDefensa.setText("Defensa: " + ControladorElegirPokemonAEntrenar.getDefensa());
-      lblVelocidad.setText("Velocidad: " + ControladorElegirPokemonAEntrenar.getVelocidad());
-      imageViewPokemon.setImage(ControladorElegirPokemonAEntrenar.getImage());
+        actualizarEstadisticas();
     }
 
     @FXML
@@ -62,6 +59,20 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void actualizarEstadisticas(){
+        lblNombre.setText("Nombre: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
+        lblVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
+        lblAtaque.setText("Ataque: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaque());
+        lblDefensa.setText("Defensa: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa());
+        lblVelocidad.setText("Velocidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVelocidad());
+        imageViewPokemon.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
+    }
+    @FXML
+    public void aplicarEnt1(){
+        entrenamiento.aplicarEnt1();
+        actualizarEstadisticas();
     }
 
 }
