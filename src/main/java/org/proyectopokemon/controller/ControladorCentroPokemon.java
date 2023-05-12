@@ -76,7 +76,7 @@ public class ControladorCentroPokemon {
     }
     @FXML
     public void IrAVentanaEntrenamiento(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEntrenamiento.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirPokemonAEntrenar.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Entrenamiento Pokémon - The Crüe");
