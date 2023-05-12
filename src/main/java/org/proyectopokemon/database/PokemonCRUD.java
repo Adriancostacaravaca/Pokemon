@@ -1,8 +1,8 @@
 package org.proyectopokemon.database;
 
 public class PokemonCRUD {
-
-    /*public static List<Pokemon> readPokemon()  {
+/*
+    public static List<Pokemon> readPokemon() {
         String query = "SELECT NOM_POKEMON AS NOMBRE, TIPO1, TIPO2, IMG_URL FROM pokedex";
 
         PreparedStatement preparedStatement = null;
@@ -15,7 +15,7 @@ public class PokemonCRUD {
             while (resultSet.next()) {
                 String name = resultSet.getString("NOMBRE");
                 String tipo = resultSet.getString("TIPO1").trim();
-                String tipo2 = resultSet.getString("TIPO2");
+                String tipo2 = resultSet.getString("TIPO2").trim();
 
                 listaPokemon.add(new Pokemon(name, Tipo.valueOf(tipo),
                         Tipo.valueOf(tipo2)));
@@ -32,9 +32,6 @@ public class PokemonCRUD {
     public static boolean deletePokemon() {
         return true;
     }
-
-     */
-
-
-}
+    */
+    }
 

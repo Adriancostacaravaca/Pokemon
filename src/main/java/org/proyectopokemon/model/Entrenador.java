@@ -3,6 +3,7 @@ package org.proyectopokemon.model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
+import org.proyectopokemon.controller.ControladorVentanaEmergente;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,12 @@ public class Entrenador {
     public static Entrenador miEntrenador = new Entrenador("Entrenador Jugador");
     public static Entrenador rivalEntrenador1 = new Entrenador("Entrenador Rival");
 
+    public ControladorVentanaEmergente controladorVentanaEmergente = new ControladorVentanaEmergente();
+
+    public Pokemon p1;
+    public Pokemon p2;
+    Pokemon nuevoPokemon;
+
     public Entrenador(String nombre) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -30,6 +37,10 @@ public class Entrenador {
         this.pokeballs = 20;
         this.equipoPrincipal = FXCollections.observableArrayList();
         this.caja = FXCollections.observableArrayList();
+    }
+
+    public Pokemon getNuevoPokemon() {
+        return nuevoPokemon;
     }
 
     public int getPokedollar() {
@@ -83,14 +94,16 @@ public class Entrenador {
         }
     }
     // FIXME: AÑADIR DOS POKEMON A LA CRIANZA
-    public void criar(){
+    public Pokemon criar(Pokemon[] p1){
         if (Entrenador.miEntrenador.getPokedollar() >= 800) {
             System.out.println("Crianza realizada");
             pokedollar -= 800;
+            nuevoPokemon = new Pokemon(controladorVentanaEmergente.getNombre(), p1[0].getTipo(),p1[1].getTipo(),p1[1].getImage());
         }
         else if (Entrenador.miEntrenador.getPokedollar() < 800) {
             System.out.println("No tienes suficiente Pokedólares para realizar la crianza");
         }
+        return nuevoPokemon;
     }
 
     public boolean capturar(Pokemon pokemon, Label lblComprobacion) {

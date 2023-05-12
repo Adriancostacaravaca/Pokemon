@@ -39,7 +39,7 @@ public class Pokedex {
     File fTreecko = new File("src/main/resources/imagenes/Treecko.png");
     Image treeckoImg = new Image(fTreecko.toURI().toString());
 
-    public Pokemon pikachu = new Pokemon("Pikachu",Tipo.ELECTRICO, Tipo.ELECTRICO, pikachuImg);
+   public Pokemon pikachu = new Pokemon("Pikachu",Tipo.ELECTRICO, Tipo.ELECTRICO, pikachuImg);
     public Pokemon treecko = new Pokemon("Treecko", Tipo.PLANTA, Tipo.PLANTA, treeckoImg);
     public Pokemon bulbasaur = new Pokemon("Bulbasaur",Tipo.PLANTA, Tipo.PLANTA, bulbasaurImg);
     public Pokemon charmander = new Pokemon("Charmander", Tipo.FUEGO, Tipo.FUEGO, charmanderImg);

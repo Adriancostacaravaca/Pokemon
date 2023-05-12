@@ -13,8 +13,6 @@ import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class ControladorCombate {
@@ -69,6 +67,7 @@ public class ControladorCombate {
         stage.show();
 
     }
+
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
@@ -96,5 +95,8 @@ public class ControladorCombate {
     public void comprobarEquipoRival(){
         System.out.println(Entrenador.rivalEntrenador1.getEquipoPrincipal());
     }
+
+
+
 
 }
