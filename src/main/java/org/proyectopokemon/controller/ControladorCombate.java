@@ -32,7 +32,7 @@ public class ControladorCombate {
 
     public void initialize() {
         pokedex = new Pokedex();
-        //pokedex.rellenarPokedex();
+        pokedex.rellenarPokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
@@ -67,7 +67,7 @@ public class ControladorCombate {
         stage.show();
 
     }
-    /*
+
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
         pokedex.pikachu.subirNivel();
@@ -95,6 +95,8 @@ public class ControladorCombate {
     public void comprobarEquipoRival(){
         System.out.println(Entrenador.rivalEntrenador1.getEquipoPrincipal());
     }
-     */
+
+
+
 
 }

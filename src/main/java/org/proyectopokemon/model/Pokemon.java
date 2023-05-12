@@ -42,7 +42,7 @@ public class Pokemon {
      //* @param image IMAGEN REFERENTE AL POKEMON
      */
 
-    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2, Image image) {
+    public Pokemon(String nombre, Tipo tipo1, Tipo tipo2,Image image) {
         Random rd = new Random();
         this.nombre = nombre;
         this.mote = mote;
@@ -111,6 +111,10 @@ public class Pokemon {
 
     public void setImage(Image image) {
         this.image = image;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
     }
 
     private static HashMap<Tipo, List<Tipo>> getTablaDebiles(){

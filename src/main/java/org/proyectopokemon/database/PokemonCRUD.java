@@ -1,8 +1,8 @@
 package org.proyectopokemon.database;
 
 public class PokemonCRUD {
-
-    /*public static List<Pokemon> readPokemon() {
+/*
+    public static List<Pokemon> readPokemon() {
         String query = "SELECT NOM_POKEMON AS NOMBRE, TIPO1, TIPO2, IMG_URL FROM pokedex";
 
         PreparedStatement preparedStatement = null;
@@ -32,11 +32,6 @@ public class PokemonCRUD {
     public static boolean deletePokemon() {
         return true;
     }
-
-
-
-    }
     */
-
-}
+    }
 
