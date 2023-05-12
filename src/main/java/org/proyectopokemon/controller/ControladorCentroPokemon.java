@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -34,12 +35,19 @@ public class ControladorCentroPokemon {
     private Button btnMoverACaja;
     private Media musicaCentroPokemon = new Media(Paths.get("src/main/resources/musica/musicaMenuPrincipal.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCentroPokemon);
+    @FXML
+    private Label lblErrorEquipoVacio;
 
     public void initialize(){
-        if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 2){
+        btnCriarPokemon.setDisable(false);
+        btnEntrenarPokemon.setDisable(false);
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
+            btnEntrenarPokemon.setDisable(true);
             btnCriarPokemon.setDisable(true);
-        }else {
-            btnCriarPokemon.setDisable(false);
+            lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");}
+        else if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 2){
+            btnCriarPokemon.setDisable(true);
+            lblErrorEquipoVacio.setText("Necesitas dos Pokémon en tu equipo para poder criar");
         }
     }
     @FXML

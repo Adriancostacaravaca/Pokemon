@@ -59,9 +59,12 @@ public class ControladorEquipoPokemon {
         botones.add(this.btnPokemon6);
 
         // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
-
+        for (int i = 0; i < botones.size(); i++) {
+            botones.get(i).setDisable(true);
+        }
         for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
             if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+                botones.get(i).setDisable(false);
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
             }
         }

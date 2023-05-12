@@ -26,6 +26,15 @@ public class ControladorMochila {
     private Button btnRevisarCajaPokemon;
     @FXML
     private Label lblMochila;
+    @FXML
+    private Label lblErrorEquipoVacio;
+
+    public void initialize() {
+        if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
+            btnRevisarEquipoPokemon.setDisable(true);
+            lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
+        }
+    }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
