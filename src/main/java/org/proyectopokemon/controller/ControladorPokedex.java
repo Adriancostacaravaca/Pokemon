@@ -9,12 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -32,7 +34,8 @@ public class ControladorPokedex {
     private ListView<Pokemon> listViewPokemon;
     @FXML
     private ImageView imageViewPokemon;
-
+    @FXML
+    private ImageView imageViewFondo;
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -45,6 +48,9 @@ public class ControladorPokedex {
     }
 
     public void initialize(){
+        File x = new File("src/main/resources/imagenes/Pokedex.jpg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         listViewPokemon.setItems(Pokedex.getPokedex());
         listViewPokemon.setCellFactory(new EquipoPrincipalCeldas());
     }

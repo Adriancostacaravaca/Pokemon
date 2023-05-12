@@ -8,11 +8,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Objects;
@@ -37,8 +40,13 @@ public class ControladorCentroPokemon {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCentroPokemon);
     @FXML
     private Label lblErrorEquipoVacio;
-
+    @FXML
+    private ImageView imageViewFondo;
     public void initialize(){
+        File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
+
         btnCriarPokemon.setDisable(false);
         btnEntrenarPokemon.setDisable(false);
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
