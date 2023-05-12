@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -31,6 +32,17 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Label lblVelocidad;
     @FXML
     private ImageView imageViewPokemon;
+    @FXML
+    private Button btnVolver;
+    @FXML
+    private Button btnEnt1;
+    @FXML
+    private Button btnEnt2;
+    @FXML
+    private Button btnEnt3;
+    @FXML
+    private Button btnEnt4;
+
 
     public void initialize(){
       lblNombre.setText("Nombre: " + ControladorElegirPokemonAEntrenar.getNombre());
