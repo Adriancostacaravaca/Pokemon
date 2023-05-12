@@ -5,9 +5,9 @@ import javafx.collections.ObservableList;
 
 public class MovimientosDisponiblesParaPokemon {
 
-    private ObservableList<MovimientoAtaque> movimientos = FXCollections.observableArrayList();
+    private ObservableList<Movimiento> movimientos = FXCollections.observableArrayList();
 
-    public ObservableList<MovimientoAtaque> getMovimientos() {
+    public ObservableList<Movimiento> getMovimientos() {
         return movimientos;
     }
 
