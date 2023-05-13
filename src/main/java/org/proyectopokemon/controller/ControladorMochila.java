@@ -52,13 +52,8 @@ public class ControladorMochila {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
-        verEquipoEntrenador();
     }
 
-    @FXML
-    public void verEquipoEntrenador() {
-        Entrenador.miEntrenador.mostrarEquipo();
-    }
     @FXML
     public void verCajaEntrenador() {
         Entrenador.miEntrenador.mostrarCaja();

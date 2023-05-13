@@ -25,10 +25,14 @@ public class Entrenador {
 
     public ControladorVentanaEmergente controladorVentanaEmergente = new ControladorVentanaEmergente();
 
-    public Pokemon p1;
-    public Pokemon p2;
-    Pokemon nuevoPokemon;
+    private Pokemon p1;
+    private Pokemon p2;
+    private Pokemon nuevoPokemon;
 
+    /**
+     * CONSTRUCTOR PARA LA CREACIÓN DE UN NUEVO ENTRENADOR
+     * @param nombre NOMBRE DEL ENTRENADOR
+     */
     public Entrenador(String nombre) {
         Random rd = new Random();
         this.nombre = nombre;
@@ -67,15 +71,10 @@ public class Entrenador {
         return pokeballs;
     }
 
-    public void mostrarEquipo() {
-        System.out.println("EQUIPO DEL ENTRENADOR:");
-        if (miEntrenador.getEquipoPrincipal().size() == 0) {
-            System.out.println("El equipo del entrenador está vacío");
-        }
-        for (int i = 0; i < miEntrenador.getEquipoPrincipal().size(); i++) {
-            System.out.println(miEntrenador.getEquipoPrincipal().get(i));
-        }
-    }
+    /**
+     * MÉTODO PARA MOSTRAR LA CAJA DEL ENTRENADOR, CON UN SIZE RECORREMOS EL ARRAY Y SI ESTÁ A 0, MOSTRAMOS UN PRINT
+     * DICIENDO QUE ESTÁ VACÍA
+     */
 
     public void mostrarCaja() {
         System.out.println("CAJA DEL ENTRENADOR:");
@@ -110,14 +109,18 @@ public class Entrenador {
         return nuevoPokemon;
     }
 
+    /**
+     * MÉTODO PARA CAPTURAR POKÉMON EN LA VENTANA DE CAPTURA
+     * @param pokemon SELECCIONAMOS EL POKEMON QUE QUEREMOS CAPTURAR
+     * @param lblComprobacion LABEL PARA MOSTRAR MENSAJE POR PANTALLA DANDO INFORMACIÓN SOBRE LA CAPTURA
+     * @return BOOLEAN QUE NOS DEVUELVE VERDADERO O FALSO, PARA SABER SI HEMOS CAPTURADO O HEMOS FALLADO
+     */
+
     public boolean capturar(Pokemon pokemon, Label lblComprobacion) {
         Random rd = new Random();
         int numero = 2;
         int numeroAzar = rd.nextInt(2) + 1;
         boolean opcion = true;
-        if (pokemon == null) {
-            lblComprobacion.setText("No hay ningún pokemon disponible para ser capturado");
-        }
         if(pokemon != null) {
             if ((numero == numeroAzar) && this.pokeballs > 0) {
                 miEntrenador.caja.add(pokemon);
@@ -136,15 +139,28 @@ public class Entrenador {
         return opcion;
     }
 
+    /**
+     * MÉTODO PARA MOVER UN POKEMON DEL EQUIPO DEL ENTRENADOR A LA CAJA DEL ENTRENADOR
+     * @param pokemon POKEMON QUE VAMOS A MOVER
+     */
+
     public void moverEquipoACaja(Pokemon pokemon){
         equipoPrincipal.remove(pokemon);
         caja.add(pokemon);
     }
+
+    /**
+     * MÉTODO PARA MOVER UN POKEMON DE LA CAJA DEL ENTRENADOR AL EQUIPO DEL ENTRENADOR
+     * @param pokemon POKEMON QUE VAMOS A MOVER
+     */
     public void moverCajaAEquipo(Pokemon pokemon){
         caja.remove(pokemon);
         equipoPrincipal.add(pokemon);
     }
 
+    /**
+     * MÉTODO PARA RELLENAR UN ARRAY QUE SERÁ EL EQUIPO DEL ENTRENADOR RIVAL CON 6 POKEMON
+     */
     public void rellenarEquipoRival(){
         for (int i = 0; i < Pokedex.getPokedex().size(); i++) {
             Random rd = new Random();

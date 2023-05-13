@@ -7,16 +7,7 @@ import javafx.scene.image.Image;
 import java.io.File;
 import java.util.Random;
 
-/**
- * Clase Pokemon Principal de mi Pokemon
- * @author festr ;
- * @version 1.0.0
- *
- */
-
 public class Pokedex {
-
-    //public ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
 
     private static ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();
 
@@ -47,10 +38,15 @@ public class Pokedex {
     public Pokemon squirtle = new Pokemon("Squirtle", Tipo.AGUA, Tipo.AGUA, squirtleImg);
     public Pokemon rattata = new Pokemon("Rattata", Tipo.NORMAL, Tipo.NORMAL, rattataImg);
 
-
+    /**
+     * CONSTRUCTOR VACÍO DE POKÉDEX
+     */
     public Pokedex(){
     }
 
+    /**
+     * MÉTODO PARA AÑADIR TODOS LOS POKEMON QUE TENEMOS CREADOS EN NUESTRA LISTA DE POKÉDEX
+     */
     public void rellenarPokedex() {
         pokedex.add(pikachu);
         pokedex.add(treecko);
@@ -60,6 +56,11 @@ public class Pokedex {
         pokedex.add(squirtle);
         pokedex.add(rattata);
     }
+
+    /**
+     * MÉTODO PARA ESCOGER UN POKEMON ALEATORIO DE LA LISTA POKÉDEX
+     * @return NOS DEVUELVE EL POKÉMON ALEATORIO
+     */
 
    public Pokemon presentarPokemonAzar(){
         Random rd = new Random();

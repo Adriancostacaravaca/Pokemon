@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.proyectopokemon.model"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"Pokemon","l":"org.proyectopokemon.controller"},{"m":"Pokemon","l":"org.proyectopokemon.controller.factories"},{"m":"Pokemon","l":"org.proyectopokemon.database"},{"m":"Pokemon","l":"org.proyectopokemon.model"}];updateSearchResults();
