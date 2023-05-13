@@ -8,23 +8,22 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
-import org.proyectopokemon.controller.factories.ElegirPokemonCeldas;
 import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.model.MovimientosDisponiblesParaPokemon;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ControladorCombate2 {
@@ -61,6 +60,8 @@ public class ControladorCombate2 {
     private ImageView imageViewFondo;
     @FXML
     private ImageView imageViewVS;
+    private List<Button> botones;
+    private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon;
     private Pokedex pokedex;
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
@@ -77,11 +78,14 @@ public class ControladorCombate2 {
     private Label lblRivalPokemonEstamina;
 
     public void initialize(){
+        movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
+        botones = new ArrayList<>();
         musicaCombate();
         pokedex = new Pokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
+        nombrarAtaques();
         File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
@@ -136,4 +140,15 @@ public class ControladorCombate2 {
         Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
         mostrarEstaminaYVitalidad();
     }
+
+    public void nombrarAtaques(){
+        for(int i = 0; i < botones.size();i++){
+            Entrenador.miEntrenador.getEquipoPrincipal().get(i).rellenarAtaques();
+            botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getListaCuatroAtaques().get(i).getNombre());
+        }
+        System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getListaCuatroAtaques().toString());
+    }
+
+
+
 }

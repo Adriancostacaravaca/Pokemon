@@ -10,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import org.proyectopokemon.controller.factories.ElegirMovimientoCeldas;
 import org.proyectopokemon.model.Movimiento;
 import org.proyectopokemon.model.MovimientosDisponiblesParaPokemon;
 import org.proyectopokemon.model.Pokedex;
@@ -33,8 +32,8 @@ public class ControladorElegirMovimiento {
     public void initialize() {
         pokedex = new Pokedex();
         movimientosDisponiblesParaPokemon.anyadirMovimientos();
-        opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
-        opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
+       // opcionesMovimientos.setItems(movimientosDisponiblesParaPokemon.getMovimientos());
+        //opcionesMovimientos.setCellFactory(new ElegirMovimientoCeldas());
         opcionesMovimientos.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null) {
                 btnAprender.setDisable(false);

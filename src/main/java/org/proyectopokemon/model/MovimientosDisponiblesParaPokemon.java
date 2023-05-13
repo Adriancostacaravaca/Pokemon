@@ -1,13 +1,13 @@
 package org.proyectopokemon.model;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MovimientosDisponiblesParaPokemon {
 
-    private ObservableList<Movimiento> movimientos = FXCollections.observableArrayList();
+    private  static List<Movimiento> movimientos = new ArrayList<>();
 
-    public ObservableList<Movimiento> getMovimientos() {
+    public static List<Movimiento> getMovimientos() {
         return movimientos;
     }
 
@@ -31,6 +31,9 @@ public class MovimientosDisponiblesParaPokemon {
         movimientos.add(new MovimientoMejora("Mejora5",1));
 
     }
+
+
+
 
 
 }

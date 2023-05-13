@@ -25,7 +25,8 @@ public class Pokemon {
     private int fertilidad;
     private char sexo;
     private int experiencia;
-    private static List<MovimientosDisponiblesParaPokemon> listaCuatroAtaques;
+    private static List<Movimiento> listaCuatroAtaques;
+    private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
     private Tipo tipo;
     private Estado estado;
     private Image image;
@@ -60,6 +61,7 @@ public class Pokemon {
         this.tipo = tipo;
         this.image = image;
         this.listaCuatroAtaques = new ArrayList<>();
+        rellenarAtaques();
     }
 
     /**
@@ -67,7 +69,6 @@ public class Pokemon {
      */
 
     public Pokemon(){}
-
 
     public String getNombre() {
         return nombre;
@@ -140,7 +141,8 @@ public class Pokemon {
     public int getVelocidad() {
         return velocidad;
     }
-    public List<MovimientosDisponiblesParaPokemon> getListaCuatroAtaques() {
+
+    public static List<Movimiento> getListaCuatroAtaques() {
         return listaCuatroAtaques;
     }
 
@@ -343,6 +345,13 @@ public class Pokemon {
         }else {
             pokemon.setVitalidad(pokemon.getVitalidad() - 5);
             this.estamina -= 5;
+        }
+    }
+    public void rellenarAtaques(){
+        movimientosDisponiblesParaPokemon.anyadirMovimientos();
+        Random rd = new Random();
+        for(int i = 0; i  < listaCuatroAtaques.size(); i++){
+            listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.getMovimientos().get(rd.nextInt()));
         }
     }
 
