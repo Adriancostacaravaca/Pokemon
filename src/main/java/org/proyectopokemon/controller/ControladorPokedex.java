@@ -27,10 +27,6 @@ public class ControladorPokedex {
     @FXML
     private Button btnVolver;
     @FXML
-    private Button btnRevisar;
-    @FXML
-    private Label lblPokedex;
-    @FXML
     private ListView<Pokemon> listViewPokemon;
     @FXML
     private ImageView imageViewPokemon;

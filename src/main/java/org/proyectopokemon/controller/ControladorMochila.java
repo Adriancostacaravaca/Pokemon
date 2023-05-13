@@ -25,8 +25,6 @@ public class ControladorMochila {
     @FXML
     private Button btnRevisarCajaPokemon;
     @FXML
-    private Label lblMochila;
-    @FXML
     private Label lblErrorEquipoVacio;
 
     public void initialize() {
