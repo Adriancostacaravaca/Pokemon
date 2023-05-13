@@ -50,6 +50,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Button btnEnt3;
     @FXML
     private Button btnEnt4;
+    @FXML
+    private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
 
     public void initialize(){
@@ -77,6 +79,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         lblVelocidad.setText("Velocidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVelocidad());
         lblNivel.setText("Nivel: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNivel());
         imageViewPokemon.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
+        lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());
     }
     @FXML
     public void aplicarEntPesado(){

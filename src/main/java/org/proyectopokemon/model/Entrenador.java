@@ -47,6 +47,10 @@ public class Entrenador {
         return pokedollar;
     }
 
+    public void setPokedollar(int pokedollar) {
+        this.pokedollar = pokedollar;
+    }
+
     public ObservableList<Pokemon> getCaja() {
         return caja;
     }
