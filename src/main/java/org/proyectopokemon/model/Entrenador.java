@@ -32,7 +32,7 @@ public class Entrenador {
     public Entrenador(String nombre) {
         Random rd = new Random();
         this.nombre = nombre;
-        this.pokedollar = rd.nextInt(201) + 800;
+        this.pokedollar = rd.nextInt(201) /*+ 800*/;
         this.cajaObjetos = new ArrayList<>();
         this.pokeballs = 20;
         this.equipoPrincipal = FXCollections.observableArrayList();

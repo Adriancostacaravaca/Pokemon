@@ -80,6 +80,22 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         lblNivel.setText("Nivel: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNivel());
         imageViewPokemon.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
         lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());
+        if (Entrenador.miEntrenador.getPokedollar() < 40) {
+            btnEnt3.setDisable(true);
+            btnEnt4.setDisable(true);
+        }
+        if (Entrenador.miEntrenador.getPokedollar() < 30) {
+            btnEnt2.setDisable(true);
+            btnEnt3.setDisable(true);
+            btnEnt4.setDisable(true);
+        }
+        if (Entrenador.miEntrenador.getPokedollar() < 20) {
+            btnEnt1.setDisable(true);
+            btnEnt2.setDisable(true);
+            btnEnt3.setDisable(true);
+            btnEnt4.setDisable(true);
+        }
+
     }
     @FXML
     public void aplicarEntPesado(){
