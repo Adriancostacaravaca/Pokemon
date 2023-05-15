@@ -89,7 +89,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
                 botones.get(i).setDisable(false);
             }
         }
-        actualizarEstadisticas();
+        actualizarEstadisticasPkm1();
     }
 
     @FXML
@@ -103,7 +103,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.show();
     }
 
-    public void actualizarEstadisticas(){
+    public void actualizarEstadisticasPkm1(){
         lblNombre.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
         lblAtaque.setText("Ataque: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaque());
         lblDefensa.setText("Defensa: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa());
@@ -134,22 +134,18 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     @FXML
     public void aplicarEntPesado(){
         entrenamiento.aplicarEntPesado();
-        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFurioso(){
         entrenamiento.aplicarEntFurioso();
-        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFuncional(){
         entrenamiento.aplicarEntFuncional();
-        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntOnirico(){
         entrenamiento.aplicarEntOnirico();
-        actualizarEstadisticas();
     }
 
 }
