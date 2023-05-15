@@ -61,7 +61,7 @@ public class Pokemon {
         this.tipo = tipo;
         this.image = image;
         this.listaCuatroAtaques = new ArrayList<>();
-        rellenarAtaques();
+
     }
 
     /**
@@ -348,8 +348,8 @@ public class Pokemon {
     public void rellenarAtaques(){
         movimientosDisponiblesParaPokemon.anyadirMovimientos();
         Random rd = new Random();
-        for(int i = 0; i  < listaCuatroAtaques.size(); i++){
-            listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.getMovimientos().get(rd.nextInt()));
+        for(int i = 0; i  < 4; i++){
+            listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.getMovimientos().get(rd.nextInt(MovimientosDisponiblesParaPokemon.getMovimientos().size())));
         }
     }
 
