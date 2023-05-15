@@ -64,33 +64,33 @@
             <Label fx:id="lblDefensaEsp" alignment="TOP_LEFT" layoutX="166.0" layoutY="318.0" prefHeight="17.0" prefWidth="128.0" />
             <Label fx:id="lblAtaqueEsp" alignment="TOP_LEFT" layoutX="166.0" layoutY="295.0" prefHeight="17.0" prefWidth="128.0" />
             <Label fx:id="lblNivel" alignment="TOP_LEFT" layoutX="166.0" layoutY="341.0" prefHeight="17.0" prefWidth="128.0" />
+            <Button fx:id="btnPokemon1" layoutX="370.0" layoutY="381.0" mnemonicParsing="false" onAction="#escogerPokemon1" prefHeight="36.0" prefWidth="128.0" text="Vacío">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
             <Label fx:id="lblPokedolares" layoutX="525.0" layoutY="345.0" prefHeight="26.0" prefWidth="114.0" />
-            <Button fx:id="btnPokemon1" layoutX="370.0" layoutY="381.0" mnemonicParsing="false" onAction="#asginarPrimerPokemon" prefHeight="36.0" prefWidth="128.0" text="Button">
+            <Button fx:id="btnPokemon2" layoutX="508.0" layoutY="381.0" mnemonicParsing="false" onAction="#escogerPokemon2" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnPokemon2" layoutX="508.0" layoutY="381.0" mnemonicParsing="false" onAction="#asginarSegundoPokemon" prefHeight="36.0" prefWidth="128.0" text="Button">
+            <Button fx:id="btnPokemon3" layoutX="646.0" layoutY="381.0" mnemonicParsing="false" onAction="#escogerPokemon3" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnPokemon3" layoutX="646.0" layoutY="381.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="128.0" text="Button">
+            <Button fx:id="btnPokemon4" layoutX="370.0" layoutY="424.0" mnemonicParsing="false" onAction="#escogerPokemon4" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnPokemon4" layoutX="370.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="128.0" text="Button">
+            <Button fx:id="btnPokemon5" layoutX="508.0" layoutY="424.0" mnemonicParsing="false" onAction="#escogerPokemon5" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="btnPokemon5" layoutX="508.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="128.0" text="Button">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnPokemon6" layoutX="646.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="128.0" text="Button">
+            <Button fx:id="btnPokemon6" layoutX="646.0" layoutY="424.0" mnemonicParsing="false" onAction="#escogerPokemon6" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font>
