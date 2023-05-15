@@ -1,5 +1,7 @@
 package org.proyectopokemon.model;
-
+/**
+ * CLASE OBJETO DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE
+ */
 public class Objeto {
 
     private String nombre;

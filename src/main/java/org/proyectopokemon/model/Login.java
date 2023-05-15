@@ -2,7 +2,9 @@ package org.proyectopokemon.model;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
+/**
+ * CLASE LOGIN DONDE PODEMOS ENCONTRAR CUALQUIER METODO QUE INVOLUCRE AL REGISTRO O AL LOGIN DE LA APLICACIÓN
+ */
 public class Login {
 
     private static String usuario;

@@ -6,9 +6,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
-
+/**
+ * CLASE TIENDA DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE
+ */
 public class Tienda {
     private ObservableList<Objeto> objetosTienda = FXCollections.observableArrayList();
+    /**
+     * CONSTRUCTOR VACIO DE TIENDA
+     */
     public Tienda(){
 
     }

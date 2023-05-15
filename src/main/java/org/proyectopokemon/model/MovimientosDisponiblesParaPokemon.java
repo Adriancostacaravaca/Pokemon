@@ -2,7 +2,9 @@ package org.proyectopokemon.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * CLASE MOVIMIENTO DONDE RECOGEREMOS TODOS LOS MOVIMIENTOS DE LOS POKEMON
+ */
 public class MovimientosDisponiblesParaPokemon {
 
     private  static List<Movimiento> movimientos = new ArrayList<>();
@@ -11,6 +13,9 @@ public class MovimientosDisponiblesParaPokemon {
         return movimientos;
     }
 
+    /**
+     * METODO PARA AÑADIR LOS MOVIMIENTOS A UNA LISTA GENERAL DE MOVIMIENTOS
+     */
     public void anyadirMovimientos(){
         movimientos.add(new MovimientoAtaque("Impactrueno",1,15, Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));
