@@ -62,6 +62,7 @@ public class ControladorCombate2 {
     private ImageView imageViewVS;
     private List<Button> botones;
     private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon;
+    private int posicionActual;
     private Pokedex pokedex;
     private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
@@ -78,6 +79,8 @@ public class ControladorCombate2 {
     private Label lblRivalPokemonEstamina;
 
     public void initialize(){
+        posicionActual  = 0;
+        cambiarPosicionActual();
         movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
@@ -86,9 +89,7 @@ public class ControladorCombate2 {
         botones.add(btnAtaque4);
         musicaCombate();
         pokedex = new Pokedex();
-        pokemonACombatir();
-        mostrarNombresPokemon();
-        mostrarEstaminaYVitalidad();
+
         rellenarAtaques();
         nombrarAtaques();
         File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
@@ -118,31 +119,31 @@ public class ControladorCombate2 {
 
     @FXML
     public void mostrarNombresPokemon(){
-            lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
+            lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getNombre());
             lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
     }
 
     @FXML
     public void pokemonACombatir() {
-        imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
+        imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getImage());
         imagenP2.setImage(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getImage());
     }
 
     public void mostrarEstaminaYVitalidad(){
-        lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
-        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getEstamina());
-        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getVitalidad());
+        lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getVitalidad());
+        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual).getEstamina());
+        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual).getVitalidad());
     }
 
     public void combatir() {
-        Entrenador.miEntrenador.getEquipoPrincipal().get(0).atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0));
+        Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual));
         mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
-        Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
+        Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).descansar();
         mostrarEstaminaYVitalidad();
     }
     public void rellenarAtaques(){
@@ -157,6 +158,17 @@ public class ControladorCombate2 {
         }
         System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getListaCuatroAtaques().toString());
     }
+
+    public void cambiarPosicionActual(){
+        posicionActual++;
+        if(posicionActual > Entrenador.miEntrenador.getEquipoPrincipal().size()){
+            posicionActual = 0;
+        }
+        pokemonACombatir();
+        mostrarNombresPokemon();
+        mostrarEstaminaYVitalidad();
+    }
+
 
 
 

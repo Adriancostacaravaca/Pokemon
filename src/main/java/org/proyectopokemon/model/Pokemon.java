@@ -337,7 +337,6 @@ public class Pokemon {
     }
 
     public void atacarAPokemon(Pokemon pokemon) {
-
         if(estamina <= 0){
             System.out.println("Necesitas descansar para realizar otro ataque");
         }else {
