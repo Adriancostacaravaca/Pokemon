@@ -89,7 +89,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
                 botones.get(i).setDisable(false);
             }
         }
-        actualizarEstadisticasPkm1();
+        escogerPokemon1();
     }
 
     @FXML
@@ -102,17 +102,16 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.setScene(scene);
         stage.show();
     }
-
-    public void actualizarEstadisticasPkm1(){
-        lblNombre.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre());
-        lblAtaque.setText("Ataque: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaque());
-        lblDefensa.setText("Defensa: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa());
-        lblAtaqueEsp.setText("Ataque Especial: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getAtaqueEsp());
-        lblDefensaEsp.setText("Defensa Especial: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensaEsp());
-        lblVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVitalidad());
-        lblVelocidad.setText("Velocidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getVelocidad());
-        lblNivel.setText("Nivel: " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNivel());
-        imageViewPokemon.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getImage());
+    public void actualizarEstadisticas(){
+        lblNombre.setText(entrenamiento.getPokemonElegido().getNombre());
+        lblAtaque.setText("Ataque: " + entrenamiento.getPokemonElegido().getAtaque());
+        lblDefensa.setText("Defensa: " + entrenamiento.getPokemonElegido().getDefensa());
+        lblAtaqueEsp.setText("Ataque Especial: " + entrenamiento.getPokemonElegido().getAtaqueEsp());
+        lblDefensaEsp.setText("Defensa Especial: " + entrenamiento.getPokemonElegido().getDefensaEsp());
+        lblVitalidad.setText("Vitalidad: " + entrenamiento.getPokemonElegido().getVitalidad());
+        lblVelocidad.setText("Velocidad: " + entrenamiento.getPokemonElegido().getVelocidad());
+        lblNivel.setText("Nivel: " + entrenamiento.getPokemonElegido().getNivel());
+        imageViewPokemon.setImage(entrenamiento.getPokemonElegido().getImage());
         lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());
         if (Entrenador.miEntrenador.getPokedollar() < 40) {
             btnEnt3.setDisable(true);
@@ -129,23 +128,52 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
             btnEnt3.setDisable(true);
             btnEnt4.setDisable(true);
         }
-
     }
+
+    public void escogerPokemon1(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(0));
+        actualizarEstadisticas();
+    }
+    public void escogerPokemon2(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(1));
+        actualizarEstadisticas();
+    }
+    public void escogerPokemon3(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(2));
+        actualizarEstadisticas();
+    }
+    public void escogerPokemon4(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(3));
+        actualizarEstadisticas();
+    }
+    public void escogerPokemon5(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(4));
+        actualizarEstadisticas();
+    }
+    public void escogerPokemon6(){
+        entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(5));
+        actualizarEstadisticas();
+    }
+
     @FXML
     public void aplicarEntPesado(){
         entrenamiento.aplicarEntPesado();
+        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFurioso(){
         entrenamiento.aplicarEntFurioso();
+        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFuncional(){
         entrenamiento.aplicarEntFuncional();
+        actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntOnirico(){
         entrenamiento.aplicarEntOnirico();
+        actualizarEstadisticas();
     }
 
 }
