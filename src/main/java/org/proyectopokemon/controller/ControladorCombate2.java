@@ -14,10 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.MovimientosDisponiblesParaPokemon;
-import org.proyectopokemon.model.Pokedex;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.model.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -119,42 +116,42 @@ public class ControladorCombate2 {
 
     @FXML
     public void mostrarNombresPokemon(){
-            lblMiPokemon.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getNombre());
+            lblMiPokemon.setText(Combate.getP().getNombre());
             lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
     }
 
     @FXML
     public void pokemonACombatir() {
-        imagenP1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getImage());
+        imagenP1.setImage(Combate.getP().getImage());
         imagenP2.setImage(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getImage());
     }
 
     public void mostrarEstaminaYVitalidad(){
-        lblMiPokemonEstamina.setText("Estamina: " + Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).getVitalidad());
-        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual).getEstamina());
-        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual).getVitalidad());
+        lblMiPokemonEstamina.setText("Estamina: " + Combate.getP().getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + Combate.getP().getVitalidad());
+        lblRivalPokemonEstamina.setText("Estamina: " + Combate.getP().getEstamina());
+        lblRivalPokemonVitalidad.setText("Vitalidad: " + Combate.getP().getVitalidad());
     }
 
     public void combatir() {
-        Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual));
+        Combate.getP().atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual));
         mostrarEstaminaYVitalidad();
     }
 
     @FXML
     public void descansar(){
-        Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual).descansar();
+        Combate.getP().descansar();
         mostrarEstaminaYVitalidad();
     }
     public void rellenarAtaques(){
         for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            Entrenador.miEntrenador.getEquipoPrincipal().get(i).rellenarAtaques();
+            Combate.getP().rellenarAtaques();
         }
     }
 
     public void nombrarAtaques(){
         for(int i = 0; i < botones.size();i++){
-            botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getListaCuatroAtaques().get(i).getNombre());
+            botones.get(i).setText(Combate.getP().getListaCuatroAtaques().get(i).getNombre());
         }
         System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getListaCuatroAtaques().toString());
     }
@@ -164,9 +161,11 @@ public class ControladorCombate2 {
         if(posicionActual > Entrenador.miEntrenador.getEquipoPrincipal().size()){
             posicionActual = 0;
         }
+        Combate.setP(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual));
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
+
     }
 
 
