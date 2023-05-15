@@ -10,12 +10,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.CajaCeldas;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
 import org.proyectopokemon.model.Entrenador;
 import org.proyectopokemon.model.Pokemon;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -40,6 +43,8 @@ public class ControladorIntercambio {
     private ListView<Pokemon> listViewCaja;
     @FXML
     private ListView<Pokemon> listViewEquipo;
+    @FXML
+    private ImageView imageViewFondo;
 
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -52,6 +57,9 @@ public class ControladorIntercambio {
         stage.show();
     }
     public void initialize() {
+        File y = new File("src/main/resources/imagenes/CajaFondo.png");
+        Image imagePrincipal = new Image(y.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         btnCajaAEquipo.setDisable(true);
         btnEquipoACaja.setDisable(true);
         lblIntercambio.setText("Intercambio");

@@ -8,9 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.model.Entrenador;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -26,8 +29,13 @@ public class ControladorMochila {
     private Button btnRevisarCajaPokemon;
     @FXML
     private Label lblErrorEquipoVacio;
+    @FXML
+    private ImageView imageViewFondo;
 
     public void initialize() {
+        File y = new File("src/main/resources/imagenes/CajaFondo.png");
+        Image imagePrincipal = new Image(y.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         if (Entrenador.miEntrenador.getEquipoPrincipal().size() < 1) {
             btnRevisarEquipoPokemon.setDisable(true);
             lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
