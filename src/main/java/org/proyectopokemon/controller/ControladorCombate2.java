@@ -61,7 +61,6 @@ public class ControladorCombate2 {
     private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon;
     private int posicionActual;
     private Pokedex pokedex;
-    private Pokemon p;
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
@@ -71,12 +70,17 @@ public class ControladorCombate2 {
     @FXML
     private Label lblMiPokemonEstamina;
     @FXML
+    private Label lblMiPokemonEstado;
+    @FXML
     private Label lblRivalPokemonVitalidad;
     @FXML
     private Label lblRivalPokemonEstamina;
+    @FXML
+    private Label lblPokemonRivalEstado;
 
     public void initialize(){
         posicionActual  = 0;
+        Combate.setP(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual));
         cambiarPosicionActual();
         movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
         botones = new ArrayList<>();
@@ -86,7 +90,6 @@ public class ControladorCombate2 {
         botones.add(btnAtaque4);
         musicaCombate();
         pokedex = new Pokedex();
-
         rellenarAtaques();
         nombrarAtaques();
         File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
@@ -95,6 +98,7 @@ public class ControladorCombate2 {
         File x = new File("src/main/resources/imagenes/ImagenVS.png");
         Image imageVS = new Image(x.toURI().toString());
         imageViewVS.setImage(imageVS);
+
         }
 
     @FXML
@@ -153,7 +157,7 @@ public class ControladorCombate2 {
         for(int i = 0; i < botones.size();i++){
             botones.get(i).setText(Combate.getP().getListaCuatroAtaques().get(i).getNombre());
         }
-        System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getListaCuatroAtaques().toString());
+
     }
 
     public void cambiarPosicionActual(){
@@ -161,7 +165,7 @@ public class ControladorCombate2 {
         if(posicionActual > Entrenador.miEntrenador.getEquipoPrincipal().size()){
             posicionActual = 0;
         }
-        Combate.setP(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual));
+
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
