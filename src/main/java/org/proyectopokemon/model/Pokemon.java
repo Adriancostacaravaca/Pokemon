@@ -138,9 +138,11 @@ public class Pokemon {
         return defensa;
     }
 
+
     public int getVelocidad() {
         return velocidad;
     }
+
 
     public static List<Movimiento> getListaCuatroAtaques() {
         return listaCuatroAtaques;
