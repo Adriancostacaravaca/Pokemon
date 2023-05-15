@@ -59,4 +59,6 @@ public class Entrenamiento {
         Entrenador.miEntrenador.setPokedollar(Entrenador.miEntrenador.getPokedollar() - costeEntrenamiento);
     }
 
+
+
 }
