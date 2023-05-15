@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-05-2023 a las 13:34:20
+-- Tiempo de generación: 15-05-2023 a las 12:33:13
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.1.17
 
@@ -26,6 +26,41 @@ CREATE TABLE `entrenador` (
   `USUARIO` varchar(20) NOT NULL,
   `CONTRASENYA` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `estado`
+--
+
+CREATE TABLE `estado` (
+  `id_estado` int(11) NOT NULL,
+  `tipo_estado` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `estado`
+--
+
+INSERT INTO `estado` (`id_estado`, `tipo_estado`) VALUES
+(1, 'PARALIZADO'),
+(2, 'QUEMADO'),
+(3, 'ENVENENADO'),
+(4, 'GRAVEMENTE_ENVENENADO'),
+(5, 'DORMIDO'),
+(6, 'CONGELADO'),
+(7, 'HELADO'),
+(8, 'SOMNOLIENTO'),
+(9, 'POKERUS'),
+(10, 'DEBILITADO'),
+(11, 'CONFUSO'),
+(12, 'ENAMORADO'),
+(13, 'ATRAPADO'),
+(14, 'MALDITO'),
+(15, 'DRENADORAS'),
+(16, 'CANTO_NORMAL'),
+(17, 'CENTRO_DE_ATENCION'),
+(18, 'AMEDRENTADO');
 
 -- --------------------------------------------------------
 
@@ -243,6 +278,40 @@ CREATE TABLE `pokemon` (
   `NIVEL` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipo`
+--
+
+CREATE TABLE `tipo` (
+  `id_tipo` int(11) NOT NULL,
+  `tipo_tipo` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `tipo`
+--
+
+INSERT INTO `tipo` (`id_tipo`, `tipo_tipo`) VALUES
+(1, 'AGUA'),
+(2, 'BICHO'),
+(3, 'DRAGON'),
+(4, 'ELECTRICO'),
+(5, 'FANTASMA'),
+(6, 'FUEGO'),
+(7, 'HIELO'),
+(8, 'LUCHA'),
+(9, 'NORMAL'),
+(10, 'PLANTA'),
+(11, 'PSIQUICO'),
+(12, 'ROCA'),
+(13, 'TIERRA'),
+(14, 'VENENO'),
+(15, 'VOLADOR'),
+(16, 'HADA'),
+(17, 'ACERO');
+
 --
 -- Índices para tablas volcadas
 --
@@ -253,6 +322,12 @@ CREATE TABLE `pokemon` (
 ALTER TABLE `entrenador`
   ADD PRIMARY KEY (`ID_ENTRENADOR`),
   ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
+
+--
+-- Indices de la tabla `estado`
+--
+ALTER TABLE `estado`
+  ADD PRIMARY KEY (`id_estado`);
 
 --
 -- Indices de la tabla `mochila`
@@ -283,6 +358,34 @@ ALTER TABLE `pokemon`
   ADD PRIMARY KEY (`ID_POKEMON`),
   ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`),
   ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
+
+--
+-- Indices de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  ADD PRIMARY KEY (`id_tipo`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `estado`
+--
+ALTER TABLE `estado`
+  MODIFY `id_estado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT de la tabla `pokemon`
+--
+ALTER TABLE `pokemon`
+  MODIFY `ID_POKEMON` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Restricciones para tablas volcadas
