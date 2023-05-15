@@ -5,10 +5,7 @@ import javafx.scene.image.Image;
 import java.util.*;
 
 /**
- * @author AdrianCosta
- * @author FranEstrada
- * @version 1.0
- *
+ * CLASE POKEMON DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE
  */
 
 public class Pokemon {

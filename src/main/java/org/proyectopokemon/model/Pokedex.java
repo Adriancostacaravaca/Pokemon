@@ -6,7 +6,9 @@ import javafx.scene.image.Image;
 
 import java.io.File;
 import java.util.Random;
-
+/**
+ * CLASE POKEDEX DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE
+ */
 public class Pokedex {
 
     private static ObservableList<Pokemon> pokedex = FXCollections.observableArrayList();

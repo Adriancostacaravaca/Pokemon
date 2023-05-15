@@ -1,6 +1,8 @@
 package org.proyectopokemon.model;
 
-
+/**
+ * CLASE ENTRENAMIENTO DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE
+ */
 public class Entrenamiento {
 
     private int costeEntrenamiento;

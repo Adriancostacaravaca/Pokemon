@@ -5,7 +5,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * CLASE LOGGER DONDE HEMOS CREADO LOS METODOS SUFICIENTES PARA ASEGURAR SU FUNCIONAMIENTO EN CUALQUIER CONTROLADOR
+ */
 public class Logger {
     private static String outputPath = "src/main/logs/";
     private static BufferedWriter bufferedWriter;
