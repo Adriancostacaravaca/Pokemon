@@ -1,4 +1,6 @@
-# DOCUMENTACIÓN DE POKÉMON
+# DOCUMENTACIÓN DE POKÉMON - THE CRÜE
 
-Adrián Costa Caravaca
-Francisco Estrada Cuenca
+Aplicación realizada por los alumnos de primer año de DAW:
+
+- Adrián Costa Caravaca
+- Francisco Estrada Cuenca

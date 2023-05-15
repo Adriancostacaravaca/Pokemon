@@ -1,5 +1,9 @@
 package org.proyectopokemon.model;
 
+
+/**
+ * ENUMERADO CON LOS TIPOS QUE PUEDE TENER UN POKEMON
+ */
 public enum Tipo {
     AGUA,
     BICHO,

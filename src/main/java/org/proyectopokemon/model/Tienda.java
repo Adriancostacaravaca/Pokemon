@@ -8,7 +8,7 @@ import javafx.scene.control.ListView;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
 
 public class Tienda {
-    ObservableList<Objeto> objetosTienda = FXCollections.observableArrayList();
+    private ObservableList<Objeto> objetosTienda = FXCollections.observableArrayList();
     public Tienda(){
 
     }
@@ -17,6 +17,9 @@ public class Tienda {
         return objetosTienda;
     }
 
+    /**
+     * MÉTODO PARA AÑADIR OBJETOS NUEVOS A UN ARRAY QUE MOSTRAREMOS EN LA TIENDA A LA HORA DE COMPRAR OBJETOS
+     */
     public void anyadirObjetosATienda(){
         objetosTienda.add(new Objeto("Pesa",0.2,0.2,250, "Aumenta el ataque y la defensa un 20%, pero disminuye la velocidad un 20%"));
         objetosTienda.add(new Objeto("Pluma",0.3,0.2,250, "Aumenta la velocidad un 30%, pero disminuye la defensa y la defensa\n" +

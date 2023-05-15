@@ -299,8 +299,6 @@ public class Pokemon {
         return tablaFuertes;
     }
 
-    // MÉTODO PARA COMPROBAR VENTAJA ENTRE DOS POKÉMON
-
     /**
      * METODO PARA COMPROBAR LA VENTAJA ENTRE DOS POKEMON
      * @param p2 EL POKEMON CON EL QUE VAMOS A COMPARARNOS
@@ -356,7 +354,7 @@ public class Pokemon {
     }
 
     /**
-     * METODO PARA DESCANSAR Y PODER RECUPERAR ESTAMINA
+     * METODO PARA DESCANSAR Y PODER RECUPERAR ESTAMINA EN NUESTRO POKÉMON
      */
 
     public void descansar(){
