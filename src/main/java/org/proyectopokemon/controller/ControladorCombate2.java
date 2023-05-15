@@ -80,11 +80,16 @@ public class ControladorCombate2 {
     public void initialize(){
         movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
         botones = new ArrayList<>();
+        botones.add(btnAtaque1);
+        botones.add(btnAtaque2);
+        botones.add(btnAtaque3);
+        botones.add(btnAtaque4);
         musicaCombate();
         pokedex = new Pokedex();
         pokemonACombatir();
         mostrarNombresPokemon();
         mostrarEstaminaYVitalidad();
+        rellenarAtaques();
         nombrarAtaques();
         File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
         Image imagePrincipal = new Image(y.toURI().toString());
@@ -140,14 +145,19 @@ public class ControladorCombate2 {
         Entrenador.miEntrenador.getEquipoPrincipal().get(0).descansar();
         mostrarEstaminaYVitalidad();
     }
+    public void rellenarAtaques(){
+        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
+            Entrenador.miEntrenador.getEquipoPrincipal().get(i).rellenarAtaques();
+        }
+    }
 
     public void nombrarAtaques(){
         for(int i = 0; i < botones.size();i++){
-            Entrenador.miEntrenador.getEquipoPrincipal().get(i).rellenarAtaques();
             botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getListaCuatroAtaques().get(i).getNombre());
         }
         System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getListaCuatroAtaques().toString());
     }
+
 
 
 
