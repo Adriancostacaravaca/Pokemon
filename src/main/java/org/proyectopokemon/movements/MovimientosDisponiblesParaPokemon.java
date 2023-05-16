@@ -24,7 +24,6 @@ public class MovimientosDisponiblesParaPokemon {
         movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispazo",1,20,Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Placaje",1,20,Tipo.ELECTRICO));
-        movimientos.add(new MovimientoAtaque("Placaje",1,20, Tipo.ELECTRICO));
 
         movimientos.add(new MovimientoEstado("Congelar",1, Estado.CONGELADO));
         movimientos.add(new MovimientoEstado("Maldecir",1,Estado.MALDITO));
