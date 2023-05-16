@@ -48,7 +48,7 @@ public class ControladorTienda {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
 
     public void initialize() throws IOException {
-        Logger.write("Has entrado a la ventana tienda");
+        Logger.write("Has entrado a la tienda Pokémon");
         tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());

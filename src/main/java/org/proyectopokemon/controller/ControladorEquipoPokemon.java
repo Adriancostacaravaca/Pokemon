@@ -51,7 +51,7 @@ public class ControladorEquipoPokemon {
     }
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana donde puedes ver los pokemones de tu equipo principal");
+        Logger.write("Estás revisando los Pokémon que se encuentran en tu equipo principal");
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);

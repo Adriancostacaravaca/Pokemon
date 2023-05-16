@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 import org.proyectopokemon.database.PokemonCRUD;
 
 import java.io.IOException;
-import java.util.LinkedList;
 import java.util.Objects;
 
 /**

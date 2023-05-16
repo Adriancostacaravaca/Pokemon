@@ -1,0 +1,16 @@
+20230516070737-Has ingresado a la aplicación Pokemon by The Crue
+20230516070740-Te has registrado
+20230516070740-Estras en el login
+20230516070741-Estas en el menu principal de la aplicación
+20230516070742-Estas en la ventan de captura
+20230516070742-Un Kadabra salvaje ah aparecido
+20230516070743-Haz capturado un Kadabra salvaje ah aparecido
+20230516070744-Un Aerodactyl salvaje ah aparecido
+20230516070744-Haz capturado un Aerodactyl salvaje ah aparecido
+20230516070745-Un Pidgeot salvaje ah aparecido
+20230516070745-Haz capturado un Pidgeot salvaje ah aparecido
+20230516070746-Estas en el menu principal de la aplicación
+20230516070746-Estas en la ventana Pokedex
+20230516070756-Estas en el menu principal de la aplicación
+20230516070757-Estas en la ventan principal de combate
+20230516070758-Estas en el menu principal de la aplicación

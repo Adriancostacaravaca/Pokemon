@@ -44,7 +44,7 @@ public class ControladorRegistro {
 
     public void initialize() throws IOException {
         Logger.create();
-        Logger.write("Has ingresado a la aplicación Pokemon by The Crue");
+        Logger.write("Has ingresado a la aplicación Pokemon realizada por The Crüe");
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);

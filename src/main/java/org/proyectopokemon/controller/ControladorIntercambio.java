@@ -58,7 +58,7 @@ public class ControladorIntercambio {
         stage.show();
     }
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana de intercambio entre tu caja y el equipo principal");
+        Logger.write("Estás en la ventana de intercambio entre tu caja y el equipo principal");
         File y = new File("src/main/resources/imagenes/CajaFondo.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);

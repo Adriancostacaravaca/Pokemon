@@ -44,7 +44,7 @@ public class ControladorPrincipal {
     private Stage stage;
 
     public void initialize() throws IOException {
-        Logger.write("Estas en el menu principal de la aplicación");
+        Logger.write("Estás en el menu principal de la aplicación");
         File f = new File("src/main/resources/imagenes/Logo.png");
         File x = new File("src/main/resources/imagenes/FondoPrincipal.jpg");
         Image image = new Image(f.toURI().toString());
@@ -120,10 +120,12 @@ public class ControladorPrincipal {
     }
 
     @FXML
-    public void cerrarPokemon() {
+    public void cerrarPokemon() throws IOException {
+        Logger.write("Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.");
+        Logger.close();
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();
-        System.out.println("Pokémon cerrado. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.");
+        System.out.println("Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.");
     }
 
 }

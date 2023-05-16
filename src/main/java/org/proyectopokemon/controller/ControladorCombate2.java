@@ -71,7 +71,7 @@ public class ControladorCombate2 {
     private Label lblRivalPokemonEstamina;
 
     public void initialize() throws IOException {
-        Logger.write("Estas combatiendo");
+        Logger.write("Estás combatiendo contra un entrenador");
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
         botones.add(btnAtaque2);
@@ -133,7 +133,7 @@ public class ControladorCombate2 {
 
     @FXML
     public void descansar() throws IOException {
-        Logger.write(pokemonElegido.getNombre() + " esta descansando");
+        Logger.write(pokemonElegido.getNombre() + " está descansando");
         pokemonElegido.descansar();
         mostrarDatosPokemon();
     }

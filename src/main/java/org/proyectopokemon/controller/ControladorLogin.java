@@ -47,7 +47,7 @@ public class ControladorLogin {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
     public void initialize() throws IOException {
-        Logger.write("Estras en el login");
+        Logger.write("Has entrado al login");
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
@@ -63,6 +63,7 @@ public class ControladorLogin {
     @FXML
     public void irAVentanaAplicacion(ActionEvent event) throws IOException {
         if (login.comprobarCredenciales(txtUsuario, txtContrasenya, lblComprobacion)) {
+            Logger.write("Las credenciales introducidas son correctas");
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
             scene = new Scene(root, 788, 477);
             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

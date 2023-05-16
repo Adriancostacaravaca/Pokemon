@@ -34,7 +34,7 @@ public class ControladorMochila {
     private ImageView imageViewFondo;
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana Mochila");
+        Logger.write("Estás en la ventana Mochila");
         File y = new File("src/main/resources/imagenes/CajaFondo.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);

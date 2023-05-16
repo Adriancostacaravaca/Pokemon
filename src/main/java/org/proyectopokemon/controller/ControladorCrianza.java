@@ -60,7 +60,7 @@ public class ControladorCrianza {
     private ControladorVentanaEmergente controladorVentanaEmergente;
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana de crianza");
+        Logger.write("Estás en la ventana de crianza");
         actualizarDinero();
         controladorVentanaEmergente = new ControladorVentanaEmergente();
         seleccionados = new Pokemon[2];

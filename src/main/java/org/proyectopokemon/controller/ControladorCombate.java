@@ -32,7 +32,7 @@ public class ControladorCombate {
     private Pokedex pokedex;
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventan principal de combate");
+        Logger.write("Estás en la ventana previa al combate contra un entrenador");
         pokedex = new Pokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO

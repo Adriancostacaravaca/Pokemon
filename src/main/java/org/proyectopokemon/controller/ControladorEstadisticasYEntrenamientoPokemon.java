@@ -70,7 +70,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Entrenamiento entrenamiento = new Entrenamiento();
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana de entrenamiento");
+        Logger.write("Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos");
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);
@@ -134,51 +134,55 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     public void escogerPokemon1() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(0));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre() + " para entrenar");
     }
     public void escogerPokemon2() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(1));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre() + " para entrenar");
     }
     public void escogerPokemon3() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(2));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre() + " para entrenar");
     }
     public void escogerPokemon4() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(3));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre() + " para entrenar");
     }
     public void escogerPokemon5() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(4));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre() + " para entrenar");
     }
     public void escogerPokemon6() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(5));
         actualizarEstadisticas();
-        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre() + " para entrenar");
+        Logger.write("Has elegido a " + Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre() + " para entrenar");
     }
 
     @FXML
-    public void aplicarEntPesado(){
+    public void aplicarEntPesado() throws IOException {
+        Logger.write("Le has aplicado un entrenamiento pesado a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntPesado();
         actualizarEstadisticas();
     }
     @FXML
-    public void aplicarEntFurioso(){
+    public void aplicarEntFurioso() throws IOException {
+        Logger.write("Le has aplicado un entrenamiento furioso a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntFurioso();
         actualizarEstadisticas();
     }
     @FXML
-    public void aplicarEntFuncional(){
+    public void aplicarEntFuncional() throws IOException {
+        Logger.write("Le has aplicado un entrenamiento funcional a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntFuncional();
         actualizarEstadisticas();
     }
     @FXML
-    public void aplicarEntOnirico(){
+    public void aplicarEntOnirico() throws IOException {
+        Logger.write("Le has aplicado un entrenamiento onírico a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntOnirico();
         actualizarEstadisticas();
     }

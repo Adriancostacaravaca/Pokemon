@@ -44,7 +44,7 @@ public class ControladorCentroPokemon {
     @FXML
     private ImageView imageViewFondo;
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventana principal de combate");
+        Logger.write("Has entrado al Centro Pokémon");
         File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
         Image imagePrincipal = new Image(x.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
@@ -108,7 +108,7 @@ public class ControladorCentroPokemon {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaIntercambioEntreCajaYEquipo.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Entrenamiento Pokémon - The Crüe");
+        stage.setTitle("Intercambio Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

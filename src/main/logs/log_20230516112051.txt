@@ -1,0 +1,29 @@
+20230516112051-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230516112052-Te has registrado
+20230516112052-Has entrado al login
+20230516112053-Estás en el menu principal de la aplicación
+20230516112054-Estás en la ventana de captura
+20230516112054-Un Alakazam salvaje ha aparecido
+20230516112054-Has capturado un Alakazam salvaje
+20230516112055-Un Kadabra salvaje ha aparecido
+20230516112055-Has capturado un Kadabra salvaje
+20230516112055-Un Articuno salvaje ha aparecido
+20230516112056-Has capturado un Articuno salvaje
+20230516112056-Estás en el menu principal de la aplicación
+20230516112057-Has entrado al Centro Pokémon
+20230516112057-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230516112058-Has movido un Alakazam a tu equipo
+20230516112059-Has movido un Kadabra a tu equipo
+20230516112059-Has movido un Articuno a tu equipo
+20230516112059-Has entrado al Centro Pokémon
+20230516112100-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230516112100-Has elegido a Alakazam para entrenar
+20230516112103-Has elegido a Kadabra para entrenar
+20230516112105-Has elegido a Articuno para entrenar
+20230516112105-Le has aplicado un entrenamiento pesado a Articuno
+20230516112106-Le has aplicado un entrenamiento furioso a Articuno
+20230516112107-Has elegido a Kadabra para entrenar
+20230516112107-Le has aplicado un entrenamiento funcional a Kadabra
+20230516112108-Le has aplicado un entrenamiento onírico a Kadabra
+20230516112108-Has entrado al Centro Pokémon
+20230516112109-Estás en el menu principal de la aplicación

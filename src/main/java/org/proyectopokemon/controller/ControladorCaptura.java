@@ -51,7 +51,7 @@ public class ControladorCaptura {
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCaptura);
 
     public void initialize() throws IOException {
-        Logger.write("Estas en la ventan de captura");
+        Logger.write("Estás en la ventana de captura");
         pokedex = new Pokedex();
         actualizarPokeballs();
         mostrarPokemonACapturar();
@@ -97,7 +97,7 @@ public class ControladorCaptura {
         imgPokemonAzar.setImage(p.getImage());
         btnCapturar.setDisable(false);
         lblComprobacion.setText(" ");
-        Logger.write("Un " + p.getNombre() + " salvaje ah aparecido");
+        Logger.write("Un " + p.getNombre() + " salvaje ha aparecido");
     }
 
     @FXML
@@ -107,7 +107,7 @@ public class ControladorCaptura {
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
             btnCapturar.setDisable(true);
-            Logger.write("Haz capturado un " + p.getNombre() + " salvaje ah aparecido");
+            Logger.write("Has capturado un " + p.getNombre() + " salvaje");
         }
 
         actualizarPokeballs();
