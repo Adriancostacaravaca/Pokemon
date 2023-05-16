@@ -5,8 +5,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import org.proyectopokemon.model.MovimientoAtaque;
-import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
 
 public class ElegirPokemonCeldas implements Callback<ListView<Pokemon>, ListCell<Pokemon>> {

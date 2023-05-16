@@ -93,8 +93,8 @@ loadScripts(document, 'script');</script>
 <div class="block">CONSTRUCTOR DE POKEMON VACIO</div>
 </div>
 <div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String,org.proyectopokemon.model.Tipo,org.proyectopokemon.model.Tipo,javafx.scene.image.Image)" class="member-name-link">Pokemon</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;nombre,
- org.proyectopokemon.model.Tipo&nbsp;tipo1,
- org.proyectopokemon.model.Tipo&nbsp;tipo2,
+ org.proyectopokemon.enums.Tipo&nbsp;tipo1,
+ org.proyectopokemon.enums.Tipo&nbsp;tipo2,
  javafx.scene.image.Image&nbsp;image)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">CONSTRUCTOR DE POKEMON PASANDO LOS PARAMETROS LISTADOS DEBAJO</div>
@@ -138,7 +138,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>javafx.scene.image.Image</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getImage()" class="member-name-link">getImage</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.proyectopokemon.model.MovimientosDisponiblesParaPokemon&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getListaCuatroAtaques()" class="member-name-link">getListaCuatroAtaques</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
@@ -147,7 +147,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getNombre()" class="member-name-link">getNombre</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.proyectopokemon.model.Tipo</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.proyectopokemon.enums.Tipo</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTipo()" class="member-name-link">getTipo</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
@@ -191,8 +191,8 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.String,org.proyectopokemon.model.Tipo,org.proyectopokemon.model.Tipo,javafx.scene.image.Image)">
 <h3>Pokemon</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Pokemon</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;nombre,
- org.proyectopokemon.model.Tipo&nbsp;tipo1,
- org.proyectopokemon.model.Tipo&nbsp;tipo2,
+ org.proyectopokemon.enums.Tipo&nbsp;tipo1,
+ org.proyectopokemon.enums.Tipo&nbsp;tipo2,
  javafx.scene.image.Image&nbsp;image)</span></div>
 <div class="block">CONSTRUCTOR DE POKEMON PASANDO LOS PARAMETROS LISTADOS DEBAJO</div>
 <dl class="notes">
@@ -270,7 +270,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getTipo()">
 <h3>getTipo</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.proyectopokemon.model.Tipo</span>&nbsp;<span class="element-name">getTipo</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.proyectopokemon.enums.Tipo</span>&nbsp;<span class="element-name">getTipo</span>()</div>
 </section>
 </li>
 <li>
@@ -308,7 +308,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getListaCuatroAtaques()">
 <h3>getListaCuatroAtaques</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.proyectopokemon.model.MovimientosDisponiblesParaPokemon&gt;</span>&nbsp;<span class="element-name">getListaCuatroAtaques</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon&gt;</span>&nbsp;<span class="element-name">getListaCuatroAtaques</span>()</div>
 </section>
 </li>
 <li>

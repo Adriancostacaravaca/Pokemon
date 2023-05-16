@@ -6,5 +6,8 @@ module Pokemon {
 
     opens org.proyectopokemon.model;
     opens org.proyectopokemon.controller;
+    opens org.proyectopokemon.enums;
+    opens org.proyectopokemon.movements;
+    opens org.proyectopokemon.logger;
 
 }

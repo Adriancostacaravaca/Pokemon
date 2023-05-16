@@ -1,5 +1,7 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.movements;
 
+
+import org.proyectopokemon.enums.Tipo;
 
 public class MovimientoAtaque extends Movimiento{
 

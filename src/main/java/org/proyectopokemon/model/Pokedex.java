@@ -3,6 +3,7 @@ package org.proyectopokemon.model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.image.Image;
+import org.proyectopokemon.enums.Tipo;
 
 import java.io.File;
 import java.util.Random;

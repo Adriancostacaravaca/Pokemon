@@ -1,6 +1,10 @@
 package org.proyectopokemon.model;
 
 import javafx.scene.image.Image;
+import org.proyectopokemon.enums.Estado;
+import org.proyectopokemon.enums.Tipo;
+import org.proyectopokemon.movements.Movimiento;
+import org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon;
 
 import java.util.*;
 
