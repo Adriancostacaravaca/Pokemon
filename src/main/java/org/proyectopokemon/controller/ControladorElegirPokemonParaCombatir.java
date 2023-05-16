@@ -38,16 +38,6 @@ public class ControladorElegirPokemonParaCombatir {
     private Button btnPokemon6;
 
     private List<Button> botones;
-    @FXML
-    public void volverAVentanaAnterior(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaMochila.fxml")));
-        scene = new Scene(root, 788, 477);
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Centro Pokémon - The Crüe");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-    }
 
     public void initialize(){
         botones = new ArrayList<>();
@@ -68,5 +58,71 @@ public class ControladorElegirPokemonParaCombatir {
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
             }
         }
+    }
+    @FXML
+    public void elegirPokemon1(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(0));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void elegirPokemon2(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(1));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void elegirPokemon3(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(2));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void elegirPokemon4(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(3));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void elegirPokemon5(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(4));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void elegirPokemon6(ActionEvent event) throws IOException {
+        ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(5));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Centro Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 }
