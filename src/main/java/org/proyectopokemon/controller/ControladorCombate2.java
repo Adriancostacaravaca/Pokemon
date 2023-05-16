@@ -96,7 +96,18 @@ public class ControladorCombate2 {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
+        stage.setTitle("Combate Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+        mediaPlayer.stop();
+    }
+    @FXML
+    public void cambiarPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirPokemonParaCombatir.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Elige tu Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

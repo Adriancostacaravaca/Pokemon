@@ -38,11 +38,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorEquipoPokemon">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorElegirPokemonParaCombatir">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Label fx:id="lblTuEquipo" alignment="CENTER" layoutX="291.0" layoutY="27.0" prefHeight="45.0" prefWidth="207.0" text="Tu equipo">
+            <Label fx:id="lblTuEquipo" alignment="CENTER" layoutX="154.0" layoutY="27.0" prefHeight="45.0" prefWidth="480.0" text="Elige qué Pokémon quieres utilizar">
                <font>
                   <Font size="30.0" />
                </font>
@@ -71,7 +71,6 @@
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
          </children></AnchorPane>
   </children>
 </VBox>
