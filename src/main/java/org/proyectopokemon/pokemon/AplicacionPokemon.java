@@ -30,7 +30,6 @@ public class AplicacionPokemon extends Application {
     public static void main(String[] args) {
         PokemonCRUD.readPokemon();
         PokemonCRUD.updatePokemon();
-
         launch();
     }
 }

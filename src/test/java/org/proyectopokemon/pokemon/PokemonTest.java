@@ -22,6 +22,11 @@ class PokemonTest {
 
     @Test
     void subirNivel() {
+        p2.setNivel(3);
+        p2.setExperiencia(30);
+        int nivel = p2.getNivel();
+        p2.subirNivel();
+        Assert.assertTrue(nivel < p2.getVitalidad());
     }
 
     @Test

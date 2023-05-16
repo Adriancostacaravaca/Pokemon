@@ -123,8 +123,16 @@ public class Pokemon {
         return nivel;
     }
 
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
     public int getExperiencia() {
         return experiencia;
+    }
+
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
     }
 
     public Image getImage() {

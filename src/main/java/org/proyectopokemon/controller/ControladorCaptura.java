@@ -110,6 +110,7 @@ public class ControladorCaptura {
             Logger.write("Has capturado un " + p.getNombre() + " salvaje");
         }
 
+
         actualizarPokeballs();
     }
 }
