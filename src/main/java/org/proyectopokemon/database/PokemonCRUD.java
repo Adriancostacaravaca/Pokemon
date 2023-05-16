@@ -3,7 +3,7 @@ package org.proyectopokemon.database;
 import javafx.scene.image.Image;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
-import org.proyectopokemon.model.Tipo;
+import org.proyectopokemon.enums.Tipo;
 
 import java.io.File;
 import java.sql.PreparedStatement;

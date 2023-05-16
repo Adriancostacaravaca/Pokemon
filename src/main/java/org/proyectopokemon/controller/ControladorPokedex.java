@@ -13,9 +13,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
+import org.proyectopokemon.model.Objeto;
 import org.proyectopokemon.model.Pokedex;
 import org.proyectopokemon.model.Pokemon;
-
+import javafx.scene.input.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
@@ -32,6 +33,7 @@ public class ControladorPokedex {
     private ImageView imageViewPokemon;
     @FXML
     private ImageView imageViewFondo;
+
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
@@ -49,5 +51,16 @@ public class ControladorPokedex {
         imageViewFondo.setImage(imagePrincipal);
         listViewPokemon.setItems(Pokedex.getPokedex());
         listViewPokemon.setCellFactory(new EquipoPrincipalCeldas());
+
     }
+
+    @FXML
+    private void onListViewMouseClicked(MouseEvent event){
+        Pokemon pokemon = listViewPokemon.getSelectionModel().getSelectedItem();
+        if(pokemon != null){
+            imageViewPokemon.setImage(pokemon.getImage());
+        }
+    }
+
+
 }
