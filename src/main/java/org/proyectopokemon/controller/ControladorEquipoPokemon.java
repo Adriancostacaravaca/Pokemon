@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.IOException;
@@ -49,7 +50,8 @@ public class ControladorEquipoPokemon {
         stage.show();
     }
 
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana donde puedes ver los pokemones de tu equipo principal");
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);

@@ -5,6 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
+
+import java.io.IOException;
 
 public  class ControladorVentanaEmergente {
 
@@ -21,7 +24,8 @@ public  class ControladorVentanaEmergente {
         return nombre;
     }
 
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Has entrado a la ventana para ponerle nombre a tu pokemno");
         lblAsignarNombre.setText("¡Asignale un nombre a tu pokemon!"
         );
 

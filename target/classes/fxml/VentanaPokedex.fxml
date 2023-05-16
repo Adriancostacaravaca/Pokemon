@@ -50,7 +50,7 @@
                </image>
             </ImageView>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
-            <ListView fx:id="listViewPokemon" layoutX="54.0" layoutY="103.0" prefHeight="291.0" prefWidth="244.0" />
+            <ListView fx:id="listViewPokemon" layoutX="54.0" layoutY="103.0" onMouseClicked="#onListViewMouseClicked" prefHeight="291.0" prefWidth="244.0" />
             <ImageView fx:id="imageViewPokemon" fitHeight="209.0" fitWidth="221.0" layoutX="481.0" layoutY="134.0" pickOnBounds="true">
                <effect>
                   <DropShadow />

@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Pokemon;
 
@@ -58,7 +59,8 @@ public class ControladorCrianza {
     private Pokemon[] seleccionados;
     private ControladorVentanaEmergente controladorVentanaEmergente;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana de crianza");
         actualizarDinero();
         controladorVentanaEmergente = new ControladorVentanaEmergente();
         seleccionados = new Pokemon[2];
@@ -120,6 +122,7 @@ public class ControladorCrianza {
 
     // MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON
     public void criar() throws IOException {
+
         if (imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null) {
             System.out.println("Elige más Pokémon");
         } else {

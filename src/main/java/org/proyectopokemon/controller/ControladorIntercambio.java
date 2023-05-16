@@ -15,6 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.CajaCeldas;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Pokemon;
 
@@ -56,7 +57,8 @@ public class ControladorIntercambio {
         stage.setScene(scene);
         stage.show();
     }
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana de intercambio entre tu caja y el equipo principal");
         File y = new File("src/main/resources/imagenes/CajaFondo.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
@@ -89,18 +91,20 @@ public class ControladorIntercambio {
     }
 
     @FXML
-    public void equipoACaja(){
+    public void equipoACaja() throws IOException {
         Pokemon pokemonSelect = listViewEquipo.getSelectionModel().getSelectedItem();
+
         if (pokemonSelect != null) {
             Entrenador.miEntrenador.moverEquipoACaja(pokemonSelect);
         }
-
+        Logger.write("Has movido un " + pokemonSelect.getNombre() + " a tu caja");
     }
     @FXML
-    public void cajaAEquipo(){
+    public void cajaAEquipo() throws IOException {
         Pokemon pokemonSelect = listViewCaja.getSelectionModel().getSelectedItem();
         if (pokemonSelect != null) {
             Entrenador.miEntrenador.moverCajaAEquipo(pokemonSelect);
         }
+        Logger.write("Has movido un " + pokemonSelect.getNombre() + " a tu equipo");
     }
 }

@@ -13,6 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.File;
@@ -42,7 +43,8 @@ public class ControladorCentroPokemon {
     private Label lblErrorEquipoVacio;
     @FXML
     private ImageView imageViewFondo;
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana principal de combate");
         File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
         Image imagePrincipal = new Image(x.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);

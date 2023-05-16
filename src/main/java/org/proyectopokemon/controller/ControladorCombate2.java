@@ -13,6 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.*;
 
 import java.io.File;
@@ -69,7 +70,8 @@ public class ControladorCombate2 {
     @FXML
     private Label lblRivalPokemonEstamina;
 
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Estas combatiendo");
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
         botones.add(btnAtaque2);
@@ -130,7 +132,8 @@ public class ControladorCombate2 {
     }
 
     @FXML
-    public void descansar(){
+    public void descansar() throws IOException {
+        Logger.write(pokemonElegido.getNombre() + " esta descansando");
         pokemonElegido.descansar();
         mostrarDatosPokemon();
     }

@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Entrenamiento;
 
@@ -19,7 +20,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class ControladorEstadisticasYEntrenamientoPokemon {
-
     private Parent root;
     private Scene scene;
     private Stage stage;
@@ -69,7 +69,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
 
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana de entrenamiento");
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);
@@ -130,29 +131,35 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         }
     }
 
-    public void escogerPokemon1(){
+    public void escogerPokemon1() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(0));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre() + " para entrenar");
     }
-    public void escogerPokemon2(){
+    public void escogerPokemon2() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(1));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre() + " para entrenar");
     }
-    public void escogerPokemon3(){
+    public void escogerPokemon3() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(2));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre() + " para entrenar");
     }
-    public void escogerPokemon4(){
+    public void escogerPokemon4() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(3));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre() + " para entrenar");
     }
-    public void escogerPokemon5(){
+    public void escogerPokemon5() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(4));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre() + " para entrenar");
     }
-    public void escogerPokemon6(){
+    public void escogerPokemon6() throws IOException {
         entrenamiento.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(5));
         actualizarEstadisticas();
+        Logger.write("Haz elegido el pokemon " + Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre() + " para entrenar");
     }
 
     @FXML

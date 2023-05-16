@@ -29,11 +29,9 @@ public class AplicacionPokemon extends Application {
     }
 
     public static void main(String[] args) {
-        LinkedList<Pokemon> miLista = (LinkedList<Pokemon>) PokemonCRUD.readPokemon();
-        for (Pokemon p:miLista) {
-            Pokedex.getPokedex().add(p);
-        }
+        PokemonCRUD.readPokemon();
         PokemonCRUD.updatePokemon();
+
         launch();
     }
 }

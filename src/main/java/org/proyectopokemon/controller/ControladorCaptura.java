@@ -13,6 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Pokedex;
 import org.proyectopokemon.pokemon.Pokemon;
@@ -49,7 +50,8 @@ public class ControladorCaptura {
     private Media musicaCaptura = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaCaptura);
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventan de captura");
         pokedex = new Pokedex();
         actualizarPokeballs();
         mostrarPokemonACapturar();
@@ -89,21 +91,23 @@ public class ControladorCaptura {
     }
 
     @FXML
-    public void mostrarPokemonACapturar() {
+    public void mostrarPokemonACapturar() throws IOException {
         nuevoPokemonACapturar();
         lblPokemon.setText(p.getNombre());
         imgPokemonAzar.setImage(p.getImage());
         btnCapturar.setDisable(false);
         lblComprobacion.setText(" ");
+        Logger.write("Un " + p.getNombre() + " salvaje ah aparecido");
     }
 
     @FXML
-    public void capturar() {
+    public void capturar() throws IOException {
         boolean capturaHecha = Entrenador.miEntrenador.capturar(p, lblComprobacion);
 
         if (capturaHecha) {
             lblComprobacion.setText("¡Has capturado un " + p.getNombre() + " salvaje!");
             btnCapturar.setDisable(true);
+            Logger.write("Haz capturado un " + p.getNombre() + " salvaje ah aparecido");
         }
 
         actualizarPokeballs();

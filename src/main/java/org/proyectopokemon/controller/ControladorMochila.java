@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.File;
@@ -32,7 +33,8 @@ public class ControladorMochila {
     @FXML
     private ImageView imageViewFondo;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana Mochila");
         File y = new File("src/main/resources/imagenes/CajaFondo.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);

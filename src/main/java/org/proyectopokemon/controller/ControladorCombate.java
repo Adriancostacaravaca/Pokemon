@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Pokedex;
 
@@ -30,7 +31,8 @@ public class ControladorCombate {
     private Label lblErrorEquipoVacio;
     private Pokedex pokedex;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventan principal de combate");
         pokedex = new Pokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO

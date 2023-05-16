@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Login;
 
 import java.io.File;
@@ -41,7 +42,9 @@ public class ControladorRegistro {
     private Login login = new Login();
     private boolean registroCorrecto = false;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.create();
+        Logger.write("Has ingresado a la aplicación Pokemon by The Crue");
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);
@@ -61,7 +64,8 @@ public class ControladorRegistro {
         }
     }
 
-    public void registrarUsuario() {
+    public void registrarUsuario() throws IOException {
+        Logger.write("Te has registrado");
         login.setUsuario(this.txtUsuario.getText());
         login.setContrasenya(this.txtContrasenya.getText());
     }

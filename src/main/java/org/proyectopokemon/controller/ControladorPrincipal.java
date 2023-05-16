@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 
 
 import java.io.File;
@@ -42,7 +43,8 @@ public class ControladorPrincipal {
     private Scene scene;
     private Stage stage;
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estas en el menu principal de la aplicación");
         File f = new File("src/main/resources/imagenes/Logo.png");
         File x = new File("src/main/resources/imagenes/FondoPrincipal.jpg");
         Image image = new Image(f.toURI().toString());

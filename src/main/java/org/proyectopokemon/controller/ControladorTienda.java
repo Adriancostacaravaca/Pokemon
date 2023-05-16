@@ -15,6 +15,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Mochila;
 import org.proyectopokemon.shop.Objeto;
@@ -46,7 +47,8 @@ public class ControladorTienda {
     private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Has entrado a la ventana tienda");
         tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());

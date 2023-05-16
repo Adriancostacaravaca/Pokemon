@@ -15,6 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Login;
 
 import java.io.File;
@@ -45,7 +46,8 @@ public class ControladorLogin {
     private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaLogin.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
 
-    public void initialize() {
+    public void initialize() throws IOException {
+        Logger.write("Estras en el login");
         File f = new File("src/main/resources/imagenes/iconoUsuario.png");
         Image image = new Image(f.toURI().toString());
         imagenUsuario.setImage(image);

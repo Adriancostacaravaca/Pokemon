@@ -13,9 +13,10 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
-import org.proyectopokemon.model.Objeto;
-import org.proyectopokemon.model.Pokedex;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.logger.Logger;
+import org.proyectopokemon.shop.Objeto;
+import org.proyectopokemon.pokemon.Pokedex;
+import org.proyectopokemon.pokemon.Pokemon;
 import javafx.scene.input.MouseEvent;
 import java.io.File;
 import java.io.IOException;
@@ -45,7 +46,8 @@ public class ControladorPokedex {
         stage.show();
     }
 
-    public void initialize(){
+    public void initialize() throws IOException {
+        Logger.write("Estas en la ventana Pokedex");
         File x = new File("src/main/resources/imagenes/Pokedex.jpg");
         Image imagePrincipal = new Image(x.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);

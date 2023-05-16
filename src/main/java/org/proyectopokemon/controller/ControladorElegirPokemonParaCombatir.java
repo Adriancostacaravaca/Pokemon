@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.IOException;
@@ -17,7 +18,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class ControladorElegirPokemonParaCombatir {
-
     private Parent root;
     private Scene scene;
     private Stage stage;
@@ -62,6 +62,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon1(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(0));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(0).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -73,6 +74,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon2(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(1));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(1).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -84,6 +86,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon3(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(2));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(2).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -95,6 +98,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon4(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(3));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(3).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -106,6 +110,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon5(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(4));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(4).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -117,6 +122,7 @@ public class ControladorElegirPokemonParaCombatir {
     @FXML
     public void elegirPokemon6(ActionEvent event) throws IOException {
         ControladorCombate2.setPokemonElegido(Entrenador.miEntrenador.getEquipoPrincipal().get(5));
+        Logger.write("Haz Elegido " + Entrenador.miEntrenador.getEquipoPrincipal().get(5).getNombre() + " para combatir");
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate2.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

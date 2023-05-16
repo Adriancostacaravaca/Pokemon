@@ -1,6 +1,7 @@
 package org.proyectopokemon.database;
 
 import javafx.scene.image.Image;
+import org.proyectopokemon.pokemon.Pokedex;
 import org.proyectopokemon.pokemon.Pokemon;
 import org.proyectopokemon.enums.Tipo;
 import org.proyectopokemon.movements.Movimiento;
@@ -14,7 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PokemonCRUD {
-    public static List<Pokemon> readPokemon() {
+    public static void readPokemon() {
         String query = "SELECT NOM_POKEMON AS NOMBRE, TIPO1, TIPO2, IMG_URL FROM pokedex";
 
         PreparedStatement preparedStatement = null;
@@ -29,13 +30,12 @@ public class PokemonCRUD {
                 String tipo2 = resultSet.getString("TIPO2").trim();
                 String imgURL = resultSet.getString("IMG_URL");
                 File imgURL2 = new File(imgURL);
-                listaPokemon.add(new Pokemon(name, Tipo.valueOf(tipo),
+                Pokedex.getPokedex().add(new Pokemon(name, Tipo.valueOf(tipo),
                         Tipo.valueOf(tipo2),new Image(imgURL2.toURI().toString())));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return listaPokemon;
     }
 
     public static List<Pokemon> readPokemon(int id) {
