@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import javafx.scene.image.Image;
 import org.proyectopokemon.enums.Estado;
@@ -61,7 +61,7 @@ public class Pokemon {
         this.experiencia = 0;
         this.tipo = tipo;
         this.image = image;
-        this.listaCuatroAtaques = new ArrayList<>();
+        // this.listaCuatroAtaques = listaMovs;
 
     }
 

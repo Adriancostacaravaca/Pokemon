@@ -4,10 +4,11 @@ module Pokemon {
     requires javafx.media;
     requires java.sql;
 
-    opens org.proyectopokemon.model;
+    opens org.proyectopokemon.pokemon;
     opens org.proyectopokemon.controller;
     opens org.proyectopokemon.enums;
     opens org.proyectopokemon.movements;
     opens org.proyectopokemon.logger;
+    opens org.proyectopokemon.shop;
 
 }

@@ -12,7 +12,7 @@ import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.proyectopokemon.movements.Movimiento;
 import org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon;
-import org.proyectopokemon.model.Pokedex;
+import org.proyectopokemon.pokemon.Pokedex;
 
 import java.io.IOException;
 import java.util.Objects;

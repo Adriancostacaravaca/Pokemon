@@ -8,14 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.*;
-import org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon;
+import org.proyectopokemon.pokemon.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -59,7 +57,7 @@ public class ControladorCombate2 {
     @FXML
     private ImageView imageViewVS;
     private List<Button> botones;
-    private Pokemon pokemonElegido = new Pokemon();
+    private static Pokemon pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
@@ -72,7 +70,6 @@ public class ControladorCombate2 {
     private Label lblRivalPokemonEstamina;
 
     public void initialize(){
-        pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
         botones.add(btnAtaque2);
@@ -98,7 +95,18 @@ public class ControladorCombate2 {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCombate.fxml")));
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setTitle("Pokemon - The Crüe");
+        stage.setTitle("Combate Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+        mediaPlayer.stop();
+    }
+    @FXML
+    public void cambiarPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirPokemonParaCombatir.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Elige tu Pokémon - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -116,7 +124,7 @@ public class ControladorCombate2 {
         lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getEstamina());
         lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getVitalidad());
     }
-
+    @FXML
     public void combatir() {
         mostrarDatosPokemon();
     }
@@ -127,6 +135,7 @@ public class ControladorCombate2 {
         mostrarDatosPokemon();
     }
 
-
-
+    public static void setPokemonElegido(Pokemon pokemonElegido) {
+        ControladorCombate2.pokemonElegido = pokemonElegido;
+    }
 }

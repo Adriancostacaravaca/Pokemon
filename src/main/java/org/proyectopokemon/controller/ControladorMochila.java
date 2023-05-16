@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
+import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.File;
 import java.io.IOException;

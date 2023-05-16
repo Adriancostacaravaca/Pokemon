@@ -15,10 +15,10 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.TiendaCeldas;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Mochila;
-import org.proyectopokemon.model.Objeto;
-import org.proyectopokemon.model.Tienda;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Mochila;
+import org.proyectopokemon.shop.Objeto;
+import org.proyectopokemon.shop.Tienda;
 
 import java.io.File;
 import java.io.IOException;

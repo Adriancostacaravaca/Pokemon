@@ -2,4 +2,4 @@ module:Pokemon
 org.proyectopokemon.controller
 org.proyectopokemon.controller.factories
 org.proyectopokemon.database
-org.proyectopokemon.model
+org.proyectopokemon.pokemon

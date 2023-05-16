@@ -10,8 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Entrenamiento;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Entrenamiento;
 
 import java.io.IOException;
 import java.util.ArrayList;

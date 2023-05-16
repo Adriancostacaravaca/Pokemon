@@ -5,7 +5,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Pokemon;
 
 public class ElegirPokemonCeldas implements Callback<ListView<Pokemon>, ListCell<Pokemon>> {
     private final ImageView imageView = new ImageView();

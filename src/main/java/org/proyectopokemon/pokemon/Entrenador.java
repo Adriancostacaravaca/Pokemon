@@ -1,9 +1,10 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
 import org.proyectopokemon.controller.ControladorVentanaEmergente;
+import org.proyectopokemon.shop.Objeto;
 
 import java.util.ArrayList;
 import java.util.List;

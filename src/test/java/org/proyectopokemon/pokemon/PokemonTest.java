@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

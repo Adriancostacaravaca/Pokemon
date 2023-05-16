@@ -1,11 +1,8 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.image.Image;
-import org.proyectopokemon.enums.Tipo;
 
-import java.io.File;
 import java.util.Random;
 /**
  * CLASE POKEDEX DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE

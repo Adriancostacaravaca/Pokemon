@@ -10,11 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Pokemon;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -50,9 +49,9 @@ public class ControladorCrianza {
     @FXML
     private Label lblCoste;
     @FXML
-    private Text txtPokemon1;
+    private Label lblPokemon1;
     @FXML
-    private Text txtPokemon2;
+    private Label lblPokemon2;
     @FXML
     private Label lblPokedolares;
     private List<CheckBox> botones;
@@ -60,6 +59,7 @@ public class ControladorCrianza {
     private ControladorVentanaEmergente controladorVentanaEmergente;
 
     public void initialize() {
+        actualizarDinero();
         controladorVentanaEmergente = new ControladorVentanaEmergente();
         seleccionados = new Pokemon[2];
         botones = new ArrayList<>();
@@ -97,6 +97,7 @@ public class ControladorCrianza {
                     }
             );
         }
+
     }
 
     @FXML
@@ -119,9 +120,8 @@ public class ControladorCrianza {
 
     // MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON
     public void criar() throws IOException {
-        Pokemon pokemon;
         if (imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null) {
-            System.out.println("Selecciona un pokemon para continuar");
+            System.out.println("Elige más Pokémon");
         } else {
             vaciarSeleccionados();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
@@ -139,9 +139,7 @@ public class ControladorCrianza {
             }
 
             Entrenador.miEntrenador.getCaja().add(Entrenador.miEntrenador.criar(seleccionados));
-
-
-
+            actualizarDinero();
         }
 
     }
@@ -170,10 +168,11 @@ public class ControladorCrianza {
                 contador++;
                 if (contador == 1 && botones.get(i).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre()) {
                     imageViewPokemon1.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getImage());
+                    lblPokemon1.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
 
                 } else if (contador == 2 && botones.get(i).getText() == Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre()) {
                     imageViewPokemon2.setImage(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getImage());
-
+                    lblPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
                 }
             }
         }

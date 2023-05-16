@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="dc.created" content="2023-05-15">
-<meta name="description" content="declaration: module: Pokemon, package: org.proyectopokemon.model, class: MovimientoEstado">
+<meta name="description" content="declaration: module: Pokemon, package: org.proyectopokemon.pokemon, class: MovimientoEstado">
 <meta name="generator" content="javadoc/ClassWriterImpl">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../script-dir/jquery-ui.min.css" title="Style">
@@ -84,18 +84,18 @@ loadScripts(document, 'script');</script>
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="sub-title"><span class="module-label-in-type">Module</span>&nbsp;<a href="../../../module-summary.html">Pokemon</a></div>
-<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">org.proyectopokemon.model</a></div>
+<div class="sub-title"><span class="package-label-in-type">Package</span>&nbsp;<a href="package-summary.html">org.proyectopokemon.pokemon</a></div>
 <h1 title="Class MovimientoEstado" class="title">Class MovimientoEstado</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance"><a href="Movimiento.html" title="class in org.proyectopokemon.model">org.proyectopokemon.movements.Movimiento</a>
+<div class="inheritance"><a href="Movimiento.html" title="class in org.proyectopokemon.pokemon">org.proyectopokemon.movements.Movimiento</a>
 <div class="inheritance">org.proyectopokemon.movements.MovimientoEstado</div>
 </div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MovimientoEstado</span>
-<span class="extends-implements">extends <a href="Movimiento.html" title="class in org.proyectopokemon.model">Movimiento</a></span></div>
+<span class="extends-implements">extends <a href="Movimiento.html" title="class in org.proyectopokemon.pokemon">Movimiento</a></span></div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,7 +104,7 @@ loadScripts(document, 'script');</script>
 <section class="field-summary" id="field-summary">
 <h2>Field Summary</h2>
 <div class="inherited-list">
-<h3 id="fields-inherited-from-class-org.proyectopokemon.model.Movimiento">Fields inherited from class&nbsp;org.proyectopokemon.model.<a href="Movimiento.html" title="class in org.proyectopokemon.model">Movimiento</a></h3>
+<h3 id="fields-inherited-from-class-org.proyectopokemon.pokemon.Movimiento">Fields inherited from class&nbsp;org.proyectopokemon.pokemon.<a href="Movimiento.html" title="class in org.proyectopokemon.pokemon">Movimiento</a></h3>
 <code><a href="Movimiento.html#nombre">nombre</a>, <a href="Movimiento.html#turnos">turnos</a></code></div>
 </section>
 </li>
@@ -116,9 +116,9 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,int,org.proyectopokemon.model.Estado)" class="member-name-link">MovimientoEstado</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;nombre,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,int,org.proyectopokemon.pokemon.Estado)" class="member-name-link">MovimientoEstado</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;nombre,
  int&nbsp;turnos,
- <a href="Estado.html" title="enum class in org.proyectopokemon.model">Estado</a>&nbsp;estado)</code></div>
+ <a href="Estado.html" title="enum class in org.proyectopokemon.pokemon">Estado</a>&nbsp;estado)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -128,7 +128,7 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div class="inherited-list">
-<h3 id="methods-inherited-from-class-org.proyectopokemon.model.Movimiento">Methods inherited from class&nbsp;org.proyectopokemon.model.<a href="Movimiento.html" title="class in org.proyectopokemon.model">Movimiento</a></h3>
+<h3 id="methods-inherited-from-class-org.proyectopokemon.pokemon.Movimiento">Methods inherited from class&nbsp;org.proyectopokemon.pokemon.<a href="Movimiento.html" title="class in org.proyectopokemon.pokemon">Movimiento</a></h3>
 <code><a href="Movimiento.html#getNombre()">getNombre</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-java.lang.Object">Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></h3>
@@ -145,11 +145,11 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.String,int,org.proyectopokemon.model.Estado)">
+<section class="detail" id="&lt;init&gt;(java.lang.String,int,org.proyectopokemon.pokemon.Estado)">
 <h3>MovimientoEstado</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">MovimientoEstado</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;nombre,
  int&nbsp;turnos,
- <a href="Estado.html" title="enum class in org.proyectopokemon.model">Estado</a>&nbsp;estado)</span></div>
+ <a href="Estado.html" title="enum class in org.proyectopokemon.pokemon">Estado</a>&nbsp;estado)</span></div>
 </section>
 </li>
 </ul>
