@@ -1,0 +1,407 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 15-05-2023 a las 12:33:13
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.1.17
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `pokemon`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `entrenador`
+--
+
+CREATE TABLE `entrenador` (
+  `ID_ENTRENADOR` int(11) NOT NULL,
+  `USUARIO` varchar(20) NOT NULL,
+  `CONTRASENYA` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `estado`
+--
+
+CREATE TABLE `estado` (
+  `id_estado` int(11) NOT NULL,
+  `tipo_estado` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `estado`
+--
+
+INSERT INTO `estado` (`id_estado`, `tipo_estado`) VALUES
+(1, 'PARALIZADO'),
+(2, 'QUEMADO'),
+(3, 'ENVENENADO'),
+(4, 'GRAVEMENTE_ENVENENADO'),
+(5, 'DORMIDO'),
+(6, 'CONGELADO'),
+(7, 'HELADO'),
+(8, 'SOMNOLIENTO'),
+(9, 'POKERUS'),
+(10, 'DEBILITADO'),
+(11, 'CONFUSO'),
+(12, 'ENAMORADO'),
+(13, 'ATRAPADO'),
+(14, 'MALDITO'),
+(15, 'DRENADORAS'),
+(16, 'CANTO_NORMAL'),
+(17, 'CENTRO_DE_ATENCION'),
+(18, 'AMEDRENTADO');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mochila`
+--
+
+CREATE TABLE `mochila` (
+  `ID_ENTRENADOR` int(11) NOT NULL,
+  `ID_OBJETO` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `objetos`
+--
+
+CREATE TABLE `objetos` (
+  `ID_OBJETO` int(11) NOT NULL,
+  `NOMBRE_OBJETO` varchar(30) NOT NULL,
+  `PRECIO` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pokedex`
+--
+
+CREATE TABLE `pokedex` (
+  `NUM_POKEDEX` int(3) NOT NULL,
+  `NOM_POKEMON` varchar(50) DEFAULT NULL,
+  `TIPO1` varchar(50) DEFAULT NULL,
+  `TIPO2` varchar(50) DEFAULT NULL,
+  `IMG_URL` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `pokedex`
+--
+
+INSERT INTO `pokedex` (`NUM_POKEDEX`, `NOM_POKEMON`, `TIPO1`, `TIPO2`, `IMG_URL`) VALUES
+(1, 'bulbasaur', 'PLANTA', 'VENENO', NULL),
+(2, 'ivysaur', 'PLANTA', 'VENENO', NULL),
+(3, 'venusaur', 'PLANTA', 'VENENO', NULL),
+(4, 'charmander', 'FUEGO', 'FUEGO', NULL),
+(5, 'charmeleon', 'FUEGO', 'FUEGO', NULL),
+(6, 'charizard', 'FUEGO', 'VOLADOR', NULL),
+(7, 'squirtle', 'AGUA', 'AGUA', NULL),
+(8, 'wartortle', 'AGUA', 'AGUA', NULL),
+(9, 'blastoise', 'AGUA', 'AGUA', NULL),
+(10, 'caterpie', 'BICHO', 'BICHO', NULL),
+(11, 'metapod', 'BICHO', 'BICHO', NULL),
+(12, 'butterfree', 'BICHO', 'VOLADOR', NULL),
+(13, 'weedle', 'BICHO', 'VENENO', NULL),
+(14, 'kakuna', 'BICHO', 'VENENO', NULL),
+(15, 'beedrill', 'BICHO', 'VENENO', NULL),
+(16, 'pidgey', 'NORMAL', 'VOLADOR', NULL),
+(17, 'pidgeotto', 'NORMAL', 'VOLADOR', NULL),
+(18, 'pidgeot', 'NORMAL', 'VOLADOR', NULL),
+(19, 'rattata', 'NORMAL', 'NORMAL', NULL),
+(20, 'raticate', 'NORMAL', 'NORMAL', NULL),
+(21, 'spearow', 'NORMAL', 'VOLADOR', NULL),
+(22, 'fearow', 'NORMAL', 'VOLADOR', NULL),
+(23, 'ekans', 'VENENO', 'VENENO', NULL),
+(24, 'arbok', 'VENENO', 'VENENO', NULL),
+(25, 'pikachu', 'ELECTRICO', 'ELECTRICO', NULL),
+(26, 'raichu', 'ELECTRICO', 'ELECTRICO', NULL),
+(27, 'sandshrew', 'TIERRA', 'TIERRA', NULL),
+(28, 'sandslash', 'TIERRA', 'TIERRA', NULL),
+(29, 'nidoran-f', 'VENENO', 'VENENO', NULL),
+(30, 'nidorina', 'VENENO', 'VENENO', NULL),
+(31, 'nidoqueen', 'VENENO', 'TIERRA', NULL),
+(32, 'nidoran-m', 'VENENO', 'VENENO', NULL),
+(33, 'nidorino', 'VENENO', 'VENENO', NULL),
+(34, 'nidoking', 'VENENO', 'TIERRA', NULL),
+(35, 'clefairy', 'HADA', 'HADA', NULL),
+(36, 'clefable', 'HADA', 'HADA', NULL),
+(37, 'vulpix', 'FUEGO', 'FUEGO', NULL),
+(38, 'ninetales', 'FUEGO', 'FUEGO', NULL),
+(39, 'jigglypuff', 'NORMAL', 'HADA', NULL),
+(40, 'wigglytuff', 'NORMAL', 'HADA', NULL),
+(41, 'zubat', 'VENENO', 'VOLADOR', NULL),
+(42, 'golbat', 'VENENO', 'VOLADOR', NULL),
+(43, 'oddish', 'PLANTA', 'VENENO', NULL),
+(44, 'gloom', 'PLANTA', 'VENENO', NULL),
+(45, 'vileplume', 'PLANTA', 'VENENO', NULL),
+(46, 'paras', 'BICHO', 'PLANTA', NULL),
+(47, 'parasect', 'BICHO', 'PLANTA', NULL),
+(48, 'venonat', 'BICHO', 'VENENO', NULL),
+(49, 'venomoth', 'BICHO', 'VENENO', NULL),
+(50, 'diglett', 'TIERRA', 'TIERRA', NULL),
+(51, 'dugtrio', 'TIERRA', 'TIERRA', NULL),
+(52, 'meowth', 'NORMAL', 'NORMAL', NULL),
+(53, 'persian', 'NORMAL', 'NORMAL', NULL),
+(54, 'psyduck', 'AGUA', 'AGUA', NULL),
+(55, 'golduck', 'AGUA', 'AGUA', NULL),
+(56, 'mankey', 'LUCHA', 'LUCHA', NULL),
+(57, 'primeape', 'LUCHA', 'LUCHA', NULL),
+(58, 'growlithe', 'FUEGO', 'FUEGO', NULL),
+(59, 'arcanine', 'FUEGO', 'FUEGO', NULL),
+(60, 'poliwag', 'AGUA', 'AGUA', NULL),
+(61, 'poliwhirl', 'AGUA', 'AGUA', NULL),
+(62, 'poliwrath', 'AGUA', 'LUCHA', NULL),
+(63, 'abra', 'PSIQUICO', 'PSIQUICO', NULL),
+(64, 'kadabra', 'PSIQUICO', 'PSIQUICO', NULL),
+(65, 'alakazam', 'PSIQUICO', 'PSIQUICO', NULL),
+(66, 'machop', 'LUCHA', 'LUCHA', NULL),
+(67, 'machoke', 'LUCHA', 'LUCHA', NULL),
+(68, 'machamp', 'LUCHA', 'LUCHA', NULL),
+(69, 'bellsprout', 'PLANTA', 'VENENO', NULL),
+(70, 'weepinbell', 'PLANTA', 'VENENO', NULL),
+(71, 'victreebel', 'PLANTA', 'VENENO', NULL),
+(72, 'tentacool', 'AGUA', 'VENENO', NULL),
+(73, 'tentacruel', 'AGUA', 'VENENO', NULL),
+(74, 'geodude', 'ROCA', 'TIERRA', NULL),
+(75, 'graveler', 'ROCA', 'TIERRA', NULL),
+(76, 'golem', 'ROCA', 'TIERRA', NULL),
+(77, 'ponyta', 'FUEGO', 'FUEGO', NULL),
+(78, 'rapidash', 'FUEGO', 'FUEGO', NULL),
+(79, 'slowpoke', 'AGUA', 'PSIQUICO', NULL),
+(80, 'slowbro', 'AGUA', 'PSIQUICO', NULL),
+(81, 'magnemite', 'ELECTRICO', 'ACERO', NULL),
+(82, 'magneton', 'ELECTRICO', 'ACERO', NULL),
+(83, 'farfetchd', 'NORMAL', 'VOLADOR', NULL),
+(84, 'doduo', 'NORMAL', 'VOLADOR', NULL),
+(85, 'dodrio', 'NORMAL', 'VOLADOR', NULL),
+(86, 'seel', 'AGUA', 'AGUA', NULL),
+(87, 'dewgong', 'AGUA', 'HIELO', NULL),
+(88, 'grimer', 'VENENO', 'VENENO', NULL),
+(89, 'muk', 'VENENO', 'VENENO', NULL),
+(90, 'shellder', 'AGUA', 'AGUA', NULL),
+(91, 'cloyster', 'AGUA', 'HIELO', NULL),
+(92, 'gastly', 'FANTASMA', 'VENENO', NULL),
+(93, 'haunter', 'FANTASMA', 'VENENO', NULL),
+(94, 'gengar', 'FANTASMA', 'VENENO', NULL),
+(95, 'onix', 'ROCA', 'TIERRA', NULL),
+(96, 'drowzee', 'PSIQUICO', 'PSIQUICO', NULL),
+(97, 'hypno', 'PSIQUICO', 'PSIQUICO', NULL),
+(98, 'krabby', 'AGUA', 'AGUA', NULL),
+(99, 'kingler', 'AGUA', 'AGUA', NULL),
+(100, 'voltorb', 'ELECTRICO', 'ELECTRICO', NULL),
+(101, 'electrode', 'ELECTRICO', 'ELECTRICO', NULL),
+(102, 'exeggcute', 'PLANTA', 'PSIQUICO', NULL),
+(103, 'exeggutor', 'PLANTA', 'PSIQUICO', NULL),
+(104, 'cubone', 'TIERRA', 'TIERRA', NULL),
+(105, 'marowak', 'TIERRA', 'TIERRA', NULL),
+(106, 'hitmonlee', 'LUCHA', 'LUCHA', NULL),
+(107, 'hitmonchan', 'LUCHA', 'LUCHA', NULL),
+(108, 'lickitung', 'NORMAL', 'NORMAL', NULL),
+(109, 'koffing', 'VENENO', 'VENENO', NULL),
+(110, 'weezing', 'VENENO', 'VENENO', NULL),
+(111, 'rhyhorn', 'TIERRA', 'ROCA', NULL),
+(112, 'rhydon', 'TIERRA', 'ROCA', NULL),
+(113, 'chansey', 'NORMAL', 'NORMAL', NULL),
+(114, 'tangela', 'PLANTA', 'PLANTA', NULL),
+(115, 'kangaskhan', 'NORMAL', 'NORMAL', NULL),
+(116, 'horsea', 'AGUA', 'AGUA', NULL),
+(117, 'seadra', 'AGUA', 'AGUA', NULL),
+(118, 'goldeen', 'AGUA', 'AGUA', NULL),
+(119, 'seaking', 'AGUA', 'AGUA', NULL),
+(120, 'staryu', 'AGUA', 'AGUA', NULL),
+(121, 'starmie', 'AGUA', 'PSIQUICO', NULL),
+(122, 'mr-mime', 'PSIQUICO', 'HADA', NULL),
+(123, 'scyther', 'BICHO', 'VOLADOR', NULL),
+(124, 'jynx', 'HIELO', 'PSIQUICO', NULL),
+(125, 'electabuzz', 'ELECTRICO', 'ELECTRICO', NULL),
+(126, 'magmar', 'FUEGO', 'FUEGO', NULL),
+(127, 'pinsir', 'BICHO', 'BICHO', NULL),
+(128, 'tauros', 'NORMAL', 'NORMAL', NULL),
+(129, 'magikarp', 'AGUA ', 'AGUA', NULL),
+(130, 'gyarados', 'AGUA', 'VOLADOR', NULL),
+(131, 'lapras', 'AGUA', 'HIELO', NULL),
+(132, 'ditto', 'NORMAL', 'NORMAL', NULL),
+(133, 'eevee', 'NORMAL', 'NORMAL', NULL),
+(134, 'vaporeon', 'AGUA', 'AGUA', NULL),
+(135, 'jolteon', 'ELECTRICO', 'ELECTRICO', NULL),
+(136, 'flareon', 'FUEGO', 'FUEGO', NULL),
+(137, 'porygon', 'NORMAL', 'NORMAL', NULL),
+(138, 'omanyte', 'ROCA', 'AGUA', NULL),
+(139, 'omastar', 'ROCA', 'AGUA', NULL),
+(140, 'kabuto', 'ROCA', 'AGUA', NULL),
+(141, 'kabutops', 'ROCA', 'AGUA', NULL),
+(142, 'aerodactyl', 'ROCA', 'VOLADOR', NULL),
+(143, 'snorlax', 'NORMAL', 'NORMAL', NULL),
+(144, 'articuno', 'HIELO', 'VOLADOR', NULL),
+(145, 'zapdos', 'ELECTRICO', 'VOLADOR', NULL),
+(146, 'moltres', 'FUEGO', 'VOLADOR', NULL),
+(147, 'dratini', 'DRAGON', 'DRAGON', NULL),
+(148, 'dragonair', 'DRAGON', 'DRAGON', NULL),
+(149, 'dragonite', 'DRAGON', 'VOLADOR', NULL),
+(150, 'mewtwo', 'PSIQUICO', 'PSIQUICO', NULL),
+(151, 'mew', 'PSIQUICO', 'PSIQUICO', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pokemon`
+--
+
+CREATE TABLE `pokemon` (
+  `ID_POKEMON` int(11) NOT NULL,
+  `NUM_POKEDEX` int(11) NOT NULL,
+  `ID_ENTRENADOR` int(11) NOT NULL,
+  `MOTE` varchar(30) NOT NULL,
+  `ATAQUE` int(11) NOT NULL,
+  `ATAQUE_ESP` int(11) NOT NULL,
+  `DEFENSA` int(11) NOT NULL,
+  `DEFENSA_ESP` int(11) NOT NULL,
+  `ESTAMINA` int(11) NOT NULL,
+  `FERTILIDAD` int(11) NOT NULL,
+  `VITALIDAD` int(11) NOT NULL,
+  `EQUIPO` int(11) NOT NULL,
+  `NIVEL` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipo`
+--
+
+CREATE TABLE `tipo` (
+  `id_tipo` int(11) NOT NULL,
+  `tipo_tipo` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `tipo`
+--
+
+INSERT INTO `tipo` (`id_tipo`, `tipo_tipo`) VALUES
+(1, 'AGUA'),
+(2, 'BICHO'),
+(3, 'DRAGON'),
+(4, 'ELECTRICO'),
+(5, 'FANTASMA'),
+(6, 'FUEGO'),
+(7, 'HIELO'),
+(8, 'LUCHA'),
+(9, 'NORMAL'),
+(10, 'PLANTA'),
+(11, 'PSIQUICO'),
+(12, 'ROCA'),
+(13, 'TIERRA'),
+(14, 'VENENO'),
+(15, 'VOLADOR'),
+(16, 'HADA'),
+(17, 'ACERO');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `entrenador`
+--
+ALTER TABLE `entrenador`
+  ADD PRIMARY KEY (`ID_ENTRENADOR`),
+  ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
+
+--
+-- Indices de la tabla `estado`
+--
+ALTER TABLE `estado`
+  ADD PRIMARY KEY (`id_estado`);
+
+--
+-- Indices de la tabla `mochila`
+--
+ALTER TABLE `mochila`
+  ADD PRIMARY KEY (`ID_ENTRENADOR`),
+  ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`),
+  ADD KEY `ID_OBJETO` (`ID_OBJETO`);
+
+--
+-- Indices de la tabla `objetos`
+--
+ALTER TABLE `objetos`
+  ADD PRIMARY KEY (`ID_OBJETO`),
+  ADD KEY `ID_OBJETO` (`ID_OBJETO`);
+
+--
+-- Indices de la tabla `pokedex`
+--
+ALTER TABLE `pokedex`
+  ADD PRIMARY KEY (`NUM_POKEDEX`),
+  ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`);
+
+--
+-- Indices de la tabla `pokemon`
+--
+ALTER TABLE `pokemon`
+  ADD PRIMARY KEY (`ID_POKEMON`),
+  ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`),
+  ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
+
+--
+-- Indices de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  ADD PRIMARY KEY (`id_tipo`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `estado`
+--
+ALTER TABLE `estado`
+  MODIFY `id_estado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT de la tabla `pokemon`
+--
+ALTER TABLE `pokemon`
+  MODIFY `ID_POKEMON` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `mochila`
+--
+ALTER TABLE `mochila`
+  ADD CONSTRAINT `mochila_ibfk_1` FOREIGN KEY (`ID_ENTRENADOR`) REFERENCES `entrenador` (`ID_ENTRENADOR`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `mochila_ibfk_2` FOREIGN KEY (`ID_OBJETO`) REFERENCES `objetos` (`ID_OBJETO`) ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `pokemon`
+--
+ALTER TABLE `pokemon`
+  ADD CONSTRAINT `pokemon_ibfk_1` FOREIGN KEY (`NUM_POKEDEX`) REFERENCES `pokedex` (`NUM_POKEDEX`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `pokemon_ibfk_2` FOREIGN KEY (`ID_ENTRENADOR`) REFERENCES `entrenador` (`ID_ENTRENADOR`) ON UPDATE CASCADE;
+COMMIT;
