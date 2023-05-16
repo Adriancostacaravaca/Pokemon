@@ -10,5 +10,6 @@ module Pokemon {
     opens org.proyectopokemon.movements;
     opens org.proyectopokemon.logger;
     opens org.proyectopokemon.shop;
+    opens org.proyectopokemon.aplicacion;
 
 }
