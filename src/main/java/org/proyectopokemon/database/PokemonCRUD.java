@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * CLASE DONDE ESTABLECEREMOS CUALQUIER BÚSQUEDA DE DATOS EN LA BASE DE DATOS
+ */
 public class PokemonCRUD {
     public static void readPokemon() {
         String query = "SELECT NOM_POKEMON AS NOMBRE, TIPO1, TIPO2, IMG_URL FROM pokedex";

@@ -16,18 +16,10 @@ public class Pokedex {
     }
 
 
-
     /**
      * CONSTRUCTOR VACÍO DE POKÉDEX
      */
     public Pokedex(){
-    }
-
-    /**
-     * MÉTODO PARA AÑADIR TODOS LOS POKEMON QUE TENEMOS CREADOS EN NUESTRA LISTA DE POKÉDEX
-     */
-    public void rellenarPokedex() {
-
     }
 
     /**

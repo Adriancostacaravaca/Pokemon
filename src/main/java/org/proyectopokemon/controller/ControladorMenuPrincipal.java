@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Objects;
 
-public class ControladorPrincipal {
+public class ControladorMenuPrincipal {
 
     @FXML
     private Button btnCombate;

@@ -31,8 +31,6 @@ public class Pokemon {
     private Tipo tipo;
     private Estado estado;
     private Image image;
-
-    // MÉTODO PARA COMPROBAR VENTAJA
     private static HashMap<Tipo, List<Tipo>> tablaDebiles;
     private static HashMap<Tipo, List<Tipo>> tablaFuertes;
 
@@ -123,18 +121,6 @@ public class Pokemon {
         return nivel;
     }
 
-    public void setNivel(int nivel) {
-        this.nivel = nivel;
-    }
-
-    public int getExperiencia() {
-        return experiencia;
-    }
-
-    public void setExperiencia(int experiencia) {
-        this.experiencia = experiencia;
-    }
-
     public Image getImage() {
         return image;
     }
@@ -147,11 +133,9 @@ public class Pokemon {
         return defensa;
     }
 
-
     public int getVelocidad() {
         return velocidad;
     }
-
 
     public static List<Movimiento> getListaCuatroAtaques() {
         return listaCuatroAtaques;
@@ -354,13 +338,6 @@ public class Pokemon {
             pokemon.setVitalidad(pokemon.getVitalidad() - 5);
             this.estamina -= 5;
             System.out.println(getListaCuatroAtaques());
-        }
-    }
-    public void rellenarAtaques(){
-        movimientosDisponiblesParaPokemon.anyadirMovimientos();
-        Random rd = new Random();
-        for (int i = 0; i < 4; i++) {
-
         }
     }
 
