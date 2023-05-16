@@ -59,48 +59,34 @@ public class ControladorCombate2 {
     @FXML
     private ImageView imageViewVS;
     private List<Button> botones;
-    private MovimientosDisponiblesParaPokemon movimientosDisponiblesParaPokemon;
-    private int posicionActual;
-    private Pokedex pokedex;
+    private Pokemon pokemonElegido = new Pokemon();
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
-    @FXML
-    private ProgressBar vitalidadMiPokemon = new ProgressBar();
     @FXML
     private Label lblMiPokemonVitalidad;
     @FXML
     private Label lblMiPokemonEstamina;
     @FXML
-    private Label lblMiPokemonEstado;
-    @FXML
     private Label lblRivalPokemonVitalidad;
     @FXML
     private Label lblRivalPokemonEstamina;
-    @FXML
-    private Label lblPokemonRivalEstado;
 
     public void initialize(){
-        posicionActual  = 0;
-        Combate.setP(Entrenador.miEntrenador.getEquipoPrincipal().get(posicionActual));
-        cambiarPosicionActual();
-        movimientosDisponiblesParaPokemon = new MovimientosDisponiblesParaPokemon();
+        pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
         botones.add(btnAtaque2);
         botones.add(btnAtaque3);
         botones.add(btnAtaque4);
+        mostrarDatosPokemon();
         musicaCombate();
-        pokedex = new Pokedex();
-        rellenarAtaques();
-        nombrarAtaques();
         File y = new File("src/main/resources/imagenes/PeleaEntrenador.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
         File x = new File("src/main/resources/imagenes/ImagenVS.png");
         Image imageVS = new Image(x.toURI().toString());
         imageViewVS.setImage(imageVS);
-
-        }
+    }
 
     @FXML
     private void musicaCombate() {
@@ -119,61 +105,27 @@ public class ControladorCombate2 {
         mediaPlayer.stop();
     }
 
-    @FXML
-    public void mostrarNombresPokemon(){
-            lblMiPokemon.setText(Combate.getP().getNombre());
-            lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
-    }
 
-    @FXML
-    public void pokemonACombatir() {
-        imagenP1.setImage(Combate.getP().getImage());
+    public void mostrarDatosPokemon(){
+        imagenP1.setImage(pokemonElegido.getImage());
         imagenP2.setImage(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getImage());
-    }
-
-    public void mostrarEstaminaYVitalidad(){
-        lblMiPokemonEstamina.setText("Estamina: " + Combate.getP().getEstamina());
-        lblMiPokemonVitalidad.setText("Vitalidad: " + Combate.getP().getVitalidad());
-        lblRivalPokemonEstamina.setText("Estamina: " + Combate.getP().getEstamina());
-        lblRivalPokemonVitalidad.setText("Vitalidad: " + Combate.getP().getVitalidad());
+        lblMiPokemon.setText(pokemonElegido.getNombre());
+        lblPokemonRival.setText(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getNombre());
+        lblMiPokemonEstamina.setText("Estamina: " + pokemonElegido.getEstamina());
+        lblMiPokemonVitalidad.setText("Vitalidad: " + pokemonElegido.getVitalidad());
+        lblRivalPokemonEstamina.setText("Estamina: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getEstamina());
+        lblRivalPokemonVitalidad.setText("Vitalidad: " + Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0).getVitalidad());
     }
 
     public void combatir() {
-        Combate.getP().atacarAPokemon(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(posicionActual));
-        mostrarEstaminaYVitalidad();
+        mostrarDatosPokemon();
     }
 
     @FXML
     public void descansar(){
-        Combate.getP().descansar();
-        mostrarEstaminaYVitalidad();
+        pokemonElegido.descansar();
+        mostrarDatosPokemon();
     }
-    public void rellenarAtaques(){
-        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            Combate.getP().rellenarAtaques();
-        }
-    }
-
-    public void nombrarAtaques(){
-        for(int i = 0; i < botones.size();i++){
-            botones.get(i).setText(Combate.getP().getListaCuatroAtaques().get(i).getNombre());
-        }
-
-    }
-
-    public void cambiarPosicionActual(){
-        posicionActual++;
-        if(posicionActual > Entrenador.miEntrenador.getEquipoPrincipal().size()){
-            posicionActual = 0;
-        }
-
-        pokemonACombatir();
-        mostrarNombresPokemon();
-        mostrarEstaminaYVitalidad();
-
-    }
-
-
 
 
 

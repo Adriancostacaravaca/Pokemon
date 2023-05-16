@@ -345,13 +345,14 @@ public class Pokemon {
         }else {
             pokemon.setVitalidad(pokemon.getVitalidad() - 5);
             this.estamina -= 5;
+            System.out.println(getListaCuatroAtaques());
         }
     }
     public void rellenarAtaques(){
         movimientosDisponiblesParaPokemon.anyadirMovimientos();
         Random rd = new Random();
-        for(int i = 0; i  < 4; i++){
-            listaCuatroAtaques.add(movimientosDisponiblesParaPokemon.getMovimientos().get(rd.nextInt(MovimientosDisponiblesParaPokemon.getMovimientos().size())));
+        for (int i = 0; i < 4; i++) {
+
         }
     }
 

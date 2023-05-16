@@ -18,19 +18,19 @@ public class Pokedex {
         return pokedex;
     }
 
-    File fBulbasur = new File("src/main/resources/imagenes/Bulbasaur.png");
+    File fBulbasur = new File("src/main/resources/imagenes_pokemon/Bulbasaur.png");
     Image bulbasaurImg = new Image(fBulbasur.toURI().toString());
-    File fCaterpie = new File("src/main/resources/imagenes/Caterpie.png");
+    File fCaterpie = new File("src/main/resources/imagenes_pokemon/Caterpie.png");
     Image caterpieImg = new Image(fCaterpie.toURI().toString());
-    File fCharmander = new File("src/main/resources/imagenes/Charmander.png");
+    File fCharmander = new File("src/main/resources/imagenes_pokemon/Charmander.png");
     Image charmanderImg = new Image(fCharmander.toURI().toString());
-    File fPikachu = new File("src/main/resources/imagenes/Pikachu.png");
+    File fPikachu = new File("src/main/resources/imagenes_pokemon/Pikachu.png");
     Image pikachuImg = new Image(fPikachu.toURI().toString());
-    File fRattata = new File("src/main/resources/imagenes/Rattata.png");
+    File fRattata = new File("src/main/resources/imagenes_pokemon/Rattata.png");
     Image rattataImg = new Image(fRattata.toURI().toString());
-    File fSquirtle = new File("src/main/resources/imagenes/Squirtle.png");
+    File fSquirtle = new File("src/main/resources/imagenes_pokemon/Squirtle.png");
     Image squirtleImg = new Image(fSquirtle.toURI().toString());
-    File fTreecko = new File("src/main/resources/imagenes/Treecko.png");
+    File fTreecko = new File("src/main/resources/imagenes_pokemon/Treecko.png");
     Image treeckoImg = new Image(fTreecko.toURI().toString());
 
    public Pokemon pikachu = new Pokemon("Pikachu",Tipo.ELECTRICO, Tipo.ELECTRICO, pikachuImg);
