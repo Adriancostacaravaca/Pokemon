@@ -29,12 +29,10 @@ public class AplicacionPokemon extends Application {
     }
 
     public static void main(String[] args) {
-        System.out.println(Tipo.valueOf("AGUA"));
         LinkedList<Pokemon> miLista = (LinkedList<Pokemon>) PokemonCRUD.readPokemon();
         for (Pokemon p:miLista) {
             Pokedex.getPokedex().add(p);
         }
-        System.out.println(Pokedex.getPokedex().toString());
         PokemonCRUD.updatePokemon();
         launch();
     }
