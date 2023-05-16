@@ -29,8 +29,6 @@ public class Entrenador {
 
     public ControladorVentanaEmergente controladorVentanaEmergente = new ControladorVentanaEmergente();
 
-    private Pokemon p1;
-    private Pokemon p2;
     private Pokemon nuevoPokemon;
 
     /**
@@ -45,10 +43,6 @@ public class Entrenador {
         this.pokeballs = 20;
         this.equipoPrincipal = FXCollections.observableArrayList();
         this.caja = FXCollections.observableArrayList();
-    }
-
-    public Pokemon getNuevoPokemon() {
-        return nuevoPokemon;
     }
 
     public int getPokedollar() {
