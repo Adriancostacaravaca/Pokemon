@@ -118,7 +118,7 @@ public class ControladorCombate2 {
     }
 
     public void combatir() {
-        mostrarDatosPokemon();
+        mostrarDatosPokemon();S
     }
 
     @FXML
