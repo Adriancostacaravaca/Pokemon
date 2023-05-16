@@ -3,7 +3,7 @@ package org.proyectopokemon.controller.factories;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.util.Callback;
-import org.proyectopokemon.model.Movimiento;
+import org.proyectopokemon.movements.Movimiento;
 
 public class ElegirMovimientoCeldas implements Callback<ListView<Movimiento>, ListCell<Movimiento>> {
 

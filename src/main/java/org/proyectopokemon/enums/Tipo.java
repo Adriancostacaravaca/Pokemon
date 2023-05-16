@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.enums;
 
 
 /**

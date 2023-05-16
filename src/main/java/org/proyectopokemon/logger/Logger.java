@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

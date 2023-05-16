@@ -10,8 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Movimiento;
-import org.proyectopokemon.model.MovimientosDisponiblesParaPokemon;
+import org.proyectopokemon.movements.Movimiento;
+import org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon;
 import org.proyectopokemon.model.Pokedex;
 
 import java.io.IOException;

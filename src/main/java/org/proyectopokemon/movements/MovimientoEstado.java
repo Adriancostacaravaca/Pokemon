@@ -1,4 +1,6 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.movements;
+
+import org.proyectopokemon.enums.Estado;
 
 public class MovimientoEstado extends Movimiento{
     Estado estado;

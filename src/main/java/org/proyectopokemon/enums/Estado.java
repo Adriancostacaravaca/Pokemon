@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.enums;
 
 /**
  * ENUMERADO CON LOS ESTADOS QUE PUEDE TENER UN POKEMON
