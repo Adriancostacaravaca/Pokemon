@@ -32,7 +32,6 @@ public class ControladorCombate {
 
     public void initialize() {
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
 
@@ -70,20 +69,6 @@ public class ControladorCombate {
 
     @FXML
     public void subirNivel(ActionEvent event) throws IOException{
-        pokedex.pikachu.subirNivel();
-        if (pokedex.pikachu.getExperiencia() == 0 && (pokedex.pikachu.getNivel() == 3 || pokedex.pikachu.getNivel() == 6 || pokedex.pikachu.getNivel() == 9 || pokedex.pikachu.getNivel() == 12)) {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirMovimientoAprendido.fxml")));
-            scene = new Scene(root, 650, 400);
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            stage.setTitle("Elegir nueva habilidad - The Crüe");
-            stage.setResizable(false);
-            stage.setScene(scene);
-            stage.show();
-        }
-        System.out.println("Nivel: " + pokedex.pikachu.getNivel());
-        System.out.println("Vitalidad: " + pokedex.pikachu.getVitalidad());
-        System.out.println("Ataque: " + pokedex.pikachu.getAtaque());
-        System.out.println("Experiencia: " + pokedex.pikachu.getExperiencia());
     }
     // FIXME: PETA EL HASHMAP POR ALGÚN MOTIVO QUE DESCONOZCO - ADRIAN
     @FXML

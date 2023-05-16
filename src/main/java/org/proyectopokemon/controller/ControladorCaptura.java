@@ -51,7 +51,6 @@ public class ControladorCaptura {
 
     public void initialize() {
         pokedex = new Pokedex();
-        pokedex.rellenarPokedex();
         actualizarPokeballs();
         mostrarPokemonACapturar();
         musicaCaptura();
