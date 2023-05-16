@@ -57,7 +57,7 @@ public class ControladorCombate2 {
     @FXML
     private ImageView imageViewVS;
     private List<Button> botones;
-    private static Pokemon pokemonElegido = new Pokemon();
+    private static Pokemon pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
     private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
@@ -70,7 +70,6 @@ public class ControladorCombate2 {
     private Label lblRivalPokemonEstamina;
 
     public void initialize(){
-        pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
         botones = new ArrayList<>();
         botones.add(btnAtaque1);
         botones.add(btnAtaque2);
