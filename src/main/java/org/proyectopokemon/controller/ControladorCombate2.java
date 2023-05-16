@@ -8,14 +8,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.*;
-import org.proyectopokemon.movements.MovimientosDisponiblesParaPokemon;
+import org.proyectopokemon.pokemon.*;
 
 import java.io.File;
 import java.io.IOException;

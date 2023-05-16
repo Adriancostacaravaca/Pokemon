@@ -1,4 +1,6 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
+
+import org.proyectopokemon.shop.Objeto;
 
 import java.util.ArrayList;
 import java.util.List;

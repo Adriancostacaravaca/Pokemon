@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

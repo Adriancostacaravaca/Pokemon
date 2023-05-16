@@ -10,11 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Pokemon;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 import javafx.scene.image.Image;
 import org.proyectopokemon.enums.Estado;

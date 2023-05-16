@@ -1,7 +1,7 @@
 package org.proyectopokemon.database;
 
 import javafx.scene.image.Image;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Pokemon;
 import org.proyectopokemon.enums.Tipo;
 import org.proyectopokemon.movements.Movimiento;
 

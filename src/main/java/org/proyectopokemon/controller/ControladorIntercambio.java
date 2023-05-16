@@ -15,8 +15,8 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.CajaCeldas;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Pokemon;
 
 import java.io.File;
 import java.io.IOException;

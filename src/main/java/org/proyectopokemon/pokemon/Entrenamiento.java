@@ -1,4 +1,4 @@
-package org.proyectopokemon.model;
+package org.proyectopokemon.pokemon;
 
 /**
  * CLASE ENTRENAMIENTO DONDE CREAREMOS CUALQUIER METODO QUE REQUIERA LA INTERVENCION DE ESTA CLASE

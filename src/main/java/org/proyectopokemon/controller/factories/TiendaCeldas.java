@@ -2,7 +2,7 @@ package org.proyectopokemon.controller.factories;
 
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
-import org.proyectopokemon.model.Objeto;
+import org.proyectopokemon.shop.Objeto;
 
 import javafx.util.Callback;
 //Se utiliza un callBack que sirve para darle forma a la presentacion de datoss de un objeto en celdas

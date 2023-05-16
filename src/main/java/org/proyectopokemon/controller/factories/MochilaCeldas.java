@@ -3,7 +3,7 @@ package org.proyectopokemon.controller.factories;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.util.Callback;
-import org.proyectopokemon.model.Objeto;
+import org.proyectopokemon.shop.Objeto;
 
 public class MochilaCeldas implements Callback<ListView<Objeto>, ListCell<Objeto>> {
 

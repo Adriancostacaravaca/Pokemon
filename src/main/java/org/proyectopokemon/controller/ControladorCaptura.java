@@ -13,9 +13,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Pokedex;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Pokedex;
+import org.proyectopokemon.pokemon.Pokemon;
 
 import java.io.File;
 import java.io.IOException;

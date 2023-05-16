@@ -9,8 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import org.proyectopokemon.model.Entrenador;
-import org.proyectopokemon.model.Pokedex;
+import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Pokedex;
 
 import java.io.IOException;
 import java.util.Objects;

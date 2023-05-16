@@ -3,7 +3,7 @@ package org.proyectopokemon.controller.factories;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.util.Callback;
-import org.proyectopokemon.model.Pokemon;
+import org.proyectopokemon.pokemon.Pokemon;
 
 public class EquipoPrincipalCeldas implements Callback<ListView<Pokemon>, ListCell<Pokemon>> {
     @Override
