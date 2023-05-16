@@ -61,7 +61,7 @@ public class Pokemon {
         this.experiencia = 0;
         this.tipo = tipo;
         this.image = image;
-        this.listaCuatroAtaques = new ArrayList<>();
+        // this.listaCuatroAtaques = listaMovs;
 
     }
 
