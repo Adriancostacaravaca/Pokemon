@@ -1,0 +1,77 @@
+20230516065053-Has ingresado a la aplicación Pokemon by The Crue
+20230516065057-Te has registrado
+20230516065057-Estras en el login
+20230516065058-Estas en el menu principal de la aplicación
+20230516065100-Estas en la ventan de captura
+20230516065100-Un Spearow salvaje ah aparecido
+20230516065103-Un Wigglytuff salvaje ah aparecido
+20230516065104-Un Magnemite salvaje ah aparecido
+20230516065104-Un Nidoking salvaje ah aparecido
+20230516065104-Un Tentacruel salvaje ah aparecido
+20230516065104-Un Bellsprout salvaje ah aparecido
+20230516065104-Un Machamp salvaje ah aparecido
+20230516065104-Un Bellsprout salvaje ah aparecido
+20230516065105-Un Shellder salvaje ah aparecido
+20230516065105-Un Abra salvaje ah aparecido
+20230516065105-Un Squirtle salvaje ah aparecido
+20230516065105-Un Ivysaur salvaje ah aparecido
+20230516065105-Un Tangela salvaje ah aparecido
+20230516065105-Un Persian salvaje ah aparecido
+20230516065106-Un Diglett salvaje ah aparecido
+20230516065106-Un Snorlax salvaje ah aparecido
+20230516065106-Un Seel salvaje ah aparecido
+20230516065106-Un Onix salvaje ah aparecido
+20230516065106-Un Venusaur salvaje ah aparecido
+20230516065107-Un Weezing salvaje ah aparecido
+20230516065107-Un Tangela salvaje ah aparecido
+20230516065107-Un Slowbro salvaje ah aparecido
+20230516065107-Un Nidorino salvaje ah aparecido
+20230516065107-Un Muk salvaje ah aparecido
+20230516065108-Un Bulbasaur salvaje ah aparecido
+20230516065108-Un Vulpix salvaje ah aparecido
+20230516065108-Un Wigglytuff salvaje ah aparecido
+20230516065108-Un Bulbasaur salvaje ah aparecido
+20230516065109-Un Golem salvaje ah aparecido
+20230516065109-Un Kangaskhan salvaje ah aparecido
+20230516065109-Un Diglett salvaje ah aparecido
+20230516065110-Haz capturado un Diglett salvaje ah aparecido
+20230516065111-Un Beedrill salvaje ah aparecido
+20230516065111-Haz capturado un Beedrill salvaje ah aparecido
+20230516065112-Un Seadra salvaje ah aparecido
+20230516065113-Haz capturado un Seadra salvaje ah aparecido
+20230516065113-Un Alakazam salvaje ah aparecido
+20230516065114-Haz capturado un Alakazam salvaje ah aparecido
+20230516065114-Un Weedle salvaje ah aparecido
+20230516065115-Haz capturado un Weedle salvaje ah aparecido
+20230516065116-Estas en el menu principal de la aplicación
+20230516065117-Estas en la ventana Mochila
+20230516065121-Estas en el menu principal de la aplicación
+20230516065122-Estas en la ventana principal de combate
+20230516065122-Estas en la ventana de intercambio entre tu caja y el equipo principal
+20230516065124-Has movido un Diglett a tu equipo
+20230516065124-Has movido un Beedrill a tu equipo
+20230516065124-Has movido un Seadra a tu equipo
+20230516065124-Has movido un Alakazam a tu equipo
+20230516065124-Has movido un Weedle a tu equipo
+20230516065125-Estas en la ventana principal de combate
+20230516065126-Estas en la ventana de entrenamiento
+20230516065126-Haz elegido el pokemon Diglett para entrenar
+20230516065131-Haz elegido el pokemon Diglett para entrenar
+20230516065132-Haz elegido el pokemon Beedrill para entrenar
+20230516065133-Haz elegido el pokemon Seadra para entrenar
+20230516065134-Haz elegido el pokemon Alakazam para entrenar
+20230516065135-Haz elegido el pokemon Weedle para entrenar
+20230516065136-Haz elegido el pokemon Beedrill para entrenar
+20230516065136-Haz elegido el pokemon Seadra para entrenar
+20230516065141-Estas en la ventana principal de combate
+20230516065144-Has entrado a la ventana tienda
+20230516065145-Estas en la ventana principal de combate
+20230516065148-Estas en la ventana de intercambio entre tu caja y el equipo principal
+20230516065150-Has movido un Seadra a tu caja
+20230516065150-Has movido un Beedrill a tu caja
+20230516065151-Estas en la ventana principal de combate
+20230516065152-Estas en el menu principal de la aplicación
+20230516065153-Estas en la ventan principal de combate
+20230516065157-Estas combatiendo
+20230516065201-Estas en la ventan principal de combate
+20230516065201-Estas en el menu principal de la aplicación

@@ -1,0 +1,7 @@
+20230516064956-Has ingresado a la aplicación Pokemon by The Crue
+20230516064959-Te has registrado
+20230516064959-Estras en el login
+20230516065001-Estas en el menu principal de la aplicación
+20230516065002-Estas en la ventana Pokedex
+20230516065010-Estas en el menu principal de la aplicación
+20230516065012-Estas en la ventan de captura
