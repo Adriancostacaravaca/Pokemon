@@ -23,7 +23,7 @@ public class ControladorCajaPokemon {
     private Stage stage;
 
     @FXML
-    private Label lblTuEquipo;
+    private Label lblTuCaja;
     @FXML
     private Button btnPokemon1;
     @FXML

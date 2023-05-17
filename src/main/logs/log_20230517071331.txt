@@ -1,0 +1,9 @@
+20230517071331-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517071333-Te has registrado
+20230517071333-Has entrado al login
+20230517071334-Las credenciales introducidas son correctas
+20230517071334-Estás en el menu principal de la aplicación
+20230517071335-Estás en la ventana de captura
+20230517071335-Un Psyduck salvaje ha aparecido
+20230517071336-Estás en el menu principal de la aplicación
+20230517071336-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

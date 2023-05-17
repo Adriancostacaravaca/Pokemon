@@ -39,9 +39,11 @@ public class ControladorTienda {
     @FXML
     private Label lblPokedolares;
     @FXML
-    private Label lblTienda;
+    private Label lblError;
     @FXML
     private ImageView imagenProfesorOak;
+    @FXML
+    private ImageView imageViewFondo;
     private Tienda tienda = new Tienda();
     private Mochila mochila = new Mochila();
     private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
@@ -49,6 +51,9 @@ public class ControladorTienda {
 
     public void initialize() throws IOException {
         Logger.write("Has entrado a la tienda Pokémon");
+        File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());
@@ -105,7 +110,7 @@ public class ControladorTienda {
                      mochila.getMochila()) {
                 }
             } else {
-                System.out.println("No tienes suficiente Pokedólares para comprar ese objeto");
+                lblError.setText("No tienes suficiente Pokedolares");
             }
         }
     }
