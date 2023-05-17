@@ -1,0 +1,36 @@
+20230517110809-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517110810-Te has registrado
+20230517110810-Has entrado al login
+20230517110812-Las credenciales introducidas son correctas
+20230517110812-Estás en el menu principal de la aplicación
+20230517110812-Has entrado al Centro Pokémon
+20230517110813-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517110813-Has entrado al Centro Pokémon
+20230517110813-Estás en el menu principal de la aplicación
+20230517110814-Estás en la ventana de captura
+20230517110814-Un Dodrio salvaje ha aparecido
+20230517110814-Un Nidoran-m salvaje ha aparecido
+20230517110815-Has capturado un Nidoran-m salvaje
+20230517110816-Estás en el menu principal de la aplicación
+20230517110817-Has entrado al Centro Pokémon
+20230517110817-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517110818-Has movido un Nidoran-m a tu equipo
+20230517110819-Has entrado al Centro Pokémon
+20230517110819-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110819-Has elegido a Nidoran-m para entrenar
+20230517110820-Le has aplicado un entrenamiento pesado a Nidoran-m
+20230517110822-Le has aplicado un entrenamiento furioso a Nidoran-m
+20230517110825-Le has aplicado un entrenamiento funcional a Nidoran-m
+20230517110827-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110829-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110830-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110831-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110831-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110831-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110832-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110832-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110832-Le has aplicado un entrenamiento onírico a Nidoran-m
+20230517110833-Le has aplicado un entrenamiento pesado a Nidoran-m
+20230517110833-Has entrado al Centro Pokémon
+20230517110834-Estás en el menu principal de la aplicación
+20230517110834-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

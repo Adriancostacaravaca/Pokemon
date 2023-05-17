@@ -10,12 +10,15 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorMochila {
@@ -32,9 +35,12 @@ public class ControladorMochila {
     private Label lblErrorEquipoVacio;
     @FXML
     private ImageView imageViewFondo;
+    private Media efectoApertura = new Media(Paths.get("src/main/resources/musica/abrirMochila.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(efectoApertura);
 
     public void initialize() throws IOException {
         Logger.write("Estás en la ventana Mochila");
+        efectoApertura();
         File y = new File("src/main/resources/imagenes/CajaFondo.png");
         Image imagePrincipal = new Image(y.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
@@ -46,7 +52,10 @@ public class ControladorMochila {
             btnRevisarCajaPokemon.setDisable(true);
         }
     }
-
+    @FXML
+    private void efectoApertura() {
+        mediaPlayer.play();
+    }
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/Menuprincipal.fxml")));
         scene = new Scene(root, 788, 477);
@@ -55,6 +64,7 @@ public class ControladorMochila {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
     @FXML
     public void IrAVentanaEquipoPokemon(ActionEvent event) throws IOException {

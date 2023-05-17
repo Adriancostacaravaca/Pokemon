@@ -11,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.controller.factories.EquipoPrincipalCeldas;
 import org.proyectopokemon.logger.Logger;
@@ -20,6 +22,7 @@ import org.proyectopokemon.pokemon.Pokemon;
 import javafx.scene.input.MouseEvent;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Objects;
 
 public class ControladorPokedex {
@@ -34,6 +37,8 @@ public class ControladorPokedex {
     private ImageView imageViewPokemon;
     @FXML
     private ImageView imageViewFondo;
+    private Media musicaFondo = new Media(Paths.get("src/main/resources/musica/musicaPokedex.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaFondo);
 
     @FXML
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -44,16 +49,21 @@ public class ControladorPokedex {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
 
     public void initialize() throws IOException {
         Logger.write("Estás en la ventana Pokedex");
+        musicaFondo();
         File x = new File("src/main/resources/imagenes/Pokedex.jpg");
         Image imagePrincipal = new Image(x.toURI().toString());
         imageViewFondo.setImage(imagePrincipal);
         listViewPokemon.setItems(Pokedex.getPokedex());
         listViewPokemon.setCellFactory(new EquipoPrincipalCeldas());
-
+    }
+    @FXML
+    private void musicaFondo() {
+        mediaPlayer.play();
     }
 
     @FXML

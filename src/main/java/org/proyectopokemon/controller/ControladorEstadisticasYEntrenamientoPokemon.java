@@ -9,12 +9,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Entrenamiento;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -72,11 +75,13 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     @FXML
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
-
     private static final DecimalFormat decfor = new DecimalFormat("0.00");
+    private Media musicaEfecto = new Media(Paths.get("src/main/resources/musica/efectoSonido.mp3").toUri().toString());
+    private MediaPlayer mediaPlayer = new MediaPlayer(musicaEfecto);
 
     public void initialize() throws IOException {
         Logger.write("Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos");
+        musicaEfecto();
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);
@@ -112,6 +117,10 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    private void musicaEfecto() {
+        mediaPlayer.play();
     }
     @FXML
     public void aplicarObjetoAPokemon(ActionEvent event) throws IOException {

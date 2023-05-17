@@ -1,0 +1,8 @@
+20230517112027-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517112029-Te has registrado
+20230517112029-Has entrado al login
+20230517112030-Las credenciales introducidas son correctas
+20230517112030-Estás en el menu principal de la aplicación
+20230517112032-Estás en la ventana Pokedex
+20230517112034-Estás en el menu principal de la aplicación
+20230517112035-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

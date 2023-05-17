@@ -1,0 +1,26 @@
+20230517110650-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517110652-Te has registrado
+20230517110652-Has entrado al login
+20230517110654-Las credenciales introducidas son correctas
+20230517110654-Estás en el menu principal de la aplicación
+20230517110655-Has entrado al Centro Pokémon
+20230517110656-Estás en el menu principal de la aplicación
+20230517110657-Estás en la ventana de captura
+20230517110657-Un Paras salvaje ha aparecido
+20230517110658-Has capturado un Paras salvaje
+20230517110658-Estás en el menu principal de la aplicación
+20230517110659-Has entrado al Centro Pokémon
+20230517110659-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517110700-Has movido un Paras a tu equipo
+20230517110701-Has entrado al Centro Pokémon
+20230517110702-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110702-Has elegido a Paras para entrenar
+20230517110703-Has entrado al Centro Pokémon
+20230517110706-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110706-Has elegido a Paras para entrenar
+20230517110710-Has entrado al Centro Pokémon
+20230517110711-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110711-Has elegido a Paras para entrenar
+20230517110714-Has entrado al Centro Pokémon
+20230517110715-Estás en el menu principal de la aplicación
+20230517110715-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
