@@ -48,6 +48,8 @@ public class ControladorTienda {
     private Mochila mochila = new Mochila();
     private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
+    @FXML
+    private ImageView imageViewFondo;
 
     public void initialize() throws IOException {
         Logger.write("Has entrado a la tienda Pokémon");
