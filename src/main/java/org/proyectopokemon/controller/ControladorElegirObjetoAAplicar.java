@@ -41,6 +41,8 @@ public class ControladorElegirObjetoAAplicar {
     private Button btnVolver;
     private List<Button> botones;
     private String nombreObjeto;
+    @FXML
+    private Button btnObj1;
 
     private Entrenamiento entrenamiento = new Entrenamiento();
     @FXML
@@ -69,6 +71,7 @@ public class ControladorElegirObjetoAAplicar {
             botones.get(i).setDisable(true);
         }
         for(int i = 0; i < Entrenador.miEntrenador.getCajaObjetos().size(); i++){
+
             if(Entrenador.miEntrenador.getCajaObjetos().get(i) != null){
                 botones.get(i).setText(Entrenador.miEntrenador.getCajaObjetos().get(i).getNombre());
                 botones.get(i).setDisable(false);
@@ -77,26 +80,32 @@ public class ControladorElegirObjetoAAplicar {
     }
     public void escogerObjeto1(){
        nombreObjeto = btnObjeto1.getText();
+       btnObjeto1.setDisable(true);
        aplicarObjeto();
     }
     public void escogerObjeto2(){
         nombreObjeto = btnObjeto2.getText();
+        btnObjeto1.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto3(){
         nombreObjeto = btnObjeto3.getText();
+        btnObjeto1.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto4(){
         nombreObjeto = btnObjeto4.getText();
+        btnObjeto1.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto5(){
         nombreObjeto = btnObjeto5.getText();
+        btnObjeto1.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto6(){
         nombreObjeto = btnObjeto6.getText();
+        btnObjeto1.setDisable(true);
         aplicarObjeto();
     }
 
