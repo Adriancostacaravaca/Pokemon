@@ -54,6 +54,8 @@ public class ControladorCrianza {
     @FXML
     private Label lblPokemon2;
     @FXML
+    private Label lblMensaje;
+    @FXML
     private Label lblPokedolares;
     private List<CheckBox> botones;
     private Pokemon[] seleccionados;
@@ -80,6 +82,9 @@ public class ControladorCrianza {
             }
         }
         for (CheckBox checkBox : botones) {
+            if (checkBox.getText().equals("CheckBox")) {
+                checkBox.setDisable(true);
+            }
             checkBox.setOnAction(event -> {
                         int contador = 0;
                         for (CheckBox cb : botones) {
@@ -90,9 +95,6 @@ public class ControladorCrianza {
                         for (CheckBox cb : botones) {
                             if (!cb.isSelected()) {
                                 cb.setDisable(contador >= 2);
-                            }
-                            if (cb.getText().equals("CheckBox")) {
-                                cb.setDisable(true);
                             }
                         }
                         mostrarImg();
@@ -116,15 +118,19 @@ public class ControladorCrianza {
 
     // ACTUALIZAMOS NUESTRO DINERO
     public void actualizarDinero() {
+        if(Entrenador.miEntrenador.getPokedollar() < 800){
+            btnCriar.setDisable(true);
+            lblMensaje.setText("No tienes suficientes pokedollares");
+        }
         lblCoste.setText("Coste: 800");
         lblPokedolares.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
     }
 
     // MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON
-    public void criar() throws IOException {
+    public void crianza() throws IOException {
 
         if (imageViewPokemon1.getImage() == null || imageViewPokemon2.getImage() == null) {
-            System.out.println("Elige más Pokémon");
+            lblMensaje.setText("Elige 2 pokemones para continuar");
         } else {
             vaciarSeleccionados();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/VentanaEmergenteAsignarNombrePokemon.fxml"));
@@ -136,18 +142,14 @@ public class ControladorCrianza {
             stage2.setScene(scene);
             stage2.showAndWait();
             actualizarDinero();
-            enviarPokemones();
-            for(int i = 0 ; i < seleccionados.length;i++){
-                System.out.println(seleccionados[i]);
-            }
-
+            enviarPokemonesAImage();
             Entrenador.miEntrenador.getCaja().add(Entrenador.miEntrenador.criar(seleccionados));
             actualizarDinero();
         }
 
     }
 
-    public void enviarPokemones() {
+    public void enviarPokemonesAImage() {
         for (int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++) {
             if (imageViewPokemon1.getImage() == Entrenador.miEntrenador.getEquipoPrincipal().get(i).getImage() ) {
                 seleccionados[0] = Entrenador.miEntrenador.getEquipoPrincipal().get(i);
@@ -178,6 +180,7 @@ public class ControladorCrianza {
                     lblPokemon2.setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
                 }
             }
+
         }
     }
 

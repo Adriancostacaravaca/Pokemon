@@ -3,8 +3,9 @@ package org.proyectopokemon.pokemon;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.proyectopokemon.enums.Tipo;
 
- // TODOS LOS ATRIBUTOS HAN DE SER STATIC
+// TODOS LOS ATRIBUTOS HAN DE SER STATIC
 
 class PokemonTest {
 
@@ -14,19 +15,19 @@ class PokemonTest {
     // SIMILAR A INITIALIZE
     @BeforeAll
     static void crearPokemon(){
-        p1 = new Pokemon();
-        p2 = new Pokemon();
+        p1 = new Pokemon("juan1", Tipo.PLANTA,Tipo.PLANTA,null);
+        p2 = new Pokemon("juan2", Tipo.PLANTA,Tipo.PLANTA,null);
     }
 
 
 
     @Test
     void subirNivel() {
-        p2.setNivel(3);
-        p2.setExperiencia(30);
-        int nivel = p2.getNivel();
+        p2.setNivel(2);
+        p2.setExperiencia(20);
+        int nivelAnterios = p2.getNivel();
         p2.subirNivel();
-        Assert.assertTrue(nivel < p2.getVitalidad());
+        Assert.assertTrue(nivelAnterios < p2.getNivel());
     }
 
     @Test

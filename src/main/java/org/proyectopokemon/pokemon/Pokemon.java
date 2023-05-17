@@ -121,6 +121,11 @@ public class Pokemon {
         return nivel;
     }
 
+    public void setNivel(int i) {
+    }
+
+    public void setExperiencia(int i) {
+    }
     public Image getImage() {
         return image;
     }
@@ -358,4 +363,6 @@ public class Pokemon {
     public String toString() {
         return "Nombre: " + nombre + ", mote: " + mote + ", nivel: " + nivel + ", género: " + sexo;
     }
+
+
 }
