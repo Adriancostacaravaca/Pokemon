@@ -46,23 +46,22 @@
   <children>
     <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
+            <ImageView fx:id="imageViewFondo" fitHeight="484.0" fitWidth="795.0" layoutX="-5.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagenes/CentroPokemon.jpeg" />
+               </image></ImageView>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaAnterior" prefHeight="36.0" prefWidth="111.0" text="Volver" />
             <ListView fx:id="listaObjetos" layoutX="282.0" layoutY="108.0" prefHeight="262.0" prefWidth="480.0" />
             <Button fx:id="btnComprar" layoutX="483.0" layoutY="387.0" mnemonicParsing="false" onAction="#comprar" prefHeight="36.0" prefWidth="111.0" text="Comprar" />
-            <Label fx:id="lblPokedolares" layoutX="637.0" layoutY="392.0" prefHeight="26.0" prefWidth="114.0" />
+            <Label fx:id="lblPokedolares" layoutX="637.0" layoutY="392.0" prefHeight="26.0" prefWidth="114.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
             <ImageView fx:id="imagenProfesorOak" fitHeight="307.0" fitWidth="219.0" layoutX="27.0" layoutY="85.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
                <effect>
                   <DropShadow />
                </effect>
-               <image>
-                  <Image url="@../imagenes/ProfesorOak.png" />
-               </image>
             </ImageView>
-            <Label fx:id="lblTienda" alignment="CENTER" layoutX="238.0" layoutY="27.0" prefHeight="45.0" prefWidth="313.0" text="Tienda Pokémon">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
          </children></AnchorPane>
   </children>
 </VBox>
