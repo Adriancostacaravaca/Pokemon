@@ -1,0 +1,34 @@
+20230517061351-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517061354-Te has registrado
+20230517061354-Has entrado al login
+20230517061356-Las credenciales introducidas son correctas
+20230517061356-Estás en el menu principal de la aplicación
+20230517061358-Estás en la ventana de captura
+20230517061358-Un Hitmonlee salvaje ha aparecido
+20230517061359-Un Alakazam salvaje ha aparecido
+20230517061359-Has capturado un Alakazam salvaje
+20230517061400-Un Venomoth salvaje ha aparecido
+20230517061401-Has capturado un Venomoth salvaje
+20230517061401-Estás en el menu principal de la aplicación
+20230517061402-Has entrado al Centro Pokémon
+20230517061402-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517061404-Has movido un Alakazam a tu equipo
+20230517061404-Has movido un Venomoth a tu equipo
+20230517061405-Has entrado al Centro Pokémon
+20230517061408-Estás en la ventana de crianza
+20230517061410-Estás eligiendo que nombre ponerle a tu nuevo Pokémon
+20230517061425-Has entrado al Centro Pokémon
+20230517061427-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517061429-Has movido un paco a tu equipo
+20230517061430-Has entrado al Centro Pokémon
+20230517061435-Estás en el menu principal de la aplicación
+20230517061435-Estás en la ventana previa al combate contra un entrenador
+20230517061436-Estás combatiendo contra un entrenador
+20230517061437-Vas a cambiar de Pokémon para combatir
+20230517061438-Has elegido a paco para combatir
+20230517061438-Estás combatiendo contra un entrenador
+20230517061447-Estás en la ventana previa al combate contra un entrenador
+20230517061448-Estás en el menu principal de la aplicación
+20230517061449-Estás en la ventana Mochila
+20230517061450-Estás en el menu principal de la aplicación
+20230517061452-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
