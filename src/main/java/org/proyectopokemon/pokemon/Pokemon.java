@@ -146,6 +146,10 @@ public class Pokemon {
         return velocidad;
     }
 
+    public void setEstamina(int estamina) {
+        this.estamina = estamina;
+    }
+
     public static List<Movimiento> getListaCuatroAtaques() {
         return listaCuatroAtaques;
     }
