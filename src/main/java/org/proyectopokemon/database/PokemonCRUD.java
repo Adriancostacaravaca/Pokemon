@@ -69,7 +69,11 @@ public class PokemonCRUD {
     public static List<Movimiento> getListaMovimientos(int pokemonId) throws SQLException {
         List<Movimiento> movimientos = new ArrayList<>();
 
-        String query = "SELECT P.NOM_POKEMON AS NOMBRE, M1.NOMBRE AS ATAQUE1, M2.NOMBRE AS ATAQUE2, M3.NOMBRE AS ATAQUE3, M4.NOMBRE AS ATAQUE4" +
+        String query = "SELECT P.NOM_POKEMON AS NOMBRE," +
+                        "M1.NOMBRE AS ATAQUE," +
+                        "M2.NOMBRE AS ATAQUE2," +
+                        "M3.NOMBRE AS ATAQUE3," +
+                        "M4.NOMBRE AS ATAQUE4" +
                         "FROM pokedex AS P " +
                         "JOIN movimientos AS M1 ON P.Primer_Ataque = M1.id_movimiento " +
                         "JOIN movimientos AS M2 ON P.Segundo_Ataque = M2.id_movimiento " +
@@ -83,14 +87,14 @@ public class PokemonCRUD {
         ResultSet resultSet = preparedStatement.executeQuery();
 
         while(resultSet.next()){
-            String nameMovement = resultSet.getString("NOMBRE");
-            String power = resultSet.getString("TIPO1").trim();
-            String state = resultSet.getString("TIPO2").trim();
-            String type = resultSet.getString("IMG_URL");
-            String improve = resultSet.getString("IMG_URL");
+            String nombre = resultSet.getString("NOMBRE");
+            String potencia = resultSet.getString("TIPO1").trim();
+            String estado = resultSet.getString("TIPO2").trim();
+            String tipo = resultSet.getString("IMG_URL");
+            String normal = resultSet.getString("IMG_URL");
 
             Movimiento movimiento = new Movimiento();
-            movimientos.add(movimiento);
+
         }
         return movimientos;
     }
