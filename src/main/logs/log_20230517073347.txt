@@ -1,0 +1,49 @@
+20230517073347-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517073349-Te has registrado
+20230517073349-Has entrado al login
+20230517073351-Las credenciales introducidas son correctas
+20230517073351-Estás en el menu principal de la aplicación
+20230517073352-Has entrado al Centro Pokémon
+20230517073353-Has entrado a la tienda Pokémon
+20230517073353-Has entrado al Centro Pokémon
+20230517073354-Estás en el menu principal de la aplicación
+20230517073355-Estás en la ventana Mochila
+20230517073355-Estás en el menu principal de la aplicación
+20230517073356-Estás en la ventana Pokedex
+20230517073357-Estás en el menu principal de la aplicación
+20230517073357-Estás en la ventana Mochila
+20230517073358-Estás en el menu principal de la aplicación
+20230517073358-Estás en la ventana previa al combate contra un entrenador
+20230517073401-Estás en el menu principal de la aplicación
+20230517073401-Estás en la ventana previa al combate contra un entrenador
+20230517073404-Estás en el menu principal de la aplicación
+20230517073405-Has entrado al Centro Pokémon
+20230517073405-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517073406-Has entrado al Centro Pokémon
+20230517073406-Estás en el menu principal de la aplicación
+20230517073407-Estás en la ventana de captura
+20230517073407-Un Electabuzz salvaje ha aparecido
+20230517073408-Has capturado un Electabuzz salvaje
+20230517073409-Estás en el menu principal de la aplicación
+20230517073409-Has entrado al Centro Pokémon
+20230517073410-Estás en el menu principal de la aplicación
+20230517073411-Estás en la ventana previa al combate contra un entrenador
+20230517073411-Estás en el menu principal de la aplicación
+20230517073412-Has entrado al Centro Pokémon
+20230517073412-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517073413-Has movido un Electabuzz a tu equipo
+20230517073414-Has entrado al Centro Pokémon
+20230517073414-Estás en el menu principal de la aplicación
+20230517073415-Estás en la ventana previa al combate contra un entrenador
+20230517073420-Estás en el menu principal de la aplicación
+20230517073421-Estás en la ventana de captura
+20230517073421-Un Dodrio salvaje ha aparecido
+20230517073422-Estás en el menu principal de la aplicación
+20230517073423-Has entrado al Centro Pokémon
+20230517073424-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517073424-Has elegido a Electabuzz para entrenar
+20230517073428-Has entrado al Centro Pokémon
+20230517073429-Estás en el menu principal de la aplicación
+20230517073430-Estás en la ventana previa al combate contra un entrenador
+20230517073431-Estás en el menu principal de la aplicación
+20230517073431-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

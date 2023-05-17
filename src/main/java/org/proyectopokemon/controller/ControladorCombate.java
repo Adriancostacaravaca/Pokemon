@@ -35,6 +35,7 @@ public class ControladorCombate {
         Logger.write("Estás en la ventana previa al combate contra un entrenador");
         pokedex = new Pokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
+        btnCombatir.setDisable(false);
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
         if(Entrenador.miEntrenador.getEquipoPrincipal().isEmpty()){
             btnSubirNivel.setDisable(true);
@@ -42,9 +43,6 @@ public class ControladorCombate {
         if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 1){
             btnCombatir.setDisable(true);
             lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
-        }else {
-            btnCombatir.setDisable(false);
-            lblErrorEquipoVacio.setText(" ");
         }
 
     }
@@ -72,7 +70,7 @@ public class ControladorCombate {
     }
 
     @FXML
-    public void subirNivel(ActionEvent event) throws IOException{
+    public void subirNivel(){
         Entrenador.miEntrenador.getEquipoPrincipal().get(0).subirNivel();
     }
     // FIXME: PETA EL HASHMAP POR ALGÚN MOTIVO QUE DESCONOZCO - ADRIAN

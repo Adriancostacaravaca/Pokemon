@@ -1,0 +1,29 @@
+20230517073531-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517073532-Te has registrado
+20230517073532-Has entrado al login
+20230517073534-Las credenciales introducidas son correctas
+20230517073534-Estás en el menu principal de la aplicación
+20230517073534-Estás en la ventana previa al combate contra un entrenador
+20230517073537-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517073537-Estás en la ventana previa al combate contra un entrenador
+20230517073538-Estás en el menu principal de la aplicación
+20230517073538-Estás en la ventana de captura
+20230517073538-Un Koffing salvaje ha aparecido
+20230517073540-Has capturado un Koffing salvaje
+20230517073540-Estás en el menu principal de la aplicación
+20230517073541-Has entrado al Centro Pokémon
+20230517073541-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517073543-Has movido un Koffing a tu equipo
+20230517073544-Has entrado al Centro Pokémon
+20230517073544-Estás en el menu principal de la aplicación
+20230517073545-Estás en la ventana previa al combate contra un entrenador
+20230517073549-Estás en el menu principal de la aplicación
+20230517073550-Estás en la ventana de captura
+20230517073550-Un Dodrio salvaje ha aparecido
+20230517073550-Estás en el menu principal de la aplicación
+20230517073551-Has entrado al Centro Pokémon
+20230517073553-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517073553-Has elegido a Koffing para entrenar
+20230517073554-Has entrado al Centro Pokémon
+20230517073554-Estás en el menu principal de la aplicación
+20230517073555-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
