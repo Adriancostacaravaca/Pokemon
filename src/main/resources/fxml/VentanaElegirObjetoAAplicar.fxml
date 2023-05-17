@@ -42,12 +42,12 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <Label fx:id="lblTuEquipo" alignment="CENTER" layoutX="291.0" layoutY="27.0" prefHeight="45.0" prefWidth="207.0" text="Tus objetos">
+            <Label fx:id="lblTusObjetos" alignment="CENTER" layoutX="291.0" layoutY="27.0" prefHeight="45.0" prefWidth="207.0" text="Tus objetos">
                <font>
                   <Font size="30.0" />
                </font>
             </Label>
-            <Button fx:id="btnObjeto1" layoutX="67.0" layoutY="135.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto1" layoutX="67.0" layoutY="135.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>

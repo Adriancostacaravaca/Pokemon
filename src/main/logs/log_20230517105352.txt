@@ -1,0 +1,46 @@
+20230517105352-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517105354-Te has registrado
+20230517105354-Has entrado al login
+20230517105355-Las credenciales introducidas son correctas
+20230517105355-Estás en el menu principal de la aplicación
+20230517105356-Estás en la ventana de captura
+20230517105356-Un Ekans salvaje ha aparecido
+20230517105356-Has capturado un Ekans salvaje
+20230517105357-Estás en el menu principal de la aplicación
+20230517105358-Has entrado al Centro Pokémon
+20230517105358-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517105400-Has movido un Ekans a tu equipo
+20230517105401-Has entrado al Centro Pokémon
+20230517105402-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105402-Has elegido a Ekans para entrenar
+20230517105437-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105438-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105438-Has elegido a Ekans para entrenar
+20230517105439-Has entrado al Centro Pokémon
+20230517105440-Has entrado a la tienda Pokémon
+20230517105442-Has entrado al Centro Pokémon
+20230517105444-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105444-Has elegido a Ekans para entrenar
+20230517105446-Has elegido a Ekans para entrenar
+20230517105450-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105453-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105453-Has elegido a Ekans para entrenar
+20230517105502-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105504-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105504-Has elegido a Ekans para entrenar
+20230517105508-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105510-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105510-Has elegido a Ekans para entrenar
+20230517105521-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105522-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105522-Has elegido a Ekans para entrenar
+20230517105527-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517105528-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517105528-Has elegido a Ekans para entrenar
+20230517105556-Has entrado al Centro Pokémon
+20230517105556-Estás en el menu principal de la aplicación
+20230517105557-Estás en la ventana de captura
+20230517105557-Un Seadra salvaje ha aparecido
+20230517105559-Estás en el menu principal de la aplicación
+20230517105600-Has entrado al Centro Pokémon
+20230517105601-Has entrado a la tienda Pokémon

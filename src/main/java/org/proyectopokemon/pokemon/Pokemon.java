@@ -15,13 +15,13 @@ import java.util.*;
 public class Pokemon {
     private String nombre;
     private String mote;
-    private int vitalidad;
-    private int ataque;
-    private int defensa;
-    private int ataqueEsp;
-    private int defensaEsp;
-    private int velocidad;
-    private int estamina;
+    private double vitalidad;
+    private double ataque;
+    private double defensa;
+    private double ataqueEsp;
+    private double defensaEsp;
+    private double velocidad;
+    private double estamina;
     private int nivel;
     private int fertilidad;
     private char sexo;
@@ -73,47 +73,51 @@ public class Pokemon {
         return nombre;
     }
 
-    public int getVitalidad() {
+    public double getVitalidad() {
         return vitalidad;
     }
 
-    public void setVitalidad(int vitalidad) {
+    public void setVitalidad(double vitalidad) {
         this.vitalidad = vitalidad;
     }
 
-    public void setDefensa(int defensa) {
+    public void setDefensa(double defensa) {
         this.defensa = defensa;
     }
 
-    public void setDefensaEsp(int defensaEsp) {
+    public void setDefensaEsp(double defensaEsp) {
         this.defensaEsp = defensaEsp;
     }
 
-    public int getDefensaEsp() {
+    public void setEstamina(double estamina) {
+        this.estamina = estamina;
+    }
+
+    public double getDefensaEsp() {
         return defensaEsp;
     }
 
-    public void setAtaque(int ataque) {
+    public void setAtaque(double ataque) {
         this.ataque = ataque;
     }
 
-    public void setAtaqueEsp(int ataqueEsp) {
+    public void setAtaqueEsp(double ataqueEsp) {
         this.ataqueEsp = ataqueEsp;
     }
 
-    public int getAtaqueEsp() {
+    public double getAtaqueEsp() {
         return ataqueEsp;
     }
 
-    public void setVelocidad(int velocidad) {
+    public void setVelocidad(double velocidad) {
         this.velocidad = velocidad;
     }
 
-    public int getAtaque() {
+    public double getAtaque() {
         return ataque;
     }
 
-    public int getEstamina() {
+    public double getEstamina() {
         return estamina;
     }
 
@@ -134,11 +138,11 @@ public class Pokemon {
         return tipo;
     }
 
-    public int getDefensa() {
+    public double getDefensa() {
         return defensa;
     }
 
-    public int getVelocidad() {
+    public double getVelocidad() {
         return velocidad;
     }
 
@@ -340,7 +344,7 @@ public class Pokemon {
         if(estamina <= 0){
             System.out.println("Necesitas descansar para realizar otro ataque");
         }else {
-            pokemon.setVitalidad(pokemon.getVitalidad() - 5);
+            pokemon.setVitalidad(pokemon.getVitalidad() - 5f);
             this.estamina -= 5;
             System.out.println(getListaCuatroAtaques());
         }

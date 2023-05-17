@@ -15,6 +15,7 @@ import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Entrenamiento;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -72,6 +73,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
 
+    private static final DecimalFormat decfor = new DecimalFormat("0.00");
+
     public void initialize() throws IOException {
         Logger.write("Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos");
         botones = new ArrayList<>();
@@ -120,12 +123,12 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     }
     public void actualizarEstadisticas(){
         lblNombre.setText(entrenamiento.getPokemonElegido().getNombre());
-        lblAtaque.setText("Ataque: " + entrenamiento.getPokemonElegido().getAtaque());
-        lblDefensa.setText("Defensa: " + entrenamiento.getPokemonElegido().getDefensa());
-        lblAtaqueEsp.setText("Ataque Especial: " + entrenamiento.getPokemonElegido().getAtaqueEsp());
-        lblDefensaEsp.setText("Defensa Especial: " + entrenamiento.getPokemonElegido().getDefensaEsp());
-        lblVitalidad.setText("Vitalidad: " + entrenamiento.getPokemonElegido().getVitalidad());
-        lblVelocidad.setText("Velocidad: " + entrenamiento.getPokemonElegido().getVelocidad());
+        lblAtaque.setText("Ataque: " + decfor.format(entrenamiento.getPokemonElegido().getAtaque()));
+        lblDefensa.setText("Defensa: " + decfor.format(entrenamiento.getPokemonElegido().getDefensa()));
+        lblAtaqueEsp.setText("Ataque Especial: " + decfor.format(entrenamiento.getPokemonElegido().getAtaqueEsp()));
+        lblDefensaEsp.setText("Defensa Especial: " + decfor.format(entrenamiento.getPokemonElegido().getDefensaEsp()));
+        lblVitalidad.setText("Vitalidad: " + decfor.format(entrenamiento.getPokemonElegido().getVitalidad()));
+        lblVelocidad.setText("Velocidad: " + decfor.format(entrenamiento.getPokemonElegido().getVelocidad()));
         lblNivel.setText("Nivel: " + entrenamiento.getPokemonElegido().getNivel());
         imageViewPokemon.setImage(entrenamiento.getPokemonElegido().getImage());
         lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());

@@ -1,0 +1,44 @@
+20230517105959-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517110001-Te has registrado
+20230517110001-Has entrado al login
+20230517110003-Las credenciales introducidas son correctas
+20230517110003-Estás en el menu principal de la aplicación
+20230517110004-Estás en la ventana de captura
+20230517110004-Un Gastly salvaje ha aparecido
+20230517110004-Has capturado un Gastly salvaje
+20230517110005-Estás en el menu principal de la aplicación
+20230517110006-Has entrado al Centro Pokémon
+20230517110006-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517110007-Has movido un Gastly a tu equipo
+20230517110008-Has entrado al Centro Pokémon
+20230517110009-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110009-Has elegido a Gastly para entrenar
+20230517110010-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110010-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110010-Has elegido a Gastly para entrenar
+20230517110011-Has entrado al Centro Pokémon
+20230517110011-Has entrado a la tienda Pokémon
+20230517110018-Has entrado al Centro Pokémon
+20230517110018-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110018-Has elegido a Gastly para entrenar
+20230517110019-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110021-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110021-Has elegido a Gastly para entrenar
+20230517110031-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110032-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110032-Has elegido a Gastly para entrenar
+20230517110035-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110036-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110036-Has elegido a Gastly para entrenar
+20230517110044-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110045-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110045-Has elegido a Gastly para entrenar
+20230517110046-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110047-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110047-Has elegido a Gastly para entrenar
+20230517110116-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110118-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110118-Has elegido a Gastly para entrenar
+20230517110228-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517110229-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517110229-Has elegido a Gastly para entrenar

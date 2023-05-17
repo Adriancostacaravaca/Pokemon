@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
+import org.proyectopokemon.pokemon.Entrenamiento;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class ControladorElegirObjetoAAplicar {
     private Stage stage;
 
     @FXML
-    private Label lblTuEquipo;
+    private Label lblTusObjetos;
     @FXML
     private Button btnObjeto1;
     @FXML
@@ -39,6 +40,9 @@ public class ControladorElegirObjetoAAplicar {
     @FXML
     private Button btnVolver;
     private List<Button> botones;
+    private String nombreObjeto;
+
+    private Entrenamiento entrenamiento = new Entrenamiento();
     @FXML
     public void volverAVentanaAnterior(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEstadisticasYEntrenamientoPokemon.fxml")));
@@ -67,10 +71,39 @@ public class ControladorElegirObjetoAAplicar {
         for(int i = 0; i < Entrenador.miEntrenador.getCajaObjetos().size(); i++){
             if(Entrenador.miEntrenador.getCajaObjetos().get(i) != null){
                 botones.get(i).setText(Entrenador.miEntrenador.getCajaObjetos().get(i).getNombre());
+                nombreObjeto = Entrenador.miEntrenador.getCajaObjetos().get(i).getNombre();
                 botones.get(i).setDisable(false);
             }
         }
     }
+    public void aplicarObjeto(){
 
+        switch (nombreObjeto) {
+            case "Pesa":
+                entrenamiento.getPokemonElegido().setAtaque(entrenamiento.getPokemonElegido().getAtaque() * 1.2f);
+                entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 1.2f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.2f);
+                break;
+            case "Pluma":
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 1.3f);
+                entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 0.2f);
+                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.2f);
+                break;
+            case "Chaleco":
+                entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 1.2f);
+                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 1.2f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.15f);
+                entrenamiento.getPokemonElegido().setAtaque(entrenamiento.getPokemonElegido().getAtaque() * 0.15f);
+                break;
+            case "Baston":
+                entrenamiento.getPokemonElegido().setEstamina(entrenamiento.getPokemonElegido().getEstamina() * 1.2f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.15f);
+                break;
+            case "Pilas":
+                entrenamiento.getPokemonElegido().setEstamina(entrenamiento.getPokemonElegido().getEstamina() * 1.5f);
+                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.3f);
+                break;
+        }
+    }
 
 }
