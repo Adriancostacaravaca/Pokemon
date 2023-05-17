@@ -44,16 +44,16 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
             <ImageView fx:id="imageViewFondo" fitHeight="477.0" fitWidth="788.0" pickOnBounds="true" />
+            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="115.0" layoutY="149.0" prefHeight="27.0" prefWidth="559.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
             <Button fx:id="btnTienda" layoutX="317.0" layoutY="190.0" mnemonicParsing="false" onAction="#irAVentanaTienda" prefHeight="36.0" prefWidth="155.0" text="Tienda" />
             <Button fx:id="btnCriarPokemon" layoutX="317.0" layoutY="320.0" mnemonicParsing="false" onAction="#IrAVentanaCrianza" prefHeight="36.0" prefWidth="155.0" text="Criar Pokemon" />
             <Button fx:id="btnEntrenarPokemon" layoutX="317.0" layoutY="233.0" mnemonicParsing="false" onAction="#IrAVentanaEntrenamiento" prefHeight="36.0" prefWidth="155.0" text="Entrenar Pokemon" />
             <Button fx:id="btnMoverAEquipo" layoutX="317.0" layoutY="276.0" mnemonicParsing="false" onAction="#IrAVentanaIntercambio" prefHeight="36.0" prefWidth="155.0" text="Mover a Equipo" />
-            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="241.0" layoutY="161.0" prefHeight="17.0" prefWidth="308.0" textFill="RED">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
          </children>
     </AnchorPane>
   </children>

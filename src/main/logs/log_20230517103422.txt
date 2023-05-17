@@ -1,0 +1,30 @@
+20230517103422-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517103435-Te has registrado
+20230517103435-Has entrado al login
+20230517103439-Las credenciales introducidas son correctas
+20230517103439-Estás en el menu principal de la aplicación
+20230517103443-Estás en la ventana Pokedex
+20230517103446-Estás en el menu principal de la aplicación
+20230517103447-Estás en la ventana Mochila
+20230517103448-Estás en el menu principal de la aplicación
+20230517103449-Has entrado al Centro Pokémon
+20230517103454-Estás en el menu principal de la aplicación
+20230517103456-Estás en la ventana de captura
+20230517103456-Un Doduo salvaje ha aparecido
+20230517103458-Estás en el menu principal de la aplicación
+20230517103459-Estás en la ventana de captura
+20230517103459-Un Nidoqueen salvaje ha aparecido
+20230517103501-Has capturado un Nidoqueen salvaje
+20230517103501-Estás en el menu principal de la aplicación
+20230517103502-Has entrado al Centro Pokémon
+20230517103503-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517103503-Has movido un Nidoqueen a tu equipo
+20230517103504-Has entrado al Centro Pokémon
+20230517103505-Has entrado a la tienda Pokémon
+20230517103506-Has entrado al Centro Pokémon
+20230517103507-Estás en el menu principal de la aplicación
+20230517103507-Estás en la ventana previa al combate contra un entrenador
+20230517103508-Estás combatiendo contra un entrenador
+20230517103514-Estás en la ventana previa al combate contra un entrenador
+20230517103514-Estás en el menu principal de la aplicación
+20230517103515-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

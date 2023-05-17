@@ -1,0 +1,52 @@
+20230517103001-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517103004-Te has registrado
+20230517103004-Has entrado al login
+20230517103005-Las credenciales introducidas son correctas
+20230517103005-Estás en el menu principal de la aplicación
+20230517103019-Estás en la ventana Mochila
+20230517103020-Estás en el menu principal de la aplicación
+20230517103021-Estás en la ventana Mochila
+20230517103022-Estás en el menu principal de la aplicación
+20230517103023-Estás en la ventana Pokedex
+20230517103024-Estás en el menu principal de la aplicación
+20230517103025-Estás en la ventana previa al combate contra un entrenador
+20230517103027-Estás en el menu principal de la aplicación
+20230517103028-Has entrado al Centro Pokémon
+20230517103029-Estás en el menu principal de la aplicación
+20230517103030-Estás en la ventana de captura
+20230517103030-Un Jigglypuff salvaje ha aparecido
+20230517103031-Estás en el menu principal de la aplicación
+20230517103032-Estás en la ventana Pokedex
+20230517103033-Estás en el menu principal de la aplicación
+20230517103034-Estás en la ventana Mochila
+20230517103035-Estás en el menu principal de la aplicación
+20230517103035-Estás en la ventana previa al combate contra un entrenador
+20230517103037-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517103038-Estás en la ventana previa al combate contra un entrenador
+20230517103040-Estás en el menu principal de la aplicación
+20230517103041-Estás en la ventana de captura
+20230517103041-Un Blastoise salvaje ha aparecido
+20230517103050-Un Ditto salvaje ha aparecido
+20230517103051-Un Jolteon salvaje ha aparecido
+20230517103052-Un Kangaskhan salvaje ha aparecido
+20230517103054-Estás en el menu principal de la aplicación
+20230517103054-Estás en la ventana Mochila
+20230517103055-Estás en el menu principal de la aplicación
+20230517103056-Estás en la ventana Pokedex
+20230517103107-Estás en el menu principal de la aplicación
+20230517103108-Estás en la ventana Mochila
+20230517103109-Estás en el menu principal de la aplicación
+20230517103111-Estás en la ventana de captura
+20230517103111-Un Charmander salvaje ha aparecido
+20230517103113-Un Nidoran-f salvaje ha aparecido
+20230517103113-Has capturado un Nidoran-f salvaje
+20230517103114-Estás en el menu principal de la aplicación
+20230517103114-Has entrado al Centro Pokémon
+20230517103115-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517103116-Has movido un Nidoran-f a tu equipo
+20230517103117-Has entrado al Centro Pokémon
+20230517103119-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517103119-Has elegido a Nidoran-f para entrenar
+20230517103124-Has entrado al Centro Pokémon
+20230517103125-Estás en el menu principal de la aplicación
+20230517103126-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

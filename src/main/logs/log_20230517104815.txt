@@ -1,0 +1,79 @@
+20230517104815-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517104817-Te has registrado
+20230517104817-Has entrado al login
+20230517104818-Las credenciales introducidas son correctas
+20230517104818-Estás en el menu principal de la aplicación
+20230517104819-Has entrado al Centro Pokémon
+20230517104820-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517104820-Has entrado al Centro Pokémon
+20230517104820-Estás en el menu principal de la aplicación
+20230517104821-Estás en la ventana de captura
+20230517104821-Un Kabuto salvaje ha aparecido
+20230517104822-Un Muk salvaje ha aparecido
+20230517104822-Un Shellder salvaje ha aparecido
+20230517104822-Has capturado un Shellder salvaje
+20230517104823-Estás en el menu principal de la aplicación
+20230517104823-Has entrado al Centro Pokémon
+20230517104825-Has entrado a la tienda Pokémon
+20230517104829-Has entrado al Centro Pokémon
+20230517104830-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517104831-Has movido un Shellder a tu equipo
+20230517104832-Has entrado al Centro Pokémon
+20230517104832-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517104832-Has elegido a Shellder para entrenar
+20230517104835-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517104840-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517104840-Has elegido a Shellder para entrenar
+20230517104851-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517104853-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517104853-Has elegido a Shellder para entrenar
+20230517104858-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517104859-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517104859-Has elegido a Shellder para entrenar
+20230517104900-Has entrado al Centro Pokémon
+20230517104900-Estás en el menu principal de la aplicación
+20230517104903-Estás en la ventana previa al combate contra un entrenador
+20230517104904-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517104907-Estás en la ventana previa al combate contra un entrenador
+20230517104908-Estás combatiendo contra un entrenador
+20230517104911-Estás en la ventana previa al combate contra un entrenador
+20230517104912-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517104913-Estás en la ventana previa al combate contra un entrenador
+20230517104914-Estás combatiendo contra un entrenador
+20230517104921-Vas a cambiar de Pokémon para combatir
+20230517104922-Has elegido a Shellder para combatir
+20230517104922-Estás combatiendo contra un entrenador
+20230517104923-Estás en la ventana previa al combate contra un entrenador
+20230517104923-Estás en el menu principal de la aplicación
+20230517104924-Has entrado al Centro Pokémon
+20230517104924-Estás en el menu principal de la aplicación
+20230517104925-Estás en la ventana de captura
+20230517104925-Un Articuno salvaje ha aparecido
+20230517104926-Has capturado un Articuno salvaje
+20230517104927-Estás en el menu principal de la aplicación
+20230517104928-Has entrado al Centro Pokémon
+20230517104928-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517104929-Has movido un Articuno a tu equipo
+20230517104930-Has entrado al Centro Pokémon
+20230517104931-Estás en el menu principal de la aplicación
+20230517104931-Estás en la ventana previa al combate contra un entrenador
+20230517104933-Estás combatiendo contra un entrenador
+20230517104939-Vas a cambiar de Pokémon para combatir
+20230517104940-Has elegido a Articuno para combatir
+20230517104940-Estás combatiendo contra un entrenador
+20230517104941-Vas a cambiar de Pokémon para combatir
+20230517104942-Has elegido a Shellder para combatir
+20230517104942-Estás combatiendo contra un entrenador
+20230517104943-Vas a cambiar de Pokémon para combatir
+20230517104943-Has elegido a Articuno para combatir
+20230517104943-Estás combatiendo contra un entrenador
+20230517104944-Vas a cambiar de Pokémon para combatir
+20230517104945-Has elegido a Shellder para combatir
+20230517104945-Estás combatiendo contra un entrenador
+20230517104946-Estás en la ventana previa al combate contra un entrenador
+20230517104946-Estás en el menu principal de la aplicación
+20230517104947-Estás en la ventana previa al combate contra un entrenador
+20230517104948-Estás en el menu principal de la aplicación
+20230517104949-Estás en la ventana Pokedex
+20230517104950-Estás en el menu principal de la aplicación
+20230517104951-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

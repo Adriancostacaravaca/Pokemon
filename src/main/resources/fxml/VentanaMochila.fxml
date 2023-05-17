@@ -43,13 +43,13 @@
   <children>
     <AnchorPane fx:id="objetos" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <ImageView fx:id="imageViewFondo" fitHeight="479.0" fitWidth="791.0" pickOnBounds="true" />
+            <ImageView fx:id="imageViewFondo" fitHeight="479.0" fitWidth="791.0" layoutX="-14.0" pickOnBounds="true" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
             <Button fx:id="btnRevisarCajaPokemon" layoutX="317.0" layoutY="233.0" mnemonicParsing="false" onAction="#irACajaEntrenador" prefHeight="36.0" prefWidth="155.0" text="Revisar caja Pokémon" />
             <Button fx:id="btnRevisarEquipoPokemon" layoutX="317.0" layoutY="190.0" mnemonicParsing="false" onAction="#IrAVentanaEquipoPokemon" prefHeight="36.0" prefWidth="155.0" text="Revisar equipo Pokémon" />
-            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="241.0" layoutY="161.0" prefHeight="17.0" prefWidth="308.0" textFill="RED">
+            <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="140.0" layoutY="149.0" prefHeight="27.0" prefWidth="511.0" textFill="RED">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
          </children></AnchorPane>

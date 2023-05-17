@@ -59,7 +59,7 @@ public class ControladorCombate2 {
     private ImageView imageViewVS;
     private List<Button> botones;
     private static Pokemon pokemonElegido = Entrenador.miEntrenador.getEquipoPrincipal().get(0);
-    private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combatePokemonSalvaje.mp3").toUri().toString());
+    private Media combatePokemonSalvaje = new Media(Paths.get("src/main/resources/musica/combateEntrenador.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(combatePokemonSalvaje);
     @FXML
     private Label lblMiPokemonVitalidad;

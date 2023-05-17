@@ -1,0 +1,8 @@
+20230517103801-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517103804-Te has registrado
+20230517103804-Has entrado al login
+20230517103806-Las credenciales introducidas son correctas
+20230517103806-Estás en el menu principal de la aplicación
+20230517103807-Estás en la ventana previa al combate contra un entrenador
+20230517103809-Estás en el menu principal de la aplicación
+20230517103810-Has entrado al Centro Pokémon
