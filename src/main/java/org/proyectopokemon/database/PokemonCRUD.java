@@ -72,8 +72,6 @@ public class PokemonCRUD {
             if(potencia == 0 && estado == null){
                 movimientos.add(new MovimientoMejora(nombre,mejora));
             }
-            System.out.println(movimientos.toString());
-
         }
         return movimientos;
     }
