@@ -1,0 +1,59 @@
+20230517124538-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517124540-Te has registrado
+20230517124540-Has entrado al login
+20230517124542-Las credenciales introducidas son correctas
+20230517124542-Estás en el menu principal de la aplicación
+20230517124543-Has entrado al Centro Pokémon
+20230517124544-Estás en el menu principal de la aplicación
+20230517124545-Estás en la ventana de captura
+20230517124545-Un Dewgong salvaje ha aparecido
+20230517124546-Has capturado un Dewgong salvaje
+20230517124548-Estás en el menu principal de la aplicación
+20230517124549-Has entrado al Centro Pokémon
+20230517124549-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517124551-Has movido un Dewgong a tu equipo
+20230517124552-Has entrado al Centro Pokémon
+20230517124553-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124553-Has elegido a Dewgong para entrenar
+20230517124554-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124554-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124554-Has elegido a Dewgong para entrenar
+20230517124557-Has entrado al Centro Pokémon
+20230517124557-Has entrado a la tienda Pokémon
+20230517124601-Has entrado al Centro Pokémon
+20230517124602-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124602-Has elegido a Dewgong para entrenar
+20230517124603-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124604-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124604-Has elegido a Dewgong para entrenar
+20230517124607-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124608-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124608-Has elegido a Dewgong para entrenar
+20230517124645-Has entrado al Centro Pokémon
+20230517124647-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124647-Has elegido a Dewgong para entrenar
+20230517124648-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124649-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124649-Has elegido a Dewgong para entrenar
+20230517124650-Has entrado al Centro Pokémon
+20230517124650-Estás en el menu principal de la aplicación
+20230517124650-Estás en la ventana Mochila
+20230517124651-Estás en el menu principal de la aplicación
+20230517124652-Has entrado al Centro Pokémon
+20230517124653-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124653-Has elegido a Dewgong para entrenar
+20230517124654-Has entrado al Centro Pokémon
+20230517124655-Has entrado a la tienda Pokémon
+20230517124657-Has entrado al Centro Pokémon
+20230517124658-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124658-Has elegido a Dewgong para entrenar
+20230517124700-Has elegido a Dewgong para entrenar
+20230517124700-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124702-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124702-Has elegido a Dewgong para entrenar
+20230517124703-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124704-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124704-Has elegido a Dewgong para entrenar
+20230517124728-Has entrado al Centro Pokémon
+20230517124728-Estás en el menu principal de la aplicación
+20230517124729-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
