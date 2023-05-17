@@ -1,8 +1,0 @@
-20230517111536-Has ingresado a la aplicación Pokemon realizada por The Crüe
-20230517111538-Te has registrado
-20230517111538-Has entrado al login
-20230517111539-Las credenciales introducidas son correctas
-20230517111539-Estás en el menu principal de la aplicación
-20230517111540-Estás en la ventana Pokedex
-20230517111542-Estás en el menu principal de la aplicación
-20230517111543-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

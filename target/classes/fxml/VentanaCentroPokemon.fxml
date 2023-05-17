@@ -41,7 +41,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.proyectopokemon.controller.ControladorCentroPokemon">
   <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="788.0" VBox.vgrow="ALWAYS">
          <children>
             <ImageView fx:id="imageViewFondo" fitHeight="477.0" fitWidth="788.0" pickOnBounds="true" />
             <Label fx:id="lblErrorEquipoVacio" alignment="CENTER" layoutX="115.0" layoutY="149.0" prefHeight="27.0" prefWidth="559.0" textFill="RED">

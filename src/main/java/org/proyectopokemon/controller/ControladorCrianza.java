@@ -77,8 +77,6 @@ public class ControladorCrianza {
         for (int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++) {
             if (Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null) {
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
-            } else {
-                System.out.println("error");
             }
         }
         for (CheckBox checkBox : botones) {
@@ -120,7 +118,7 @@ public class ControladorCrianza {
     public void actualizarDinero() {
         if(Entrenador.miEntrenador.getPokedollar() < 800){
             btnCriar.setDisable(true);
-            lblMensaje.setText("No tienes suficientes pokedollares");
+            lblMensaje.setText("No tienes suficientes pokedólares");
         }
         lblCoste.setText("Coste: 800");
         lblPokedolares.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());

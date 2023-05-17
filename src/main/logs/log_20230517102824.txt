@@ -1,5 +1,0 @@
-20230517102824-Has ingresado a la aplicación Pokemon realizada por The Crüe
-20230517102828-Te has registrado
-20230517102828-Has entrado al login
-20230517102829-Las credenciales introducidas son correctas
-20230517102830-Estás en el menu principal de la aplicación

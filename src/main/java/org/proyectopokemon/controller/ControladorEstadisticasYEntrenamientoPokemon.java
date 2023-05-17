@@ -76,7 +76,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
     private static final DecimalFormat decfor = new DecimalFormat("0.00");
-    private Media musicaEfecto = new Media(Paths.get("src/main/resources/musica/efectoSonido.mp3").toUri().toString());
+    private Media musicaEfecto = new Media(Paths.get("src/main/resources/musica/efectoEntrenamiento.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaEfecto);
 
     public void initialize() throws IOException {
@@ -117,6 +117,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+        mediaPlayer.stop();
     }
     @FXML
     private void musicaEfecto() {
@@ -142,7 +143,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         lblVelocidad.setText("Velocidad: " + decfor.format(entrenamiento.getPokemonElegido().getVelocidad()));
         lblNivel.setText("Nivel: " + entrenamiento.getPokemonElegido().getNivel());
         imageViewPokemon.setImage(entrenamiento.getPokemonElegido().getImage());
-        lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());
+        lblPokedolares.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
         if (Entrenador.miEntrenador.getPokedollar() < 40) {
             btnEnt3.setDisable(true);
             btnEnt4.setDisable(true);

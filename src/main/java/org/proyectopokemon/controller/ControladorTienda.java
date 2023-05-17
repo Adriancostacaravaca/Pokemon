@@ -110,7 +110,7 @@ public class ControladorTienda {
                      mochila.getMochila()) {
                 }
             } else {
-                lblError.setText("No tienes suficiente Pokedolares");
+                lblError.setText("No tienes suficiente pokedólares");
             }
         }
     }
