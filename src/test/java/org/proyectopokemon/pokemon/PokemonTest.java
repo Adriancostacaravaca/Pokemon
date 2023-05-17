@@ -18,16 +18,14 @@ class PokemonTest {
         p1 = new Pokemon("juan1", Tipo.PLANTA,Tipo.PLANTA,null);
         p2 = new Pokemon("juan2", Tipo.PLANTA,Tipo.PLANTA,null);
     }
-
-
-
     @Test
     void subirNivel() {
         p2.setNivel(2);
         p2.setExperiencia(20);
         int nivelAnterios = p2.getNivel();
         p2.subirNivel();
-        Assert.assertTrue(nivelAnterios < p2.getNivel());
+        int nivelAhora = p2.getNivel();
+        Assert.assertEquals(3,  nivelAhora);
     }
 
     @Test
@@ -39,6 +37,9 @@ class PokemonTest {
 
     @Test
     void descansar() {
+        p2.setEstamina(3);
+        p2.descansar();
+        Assert.assertEquals(20,p2.getEstamina());
     }
 
 }
