@@ -1,0 +1,4 @@
+20230517092022-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517092025-Te has registrado
+20230517092025-Has entrado al login
+20230517092026-No te acuerdas de las credenciales
