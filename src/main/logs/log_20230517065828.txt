@@ -1,0 +1,21 @@
+20230517065828-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517065831-Te has registrado
+20230517065831-Has entrado al login
+20230517065832-Las credenciales introducidas son correctas
+20230517065832-Estás en el menu principal de la aplicación
+20230517065833-Estás en la ventana de captura
+20230517065833-Un Muk salvaje ha aparecido
+20230517065834-Has capturado un Muk salvaje
+20230517065835-Estás en el menu principal de la aplicación
+20230517065836-Has entrado al Centro Pokémon
+20230517065839-Estás en el menu principal de la aplicación
+20230517065839-Estás en la ventana previa al combate contra un entrenador
+20230517065844-Estás en el menu principal de la aplicación
+20230517065844-Has entrado al Centro Pokémon
+20230517065845-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517065847-Has movido un Muk a tu equipo
+20230517065847-Has entrado al Centro Pokémon
+20230517065849-Estás en el menu principal de la aplicación
+20230517065850-Estás en la ventana previa al combate contra un entrenador
+20230517065856-Estás en la ventana previa al combate contra un entrenador
+20230517065907-Estás en la ventana previa al combate contra un entrenador

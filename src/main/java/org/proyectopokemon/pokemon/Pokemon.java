@@ -130,6 +130,11 @@ public class Pokemon {
 
     public void setExperiencia(int i) {
     }
+
+    public int getExperiencia() {
+        return experiencia;
+    }
+
     public Image getImage() {
         return image;
     }
