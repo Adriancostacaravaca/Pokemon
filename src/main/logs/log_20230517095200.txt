@@ -1,0 +1,22 @@
+20230517095200-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517095216-Te has registrado
+20230517095216-Has entrado al login
+20230517095218-Las credenciales introducidas son correctas
+20230517095218-Estás en el menu principal de la aplicación
+20230517095222-Estás en la ventana de captura
+20230517095222-Un Growlithe salvaje ha aparecido
+20230517095223-Has capturado un Growlithe salvaje
+20230517095224-Estás en el menu principal de la aplicación
+20230517095225-Has entrado al Centro Pokémon
+20230517095226-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517095227-Has movido un Growlithe a tu equipo
+20230517095228-Has entrado al Centro Pokémon
+20230517095229-Estás en el menu principal de la aplicación
+20230517095231-Has entrado al Centro Pokémon
+20230517095232-Has entrado a la tienda Pokémon
+20230517095244-Has entrado al Centro Pokémon
+20230517095246-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517095246-Has elegido a Growlithe para entrenar
+20230517095248-Has entrado al Centro Pokémon
+20230517095248-Estás en el menu principal de la aplicación
+20230517095253-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

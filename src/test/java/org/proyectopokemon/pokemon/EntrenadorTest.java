@@ -27,7 +27,7 @@ class EntrenadorTest {
         prueba1 = new Pokemon("Juan", Tipo.PLANTA,Tipo.PLANTA,null);
         prueba2 = new Pokemon("Juan1", Tipo.PLANTA,Tipo.PLANTA,null);
         p1 = new Entrenador("juan");
-        objeto1 = new Objeto("pala",5,2,200,"mata");
+        objeto1 = new Objeto("pala",200,"mata");
         prueba = new Pokemon[2];
         prueba[0] = prueba1;
         prueba[1] = prueba2;

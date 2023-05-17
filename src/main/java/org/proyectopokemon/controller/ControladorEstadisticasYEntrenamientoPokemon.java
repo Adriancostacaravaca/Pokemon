@@ -64,7 +64,10 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Button btnPokemon5;
     @FXML
     private Button btnPokemon6;
+    @FXML
+    private Button btnObj1;
     private List<Button> botones;
+    private List<Button> objetos;
     @FXML
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
@@ -78,6 +81,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         botones.add(this.btnPokemon4);
         botones.add(this.btnPokemon5);
         botones.add(this.btnPokemon6);
+        objetos = new ArrayList<>();
+        objetos.add(this.btnObj1);
         for (int i = 0; i < botones.size(); i++) {
             this.botones.get(i).setDisable(true);
         }
@@ -99,6 +104,16 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         scene = new Scene(root, 788, 477);
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Pokemon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    public void aplicarObjetoAPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirObjetoAAplicar.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Elegir Objeto - The Crüe");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();

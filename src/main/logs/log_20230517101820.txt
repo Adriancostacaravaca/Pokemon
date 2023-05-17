@@ -1,0 +1,23 @@
+20230517101820-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517101822-Te has registrado
+20230517101822-Has entrado al login
+20230517101824-Las credenciales introducidas son correctas
+20230517101824-Estás en el menu principal de la aplicación
+20230517101825-Estás en la ventana de captura
+20230517101825-Un Charizard salvaje ha aparecido
+20230517101827-Has capturado un Charizard salvaje
+20230517101828-Estás en el menu principal de la aplicación
+20230517101829-Has entrado al Centro Pokémon
+20230517101830-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517101831-Has movido un Charizard a tu equipo
+20230517101832-Has entrado al Centro Pokémon
+20230517101833-Has entrado a la tienda Pokémon
+20230517101838-Has entrado al Centro Pokémon
+20230517101840-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517101840-Has elegido a Charizard para entrenar
+20230517101842-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517101848-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517101848-Has elegido a Charizard para entrenar
+20230517101849-Has entrado al Centro Pokémon
+20230517101850-Estás en el menu principal de la aplicación
+20230517101851-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
