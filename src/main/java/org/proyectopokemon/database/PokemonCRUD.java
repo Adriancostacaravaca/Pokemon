@@ -69,7 +69,12 @@ public class PokemonCRUD {
     public static List<Movimiento> getListaMovimientos(int pokemonId) throws SQLException {
         List<Movimiento> movimientos = new ArrayList<>();
 
-        String query = "JOIN ";
+        String query = "SELECT P.NOM_POKEMON AS NOMBRE, M1.NOMBRE AS ATAQUE1, M2.NOMBRE AS ATAQUE2, M3.NOMBRE AS ATAQUE3, M4.NOMBRE AS ATAQUE4" +
+                        "FROM pokedex AS P " +
+                        "JOIN movimientos AS M1 ON P.Primer_Ataque = M1.id_movimiento " +
+                        "JOIN movimientos AS M2 ON P.Segundo_Ataque = M2.id_movimiento " +
+                        "JOIN movimientos AS M3 ON P.Tercer_Ataque = M3.id_movimiento " +
+                        "JOIN movimientos AS M4 ON P.Cuarto_Ataque = M4.id_movimiento;";
 
         PreparedStatement preparedStatement = null;
 
