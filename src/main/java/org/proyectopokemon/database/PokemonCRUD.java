@@ -1,6 +1,10 @@
 package org.proyectopokemon.database;
 
 import javafx.scene.image.Image;
+import org.proyectopokemon.enums.Estado;
+import org.proyectopokemon.movements.MovimientoAtaque;
+import org.proyectopokemon.movements.MovimientoEstado;
+import org.proyectopokemon.movements.MovimientoMejora;
 import org.proyectopokemon.pokemon.Pokedex;
 import org.proyectopokemon.pokemon.Pokemon;
 import org.proyectopokemon.enums.Tipo;
@@ -41,59 +45,34 @@ public class PokemonCRUD {
         }
     }
 
-    public static List<Pokemon> readPokemon(int id) {
-        String query = "SELECT NOM_POKEMON AS NOMBRE, TIPO1, TIPO2, IMG_URL FROM pokedex where id = ?";
-
-        PreparedStatement preparedStatement = null;
-        LinkedList<Pokemon> listaPokemon = new LinkedList<>();
-        try {
-            preparedStatement = PokemonConnection.getConnection().prepareStatement(query);
-            preparedStatement.setInt(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
-
-            while (resultSet.next()) {
-                String name = resultSet.getString("NOMBRE");
-                String tipo = resultSet.getString("TIPO1").trim();
-                String tipo2 = resultSet.getString("TIPO2").trim();
-                String imgURL = resultSet.getString("IMG_URL");
-                File imgURL2 = new File(imgURL);
-                listaPokemon.add(new Pokemon(name, Tipo.valueOf(tipo),
-                        Tipo.valueOf(tipo2),new Image(imgURL2.toURI().toString())));
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return listaPokemon;
-    }
-
-    public static List<Movimiento> getListaMovimientos(int pokemonId) throws SQLException {
+    public static List<Movimiento> getListaMovimientos() throws SQLException {
         List<Movimiento> movimientos = new ArrayList<>();
 
-        String query = "SELECT P.NOM_POKEMON AS NOMBRE," +
-                        "M1.NOMBRE AS ATAQUE," +
-                        "M2.NOMBRE AS ATAQUE2," +
-                        "M3.NOMBRE AS ATAQUE3," +
-                        "M4.NOMBRE AS ATAQUE4" +
-                        "FROM pokedex AS P " +
-                        "JOIN movimientos AS M1 ON P.Primer_Ataque = M1.id_movimiento " +
-                        "JOIN movimientos AS M2 ON P.Segundo_Ataque = M2.id_movimiento " +
-                        "JOIN movimientos AS M3 ON P.Tercer_Ataque = M3.id_movimiento " +
-                        "JOIN movimientos AS M4 ON P.Cuarto_Ataque = M4.id_movimiento;";
+        String query = "SELECT p.NOM_POKEMON AS NOMBRE,m1.nombre AS NOMATK1, m1.Potencia AS POTENCIATK1, m1.Estado AS ESTADOATK1, m1.Mejora AS MEJORATK1" +
+                " from pokedex as p JOIN movimientos as m1 on Primer_Ataque = m1.id_movimiento";
 
         PreparedStatement preparedStatement = null;
 
         preparedStatement = PokemonConnection.getConnection().prepareStatement(query);
-        preparedStatement.setInt(1, pokemonId);
         ResultSet resultSet = preparedStatement.executeQuery();
 
         while(resultSet.next()){
-            String nombre = resultSet.getString("NOMBRE");
-            String potencia = resultSet.getString("TIPO1").trim();
-            String estado = resultSet.getString("TIPO2").trim();
-            String tipo = resultSet.getString("IMG_URL");
-            String normal = resultSet.getString("IMG_URL");
+            String nombre = resultSet.getString("NOMATK1");
+            int potencia = resultSet.getInt("POTENCIATK1");
+            String estado = resultSet.getString("ESTADOATK1");
+            int mejora = resultSet.getInt("MEJORATK1");
 
-            Movimiento movimiento = new Movimiento();
+
+            if(estado == null && mejora == 0){
+                movimientos.add(new MovimientoAtaque(nombre,potencia));
+            }
+            if(mejora == 0 && potencia == 0){
+                movimientos.add(new MovimientoEstado(nombre, Estado.valueOf(estado)));
+            }
+            if(potencia == 0 && estado == null){
+                movimientos.add(new MovimientoMejora(nombre,mejora));
+            }
+            System.out.println(movimientos.toString());
 
         }
         return movimientos;

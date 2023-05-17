@@ -8,7 +8,7 @@ public class MovimientoAtaque extends Movimiento{
     private int potencia;
     private Tipo tipo;
 
-    public MovimientoAtaque(String nombre,int turnos, int potencia, Tipo tipo) {
+    public MovimientoAtaque(String nombre, int potencia) {
         this.nombre = nombre;
         this.turnos = turnos;
         this.potencia = potencia;

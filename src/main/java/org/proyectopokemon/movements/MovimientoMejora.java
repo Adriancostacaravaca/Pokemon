@@ -2,9 +2,10 @@ package org.proyectopokemon.movements;
 
 public class MovimientoMejora extends Movimiento{
 
-    public MovimientoMejora(String nombre,int turnos){
+    private int mejora;
+    public MovimientoMejora(String nombre,int mejora){
         this.nombre = nombre;
-        this.turnos = turnos;
+        this.mejora = mejora;
     }
 
 

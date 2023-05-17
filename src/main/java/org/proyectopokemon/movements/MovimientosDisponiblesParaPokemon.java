@@ -19,7 +19,7 @@ public class MovimientosDisponiblesParaPokemon {
     /**
      * METODO PARA AÑADIR LOS MOVIMIENTOS A UNA LISTA GENERAL DE MOVIMIENTOS
      */
-    public void anyadirMovimientos(){
+   /* public void anyadirMovimientos(){
         movimientos.add(new MovimientoAtaque("Impactrueno",1,15, Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispa",1,13,Tipo.ELECTRICO));
         movimientos.add(new MovimientoAtaque("Chispazo",1,20,Tipo.ELECTRICO));
@@ -37,7 +37,7 @@ public class MovimientosDisponiblesParaPokemon {
         movimientos.add(new MovimientoMejora("Mejora4",1));
         movimientos.add(new MovimientoMejora("Mejora5",1));
 
-    }
+    }*/
 
 
 

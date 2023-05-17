@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import org.proyectopokemon.database.PokemonCRUD;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Objects;
 
 /**
@@ -27,9 +28,10 @@ public class AplicacionPokemon extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         PokemonCRUD.readPokemon();
         PokemonCRUD.updatePokemon();
+        PokemonCRUD.getListaMovimientos();
         launch();
     }
 }
