@@ -51,6 +51,9 @@ public class ControladorTienda {
 
     public void initialize() throws IOException {
         Logger.write("Has entrado a la tienda Pokémon");
+        File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());
