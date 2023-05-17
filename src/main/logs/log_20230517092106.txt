@@ -1,0 +1,4 @@
+20230517092106-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517092108-Te has registrado
+20230517092108-Has entrado al login
+20230517092110-No te acuerdas de las credenciales

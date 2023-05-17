@@ -6,10 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
@@ -42,6 +39,8 @@ public class ControladorLogin {
     private Label lblComprobacion;
     @FXML
     private ImageView imagenUsuario;
+    @FXML
+    private Hyperlink hyperLinkCredenciales;
     private Login login = new Login();
     private Media musicaMenuPrincipal = new Media(Paths.get("src/main/resources/musica/musicaLogin.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaMenuPrincipal);
@@ -73,5 +72,17 @@ public class ControladorLogin {
             stage.show();
             mediaPlayer.stop();
         }
+    }
+    @FXML
+    public void olvidarCredenciales(ActionEvent event) throws IOException {
+            Logger.write("No te acuerdas de las credenciales");
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaRegistro.fxml")));
+            scene = new Scene(root, 419, 491);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setTitle("Registro - The Crüe");
+            stage.setResizable(false);
+            stage.setScene(scene);
+            stage.show();
+            mediaPlayer.stop();
     }
 }

@@ -79,8 +79,14 @@ public class ControladorCombate {
     }
 
     @FXML
-    public void comprobarEquipoRival(){
-        System.out.println(Entrenador.rivalEntrenador1.getEquipoPrincipal());
+    public void comprobarEquipoRival(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaEquipoPokemonRival.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Equipo rival - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
