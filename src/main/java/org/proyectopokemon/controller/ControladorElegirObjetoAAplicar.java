@@ -64,7 +64,7 @@ public class ControladorElegirObjetoAAplicar {
         botones.add(this.btnObjeto5);
         botones.add(this.btnObjeto6);
 
-        // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
+        // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS OBJETOS
         for (int i = 0; i < botones.size(); i++) {
             botones.get(i).setDisable(true);
         }
@@ -76,32 +76,33 @@ public class ControladorElegirObjetoAAplicar {
             }
         }
     }
+
     public void aplicarObjeto(){
 
         switch (nombreObjeto) {
             case "Pesa":
                 entrenamiento.getPokemonElegido().setAtaque(entrenamiento.getPokemonElegido().getAtaque() * 1.2f);
                 entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 1.2f);
-                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.2f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.8f);
                 break;
             case "Pluma":
                 entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 1.3f);
-                entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 0.2f);
-                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.2f);
+                entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 0.8f);
+                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.8f);
                 break;
             case "Chaleco":
                 entrenamiento.getPokemonElegido().setDefensa(entrenamiento.getPokemonElegido().getDefensa() * 1.2f);
                 entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 1.2f);
-                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.15f);
-                entrenamiento.getPokemonElegido().setAtaque(entrenamiento.getPokemonElegido().getAtaque() * 0.15f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.85f);
+                entrenamiento.getPokemonElegido().setAtaque(entrenamiento.getPokemonElegido().getAtaque() * 0.85f);
                 break;
             case "Baston":
                 entrenamiento.getPokemonElegido().setEstamina(entrenamiento.getPokemonElegido().getEstamina() * 1.2f);
-                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.15f);
+                entrenamiento.getPokemonElegido().setVelocidad(entrenamiento.getPokemonElegido().getVelocidad() * 0.85f);
                 break;
             case "Pilas":
                 entrenamiento.getPokemonElegido().setEstamina(entrenamiento.getPokemonElegido().getEstamina() * 1.5f);
-                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.3f);
+                entrenamiento.getPokemonElegido().setDefensaEsp(entrenamiento.getPokemonElegido().getDefensaEsp() * 0.7f);
                 break;
         }
     }

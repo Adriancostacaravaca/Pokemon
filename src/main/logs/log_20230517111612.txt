@@ -1,0 +1,67 @@
+20230517111612-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517111618-Te has registrado
+20230517111618-Has entrado al login
+20230517111620-Las credenciales introducidas son correctas
+20230517111620-Estás en el menu principal de la aplicación
+20230517111621-Estás en la ventana de captura
+20230517111621-Un Primeape salvaje ha aparecido
+20230517111621-Un Horsea salvaje ha aparecido
+20230517111622-Has capturado un Horsea salvaje
+20230517111623-Estás en el menu principal de la aplicación
+20230517111623-Has entrado al Centro Pokémon
+20230517111624-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517111625-Has movido un Horsea a tu equipo
+20230517111625-Has entrado al Centro Pokémon
+20230517111626-Has entrado a la tienda Pokémon
+20230517111630-Has entrado al Centro Pokémon
+20230517111631-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111631-Has elegido a Horsea para entrenar
+20230517111632-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111637-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111637-Has elegido a Horsea para entrenar
+20230517111640-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111641-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111641-Has elegido a Horsea para entrenar
+20230517111649-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111650-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111650-Has elegido a Horsea para entrenar
+20230517111652-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111653-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111653-Has elegido a Horsea para entrenar
+20230517111654-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111655-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111655-Has elegido a Horsea para entrenar
+20230517111655-Has entrado al Centro Pokémon
+20230517111657-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111657-Has elegido a Horsea para entrenar
+20230517111700-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111701-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111701-Has elegido a Horsea para entrenar
+20230517111709-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111716-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111716-Has elegido a Horsea para entrenar
+20230517111727-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111729-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111729-Has elegido a Horsea para entrenar
+20230517111738-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111740-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111740-Has elegido a Horsea para entrenar
+20230517111746-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111747-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111747-Has elegido a Horsea para entrenar
+20230517111749-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111749-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111749-Has elegido a Horsea para entrenar
+20230517111800-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111801-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111801-Has elegido a Horsea para entrenar
+20230517111802-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111807-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111807-Has elegido a Horsea para entrenar
+20230517111815-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111817-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111817-Has elegido a Horsea para entrenar
+20230517111820-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517112208-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517112208-Has elegido a Horsea para entrenar
+20230517112211-Estás revisando los objetos que puedes aplicar a tu Pokémon

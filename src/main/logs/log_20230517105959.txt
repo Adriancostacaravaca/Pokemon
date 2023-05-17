@@ -42,3 +42,6 @@
 20230517110228-Estás revisando los objetos que puedes aplicar a tu Pokémon
 20230517110229-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
 20230517110229-Has elegido a Gastly para entrenar
+20230517110824-Has entrado al Centro Pokémon
+20230517110825-Estás en el menu principal de la aplicación
+20230517110826-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

@@ -51,23 +51,23 @@
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnObjeto3" layoutX="507.0" layoutY="135.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto3" layoutX="507.0" layoutY="135.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnObjeto2" layoutX="287.0" layoutY="135.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto2" layoutX="287.0" layoutY="135.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnObjeto4" layoutX="67.0" layoutY="242.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto4" layoutX="67.0" layoutY="242.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnObjeto6" layoutX="507.0" layoutY="242.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto6" layoutX="507.0" layoutY="242.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="btnObjeto5" layoutX="287.0" layoutY="242.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
+            <Button fx:id="btnObjeto5" layoutX="287.0" layoutY="242.0" mnemonicParsing="false" onAction="#aplicarObjeto" prefHeight="101.0" prefWidth="214.0" text="Vacío">
                <font>
                   <Font size="14.0" />
                </font></Button>
