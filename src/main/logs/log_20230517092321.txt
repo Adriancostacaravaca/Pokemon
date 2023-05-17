@@ -1,0 +1,27 @@
+20230517092321-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517092323-Te has registrado
+20230517092323-Has entrado al login
+20230517092325-Las credenciales introducidas son correctas
+20230517092325-Estás en el menu principal de la aplicación
+20230517092326-Estás en la ventana de captura
+20230517092326-Un Tentacool salvaje ha aparecido
+20230517092328-Has capturado un Tentacool salvaje
+20230517092329-Un Squirtle salvaje ha aparecido
+20230517092329-Has capturado un Squirtle salvaje
+20230517092330-Estás en el menu principal de la aplicación
+20230517092331-Has entrado al Centro Pokémon
+20230517092332-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517092334-Has movido un Tentacool a tu equipo
+20230517092334-Has movido un Squirtle a tu equipo
+20230517092335-Has entrado al Centro Pokémon
+20230517092337-Estás en la ventana de crianza
+20230517092339-Has entrado al Centro Pokémon
+20230517092339-Estás en el menu principal de la aplicación
+20230517092340-Estás en la ventana previa al combate contra un entrenador
+20230517092340-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517092342-Estás en la ventana previa al combate contra un entrenador
+20230517092343-Estás en el menu principal de la aplicación
+20230517092344-Estás en la ventana previa al combate contra un entrenador
+20230517092345-Estás en el menu principal de la aplicación
+20230517092346-Has entrado al Centro Pokémon
+20230517092347-Estás en la ventana de crianza

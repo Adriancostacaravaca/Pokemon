@@ -1,0 +1,20 @@
+20230517092512-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517092514-Te has registrado
+20230517092514-Has entrado al login
+20230517092515-Las credenciales introducidas son correctas
+20230517092515-Estás en el menu principal de la aplicación
+20230517092516-Estás en la ventana de captura
+20230517092516-Un Gloom salvaje ha aparecido
+20230517092517-Has capturado un Gloom salvaje
+20230517092517-Un Primeape salvaje ha aparecido
+20230517092517-Has capturado un Primeape salvaje
+20230517092518-Estás en el menu principal de la aplicación
+20230517092519-Has entrado al Centro Pokémon
+20230517092519-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517092521-Has movido un Gloom a tu equipo
+20230517092522-Has movido un Primeape a tu equipo
+20230517092522-Has entrado al Centro Pokémon
+20230517092524-Estás en la ventana de crianza
+20230517092540-Has entrado al Centro Pokémon
+20230517092541-Estás en el menu principal de la aplicación
+20230517092542-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

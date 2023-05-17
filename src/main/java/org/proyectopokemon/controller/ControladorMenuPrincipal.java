@@ -125,7 +125,6 @@ public class ControladorMenuPrincipal {
         Logger.close();
         Stage stage = (Stage) btnSalir.getScene().getWindow();
         stage.close();
-        System.out.println("Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.");
     }
 
 }
