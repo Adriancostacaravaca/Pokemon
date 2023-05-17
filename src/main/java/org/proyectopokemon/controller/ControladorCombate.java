@@ -8,11 +8,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.proyectopokemon.logger.Logger;
 import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Pokedex;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -30,9 +33,14 @@ public class ControladorCombate {
     @FXML
     private Label lblErrorEquipoVacio;
     private Pokedex pokedex;
+    @FXML
+    private ImageView imageViewFondo;
 
     public void initialize() throws IOException {
         Logger.write("Estás en la ventana previa al combate contra un entrenador");
+        File x = new File("src/main/resources/imagenes/GimnasioPokemon.jpg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         pokedex = new Pokedex();
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         btnCombatir.setDisable(false);

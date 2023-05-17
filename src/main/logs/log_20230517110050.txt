@@ -1,0 +1,31 @@
+20230517110050-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517110051-Te has registrado
+20230517110051-Has entrado al login
+20230517110052-Las credenciales introducidas son correctas
+20230517110052-Estás en el menu principal de la aplicación
+20230517110053-Estás en la ventana previa al combate contra un entrenador
+20230517110059-Estás revisando los Pokémon que se encuentran en el equipo del rival
+20230517110103-Estás en la ventana previa al combate contra un entrenador
+20230517110104-Estás en el menu principal de la aplicación
+20230517110105-Estás en la ventana Mochila
+20230517110105-Estás en el menu principal de la aplicación
+20230517110106-Estás en la ventana Pokedex
+20230517110107-Estás en el menu principal de la aplicación
+20230517110107-Estás en la ventana de captura
+20230517110107-Un Beedrill salvaje ha aparecido
+20230517110108-Estás en el menu principal de la aplicación
+20230517110109-Has entrado al Centro Pokémon
+20230517110110-Has entrado a la tienda Pokémon
+20230517110110-Has entrado al Centro Pokémon
+20230517110111-Estás en el menu principal de la aplicación
+20230517110112-Estás en la ventana previa al combate contra un entrenador
+20230517110116-Estás en el menu principal de la aplicación
+20230517110119-Estás en la ventana de captura
+20230517110119-Un Abra salvaje ha aparecido
+20230517110120-Estás en el menu principal de la aplicación
+20230517110120-Estás en la ventana de captura
+20230517110120-Un Exeggutor salvaje ha aparecido
+20230517110122-Estás en el menu principal de la aplicación
+20230517110122-Estás en la ventana Mochila
+20230517110124-Estás en el menu principal de la aplicación
+20230517110125-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
