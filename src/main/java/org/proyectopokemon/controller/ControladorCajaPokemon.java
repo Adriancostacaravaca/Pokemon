@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ControladorEquipoPokemon {
+public class ControladorCajaPokemon {
     private Parent root;
     private Scene scene;
     private Stage stage;
@@ -37,6 +37,26 @@ public class ControladorEquipoPokemon {
     @FXML
     private Button btnPokemon6;
     @FXML
+    private Button btnPokemon7;
+    @FXML
+    private Button btnPokemon8;
+    @FXML
+    private Button btnPokemon9;
+    @FXML
+    private Button btnPokemon10;
+    @FXML
+    private Button btnPokemon11;
+    @FXML
+    private Button btnPokemon12;
+    @FXML
+    private Button btnPokemon13;
+    @FXML
+    private Button btnPokemon14;
+    @FXML
+    private Button btnPokemon15;
+    @FXML
+    private Button btnPokemon16;
+    @FXML
     private Button btnVolver;
     private List<Button> botones;
     @FXML
@@ -51,7 +71,7 @@ public class ControladorEquipoPokemon {
     }
 
     public void initialize() throws IOException {
-        Logger.write("Estás revisando los Pokémon que se encuentran en tu equipo principal");
+        Logger.write("Estás revisando los Pokémon que se encuentran en tu caja");
         botones = new ArrayList<>();
         botones.add(this.btnPokemon1);
         botones.add(this.btnPokemon2);
@@ -59,15 +79,25 @@ public class ControladorEquipoPokemon {
         botones.add(this.btnPokemon4);
         botones.add(this.btnPokemon5);
         botones.add(this.btnPokemon6);
+        botones.add(this.btnPokemon7);
+        botones.add(this.btnPokemon8);
+        botones.add(this.btnPokemon9);
+        botones.add(this.btnPokemon10);
+        botones.add(this.btnPokemon11);
+        botones.add(this.btnPokemon12);
+        botones.add(this.btnPokemon13);
+        botones.add(this.btnPokemon14);
+        botones.add(this.btnPokemon15);
+        botones.add(this.btnPokemon16);
 
-        // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
+        // RECORRE LA CAJA DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
         for (int i = 0; i < botones.size(); i++) {
             botones.get(i).setDisable(true);
         }
-        for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){
-            if(Entrenador.miEntrenador.getEquipoPrincipal().get(i) != null){
+        for(int i = 0; i < Entrenador.miEntrenador.getCaja().size(); i++){
+            if(Entrenador.miEntrenador.getCaja().get(i) != null){
                 botones.get(i).setDisable(false);
-                botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
+                botones.get(i).setText(Entrenador.miEntrenador.getCaja().get(i).getNombre());
             }
         }
     }

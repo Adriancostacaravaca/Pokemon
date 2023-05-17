@@ -1,0 +1,25 @@
+20230517071051-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517071052-Te has registrado
+20230517071052-Has entrado al login
+20230517071053-Las credenciales introducidas son correctas
+20230517071053-Estás en el menu principal de la aplicación
+20230517071054-Estás en la ventana de captura
+20230517071054-Un Nidorino salvaje ha aparecido
+20230517071055-Has capturado un Nidorino salvaje
+20230517071055-Estás en el menu principal de la aplicación
+20230517071056-Estás en la ventana Mochila
+20230517071056-Estás en el menu principal de la aplicación
+20230517071057-Estás en la ventana Mochila
+20230517071058-Estás revisando los Pokémon que se encuentran en tu caja
+20230517071058-Estás en la ventana Mochila
+20230517071059-Estás en el menu principal de la aplicación
+20230517071059-Has entrado al Centro Pokémon
+20230517071100-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517071101-Has movido un Nidorino a tu equipo
+20230517071101-Has entrado al Centro Pokémon
+20230517071101-Estás en el menu principal de la aplicación
+20230517071102-Estás en la ventana Mochila
+20230517071103-Estás en el menu principal de la aplicación
+20230517071104-Estás en la ventana previa al combate contra un entrenador
+20230517071106-Estás en el menu principal de la aplicación
+20230517071106-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

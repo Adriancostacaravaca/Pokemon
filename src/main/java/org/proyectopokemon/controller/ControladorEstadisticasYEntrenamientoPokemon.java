@@ -89,7 +89,9 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         for (int i = 0; i < botones.size(); i++) {
             this.botones.get(i).setDisable(true);
         }
-
+        if (Entrenador.miEntrenador.getCajaObjetos().size() < 1) {
+            btnObj1.setDisable(true);
+        }
         // RECORRE EL EQUIPO DEL ENTRENADOR Y VA HABILITANDO BOTONES CONFORME ENCUENTRA LOS POKEMON
 
         for(int i = 0; i < Entrenador.miEntrenador.getEquipoPrincipal().size(); i++){

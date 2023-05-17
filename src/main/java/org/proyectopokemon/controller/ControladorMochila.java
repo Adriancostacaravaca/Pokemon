@@ -42,6 +42,9 @@ public class ControladorMochila {
             btnRevisarEquipoPokemon.setDisable(true);
             lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
         }
+        if (Entrenador.miEntrenador.getCaja().size() < 1) {
+            btnRevisarCajaPokemon.setDisable(true);
+        }
     }
 
     public void volverAVentanaPrincipal(ActionEvent event) throws IOException {
@@ -65,8 +68,14 @@ public class ControladorMochila {
     }
 
     @FXML
-    public void verCajaEntrenador() {
-        Entrenador.miEntrenador.mostrarCaja();
+    public void irACajaEntrenador(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaCajaPokemon.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Caja Pokémon - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
 

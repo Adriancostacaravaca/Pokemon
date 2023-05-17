@@ -1,0 +1,21 @@
+20230517071024-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517071026-Te has registrado
+20230517071026-Has entrado al login
+20230517071027-Las credenciales introducidas son correctas
+20230517071027-Estás en el menu principal de la aplicación
+20230517071027-Estás en la ventana Mochila
+20230517071029-Estás en el menu principal de la aplicación
+20230517071030-Estás en la ventana de captura
+20230517071030-Un Arcanine salvaje ha aparecido
+20230517071030-Has capturado un Arcanine salvaje
+20230517071031-Estás en el menu principal de la aplicación
+20230517071031-Estás en la ventana Mochila
+20230517071033-Estás en el menu principal de la aplicación
+20230517071034-Has entrado al Centro Pokémon
+20230517071034-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517071036-Has movido un Arcanine a tu equipo
+20230517071036-Has entrado al Centro Pokémon
+20230517071036-Estás en el menu principal de la aplicación
+20230517071036-Estás en la ventana Mochila
+20230517071038-Estás en el menu principal de la aplicación
+20230517071038-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

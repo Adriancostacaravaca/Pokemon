@@ -1,0 +1,6 @@
+20230516114229-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230516114231-Te has registrado
+20230516114231-Has entrado al login
+20230516114233-Las credenciales introducidas son correctas
+20230516114233-Estás en el menu principal de la aplicación
+20230516114234-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

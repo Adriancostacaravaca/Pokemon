@@ -1,0 +1,17 @@
+20230517070634-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517070636-Te has registrado
+20230517070636-Has entrado al login
+20230517070637-Las credenciales introducidas son correctas
+20230517070637-Estás en el menu principal de la aplicación
+20230517070637-Estás en la ventana de captura
+20230517070637-Un Staryu salvaje ha aparecido
+20230517070638-Estás en el menu principal de la aplicación
+20230517070638-Estás en la ventana Mochila
+20230517070640-Estás en el menu principal de la aplicación
+20230517070640-Estás en la ventana de captura
+20230517070640-Un Articuno salvaje ha aparecido
+20230517070641-Has capturado un Articuno salvaje
+20230517070642-Estás en el menu principal de la aplicación
+20230517070642-Estás en la ventana Mochila
+20230517070646-Estás en el menu principal de la aplicación
+20230517070647-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
