@@ -1,0 +1,16 @@
+20230517065923-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517065926-Te has registrado
+20230517065926-Has entrado al login
+20230517065927-Las credenciales introducidas son correctas
+20230517065927-Estás en el menu principal de la aplicación
+20230517065928-Estás en la ventana de captura
+20230517065928-Un Parasect salvaje ha aparecido
+20230517065929-Has capturado un Parasect salvaje
+20230517065930-Estás en el menu principal de la aplicación
+20230517065931-Has entrado al Centro Pokémon
+20230517065932-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517065933-Has movido un Parasect a tu equipo
+20230517065934-Has entrado al Centro Pokémon
+20230517065936-Estás en el menu principal de la aplicación
+20230517065936-Estás en la ventana previa al combate contra un entrenador
+20230517065939-Estás en la ventana previa al combate contra un entrenador
