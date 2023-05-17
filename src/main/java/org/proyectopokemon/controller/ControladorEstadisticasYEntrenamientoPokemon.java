@@ -15,6 +15,7 @@ import org.proyectopokemon.pokemon.Entrenador;
 import org.proyectopokemon.pokemon.Entrenamiento;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -64,10 +65,15 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Button btnPokemon5;
     @FXML
     private Button btnPokemon6;
+    @FXML
+    private Button btnObj1;
     private List<Button> botones;
+    private List<Button> objetos;
     @FXML
     private Label lblPokedolares;
     private Entrenamiento entrenamiento = new Entrenamiento();
+
+    private static final DecimalFormat decfor = new DecimalFormat("0.00");
 
     public void initialize() throws IOException {
         Logger.write("Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos");
@@ -78,6 +84,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         botones.add(this.btnPokemon4);
         botones.add(this.btnPokemon5);
         botones.add(this.btnPokemon6);
+        objetos = new ArrayList<>();
+        objetos.add(this.btnObj1);
         for (int i = 0; i < botones.size(); i++) {
             this.botones.get(i).setDisable(true);
         }
@@ -103,14 +111,24 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    public void aplicarObjetoAPokemon(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/VentanaElegirObjetoAAplicar.fxml")));
+        scene = new Scene(root, 788, 477);
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Elegir Objeto - The Crüe");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
     public void actualizarEstadisticas(){
         lblNombre.setText(entrenamiento.getPokemonElegido().getNombre());
-        lblAtaque.setText("Ataque: " + entrenamiento.getPokemonElegido().getAtaque());
-        lblDefensa.setText("Defensa: " + entrenamiento.getPokemonElegido().getDefensa());
-        lblAtaqueEsp.setText("Ataque Especial: " + entrenamiento.getPokemonElegido().getAtaqueEsp());
-        lblDefensaEsp.setText("Defensa Especial: " + entrenamiento.getPokemonElegido().getDefensaEsp());
-        lblVitalidad.setText("Vitalidad: " + entrenamiento.getPokemonElegido().getVitalidad());
-        lblVelocidad.setText("Velocidad: " + entrenamiento.getPokemonElegido().getVelocidad());
+        lblAtaque.setText("Ataque: " + decfor.format(entrenamiento.getPokemonElegido().getAtaque()));
+        lblDefensa.setText("Defensa: " + decfor.format(entrenamiento.getPokemonElegido().getDefensa()));
+        lblAtaqueEsp.setText("Ataque Especial: " + decfor.format(entrenamiento.getPokemonElegido().getAtaqueEsp()));
+        lblDefensaEsp.setText("Defensa Especial: " + decfor.format(entrenamiento.getPokemonElegido().getDefensaEsp()));
+        lblVitalidad.setText("Vitalidad: " + decfor.format(entrenamiento.getPokemonElegido().getVitalidad()));
+        lblVelocidad.setText("Velocidad: " + decfor.format(entrenamiento.getPokemonElegido().getVelocidad()));
         lblNivel.setText("Nivel: " + entrenamiento.getPokemonElegido().getNivel());
         imageViewPokemon.setImage(entrenamiento.getPokemonElegido().getImage());
         lblPokedolares.setText("Pokedolares: " + Entrenador.miEntrenador.getPokedollar());

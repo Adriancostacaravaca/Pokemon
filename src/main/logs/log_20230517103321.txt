@@ -1,0 +1,31 @@
+20230517103321-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517103324-Te has registrado
+20230517103325-Has entrado al login
+20230517103328-Las credenciales introducidas son correctas
+20230517103328-Estás en el menu principal de la aplicación
+20230517103333-Has entrado al Centro Pokémon
+20230517103334-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517103334-Has entrado al Centro Pokémon
+20230517103336-Has entrado a la tienda Pokémon
+20230517103338-Has entrado al Centro Pokémon
+20230517103339-Estás en el menu principal de la aplicación
+20230517103340-Estás en la ventana de captura
+20230517103340-Un Vulpix salvaje ha aparecido
+20230517103340-Un Arbok salvaje ha aparecido
+20230517103341-Has capturado un Arbok salvaje
+20230517103342-Estás en el menu principal de la aplicación
+20230517103342-Has entrado al Centro Pokémon
+20230517103343-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517103344-Has movido un Arbok a tu equipo
+20230517103345-Has entrado al Centro Pokémon
+20230517103346-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517103346-Has elegido a Arbok para entrenar
+20230517103347-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517103349-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517103349-Has elegido a Arbok para entrenar
+20230517103353-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517103354-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517103354-Has elegido a Arbok para entrenar
+20230517103404-Has entrado al Centro Pokémon
+20230517103404-Estás en el menu principal de la aplicación
+20230517103405-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

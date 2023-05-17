@@ -1,0 +1,28 @@
+20230517124443-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517124445-Te has registrado
+20230517124445-Has entrado al login
+20230517124447-Las credenciales introducidas son correctas
+20230517124447-Estás en el menu principal de la aplicación
+20230517124449-Has entrado al Centro Pokémon
+20230517124450-Estás en el menu principal de la aplicación
+20230517124450-Estás en la ventana de captura
+20230517124450-Un Bellsprout salvaje ha aparecido
+20230517124452-Has capturado un Bellsprout salvaje
+20230517124453-Estás en el menu principal de la aplicación
+20230517124454-Has entrado al Centro Pokémon
+20230517124455-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517124456-Has movido un Bellsprout a tu equipo
+20230517124457-Has entrado al Centro Pokémon
+20230517124457-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517124457-Has elegido a Bellsprout para entrenar
+20230517124500-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124502-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124502-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124503-Le has aplicado un entrenamiento onírico a Bellsprout
+20230517124505-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124505-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124505-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124506-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124506-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124507-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517124508-Estás revisando los objetos que puedes aplicar a tu Pokémon

@@ -69,7 +69,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Label fx:id="lblPokedolares" alignment="CENTER" layoutX="525.0" layoutY="282.0" prefHeight="26.0" prefWidth="114.0" />
+            <Label fx:id="lblPokedolares" alignment="CENTER" layoutX="525.0" layoutY="345.0" prefHeight="26.0" prefWidth="114.0" />
             <Button fx:id="btnPokemon2" layoutX="508.0" layoutY="381.0" mnemonicParsing="false" onAction="#escogerPokemon2" prefHeight="36.0" prefWidth="128.0" text="Vacío">
                <font>
                   <Font size="14.0" />
@@ -95,6 +95,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
+            <Button fx:id="btnObj1" layoutX="497.0" layoutY="273.0" mnemonicParsing="false" onAction="#aplicarObjetoAPokemon" prefHeight="36.0" prefWidth="170.0" text="Aplicar Objetos" />
          </children></AnchorPane>
   </children>
 </VBox>

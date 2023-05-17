@@ -1,0 +1,45 @@
+20230517111414-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517111418-Te has registrado
+20230517111418-Has entrado al login
+20230517111419-Las credenciales introducidas son correctas
+20230517111419-Estás en el menu principal de la aplicación
+20230517111433-Estás en la ventana de captura
+20230517111433-Un Slowpoke salvaje ha aparecido
+20230517111434-Has capturado un Slowpoke salvaje
+20230517111435-Estás en el menu principal de la aplicación
+20230517111436-Has entrado al Centro Pokémon
+20230517111437-Has entrado a la tienda Pokémon
+20230517111443-Has entrado al Centro Pokémon
+20230517111444-Has entrado a la tienda Pokémon
+20230517111445-Has entrado al Centro Pokémon
+20230517111446-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517111447-Has movido un Slowpoke a tu equipo
+20230517111447-Has entrado al Centro Pokémon
+20230517111448-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111448-Has elegido a Slowpoke para entrenar
+20230517111500-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111502-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111502-Has elegido a Slowpoke para entrenar
+20230517111509-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111510-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111510-Has elegido a Slowpoke para entrenar
+20230517111518-Has entrado al Centro Pokémon
+20230517111519-Has entrado a la tienda Pokémon
+20230517111521-Has entrado al Centro Pokémon
+20230517111523-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111523-Has elegido a Slowpoke para entrenar
+20230517111524-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111525-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111525-Has elegido a Slowpoke para entrenar
+20230517111531-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111535-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111535-Has elegido a Slowpoke para entrenar
+20230517111536-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111537-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111537-Has elegido a Slowpoke para entrenar
+20230517111538-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111539-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111539-Has elegido a Slowpoke para entrenar
+20230517111541-Estás revisando los objetos que puedes aplicar a tu Pokémon
+20230517111542-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517111542-Has elegido a Slowpoke para entrenar

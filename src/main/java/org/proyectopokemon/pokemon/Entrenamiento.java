@@ -29,9 +29,9 @@ public class Entrenamiento {
      */
     public void aplicarEntPesado(){
         this.costeEntrenamiento = pokemonElegido.getNivel() * 20;
-        pokemonElegido.setDefensa(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa() + 5);
-        pokemonElegido.setDefensaEsp(pokemonElegido.getDefensaEsp() + 5);
-        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5);
+        pokemonElegido.setDefensa(Entrenador.miEntrenador.getEquipoPrincipal().get(0).getDefensa() + 5f);
+        pokemonElegido.setDefensaEsp(pokemonElegido.getDefensaEsp() + 5f);
+        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5f);
         Entrenador.miEntrenador.setPokedollar(Entrenador.miEntrenador.getPokedollar() - costeEntrenamiento);
     }
 
@@ -40,9 +40,9 @@ public class Entrenamiento {
      */
     public void aplicarEntFurioso(){
         this.costeEntrenamiento = pokemonElegido.getNivel() * 30;
-        pokemonElegido.setAtaque(pokemonElegido.getAtaque() + 5);
-        pokemonElegido.setAtaqueEsp(pokemonElegido.getAtaqueEsp() + 5);
-        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5);
+        pokemonElegido.setAtaque(pokemonElegido.getAtaque() + 5f);
+        pokemonElegido.setAtaqueEsp(pokemonElegido.getAtaqueEsp() + 5f);
+        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5f);
         Entrenador.miEntrenador.setPokedollar(Entrenador.miEntrenador.getPokedollar() - costeEntrenamiento);
     }
 
@@ -51,10 +51,10 @@ public class Entrenamiento {
      */
     public void aplicarEntFuncional(){
         this.costeEntrenamiento = pokemonElegido.getNivel() * 40;
-        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5);
-        pokemonElegido.setAtaque(pokemonElegido.getAtaque() + 5);
-        pokemonElegido.setDefensa(pokemonElegido.getDefensa() + 5);
-        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5);
+        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5f);
+        pokemonElegido.setAtaque(pokemonElegido.getAtaque() + 5f);
+        pokemonElegido.setDefensa(pokemonElegido.getDefensa() + 5f);
+        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5f);
         Entrenador.miEntrenador.setPokedollar(Entrenador.miEntrenador.getPokedollar() - costeEntrenamiento);
     }
 
@@ -63,10 +63,10 @@ public class Entrenamiento {
      */
     public void aplicarEntOnirico(){
         this.costeEntrenamiento = pokemonElegido.getNivel() * 40;
-        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5);
-        pokemonElegido.setAtaqueEsp(pokemonElegido.getAtaqueEsp() + 5);
-        pokemonElegido.setDefensaEsp(pokemonElegido.getDefensaEsp() + 5);
-        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5);
+        pokemonElegido.setVelocidad(pokemonElegido.getVelocidad() + 5f);
+        pokemonElegido.setAtaqueEsp(pokemonElegido.getAtaqueEsp() + 5f);
+        pokemonElegido.setDefensaEsp(pokemonElegido.getDefensaEsp() + 5f);
+        pokemonElegido.setVitalidad(pokemonElegido.getVitalidad() + 5f);
         Entrenador.miEntrenador.setPokedollar(Entrenador.miEntrenador.getPokedollar() - costeEntrenamiento);
     }
 

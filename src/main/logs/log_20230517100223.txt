@@ -1,0 +1,29 @@
+20230517100223-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517100226-Te has registrado
+20230517100226-Has entrado al login
+20230517100227-Las credenciales introducidas son correctas
+20230517100227-Estás en el menu principal de la aplicación
+20230517100228-Has entrado al Centro Pokémon
+20230517100230-Has entrado a la tienda Pokémon
+20230517100231-Has entrado al Centro Pokémon
+20230517100231-Estás en el menu principal de la aplicación
+20230517100232-Estás en la ventana de captura
+20230517100232-Un Pinsir salvaje ha aparecido
+20230517100233-Has capturado un Pinsir salvaje
+20230517100233-Estás en el menu principal de la aplicación
+20230517100233-Estás en la ventana Mochila
+20230517100234-Estás en el menu principal de la aplicación
+20230517100235-Has entrado al Centro Pokémon
+20230517100236-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517100237-Has movido un Pinsir a tu equipo
+20230517100237-Has entrado al Centro Pokémon
+20230517100238-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517100238-Has elegido a Pinsir para entrenar
+20230517100243-Has entrado al Centro Pokémon
+20230517100245-Has entrado a la tienda Pokémon
+20230517100250-Has entrado al Centro Pokémon
+20230517100251-Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+20230517100251-Has elegido a Pinsir para entrenar
+20230517100321-Has entrado al Centro Pokémon
+20230517100322-Estás en el menu principal de la aplicación
+20230517100323-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

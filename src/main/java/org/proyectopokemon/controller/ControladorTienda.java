@@ -91,7 +91,7 @@ public class ControladorTienda {
 
     @FXML
     public void comprar() {
-        //guardamos el objeto seleccionado en una variable
+        //Guardamos el objeto seleccionado en una variable
         Objeto objetoSelect = listaObjetos.getSelectionModel().getSelectedItem();
         //Comprobamos que no sea nulo
         if (objetoSelect != null) {
@@ -103,7 +103,6 @@ public class ControladorTienda {
                 mochila.anyadirAMochila(objetoSelect);
                 for (Objeto i:
                      mochila.getMochila()) {
-                    System.out.println(mochila.getMochila().toString());
                 }
             } else {
                 System.out.println("No tienes suficiente Pokedólares para comprar ese objeto");

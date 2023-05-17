@@ -1,0 +1,15 @@
+20230517104241-Has ingresado a la aplicación Pokemon realizada por The Crüe
+20230517104246-Te has registrado
+20230517104246-Has entrado al login
+20230517104248-Las credenciales introducidas son correctas
+20230517104248-Estás en el menu principal de la aplicación
+20230517104249-Estás en la ventana de captura
+20230517104249-Un Exeggutor salvaje ha aparecido
+20230517104253-Estás en el menu principal de la aplicación
+20230517104254-Has entrado al Centro Pokémon
+20230517104255-Has entrado a la tienda Pokémon
+20230517104714-Has entrado al Centro Pokémon
+20230517104715-Estás en la ventana de intercambio entre tu caja y el equipo principal
+20230517104716-Has entrado al Centro Pokémon
+20230517104716-Estás en el menu principal de la aplicación
+20230517104718-Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

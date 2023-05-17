@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-05-2023 a las 10:29:31
+-- Tiempo de generación: 17-05-2023 a las 09:38:45
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.1.17
 
@@ -74,6 +74,28 @@ CREATE TABLE `mochila` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `movimientos`
+--
+
+CREATE TABLE `movimientos` (
+  `id_movimiento` int(30) NOT NULL,
+  `Nombre` varchar(30) NOT NULL,
+  `Potencia` int(30) DEFAULT NULL,
+  `Estado` varchar(30) DEFAULT NULL,
+  `Tipo` int(30) NOT NULL,
+  `Mejora` int(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `movimientos`
+--
+
+INSERT INTO `movimientos` (`id_movimiento`, `Nombre`, `Potencia`, `Estado`, `Tipo`, `Mejora`) VALUES
+(1, 'Placaje', 5, NULL, 0, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `objetos`
 --
 
@@ -94,165 +116,166 @@ CREATE TABLE `pokedex` (
   `NOM_POKEMON` varchar(50) DEFAULT NULL,
   `TIPO1` varchar(50) DEFAULT NULL,
   `TIPO2` varchar(50) DEFAULT NULL,
-  `IMG_URL` varchar(150) DEFAULT NULL
+  `IMG_URL` varchar(150) DEFAULT NULL,
+  `Primer_Ataque` int(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `pokedex`
 --
 
-INSERT INTO `pokedex` (`NUM_POKEDEX`, `NOM_POKEMON`, `TIPO1`, `TIPO2`, `IMG_URL`) VALUES
-(1, 'Bulbasaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Bulbasaur.png'),
-(2, 'Ivysaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Ivysaur.png'),
-(3, 'Venusaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Venusaur.png'),
-(4, 'Charmander', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Charmander.png'),
-(5, 'Charmeleon', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Charmeleon.png'),
-(6, 'Charizard', 'FUEGO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Charizard.png'),
-(7, 'Squirtle', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Squirtle.png'),
-(8, 'Wartortle', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Wartortle.png'),
-(9, 'Blastoise', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Blastoise.png'),
-(10, 'Caterpie', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Caterpie.png'),
-(11, 'Metapod', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Metapod.png'),
-(12, 'Butterfree', 'BICHO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Butterfree.png'),
-(13, 'Weedle', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Weedle.png'),
-(14, 'Kakuna', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Kakuna.png'),
-(15, 'Beedrill', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Beedrill.png'),
-(16, 'Pidgey', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgey.png'),
-(17, 'Pidgeotto', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgeotto.png'),
-(18, 'Pidgeot', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgeot.png'),
-(19, 'Rattata', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Rattata.png'),
-(20, 'Raticate', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Raticate.png'),
-(21, 'Spearow', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Spearow.png'),
-(22, 'Fearow', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Fearow.png'),
-(23, 'Ekans', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Ekans.png'),
-(24, 'Arbok', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Arbok.png'),
-(25, 'Pikachu', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Pikachu.png'),
-(26, 'Raichu', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Raichu.png'),
-(27, 'Sandshrew', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Sandshrew.png'),
-(28, 'Sandslash', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Sandslash.png'),
-(29, 'Nidoran-f', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidoran-f.png'),
-(30, 'Nidorina', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidorina.png'),
-(31, 'Nidoqueen', 'VENENO', 'TIERRA', 'src/main/resources/imagenes_pokemon/Nidoqueen.png'),
-(32, 'Nidoran-m', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidoran-m.png'),
-(33, 'Nidorino', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidorino.png'),
-(34, 'Nidoking', 'VENENO', 'TIERRA', 'src/main/resources/imagenes_pokemon/Nidoking.png'),
-(35, 'Clefairy', 'HADA', 'HADA', 'src/main/resources/imagenes_pokemon/Clefairy.png'),
-(36, 'Clefable', 'HADA', 'HADA', 'src/main/resources/imagenes_pokemon/Clefable.png'),
-(37, 'Vulpix', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Vulpix.png'),
-(38, 'Ninetales', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Ninetales.png'),
-(39, 'Jigglypuff', 'NORMAL', 'HADA', 'src/main/resources/imagenes_pokemon/Jigglypuff.png'),
-(40, 'Wigglytuff', 'NORMAL', 'HADA', 'src/main/resources/imagenes_pokemon/Wigglytuff.png'),
-(41, 'Zubat', 'VENENO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Zubat.png'),
-(42, 'Golbat', 'VENENO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Golbat.png'),
-(43, 'Oddish', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Oddish.png'),
-(44, 'Gloom', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gloom.png'),
-(45, 'Vileplume', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Vileplume.png'),
-(46, 'Paras', 'BICHO', 'PLANTA', 'src/main/resources/imagenes_pokemon/Paras.png'),
-(47, 'Parasect', 'BICHO', 'PLANTA', 'src/main/resources/imagenes_pokemon/Parasect.png'),
-(48, 'Venonat', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Venonat.png'),
-(49, 'Venomoth', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Venomoth.png'),
-(50, 'Diglett', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Diglett.png'),
-(51, 'Dugtrio', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Dugtrio.png'),
-(52, 'Meowth', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Meowth.png'),
-(53, 'Persian', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Persian.png'),
-(54, 'Psyduck', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Psyduck.png'),
-(55, 'Golduck', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Golduck.png'),
-(56, 'Mankey', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Mankey.png'),
-(57, 'Primeape', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Primeape.png'),
-(58, 'Growlithe', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Growlithe.png'),
-(59, 'Arcanine', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Arcanine.png'),
-(60, 'Poliwag', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Poliwag.png'),
-(61, 'Poliwhirl', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Poliwhirl.png'),
-(62, 'Poliwrath', 'AGUA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Poliwrath.png'),
-(63, 'Abra', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Abra.png'),
-(64, 'Kadabra', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Kadabra.png'),
-(65, 'Alakazam', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Alakazam.png'),
-(66, 'Machop', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machop.png'),
-(67, 'Machoke', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machoke.png'),
-(68, 'Machamp', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machamp.png'),
-(69, 'Bellsprout', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Bellsprout.png'),
-(70, 'Weepinbell', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Weepinbell.png'),
-(71, 'Victreebel', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Victreebel.png'),
-(72, 'Tentacool', 'AGUA', 'VENENO', 'src/main/resources/imagenes_pokemon/Tentacool.png'),
-(73, 'Tentacruel', 'AGUA', 'VENENO', 'src/main/resources/imagenes_pokemon/Tentacruel.png'),
-(74, 'Geodude', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Geodude.png'),
-(75, 'Graveler', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Graveler.png'),
-(76, 'Golem', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Golem.png'),
-(77, 'Ponyta', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Ponyta.png'),
-(78, 'Rapidash', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Rapidash.png'),
-(79, 'Slowpoke', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Slowpoke.png'),
-(80, 'Slowbro', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Slowbro.png'),
-(81, 'Magnemite', 'ELECTRICO', 'ACERO', 'src/main/resources/imagenes_pokemon/Magnemite.png'),
-(82, 'Magneton', 'ELECTRICO', 'ACERO', 'src/main/resources/imagenes_pokemon/Magneton.png'),
-(83, 'Farfetchd', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Farfetchd.png'),
-(84, 'Doduo', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Doduo.png'),
-(85, 'Dodrio', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Dodrio.png'),
-(86, 'Seel', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seel.png'),
-(87, 'Dewgong', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Dewgong.png'),
-(88, 'Grimer', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Grimer.png'),
-(89, 'Muk', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Muk.png'),
-(90, 'Shellder', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Shellder.png'),
-(91, 'Cloyster', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Cloyster.png'),
-(92, 'Gastly', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gastly.png'),
-(93, 'Haunter', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Haunter.png'),
-(94, 'Gengar', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gengar.png'),
-(95, 'Onix', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Onix.png'),
-(96, 'Drowzee', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Drowzee.png'),
-(97, 'Hypno', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Hypno.png'),
-(98, 'Krabby', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Krabby.png'),
-(99, 'Kingler', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kingler.png'),
-(100, 'Voltorb', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Voltorb.png'),
-(101, 'Electrode', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Electrode.png'),
-(102, 'Exeggcute', 'PLANTA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Exeggcute.png'),
-(103, 'Exeggutor', 'PLANTA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Exeggutor.png'),
-(104, 'Cubone', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Cubone.png'),
-(105, 'Marowak', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Marowak.png'),
-(106, 'Hitmonlee', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Hitmonlee.png'),
-(107, 'Hitmonchan', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Hitmonchan.png'),
-(108, 'Lickitung', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Lickitung.png'),
-(109, 'Koffing', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Koffing.png'),
-(110, 'Weezing', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Weezing.png'),
-(111, 'Rhyhorn', 'TIERRA', 'ROCA', 'src/main/resources/imagenes_pokemon/Rhyhorn.png'),
-(112, 'Rhydon', 'TIERRA', 'ROCA', 'src/main/resources/imagenes_pokemon/Rhydon.png'),
-(113, 'Chansey', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Chansey.png'),
-(114, 'Tangela', 'PLANTA', 'PLANTA', 'src/main/resources/imagenes_pokemon/Tangela.png'),
-(115, 'Kangaskhan', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Kangaskhan.png'),
-(116, 'Horsea', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Horsea.png'),
-(117, 'Seadra', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seadra.png'),
-(118, 'Goldeen', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Goldeen.png'),
-(119, 'Seaking', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seaking.png'),
-(120, 'Staryu', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Staryu.png'),
-(121, 'Starmie', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Starmie.png'),
-(122, 'Mr-mime', 'PSIQUICO', 'HADA', 'src/main/resources/imagenes_pokemon/Mr-mime.png'),
-(123, 'Scyther', 'BICHO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Scyther.png'),
-(124, 'Jynx', 'HIELO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Jynx.png'),
-(125, 'Electabuzz', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Electabuzz.png'),
-(126, 'Magmar', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Magmar.png'),
-(127, 'Pinsir', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Pinsir.png'),
-(128, 'Tauros', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Tauros.png'),
-(129, 'Magikarp', 'AGUA ', 'AGUA', 'src/main/resources/imagenes_pokemon/Magikarp.png'),
-(130, 'Gyarados', 'AGUA', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Gyarados.png'),
-(131, 'Lapras', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Lapras.png'),
-(132, 'Ditto', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Ditto.png'),
-(133, 'Eevee', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Eevee.png'),
-(134, 'Vaporeon', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Vaporeon.png'),
-(135, 'Jolteon', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Jolteon.png'),
-(136, 'Flareon', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Flareon.png'),
-(137, 'Porygon', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Porygon.png'),
-(138, 'Omanyte', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Omanyte.png'),
-(139, 'Omastar', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Omastar.png'),
-(140, 'Kabuto', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kabuto.png'),
-(141, 'Kabutops', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kabutops.png'),
-(142, 'Aerodactyl', 'ROCA', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Aerodactyl.png'),
-(143, 'Snorlax', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Snorlax.png'),
-(144, 'Articuno', 'HIELO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Articuno.png'),
-(145, 'Zapdos', 'ELECTRICO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Zapdos.png'),
-(146, 'Moltres', 'FUEGO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Moltres.png'),
-(147, 'Dratini', 'DRAGON', 'DRAGON', 'src/main/resources/imagenes_pokemon/Dratini.png'),
-(148, 'Dragonair', 'DRAGON', 'DRAGON', 'src/main/resources/imagenes_pokemon/Dragonair.png'),
-(149, 'Dragonite', 'DRAGON', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Dragonite.png'),
-(150, 'Mewtwo', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Mewtwo.png'),
-(151, 'Mew', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Mew.png');
+INSERT INTO `pokedex` (`NUM_POKEDEX`, `NOM_POKEMON`, `TIPO1`, `TIPO2`, `IMG_URL`, `Primer_Ataque`) VALUES
+(1, 'Bulbasaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Bulbasaur.png', 1),
+(2, 'Ivysaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Ivysaur.png', NULL),
+(3, 'Venusaur', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Venusaur.png', NULL),
+(4, 'Charmander', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Charmander.png', NULL),
+(5, 'Charmeleon', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Charmeleon.png', NULL),
+(6, 'Charizard', 'FUEGO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Charizard.png', NULL),
+(7, 'Squirtle', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Squirtle.png', NULL),
+(8, 'Wartortle', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Wartortle.png', NULL),
+(9, 'Blastoise', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Blastoise.png', NULL),
+(10, 'Caterpie', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Caterpie.png', NULL),
+(11, 'Metapod', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Metapod.png', NULL),
+(12, 'Butterfree', 'BICHO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Butterfree.png', NULL),
+(13, 'Weedle', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Weedle.png', NULL),
+(14, 'Kakuna', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Kakuna.png', NULL),
+(15, 'Beedrill', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Beedrill.png', NULL),
+(16, 'Pidgey', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgey.png', NULL),
+(17, 'Pidgeotto', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgeotto.png', NULL),
+(18, 'Pidgeot', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Pidgeot.png', NULL),
+(19, 'Rattata', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Rattata.png', NULL),
+(20, 'Raticate', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Raticate.png', NULL),
+(21, 'Spearow', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Spearow.png', NULL),
+(22, 'Fearow', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Fearow.png', NULL),
+(23, 'Ekans', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Ekans.png', NULL),
+(24, 'Arbok', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Arbok.png', NULL),
+(25, 'Pikachu', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Pikachu.png', NULL),
+(26, 'Raichu', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Raichu.png', NULL),
+(27, 'Sandshrew', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Sandshrew.png', NULL),
+(28, 'Sandslash', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Sandslash.png', NULL),
+(29, 'Nidoran-f', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidoran-f.png', NULL),
+(30, 'Nidorina', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidorina.png', NULL),
+(31, 'Nidoqueen', 'VENENO', 'TIERRA', 'src/main/resources/imagenes_pokemon/Nidoqueen.png', NULL),
+(32, 'Nidoran-m', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidoran-m.png', NULL),
+(33, 'Nidorino', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Nidorino.png', NULL),
+(34, 'Nidoking', 'VENENO', 'TIERRA', 'src/main/resources/imagenes_pokemon/Nidoking.png', NULL),
+(35, 'Clefairy', 'HADA', 'HADA', 'src/main/resources/imagenes_pokemon/Clefairy.png', NULL),
+(36, 'Clefable', 'HADA', 'HADA', 'src/main/resources/imagenes_pokemon/Clefable.png', NULL),
+(37, 'Vulpix', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Vulpix.png', NULL),
+(38, 'Ninetales', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Ninetales.png', NULL),
+(39, 'Jigglypuff', 'NORMAL', 'HADA', 'src/main/resources/imagenes_pokemon/Jigglypuff.png', NULL),
+(40, 'Wigglytuff', 'NORMAL', 'HADA', 'src/main/resources/imagenes_pokemon/Wigglytuff.png', NULL),
+(41, 'Zubat', 'VENENO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Zubat.png', NULL),
+(42, 'Golbat', 'VENENO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Golbat.png', NULL),
+(43, 'Oddish', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Oddish.png', NULL),
+(44, 'Gloom', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gloom.png', NULL),
+(45, 'Vileplume', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Vileplume.png', NULL),
+(46, 'Paras', 'BICHO', 'PLANTA', 'src/main/resources/imagenes_pokemon/Paras.png', NULL),
+(47, 'Parasect', 'BICHO', 'PLANTA', 'src/main/resources/imagenes_pokemon/Parasect.png', NULL),
+(48, 'Venonat', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Venonat.png', NULL),
+(49, 'Venomoth', 'BICHO', 'VENENO', 'src/main/resources/imagenes_pokemon/Venomoth.png', NULL),
+(50, 'Diglett', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Diglett.png', NULL),
+(51, 'Dugtrio', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Dugtrio.png', NULL),
+(52, 'Meowth', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Meowth.png', NULL),
+(53, 'Persian', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Persian.png', NULL),
+(54, 'Psyduck', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Psyduck.png', NULL),
+(55, 'Golduck', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Golduck.png', NULL),
+(56, 'Mankey', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Mankey.png', NULL),
+(57, 'Primeape', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Primeape.png', NULL),
+(58, 'Growlithe', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Growlithe.png', NULL),
+(59, 'Arcanine', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Arcanine.png', NULL),
+(60, 'Poliwag', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Poliwag.png', NULL),
+(61, 'Poliwhirl', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Poliwhirl.png', NULL),
+(62, 'Poliwrath', 'AGUA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Poliwrath.png', NULL),
+(63, 'Abra', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Abra.png', NULL),
+(64, 'Kadabra', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Kadabra.png', NULL),
+(65, 'Alakazam', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Alakazam.png', NULL),
+(66, 'Machop', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machop.png', NULL),
+(67, 'Machoke', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machoke.png', NULL),
+(68, 'Machamp', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Machamp.png', NULL),
+(69, 'Bellsprout', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Bellsprout.png', NULL),
+(70, 'Weepinbell', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Weepinbell.png', NULL),
+(71, 'Victreebel', 'PLANTA', 'VENENO', 'src/main/resources/imagenes_pokemon/Victreebel.png', NULL),
+(72, 'Tentacool', 'AGUA', 'VENENO', 'src/main/resources/imagenes_pokemon/Tentacool.png', NULL),
+(73, 'Tentacruel', 'AGUA', 'VENENO', 'src/main/resources/imagenes_pokemon/Tentacruel.png', NULL),
+(74, 'Geodude', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Geodude.png', NULL),
+(75, 'Graveler', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Graveler.png', NULL),
+(76, 'Golem', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Golem.png', NULL),
+(77, 'Ponyta', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Ponyta.png', NULL),
+(78, 'Rapidash', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Rapidash.png', NULL),
+(79, 'Slowpoke', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Slowpoke.png', NULL),
+(80, 'Slowbro', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Slowbro.png', NULL),
+(81, 'Magnemite', 'ELECTRICO', 'ACERO', 'src/main/resources/imagenes_pokemon/Magnemite.png', NULL),
+(82, 'Magneton', 'ELECTRICO', 'ACERO', 'src/main/resources/imagenes_pokemon/Magneton.png', NULL),
+(83, 'Farfetchd', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Farfetchd.png', NULL),
+(84, 'Doduo', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Doduo.png', NULL),
+(85, 'Dodrio', 'NORMAL', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Dodrio.png', NULL),
+(86, 'Seel', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seel.png', NULL),
+(87, 'Dewgong', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Dewgong.png', NULL),
+(88, 'Grimer', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Grimer.png', NULL),
+(89, 'Muk', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Muk.png', NULL),
+(90, 'Shellder', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Shellder.png', NULL),
+(91, 'Cloyster', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Cloyster.png', NULL),
+(92, 'Gastly', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gastly.png', NULL),
+(93, 'Haunter', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Haunter.png', NULL),
+(94, 'Gengar', 'FANTASMA', 'VENENO', 'src/main/resources/imagenes_pokemon/Gengar.png', NULL),
+(95, 'Onix', 'ROCA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Onix.png', NULL),
+(96, 'Drowzee', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Drowzee.png', NULL),
+(97, 'Hypno', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Hypno.png', NULL),
+(98, 'Krabby', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Krabby.png', NULL),
+(99, 'Kingler', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kingler.png', NULL),
+(100, 'Voltorb', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Voltorb.png', NULL),
+(101, 'Electrode', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Electrode.png', NULL),
+(102, 'Exeggcute', 'PLANTA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Exeggcute.png', NULL),
+(103, 'Exeggutor', 'PLANTA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Exeggutor.png', NULL),
+(104, 'Cubone', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Cubone.png', NULL),
+(105, 'Marowak', 'TIERRA', 'TIERRA', 'src/main/resources/imagenes_pokemon/Marowak.png', NULL),
+(106, 'Hitmonlee', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Hitmonlee.png', NULL),
+(107, 'Hitmonchan', 'LUCHA', 'LUCHA', 'src/main/resources/imagenes_pokemon/Hitmonchan.png', NULL),
+(108, 'Lickitung', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Lickitung.png', NULL),
+(109, 'Koffing', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Koffing.png', NULL),
+(110, 'Weezing', 'VENENO', 'VENENO', 'src/main/resources/imagenes_pokemon/Weezing.png', NULL),
+(111, 'Rhyhorn', 'TIERRA', 'ROCA', 'src/main/resources/imagenes_pokemon/Rhyhorn.png', NULL),
+(112, 'Rhydon', 'TIERRA', 'ROCA', 'src/main/resources/imagenes_pokemon/Rhydon.png', NULL),
+(113, 'Chansey', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Chansey.png', NULL),
+(114, 'Tangela', 'PLANTA', 'PLANTA', 'src/main/resources/imagenes_pokemon/Tangela.png', NULL),
+(115, 'Kangaskhan', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Kangaskhan.png', NULL),
+(116, 'Horsea', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Horsea.png', NULL),
+(117, 'Seadra', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seadra.png', NULL),
+(118, 'Goldeen', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Goldeen.png', NULL),
+(119, 'Seaking', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Seaking.png', NULL),
+(120, 'Staryu', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Staryu.png', NULL),
+(121, 'Starmie', 'AGUA', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Starmie.png', NULL),
+(122, 'Mr-mime', 'PSIQUICO', 'HADA', 'src/main/resources/imagenes_pokemon/Mr-mime.png', NULL),
+(123, 'Scyther', 'BICHO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Scyther.png', NULL),
+(124, 'Jynx', 'HIELO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Jynx.png', NULL),
+(125, 'Electabuzz', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Electabuzz.png', NULL),
+(126, 'Magmar', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Magmar.png', NULL),
+(127, 'Pinsir', 'BICHO', 'BICHO', 'src/main/resources/imagenes_pokemon/Pinsir.png', NULL),
+(128, 'Tauros', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Tauros.png', NULL),
+(129, 'Magikarp', 'AGUA ', 'AGUA', 'src/main/resources/imagenes_pokemon/Magikarp.png', NULL),
+(130, 'Gyarados', 'AGUA', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Gyarados.png', NULL),
+(131, 'Lapras', 'AGUA', 'HIELO', 'src/main/resources/imagenes_pokemon/Lapras.png', NULL),
+(132, 'Ditto', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Ditto.png', NULL),
+(133, 'Eevee', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Eevee.png', NULL),
+(134, 'Vaporeon', 'AGUA', 'AGUA', 'src/main/resources/imagenes_pokemon/Vaporeon.png', NULL),
+(135, 'Jolteon', 'ELECTRICO', 'ELECTRICO', 'src/main/resources/imagenes_pokemon/Jolteon.png', NULL),
+(136, 'Flareon', 'FUEGO', 'FUEGO', 'src/main/resources/imagenes_pokemon/Flareon.png', NULL),
+(137, 'Porygon', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Porygon.png', NULL),
+(138, 'Omanyte', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Omanyte.png', NULL),
+(139, 'Omastar', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Omastar.png', NULL),
+(140, 'Kabuto', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kabuto.png', NULL),
+(141, 'Kabutops', 'ROCA', 'AGUA', 'src/main/resources/imagenes_pokemon/Kabutops.png', NULL),
+(142, 'Aerodactyl', 'ROCA', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Aerodactyl.png', NULL),
+(143, 'Snorlax', 'NORMAL', 'NORMAL', 'src/main/resources/imagenes_pokemon/Snorlax.png', NULL),
+(144, 'Articuno', 'HIELO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Articuno.png', NULL),
+(145, 'Zapdos', 'ELECTRICO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Zapdos.png', NULL),
+(146, 'Moltres', 'FUEGO', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Moltres.png', NULL),
+(147, 'Dratini', 'DRAGON', 'DRAGON', 'src/main/resources/imagenes_pokemon/Dratini.png', NULL),
+(148, 'Dragonair', 'DRAGON', 'DRAGON', 'src/main/resources/imagenes_pokemon/Dragonair.png', NULL),
+(149, 'Dragonite', 'DRAGON', 'VOLADOR', 'src/main/resources/imagenes_pokemon/Dragonite.png', NULL),
+(150, 'Mewtwo', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Mewtwo.png', NULL),
+(151, 'Mew', 'PSIQUICO', 'PSIQUICO', 'src/main/resources/imagenes_pokemon/Mew.png', NULL);
 
 -- --------------------------------------------------------
 
@@ -330,6 +353,12 @@ ALTER TABLE `mochila`
   ADD KEY `ID_OBJETO` (`ID_OBJETO`);
 
 --
+-- Indices de la tabla `movimientos`
+--
+ALTER TABLE `movimientos`
+  ADD PRIMARY KEY (`id_movimiento`);
+
+--
 -- Indices de la tabla `objetos`
 --
 ALTER TABLE `objetos`
@@ -341,7 +370,8 @@ ALTER TABLE `objetos`
 --
 ALTER TABLE `pokedex`
   ADD PRIMARY KEY (`NUM_POKEDEX`),
-  ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`);
+  ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`),
+  ADD KEY `Primer_Ataque` (`Primer_Ataque`);
 
 --
 -- Indices de la tabla `pokemon`
@@ -350,6 +380,28 @@ ALTER TABLE `pokemon`
   ADD PRIMARY KEY (`ID_POKEMON`),
   ADD KEY `NUM_POKEDEX` (`NUM_POKEDEX`),
   ADD KEY `ID_ENTRENADOR` (`ID_ENTRENADOR`);
+
+--
+-- Indices de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  ADD PRIMARY KEY (`id_tipo`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `movimientos`
+--
+ALTER TABLE `movimientos`
+  MODIFY `id_movimiento` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `tipo`
+--
+ALTER TABLE `tipo`
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Restricciones para tablas volcadas
@@ -361,6 +413,12 @@ ALTER TABLE `pokemon`
 ALTER TABLE `mochila`
   ADD CONSTRAINT `mochila_ibfk_1` FOREIGN KEY (`ID_ENTRENADOR`) REFERENCES `entrenador` (`ID_ENTRENADOR`) ON UPDATE CASCADE,
   ADD CONSTRAINT `mochila_ibfk_2` FOREIGN KEY (`ID_OBJETO`) REFERENCES `objetos` (`ID_OBJETO`) ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `pokedex`
+--
+ALTER TABLE `pokedex`
+  ADD CONSTRAINT `pokedex_ibfk_1` FOREIGN KEY (`Primer_Ataque`) REFERENCES `movimientos` (`id_movimiento`);
 
 --
 -- Filtros para la tabla `pokemon`
