@@ -26,7 +26,7 @@ public  class ControladorVentanaEmergente {
 
     public void initialize() throws IOException {
         Logger.write("Estás eligiendo que nombre ponerle a tu nuevo Pokémon");
-        lblAsignarNombre.setText("¡Asignale un nombre a tu pokemon!"
+        lblAsignarNombre.setText("¡Asígnale un nombre a tu Pokémon!"
         );
 
     }

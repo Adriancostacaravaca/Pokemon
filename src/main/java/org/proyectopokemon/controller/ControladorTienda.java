@@ -46,9 +46,14 @@ public class ControladorTienda {
     private Mochila mochila = new Mochila();
     private Media musicaTienda = new Media(Paths.get("src/main/resources/musica/tienda.mp3").toUri().toString());
     private MediaPlayer mediaPlayer = new MediaPlayer(musicaTienda);
+    @FXML
+    private ImageView imageViewFondo;
 
     public void initialize() throws IOException {
         Logger.write("Has entrado a la tienda Pokémon");
+        File x = new File("src/main/resources/imagenes/CentroPokemon.jpeg");
+        Image imagePrincipal = new Image(x.toURI().toString());
+        imageViewFondo.setImage(imagePrincipal);
         tienda.anyadirObjetosATienda();
         listaObjetos.setItems(tienda.getObjetosTienda());
         listaObjetos.setCellFactory(new TiendaCeldas());
