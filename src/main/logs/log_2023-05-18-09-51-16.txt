@@ -1,0 +1,12 @@
+2023-05-18-09-51-16: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-51-18: Te has registrado
+2023-05-18-09-51-18: Has entrado al login
+2023-05-18-09-51-19: Las credenciales introducidas son correctas
+2023-05-18-09-51-19: Estás en el menu principal de la aplicación
+2023-05-18-09-51-20: Estás en la ventana Mochila
+2023-05-18-09-51-22: Estás en el menu principal de la aplicación
+2023-05-18-09-51-23: Has entrado al Centro Pokémon
+2023-05-18-09-51-24: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-09-51-25: Has entrado al Centro Pokémon
+2023-05-18-09-51-26: Estás en el menu principal de la aplicación
+2023-05-18-09-51-28: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
