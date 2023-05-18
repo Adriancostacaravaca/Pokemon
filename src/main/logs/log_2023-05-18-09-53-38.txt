@@ -1,0 +1,16 @@
+2023-05-18-09-53-38: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-53-40: Te has registrado
+2023-05-18-09-53-40: Has entrado al login
+2023-05-18-09-53-42: Las credenciales introducidas son correctas
+2023-05-18-09-53-42: Estás en el menu principal de la aplicación
+2023-05-18-09-53-42: Estás en la ventana Mochila
+2023-05-18-09-53-43: Estás en el menu principal de la aplicación
+2023-05-18-09-53-43: Estás en la ventana de captura
+2023-05-18-09-53-43: Un Raichu salvaje ha aparecido
+2023-05-18-09-53-44: Has capturado un Raichu salvaje
+2023-05-18-09-53-44: Estás en el menu principal de la aplicación
+2023-05-18-09-53-45: Estás en la ventana Mochila
+2023-05-18-09-53-46: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-09-53-48: Estás en la ventana Mochila
+2023-05-18-09-53-50: Estás en el menu principal de la aplicación
+2023-05-18-09-53-50: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

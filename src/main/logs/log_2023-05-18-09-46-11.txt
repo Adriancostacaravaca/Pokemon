@@ -1,0 +1,36 @@
+2023-05-18-09-46-11: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-46-13: Te has registrado
+2023-05-18-09-46-13: Has entrado al login
+2023-05-18-09-46-15: Las credenciales introducidas son correctas
+2023-05-18-09-46-15: Estás en el menu principal de la aplicación
+2023-05-18-09-46-16: Estás en la ventana de captura
+2023-05-18-09-46-16: Un Fearow salvaje ha aparecido
+2023-05-18-09-46-16: Has capturado un Fearow salvaje
+2023-05-18-09-46-17: Estás en el menu principal de la aplicación
+2023-05-18-09-46-18: Has entrado al Centro Pokémon
+2023-05-18-09-46-18: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-09-46-20: Has movido un Fearow a tu equipo
+2023-05-18-09-46-21: Has entrado al Centro Pokémon
+2023-05-18-09-46-22: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-09-46-22: Has elegido a Fearow para entrenar
+2023-05-18-09-46-23: Le has aplicado un entrenamiento funcional a Fearow
+2023-05-18-09-46-27: Le has aplicado un entrenamiento funcional a Fearow
+2023-05-18-09-46-28: Le has aplicado un entrenamiento funcional a Fearow
+2023-05-18-09-46-34: Has entrado al Centro Pokémon
+2023-05-18-09-46-36: Estás en el menu principal de la aplicación
+2023-05-18-09-46-37: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-09-46-38: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-09-46-39: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-09-46-40: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-09-46-42: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-09-47-06: Estás combatiendo contra un entrenador
+2023-05-18-09-47-07: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-09-47-19: Estás en el menu principal de la aplicación
+2023-05-18-09-47-20: Has entrado al Centro Pokémon
+2023-05-18-09-47-21: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-09-47-21: Has elegido a Fearow para entrenar
+2023-05-18-09-47-28: Has entrado al Centro Pokémon
+2023-05-18-09-47-29: Estás en el menu principal de la aplicación
+2023-05-18-09-47-30: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-09-47-38: Estás en el menu principal de la aplicación
+2023-05-18-09-47-51: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

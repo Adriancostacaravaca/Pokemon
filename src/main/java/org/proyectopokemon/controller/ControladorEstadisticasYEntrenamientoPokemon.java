@@ -76,6 +76,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private List<Button> objetos;
     @FXML
     private Label lblPokedolares;
+    @FXML
+    private Label lblEntrenamiento;
     private Entrenamiento entrenamiento = new Entrenamiento();
     private static final DecimalFormat decfor = new DecimalFormat("0.00");
     private Media musicaEfecto = new Media(Paths.get("src/main/resources/musica/efectoEntrenamiento.mp3").toUri().toString());
@@ -202,24 +204,28 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     public void aplicarEntPesado() throws IOException {
         Logger.write("Le has aplicado un entrenamiento pesado a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntPesado();
+        lblEntrenamiento.setText("Aplicado Entrenamiento Pesado");
         actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFurioso() throws IOException {
         Logger.write("Le has aplicado un entrenamiento furioso a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntFurioso();
+        lblEntrenamiento.setText("Aplicado Entrenamiento Furioso");
         actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntFuncional() throws IOException {
         Logger.write("Le has aplicado un entrenamiento funcional a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntFuncional();
+        lblEntrenamiento.setText("Aplicado Entrenamiento Funcional");
         actualizarEstadisticas();
     }
     @FXML
     public void aplicarEntOnirico() throws IOException {
         Logger.write("Le has aplicado un entrenamiento onírico a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntOnirico();
+        lblEntrenamiento.setText("Aplicado Entrenamiento Onírico");
         actualizarEstadisticas();
     }
     @FXML
