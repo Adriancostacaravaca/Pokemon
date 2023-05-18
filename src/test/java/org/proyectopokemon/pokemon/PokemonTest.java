@@ -36,7 +36,7 @@ class PokemonTest {
     void descansar() {
         p2.setEstamina(3);
         p2.descansar();
-        Assert.assertEquals(20,p2.getEstamina());
+        Assert.assertTrue(20 == p2.getEstamina());
     }
 
 }
