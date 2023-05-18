@@ -1,0 +1,57 @@
+2023-05-18-01-39-11: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-01-39-13: Te has registrado
+2023-05-18-01-39-13: Has entrado al login
+2023-05-18-01-39-14: Las credenciales introducidas son correctas
+2023-05-18-01-39-14: Estás en el menu principal de la aplicación
+2023-05-18-01-39-16: Estás en la ventana de captura
+2023-05-18-01-39-16: Un Poliwhirl salvaje ha aparecido
+2023-05-18-01-39-17: Has capturado un Poliwhirl salvaje
+2023-05-18-01-39-17: Estás en el menu principal de la aplicación
+2023-05-18-01-39-18: Has entrado al Centro Pokémon
+2023-05-18-01-39-18: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-39-19: Has movido un Poliwhirl a tu equipo
+2023-05-18-01-39-20: Has entrado al Centro Pokémon
+2023-05-18-01-39-20: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-01-39-20: Has elegido a Poliwhirl para entrenar
+2023-05-18-01-39-21: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-22: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-23: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-24: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-24: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-24: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-24: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-25: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-25: Le has aplicado un entrenamiento funcional a Poliwhirl
+2023-05-18-01-39-30: Has entrado al Centro Pokémon
+2023-05-18-01-39-30: Estás en el menu principal de la aplicación
+2023-05-18-01-39-31: Estás en la ventana Mochila
+2023-05-18-01-39-32: Estás revisando los Pokémon que se encuentran en tu equipo principal
+2023-05-18-01-39-33: Estás en la ventana Mochila
+2023-05-18-01-39-33: Estás en el menu principal de la aplicación
+2023-05-18-01-39-34: Has entrado al Centro Pokémon
+2023-05-18-01-39-36: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-39-38: Has movido un Poliwhirl a tu caja
+2023-05-18-01-39-38: Has entrado al Centro Pokémon
+2023-05-18-01-39-38: Estás en el menu principal de la aplicación
+2023-05-18-01-39-39: Estás en la ventana Mochila
+2023-05-18-01-39-39: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-01-39-41: Estás en la ventana Mochila
+2023-05-18-01-39-41: Estás en el menu principal de la aplicación
+2023-05-18-01-39-43: Has entrado al Centro Pokémon
+2023-05-18-01-39-43: Estás en el menu principal de la aplicación
+2023-05-18-01-39-43: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-01-39-52: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-01-39-54: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-01-39-55: Estás en el menu principal de la aplicación
+2023-05-18-01-39-57: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
