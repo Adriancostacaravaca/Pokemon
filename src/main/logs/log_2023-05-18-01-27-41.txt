@@ -1,0 +1,23 @@
+2023-05-18-01-27-41: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-01-27-52: Te has registrado
+2023-05-18-01-27-52: Has entrado al login
+2023-05-18-01-27-53: Las credenciales introducidas son correctas
+2023-05-18-01-27-53: Estás en el menu principal de la aplicación
+2023-05-18-01-27-54: Estás en la ventana de captura
+2023-05-18-01-27-54: Un Wartortle salvaje ha aparecido
+2023-05-18-01-27-54: Has capturado un Wartortle salvaje
+2023-05-18-01-27-55: Un Dragonite salvaje ha aparecido
+2023-05-18-01-27-56: Has capturado un Dragonite salvaje
+2023-05-18-01-27-57: Estás en el menu principal de la aplicación
+2023-05-18-01-27-58: Has entrado al Centro Pokémon
+2023-05-18-01-27-59: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-28-00: Has movido un Dragonite a tu equipo
+2023-05-18-01-28-00: Has movido un Wartortle a tu equipo
+2023-05-18-01-28-01: Has entrado al Centro Pokémon
+2023-05-18-01-28-02: Estás en la ventana de crianza
+2023-05-18-01-28-07: Estás eligiendo que nombre ponerle a tu nuevo Pokémon
+2023-05-18-01-28-32: Has entrado al Centro Pokémon
+2023-05-18-01-28-33: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-28-34: Has entrado al Centro Pokémon
+2023-05-18-01-28-35: Estás en el menu principal de la aplicación
+2023-05-18-01-28-36: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
