@@ -27,8 +27,6 @@ public class ControladorCombate {
     @FXML
     private Button btnVolver;
     @FXML
-    private Button btnSubirNivel;
-    @FXML
     private Button btnCombatir;
     @FXML
     private Label lblErrorEquipoVacio;
