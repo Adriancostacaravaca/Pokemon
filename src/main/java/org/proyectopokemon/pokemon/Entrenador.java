@@ -69,21 +69,6 @@ public class Entrenador {
         return pokeballs;
     }
 
-    /**
-     * MÉTODO PARA MOSTRAR LA CAJA DEL ENTRENADOR, CON UN SIZE RECORREMOS EL ARRAY Y SI ESTÁ A 0, MOSTRAMOS UN PRINT
-     * DICIENDO QUE ESTÁ VACÍA
-     */
-
-    public void mostrarCaja() {
-        System.out.println("CAJA DEL ENTRENADOR:");
-        if (miEntrenador.getCaja().size() == 0) {
-            System.out.println("La caja del entrenador está vacía");
-        }
-        for (int i = 0; i < miEntrenador.getCaja().size(); i++) {
-            System.out.println(miEntrenador.getCaja().get(i));
-        }
-    }
-
     // COMPROBACIÓN DE SI TENEMOS DINERO O NO
     public boolean comprar(Objeto objeto) {
         if (pokedollar >= objeto.getCoste()) {
