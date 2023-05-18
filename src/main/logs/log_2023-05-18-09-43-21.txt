@@ -1,0 +1,17 @@
+2023-05-18-09-43-21: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-43-32: Te has registrado
+2023-05-18-09-43-32: Has entrado al login
+2023-05-18-09-43-33: Las credenciales introducidas son correctas
+2023-05-18-09-43-34: Estás en el menu principal de la aplicación
+2023-05-18-09-43-34: Estás en la ventana de captura
+2023-05-18-09-43-34: Un Seadra salvaje ha aparecido
+2023-05-18-09-43-35: Has capturado un Seadra salvaje
+2023-05-18-09-43-37: Estás en el menu principal de la aplicación
+2023-05-18-09-43-38: Has entrado al Centro Pokémon
+2023-05-18-09-43-38: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-09-43-40: Has movido un Seadra a tu equipo
+2023-05-18-09-43-41: Has entrado al Centro Pokémon
+2023-05-18-09-43-42: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-09-43-42: Has elegido a Seadra para entrenar
+2023-05-18-09-43-43: Le has aplicado un entrenamiento pesado a Seadra
+2023-05-18-09-43-45: Le has aplicado un entrenamiento furioso a Seadra

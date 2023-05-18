@@ -1,0 +1,21 @@
+2023-05-18-09-45-23: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-45-27: Te has registrado
+2023-05-18-09-45-27: Has entrado al login
+2023-05-18-09-45-29: Las credenciales introducidas son correctas
+2023-05-18-09-45-29: Estás en el menu principal de la aplicación
+2023-05-18-09-45-32: Estás en la ventana de captura
+2023-05-18-09-45-32: Un Hitmonlee salvaje ha aparecido
+2023-05-18-09-45-32: Has capturado un Hitmonlee salvaje
+2023-05-18-09-45-33: Estás en el menu principal de la aplicación
+2023-05-18-09-45-34: Has entrado al Centro Pokémon
+2023-05-18-09-45-34: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-09-45-36: Has movido un Hitmonlee a tu equipo
+2023-05-18-09-45-36: Has entrado al Centro Pokémon
+2023-05-18-09-45-37: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-09-45-37: Has elegido a Hitmonlee para entrenar
+2023-05-18-09-45-39: Le has aplicado un entrenamiento pesado a Hitmonlee
+2023-05-18-09-45-40: Le has aplicado un entrenamiento furioso a Hitmonlee
+2023-05-18-09-45-41: Le has aplicado un entrenamiento funcional a Hitmonlee
+2023-05-18-09-45-42: Has entrado al Centro Pokémon
+2023-05-18-09-45-42: Estás en el menu principal de la aplicación
+2023-05-18-09-45-43: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
