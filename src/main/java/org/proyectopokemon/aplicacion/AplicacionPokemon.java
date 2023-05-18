@@ -13,7 +13,7 @@ import java.util.Objects;
 
 /**
  * @author Adrian Costa Caravaca
- * @author Francisco Estrada Cuencaa
+ * @author Francisco Estrada Cuenca
  * @version 1.0
  */
 public class AplicacionPokemon extends Application {
