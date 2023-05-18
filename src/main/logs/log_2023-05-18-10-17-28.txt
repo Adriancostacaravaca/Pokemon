@@ -1,0 +1,17 @@
+2023-05-18-10-17-28: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-10-17-33: Te has registrado
+2023-05-18-10-17-33: Has entrado al login
+2023-05-18-10-17-35: Las credenciales introducidas son correctas
+2023-05-18-10-17-35: Estás en el menu principal de la aplicación
+2023-05-18-10-17-38: Estás en la ventana de captura
+2023-05-18-10-17-38: Un Hypno salvaje ha aparecido
+2023-05-18-10-17-38: Has capturado un Hypno salvaje
+2023-05-18-10-17-39: Estás en el menu principal de la aplicación
+2023-05-18-10-17-40: Has entrado al Centro Pokémon
+2023-05-18-10-17-40: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-10-17-41: Has movido un Hypno a tu equipo
+2023-05-18-10-17-42: Has entrado al Centro Pokémon
+2023-05-18-10-17-43: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-10-17-43: Has elegido a Hypno para entrenar
+2023-05-18-10-18-01: Has entrado al Centro Pokémon
+2023-05-18-10-18-02: Estás en el menu principal de la aplicación

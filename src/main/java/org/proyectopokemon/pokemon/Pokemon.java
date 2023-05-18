@@ -344,7 +344,6 @@ public class Pokemon {
             velocidad += incremento;
             this.nivel++;
             this.experiencia = 0;
-            System.out.println("Has subido al nivel: " + getNivel());
         }
 
     }
