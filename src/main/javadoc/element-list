@@ -1,5 +1,10 @@
 module:Pokemon
+org.proyectopokemon.aplicacion
 org.proyectopokemon.controller
 org.proyectopokemon.controller.factories
 org.proyectopokemon.database
+org.proyectopokemon.enums
+org.proyectopokemon.logger
+org.proyectopokemon.movements
 org.proyectopokemon.pokemon
+org.proyectopokemon.shop

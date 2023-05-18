@@ -1,0 +1,34 @@
+2023-05-18-01-05-56: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-01-05-57: Te has registrado
+2023-05-18-01-05-58: Has entrado al login
+2023-05-18-01-05-59: Las credenciales introducidas son correctas
+2023-05-18-01-05-59: Estás en el menu principal de la aplicación
+2023-05-18-01-06-00: Has entrado al Centro Pokémon
+2023-05-18-01-06-01: Estás en el menu principal de la aplicación
+2023-05-18-01-06-01: Estás en la ventana de captura
+2023-05-18-01-06-01: Un Graveler salvaje ha aparecido
+2023-05-18-01-06-02: Has capturado un Graveler salvaje
+2023-05-18-01-06-03: Un Squirtle salvaje ha aparecido
+2023-05-18-01-06-03: Has capturado un Squirtle salvaje
+2023-05-18-01-06-03: Estás en el menu principal de la aplicación
+2023-05-18-01-06-04: Has entrado al Centro Pokémon
+2023-05-18-01-06-07: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-06-08: Has movido un Graveler a tu equipo
+2023-05-18-01-06-08: Has movido un Squirtle a tu equipo
+2023-05-18-01-06-09: Has entrado al Centro Pokémon
+2023-05-18-01-06-09: Estás en la ventana de crianza
+2023-05-18-01-06-13: Estás eligiendo que nombre ponerle a tu nuevo Pokémon
+2023-05-18-01-06-25: Has entrado al Centro Pokémon
+2023-05-18-01-06-26: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-06-27: Has movido un Pokemonprueba a tu equipo
+2023-05-18-01-06-28: Has entrado al Centro Pokémon
+2023-05-18-01-06-29: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-06-30: Has movido un Graveler a tu caja
+2023-05-18-01-06-30: Has movido un Squirtle a tu caja
+2023-05-18-01-06-31: Has entrado al Centro Pokémon
+2023-05-18-01-06-32: Estás en el menu principal de la aplicación
+2023-05-18-01-06-32: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-01-06-33: Estás combatiendo contra un entrenador
+2023-05-18-01-06-35: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-01-06-36: Estás en el menu principal de la aplicación
+2023-05-18-01-06-36: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

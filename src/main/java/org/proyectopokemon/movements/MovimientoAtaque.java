@@ -3,6 +3,9 @@ package org.proyectopokemon.movements;
 
 import org.proyectopokemon.enums.Tipo;
 
+/**
+ * CLASE PARA ESTABLECER LOS ATRIBUTOS DE UN MOVIMIENTO ATAQUE
+ */
 public class MovimientoAtaque extends Movimiento{
 
     private int potencia;
