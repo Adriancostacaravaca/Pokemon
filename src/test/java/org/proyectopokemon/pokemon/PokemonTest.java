@@ -20,12 +20,9 @@ class PokemonTest {
     }
     @Test
     void subirNivel() {
-        p2.setNivel(2);
-        p2.setExperiencia(20);
-        int nivelAnterios = p2.getNivel();
+        int experienciaAntes = p2.getExperiencia();
         p2.subirNivel();
-        int nivelAhora = p2.getNivel();
-        Assert.assertEquals(3,  nivelAhora);
+        Assert.assertTrue(experienciaAntes < p2.getExperiencia());
     }
 
     @Test

@@ -1,0 +1,18 @@
+2023-05-18-01-32-35: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-01-32-38: Te has registrado
+2023-05-18-01-32-38: Has entrado al login
+2023-05-18-01-32-39: Las credenciales introducidas son correctas
+2023-05-18-01-32-39: Estás en el menu principal de la aplicación
+2023-05-18-01-32-40: Estás en la ventana de captura
+2023-05-18-01-32-40: Un Nidorino salvaje ha aparecido
+2023-05-18-01-32-40: Has capturado un Nidorino salvaje
+2023-05-18-01-32-41: Un Blastoise salvaje ha aparecido
+2023-05-18-01-32-41: Has capturado un Blastoise salvaje
+2023-05-18-01-32-42: Estás en el menu principal de la aplicación
+2023-05-18-01-32-43: Has entrado al Centro Pokémon
+2023-05-18-01-32-43: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-01-32-44: Has movido un Nidorino a tu equipo
+2023-05-18-01-32-44: Has movido un Blastoise a tu equipo
+2023-05-18-01-32-45: Has entrado al Centro Pokémon
+2023-05-18-01-32-47: Estás en la ventana de crianza
+2023-05-18-01-32-50: Estás eligiendo que nombre ponerle a tu nuevo Pokémon
