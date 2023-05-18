@@ -1,0 +1,39 @@
+2023-05-18-12-54-35: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-12-54-37: Te has registrado
+2023-05-18-12-54-37: Has entrado al login
+2023-05-18-12-54-38: Las credenciales introducidas son correctas
+2023-05-18-12-54-38: Estás en el menu principal de la aplicación
+2023-05-18-12-54-38: Estás en la ventana de captura
+2023-05-18-12-54-38: Un Metapod salvaje ha aparecido
+2023-05-18-12-54-39: Has capturado un Metapod salvaje
+2023-05-18-12-54-39: Un Eevee salvaje ha aparecido
+2023-05-18-12-54-40: Has capturado un Eevee salvaje
+2023-05-18-12-54-40: Estás en el menu principal de la aplicación
+2023-05-18-12-54-41: Has entrado al Centro Pokémon
+2023-05-18-12-54-42: Has entrado a la tienda Pokémon
+2023-05-18-12-54-47: Has entrado al Centro Pokémon
+2023-05-18-12-54-48: Estás en el menu principal de la aplicación
+2023-05-18-12-54-49: Has entrado al Centro Pokémon
+2023-05-18-12-54-49: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-12-54-51: Has movido un Metapod a tu equipo
+2023-05-18-12-54-51: Has movido un Eevee a tu equipo
+2023-05-18-12-54-52: Has entrado al Centro Pokémon
+2023-05-18-12-54-52: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-54-52: Has elegido a Metapod para entrenar
+2023-05-18-12-54-55: Estás revisando los objetos que puedes aplicar a tu Pokémon
+2023-05-18-12-54-57: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-54-57: Has elegido a Metapod para entrenar
+2023-05-18-12-54-59: Has elegido a Eevee para entrenar
+2023-05-18-12-55-00: Estás revisando los objetos que puedes aplicar a tu Pokémon
+2023-05-18-12-55-02: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-55-02: Has elegido a Metapod para entrenar
+2023-05-18-12-55-03: Estás revisando los objetos que puedes aplicar a tu Pokémon
+2023-05-18-12-55-05: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-55-05: Has elegido a Metapod para entrenar
+2023-05-18-12-55-07: Le has aplicado un entrenamiento furioso a Metapod
+2023-05-18-12-55-07: Le has aplicado un entrenamiento furioso a Metapod
+2023-05-18-12-55-07: Le has aplicado un entrenamiento furioso a Metapod
+2023-05-18-12-55-09: Le has aplicado un entrenamiento pesado a Metapod
+2023-05-18-12-55-21: Has entrado al Centro Pokémon
+2023-05-18-12-55-22: Estás en el menu principal de la aplicación
+2023-05-18-12-55-22: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

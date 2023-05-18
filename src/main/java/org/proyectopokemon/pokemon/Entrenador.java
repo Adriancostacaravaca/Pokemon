@@ -69,7 +69,11 @@ public class Entrenador {
         return pokeballs;
     }
 
-    // COMPROBACIÓN DE SI TENEMOS DINERO O NO
+    /**
+     * MÉTODO PARA REALIZAR LA COMPRA DE UN OBJETO EN LA TIENDA Y POSTERIORMENTE LO AÑADIREMOS EN LA CAJA DE OBJETOS
+     * @param objeto OBJETO QUE SELECCIONAMOS EN LA TIENDA
+     * @return
+     */
     public boolean comprar(Objeto objeto) {
         if (pokedollar >= objeto.getCoste()) {
             pokedollar -= objeto.getCoste();
@@ -79,15 +83,17 @@ public class Entrenador {
             return false;
         }
     }
-    // FIXME: AÑADIR DOS POKEMON A LA CRIANZA
+
+    /**
+     * MÉTODO PARA REALIZAR LA CRIANZA ENTRE DOS POKÉMON, SI NO TENEMOS SUFICIENTE DINERO NO NOS DEJARÁ REALIZARLA
+     * @param p1 POKÉMON QUE VAMOS A ESCOGER PARA CRIAR
+     * @return
+     */
+
     public Pokemon criar(Pokemon[] p1){
         if (Entrenador.miEntrenador.getPokedollar() >= 800) {
-            System.out.println("Crianza realizada");
             pokedollar -= 800;
             nuevoPokemon = new Pokemon(controladorVentanaEmergente.getNombre(), p1[0].getTipo(),p1[1].getTipo(),p1[1].getImage());
-        }
-        else if (Entrenador.miEntrenador.getPokedollar() < 800) {
-            System.out.println("No tienes suficiente Pokedólares para realizar la crianza");
         }
         return nuevoPokemon;
     }

@@ -85,27 +85,27 @@ public class ControladorElegirObjetoAAplicar {
     }
     public void escogerObjeto2(){
         nombreObjeto = btnObjeto2.getText();
-        btnObjeto1.setDisable(true);
+        btnObjeto2.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto3(){
         nombreObjeto = btnObjeto3.getText();
-        btnObjeto1.setDisable(true);
+        btnObjeto3.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto4(){
         nombreObjeto = btnObjeto4.getText();
-        btnObjeto1.setDisable(true);
+        btnObjeto4.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto5(){
         nombreObjeto = btnObjeto5.getText();
-        btnObjeto1.setDisable(true);
+        btnObjeto5.setDisable(true);
         aplicarObjeto();
     }
     public void escogerObjeto6(){
         nombreObjeto = btnObjeto6.getText();
-        btnObjeto1.setDisable(true);
+        btnObjeto6.setDisable(true);
         aplicarObjeto();
     }
 

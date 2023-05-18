@@ -1,0 +1,18 @@
+2023-05-18-12-24-50: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-12-24-52: Te has registrado
+2023-05-18-12-24-52: Has entrado al login
+2023-05-18-12-24-54: Las credenciales introducidas son correctas
+2023-05-18-12-24-54: Estás en el menu principal de la aplicación
+2023-05-18-12-24-55: Estás en la ventana de captura
+2023-05-18-12-24-55: Un Primeape salvaje ha aparecido
+2023-05-18-12-24-56: Has capturado un Primeape salvaje
+2023-05-18-12-24-57: Estás en el menu principal de la aplicación
+2023-05-18-12-24-58: Has entrado al Centro Pokémon
+2023-05-18-12-24-58: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-12-25-00: Has movido un Primeape a tu equipo
+2023-05-18-12-25-00: Has entrado al Centro Pokémon
+2023-05-18-12-25-01: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-25-01: Has elegido a Primeape para entrenar
+2023-05-18-12-25-08: Has entrado al Centro Pokémon
+2023-05-18-12-25-08: Estás en el menu principal de la aplicación
+2023-05-18-12-25-09: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
