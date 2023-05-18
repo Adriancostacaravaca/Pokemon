@@ -1,0 +1,6 @@
+2023-05-18-09-58-37: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-58-39: Te has registrado
+2023-05-18-09-58-39: Has entrado al login
+2023-05-18-09-58-41: Las credenciales introducidas son correctas
+2023-05-18-09-58-41: Estás en el menu principal de la aplicación
+2023-05-18-09-59-41: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.
