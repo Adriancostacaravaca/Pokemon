@@ -1,0 +1,42 @@
+2023-05-18-02-33-53: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-02-33-55: Te has registrado
+2023-05-18-02-33-55: Has entrado al login
+2023-05-18-02-33-57: Las credenciales introducidas son correctas
+2023-05-18-02-33-57: Estás en el menu principal de la aplicación
+2023-05-18-02-34-00: Has entrado al Centro Pokémon
+2023-05-18-02-34-00: Estás en el menu principal de la aplicación
+2023-05-18-02-34-01: Estás en la ventana de captura
+2023-05-18-02-34-01: Un Hitmonlee salvaje ha aparecido
+2023-05-18-02-34-02: Has capturado un Hitmonlee salvaje
+2023-05-18-02-34-02: Un Krabby salvaje ha aparecido
+2023-05-18-02-34-03: Has capturado un Krabby salvaje
+2023-05-18-02-34-04: Estás en el menu principal de la aplicación
+2023-05-18-02-34-05: Has entrado al Centro Pokémon
+2023-05-18-02-34-06: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-34-07: Has movido un Hitmonlee a tu equipo
+2023-05-18-02-34-08: Has movido un Krabby a tu equipo
+2023-05-18-02-34-09: Has entrado al Centro Pokémon
+2023-05-18-02-34-10: Estás en la ventana de crianza
+2023-05-18-02-34-19: Estás eligiendo que nombre ponerle a tu nuevo Pokémon
+2023-05-18-02-34-47: Has entrado al Centro Pokémon
+2023-05-18-02-34-49: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-34-55: Has movido un PruebaPokemon a tu equipo
+2023-05-18-02-35-00: Has entrado al Centro Pokémon
+2023-05-18-02-35-03: Estás en el menu principal de la aplicación
+2023-05-18-02-35-04: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-35-05: Estás combatiendo contra un entrenador
+2023-05-18-02-35-09: Vas a cambiar de Pokémon para combatir
+2023-05-18-02-35-10: Has elegido a PruebaPokemon para combatir
+2023-05-18-02-35-10: Estás combatiendo contra un entrenador
+2023-05-18-02-35-16: Vas a cambiar de Pokémon para combatir
+2023-05-18-02-35-22: Has elegido a PruebaPokemon para combatir
+2023-05-18-02-35-22: Estás combatiendo contra un entrenador
+2023-05-18-02-35-23: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-35-25: Estás en el menu principal de la aplicación
+2023-05-18-02-35-32: Estás en la ventana Mochila
+2023-05-18-02-35-35: Estás en el menu principal de la aplicación
+2023-05-18-02-35-36: Has entrado al Centro Pokémon
+2023-05-18-02-35-37: Estás en el menu principal de la aplicación
+2023-05-18-02-35-40: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-35-41: Estás en el menu principal de la aplicación
+2023-05-18-02-35-48: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

@@ -53,7 +53,7 @@ public class ControladorPokedex {
     }
 
     public void initialize() throws IOException {
-        Logger.write("Estás en la ventana Pokedex");
+        Logger.write("Estás revisando la Pokedex");
         musicaFondo();
         File x = new File("src/main/resources/imagenes/Pokedex.jpg");
         Image imagePrincipal = new Image(x.toURI().toString());

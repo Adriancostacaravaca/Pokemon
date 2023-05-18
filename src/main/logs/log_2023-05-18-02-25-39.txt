@@ -1,0 +1,98 @@
+2023-05-18-02-25-39: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-02-25-45: Te has registrado
+2023-05-18-02-25-45: Has entrado al login
+2023-05-18-02-25-53: Las credenciales introducidas son correctas
+2023-05-18-02-25-53: Estás en el menu principal de la aplicación
+2023-05-18-02-26-06: Estás en la ventana Mochila
+2023-05-18-02-26-29: Estás en el menu principal de la aplicación
+2023-05-18-02-26-33: Estás en la ventana de captura
+2023-05-18-02-26-33: Un Vileplume salvaje ha aparecido
+2023-05-18-02-26-36: Un Raticate salvaje ha aparecido
+2023-05-18-02-26-37: Un Bellsprout salvaje ha aparecido
+2023-05-18-02-26-37: Un Nidoqueen salvaje ha aparecido
+2023-05-18-02-26-38: Un Nidoran-f salvaje ha aparecido
+2023-05-18-02-26-39: Un Chansey salvaje ha aparecido
+2023-05-18-02-26-48: Has capturado un Chansey salvaje
+2023-05-18-02-26-50: Estás en el menu principal de la aplicación
+2023-05-18-02-26-52: Has entrado al Centro Pokémon
+2023-05-18-02-27-06: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-27-12: Has entrado al Centro Pokémon
+2023-05-18-02-27-13: Estás en el menu principal de la aplicación
+2023-05-18-02-27-14: Estás en la ventana Mochila
+2023-05-18-02-27-16: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-02-27-20: Estás en la ventana Mochila
+2023-05-18-02-27-21: Estás en el menu principal de la aplicación
+2023-05-18-02-27-22: Has entrado al Centro Pokémon
+2023-05-18-02-27-23: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-27-25: Has movido un Chansey a tu equipo
+2023-05-18-02-27-26: Has entrado al Centro Pokémon
+2023-05-18-02-27-34: Estás en el menu principal de la aplicación
+2023-05-18-02-27-35: Estás en la ventana Mochila
+2023-05-18-02-27-38: Estás revisando los Pokémon que se encuentran en tu equipo principal
+2023-05-18-02-27-42: Estás en la ventana Mochila
+2023-05-18-02-27-42: Estás en el menu principal de la aplicación
+2023-05-18-02-27-45: Has entrado al Centro Pokémon
+2023-05-18-02-27-45: Estás en el menu principal de la aplicación
+2023-05-18-02-27-48: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-27-52: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-02-28-01: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-28-04: Estás combatiendo contra un entrenador
+2023-05-18-02-28-15: Chansey está descansando
+2023-05-18-02-28-18: Vas a cambiar de Pokémon para combatir
+2023-05-18-02-28-21: Has elegido a Chansey para combatir
+2023-05-18-02-28-21: Estás combatiendo contra un entrenador
+2023-05-18-02-28-22: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-28-23: Estás en el menu principal de la aplicación
+2023-05-18-02-28-24: Estás en la ventana de captura
+2023-05-18-02-28-24: Un Doduo salvaje ha aparecido
+2023-05-18-02-28-26: Has capturado un Doduo salvaje
+2023-05-18-02-28-28: Estás en el menu principal de la aplicación
+2023-05-18-02-28-28: Has entrado al Centro Pokémon
+2023-05-18-02-28-29: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-28-30: Has movido un Doduo a tu equipo
+2023-05-18-02-28-31: Has entrado al Centro Pokémon
+2023-05-18-02-28-31: Estás en el menu principal de la aplicación
+2023-05-18-02-28-32: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-28-33: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-02-28-35: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-28-35: Estás combatiendo contra un entrenador
+2023-05-18-02-28-39: Vas a cambiar de Pokémon para combatir
+2023-05-18-02-28-40: Has elegido a Doduo para combatir
+2023-05-18-02-28-40: Estás combatiendo contra un entrenador
+2023-05-18-02-28-46: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-02-28-47: Estás en el menu principal de la aplicación
+2023-05-18-02-28-58: Has entrado al Centro Pokémon
+2023-05-18-02-29-08: Has entrado a la tienda Pokémon
+2023-05-18-02-29-30: Has entrado al Centro Pokémon
+2023-05-18-02-29-32: Has entrado a la tienda Pokémon
+2023-05-18-02-29-40: Has entrado al Centro Pokémon
+2023-05-18-02-29-48: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-02-30-08: Has entrado al Centro Pokémon
+2023-05-18-02-30-10: Estás en la ventana de crianza
+2023-05-18-02-30-37: Has entrado al Centro Pokémon
+2023-05-18-02-30-43: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-02-30-43: Has elegido a Chansey para entrenar
+2023-05-18-02-30-50: Le has aplicado un entrenamiento pesado a Chansey
+2023-05-18-02-30-51: Le has aplicado un entrenamiento furioso a Chansey
+2023-05-18-02-30-53: Le has aplicado un entrenamiento funcional a Chansey
+2023-05-18-02-30-54: Le has aplicado un entrenamiento onírico a Chansey
+2023-05-18-02-30-58: Estás revisando los objetos que puedes aplicar a tu Pokémon
+2023-05-18-02-31-03: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-02-31-03: Has elegido a Chansey para entrenar
+2023-05-18-02-31-13: Has elegido a Doduo para entrenar
+2023-05-18-02-32-01: Has elegido a Chansey para entrenar
+2023-05-18-02-32-07: Has elegido a Doduo para entrenar
+2023-05-18-02-32-08: Has elegido a Chansey para entrenar
+2023-05-18-02-32-12: Has entrado al Centro Pokémon
+2023-05-18-02-32-14: Estás en el menu principal de la aplicación
+2023-05-18-02-32-17: Estás en la ventana Pokedex
+2023-05-18-02-33-00: Estás en el menu principal de la aplicación
+2023-05-18-02-33-05: Estás en la ventana de captura
+2023-05-18-02-33-05: Un Tentacruel salvaje ha aparecido
+2023-05-18-02-33-36: Has capturado un Tentacruel salvaje
+2023-05-18-02-33-42: Estás en el menu principal de la aplicación
+2023-05-18-02-33-43: Estás en la ventana Mochila
+2023-05-18-02-33-44: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-02-33-46: Estás en la ventana Mochila
+2023-05-18-02-33-46: Estás en el menu principal de la aplicación
+2023-05-18-02-33-47: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

@@ -1,0 +1,47 @@
+2023-05-18-05-55-18: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-05-55-20: Te has registrado
+2023-05-18-05-55-20: Has entrado al login
+2023-05-18-05-55-21: Las credenciales introducidas son correctas
+2023-05-18-05-55-21: Estás en el menu principal de la aplicación
+2023-05-18-05-55-22: Estás en la ventana de captura
+2023-05-18-05-55-22: Un Weedle salvaje ha aparecido
+2023-05-18-05-55-24: Has capturado un Weedle salvaje
+2023-05-18-05-55-24: Un Persian salvaje ha aparecido
+2023-05-18-05-55-25: Has capturado un Persian salvaje
+2023-05-18-05-55-26: Estás en el menu principal de la aplicación
+2023-05-18-05-55-26: Has entrado al Centro Pokémon
+2023-05-18-05-55-27: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-05-55-28: Has movido un Weedle a tu equipo
+2023-05-18-05-55-28: Has movido un Persian a tu equipo
+2023-05-18-05-55-28: Has entrado al Centro Pokémon
+2023-05-18-05-55-29: Has entrado a la tienda Pokémon
+2023-05-18-05-55-32: Has entrado al Centro Pokémon
+2023-05-18-05-55-32: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-05-55-32: Has elegido a Weedle para entrenar
+2023-05-18-05-55-34: Has elegido a Persian para entrenar
+2023-05-18-05-55-35: Has elegido a Weedle para entrenar
+2023-05-18-05-55-37: Has elegido a Persian para entrenar
+2023-05-18-05-55-38: Has elegido a Weedle para entrenar
+2023-05-18-05-55-39: Has entrado al Centro Pokémon
+2023-05-18-05-55-39: Estás en el menu principal de la aplicación
+2023-05-18-05-55-39: Estás en la ventana Mochila
+2023-05-18-05-55-40: Estás revisando los Pokémon que se encuentran en tu equipo principal
+2023-05-18-05-55-43: Estás en la ventana Mochila
+2023-05-18-05-55-43: Estás en el menu principal de la aplicación
+2023-05-18-05-55-44: Estás revisando la Pokedex
+2023-05-18-05-55-45: Estás en el menu principal de la aplicación
+2023-05-18-05-55-46: Has entrado al Centro Pokémon
+2023-05-18-05-55-48: Estás en la ventana de crianza
+2023-05-18-05-55-58: Has entrado al Centro Pokémon
+2023-05-18-05-55-58: Estás en el menu principal de la aplicación
+2023-05-18-05-55-59: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-05-55-59: Estás combatiendo contra un entrenador
+2023-05-18-05-56-01: Weedle está descansando
+2023-05-18-05-56-02: Weedle está descansando
+2023-05-18-05-56-02: Weedle está descansando
+2023-05-18-05-56-02: Weedle está descansando
+2023-05-18-05-56-10: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-05-56-11: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-05-56-13: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-05-56-13: Estás en el menu principal de la aplicación
+2023-05-18-05-56-14: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

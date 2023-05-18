@@ -125,12 +125,6 @@ public class Pokemon {
         return nivel;
     }
 
-    public void setNivel(int i) {
-    }
-
-    public void setExperiencia(int i) {
-    }
-
     public int getExperiencia() {
         return experiencia;
     }
@@ -317,7 +311,6 @@ public class Pokemon {
      * @param p2 EL POKEMON CON EL QUE VAMOS A COMPARARNOS
      * @return DEVUELVE EL VALOR DE LA VENTAJA O DESVENTAJA
      */
-    // FIXME: HAY QUE COMPROBAR EL TIPO DEL POKÉMON Y EL TIPO DEL ATAQUE PARA AMBOS CASOS DE ATAQUE (JUGADOR/RIVAL)
     public float comprobarVentaja(Pokemon p2) {
         if (getTablaDebiles().get(this.getTipo()).contains(p2.getTipo()))
             return 2.0f;
@@ -345,17 +338,11 @@ public class Pokemon {
             this.nivel++;
             this.experiencia = 0;
         }
-
     }
 
     public void atacarAPokemon(Pokemon pokemon) {
-        if(estamina <= 0){
-            System.out.println("Necesitas descansar para realizar otro ataque");
-        }else {
             pokemon.setVitalidad(pokemon.getVitalidad() - 5f);
             this.estamina -= 5;
-            System.out.println(getListaCuatroAtaques());
-        }
     }
 
     /**
@@ -364,10 +351,6 @@ public class Pokemon {
 
     public void descansar(){
         this.estamina = 20;
-
-        if (getEstamina() == 20) {
-            System.out.println("Tu estamina está llena, no puedes recuperar más");
-        }
 
     }
 
