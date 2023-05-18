@@ -77,11 +77,7 @@ public class ControladorCombate {
 
     }
 
-    @FXML
-    public void subirNivel(){
-        Entrenador.miEntrenador.getEquipoPrincipal().get(0).subirNivel();
-    }
-    // FIXME: PETA EL HASHMAP POR ALGÚN MOTIVO QUE DESCONOZCO - ADRIAN
+
     @FXML
     public void comprobarVentaja() {
         System.out.println(Entrenador.miEntrenador.getEquipoPrincipal().get(0).comprobarVentaja(Entrenador.rivalEntrenador1.getEquipoPrincipal().get(0)));

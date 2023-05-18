@@ -49,11 +49,9 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button fx:id="btnSubirNivel" layoutX="326.0" layoutY="232.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="36.0" prefWidth="136.0" text="Subir Nivel" />
-            <Button fx:id="btnCombatir" layoutX="326.0" layoutY="190.0" mnemonicParsing="false" onAction="#irACombatir" prefHeight="36.0" prefWidth="136.0" text="Combatir" />
+            <Button fx:id="btnCombatir" layoutX="328.0" layoutY="195.0" mnemonicParsing="false" onAction="#irACombatir" prefHeight="36.0" prefWidth="136.0" text="Combatir" />
             <Button fx:id="btnVolver" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#volverAVentanaPrincipal" prefHeight="36.0" prefWidth="111.0" text="Menú" />
-            <Button fx:id="btnComprobar" layoutX="326.0" layoutY="275.0" mnemonicParsing="false" onAction="#comprobarVentaja" prefHeight="36.0" prefWidth="136.0" text="Comprobar Ventaja" />
-            <Button fx:id="btnComprobarEquipoRival" layoutX="326.0" layoutY="318.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="36.0" prefWidth="136.0" text="Equipo Rival" />
+            <Button fx:id="btnComprobarEquipoRival" layoutX="328.0" layoutY="247.0" mnemonicParsing="false" onAction="#comprobarEquipoRival" prefHeight="36.0" prefWidth="136.0" text="Equipo Rival" />
          </children></AnchorPane>
   </children>
 </VBox>

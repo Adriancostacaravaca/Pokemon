@@ -96,6 +96,7 @@
                </font>
             </Button>
             <Button fx:id="btnObj1" layoutX="497.0" layoutY="273.0" mnemonicParsing="false" onAction="#aplicarObjetoAPokemon" prefHeight="36.0" prefWidth="170.0" text="Aplicar Objetos" />
+            <Button fx:id="btnSubirNivel" layoutX="238.0" layoutY="424.0" mnemonicParsing="false" onAction="#subirNivel" prefHeight="36.0" prefWidth="111.0" text="Subir Nivel" />
          </children></AnchorPane>
   </children>
 </VBox>

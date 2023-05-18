@@ -1,0 +1,14 @@
+2023-05-18-09-39-34: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-39-40: Te has registrado
+2023-05-18-09-39-40: Has entrado al login
+2023-05-18-09-39-46: Las credenciales introducidas son correctas
+2023-05-18-09-39-46: Estás en el menu principal de la aplicación
+2023-05-18-09-39-49: Estás en la ventana Mochila
+2023-05-18-09-39-50: Estás en el menu principal de la aplicación
+2023-05-18-09-39-50: Estás en la ventana Mochila
+2023-05-18-09-39-51: Estás en el menu principal de la aplicación
+2023-05-18-09-39-52: Estás en la ventana Mochila
+2023-05-18-09-39-53: Estás en el menu principal de la aplicación
+2023-05-18-09-39-53: Estás en la ventana Mochila
+2023-05-18-09-39-54: Estás en el menu principal de la aplicación
+2023-05-18-09-39-55: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

@@ -70,6 +70,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     private Button btnPokemon6;
     @FXML
     private Button btnObj1;
+    @FXML
+    private  Button btnSubirNivel;
     private List<Button> botones;
     private List<Button> objetos;
     @FXML
@@ -104,6 +106,10 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
                 botones.get(i).setText(Entrenador.miEntrenador.getEquipoPrincipal().get(i).getNombre());
                 botones.get(i).setDisable(false);
             }
+        }
+
+        if(entrenamiento.getPokemonElegido() == null){
+            btnSubirNivel.setDisable(true);
         }
         escogerPokemon1();
     }
@@ -215,6 +221,12 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         Logger.write("Le has aplicado un entrenamiento onírico a " + entrenamiento.getPokemonElegido().getNombre());
         entrenamiento.aplicarEntOnirico();
         actualizarEstadisticas();
+    }
+    @FXML
+    public void subirNivel(){
+        actualizarEstadisticas();
+        entrenamiento.getPokemonElegido().subirNivel();
+
     }
 
 }

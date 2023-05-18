@@ -1,0 +1,23 @@
+2023-05-18-09-58-00: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-09-58-04: Te has registrado
+2023-05-18-09-58-04: Has entrado al login
+2023-05-18-09-58-05: Las credenciales introducidas son correctas
+2023-05-18-09-58-05: Estás en el menu principal de la aplicación
+2023-05-18-09-58-07: Estás en la ventana de captura
+2023-05-18-09-58-07: Un Gengar salvaje ha aparecido
+2023-05-18-09-58-17: Estás en el menu principal de la aplicación
+2023-05-18-09-58-17: Estás en la ventana de captura
+2023-05-18-09-58-17: Un Dugtrio salvaje ha aparecido
+2023-05-18-09-58-19: Has capturado un Dugtrio salvaje
+2023-05-18-09-58-22: Estás en el menu principal de la aplicación
+2023-05-18-09-58-30: Estás en la ventana de captura
+2023-05-18-09-58-30: Un Dragonite salvaje ha aparecido
+2023-05-18-09-58-32: Estás en el menu principal de la aplicación
+2023-05-18-09-58-45: Has entrado al Centro Pokémon
+2023-05-18-09-58-45: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-09-58-47: Has movido un Dugtrio a tu equipo
+2023-05-18-09-58-47: Has entrado al Centro Pokémon
+2023-05-18-09-58-49: Estás en el menu principal de la aplicación
+2023-05-18-09-58-50: Has entrado al Centro Pokémon
+2023-05-18-09-58-51: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-09-58-51: Has elegido a Dugtrio para entrenar
