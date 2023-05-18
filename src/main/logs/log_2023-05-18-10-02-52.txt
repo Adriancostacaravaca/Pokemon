@@ -1,0 +1,32 @@
+2023-05-18-10-02-52: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-10-02-54: Te has registrado
+2023-05-18-10-02-54: Has entrado al login
+2023-05-18-10-02-55: Las credenciales introducidas son correctas
+2023-05-18-10-02-55: Estás en el menu principal de la aplicación
+2023-05-18-10-02-56: Estás en la ventana de captura
+2023-05-18-10-02-56: Un Electabuzz salvaje ha aparecido
+2023-05-18-10-02-57: Has capturado un Electabuzz salvaje
+2023-05-18-10-02-58: Estás en el menu principal de la aplicación
+2023-05-18-10-02-58: Estás en la ventana Mochila
+2023-05-18-10-02-59: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-10-03-00: Estás en la ventana Mochila
+2023-05-18-10-03-01: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-10-03-01: Estás en la ventana Mochila
+2023-05-18-10-03-02: Estás en el menu principal de la aplicación
+2023-05-18-10-03-02: Has entrado al Centro Pokémon
+2023-05-18-10-03-04: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-10-03-05: Has movido un Electabuzz a tu equipo
+2023-05-18-10-03-06: Has entrado al Centro Pokémon
+2023-05-18-10-03-06: Estás en el menu principal de la aplicación
+2023-05-18-10-03-07: Estás en la ventana Mochila
+2023-05-18-10-03-07: Estás revisando los Pokémon que se encuentran en tu equipo principal
+2023-05-18-10-03-09: Estás en la ventana Mochila
+2023-05-18-10-03-09: Estás en el menu principal de la aplicación
+2023-05-18-10-03-10: Has entrado al Centro Pokémon
+2023-05-18-10-03-11: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-10-03-11: Has elegido a Electabuzz para entrenar
+2023-05-18-10-03-31: Le has aplicado un entrenamiento onírico a Electabuzz
+2023-05-18-10-03-35: Le has aplicado un entrenamiento funcional a Electabuzz
+2023-05-18-10-03-37: Has elegido a Electabuzz para entrenar
+2023-05-18-10-03-39: Le has aplicado un entrenamiento funcional a Electabuzz
+2023-05-18-10-03-40: Le has aplicado un entrenamiento onírico a Electabuzz
