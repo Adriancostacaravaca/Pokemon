@@ -32,7 +32,7 @@ public class Logger {
      */
 
     public static void write(String msg) throws IOException {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddhhmmss");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
         String finalMsg = simpleDateFormat.format(new Date()) + "-" + msg + "\n";
         bufferedWriter.write(finalMsg);
         bufferedWriter.flush();
