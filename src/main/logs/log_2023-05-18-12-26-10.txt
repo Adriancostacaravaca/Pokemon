@@ -1,0 +1,34 @@
+2023-05-18-12-26-10: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-12-26-12: Te has registrado
+2023-05-18-12-26-12: Has entrado al login
+2023-05-18-12-26-20: Las credenciales introducidas son correctas
+2023-05-18-12-26-20: Estás en el menu principal de la aplicación
+2023-05-18-12-26-37: Estás en la ventana Mochila
+2023-05-18-12-26-39: Estás en el menu principal de la aplicación
+2023-05-18-12-26-40: Estás en la ventana de captura
+2023-05-18-12-26-40: Un Golem salvaje ha aparecido
+2023-05-18-12-26-41: Has capturado un Golem salvaje
+2023-05-18-12-26-42: Estás en el menu principal de la aplicación
+2023-05-18-12-26-43: Estás en la ventana Mochila
+2023-05-18-12-26-44: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-45: Estás en la ventana Mochila
+2023-05-18-12-26-45: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-46: Estás en la ventana Mochila
+2023-05-18-12-26-47: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-47: Estás en la ventana Mochila
+2023-05-18-12-26-48: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-49: Estás en la ventana Mochila
+2023-05-18-12-26-49: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-50: Estás en la ventana Mochila
+2023-05-18-12-26-50: Estás revisando los Pokémon que se encuentran en tu caja
+2023-05-18-12-26-50: Estás en la ventana Mochila
+2023-05-18-12-26-51: Estás en el menu principal de la aplicación
+2023-05-18-12-26-52: Estás en la ventana Pokedex
+2023-05-18-12-26-57: Estás en el menu principal de la aplicación
+2023-05-18-12-26-59: Has entrado al Centro Pokémon
+2023-05-18-12-29-58: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-12-29-59: Has entrado al Centro Pokémon
+2023-05-18-12-30-00: Has entrado a la tienda Pokémon
+2023-05-18-12-30-06: Has entrado al Centro Pokémon
+2023-05-18-12-30-07: Estás en el menu principal de la aplicación
+2023-05-18-12-30-08: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

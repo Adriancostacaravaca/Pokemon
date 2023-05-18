@@ -1,0 +1,26 @@
+2023-05-18-12-23-30: Has ingresado a la aplicación Pokemon realizada por The Crüe
+2023-05-18-12-23-31: Te has registrado
+2023-05-18-12-23-31: Has entrado al login
+2023-05-18-12-23-33: Las credenciales introducidas son correctas
+2023-05-18-12-23-33: Estás en el menu principal de la aplicación
+2023-05-18-12-23-33: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-12-23-35: Estás revisando los Pokémon que se encuentran en el equipo del rival
+2023-05-18-12-23-36: Estás en la ventana previa al combate contra un entrenador
+2023-05-18-12-23-39: Estás en el menu principal de la aplicación
+2023-05-18-12-23-40: Estás en la ventana Mochila
+2023-05-18-12-23-41: Estás en el menu principal de la aplicación
+2023-05-18-12-23-41: Estás en la ventana Pokedex
+2023-05-18-12-23-43: Estás en el menu principal de la aplicación
+2023-05-18-12-23-44: Estás en la ventana de captura
+2023-05-18-12-23-44: Un Arcanine salvaje ha aparecido
+2023-05-18-12-23-45: Has capturado un Arcanine salvaje
+2023-05-18-12-23-45: Estás en el menu principal de la aplicación
+2023-05-18-12-23-46: Has entrado al Centro Pokémon
+2023-05-18-12-23-46: Estás en la ventana de intercambio entre tu caja y el equipo principal
+2023-05-18-12-23-47: Has movido un Arcanine a tu equipo
+2023-05-18-12-23-47: Has entrado al Centro Pokémon
+2023-05-18-12-23-48: Estás revisando las estadísticas de tu Pokémon y puede que elijas entrenarlos
+2023-05-18-12-23-48: Has elegido a Arcanine para entrenar
+2023-05-18-12-24-09: Has entrado al Centro Pokémon
+2023-05-18-12-24-10: Estás en el menu principal de la aplicación
+2023-05-18-12-24-10: Aplicación cerrada. ¡Esperamos que vuelvas pronto a Pokémon The Crüe!.

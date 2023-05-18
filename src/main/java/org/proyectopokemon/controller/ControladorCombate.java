@@ -45,9 +45,6 @@ public class ControladorCombate {
         Entrenador.rivalEntrenador1.rellenarEquipoRival();
         btnCombatir.setDisable(false);
         // REVISA EL EQUIPO DEL ENTRENADOR Y HABILITA EL BOTON DE COMBATIR SI HAY UN POKEMON COMO MINIMO
-        if(Entrenador.miEntrenador.getEquipoPrincipal().isEmpty()){
-            btnSubirNivel.setDisable(true);
-        }
         if(Entrenador.miEntrenador.getEquipoPrincipal().size() < 1){
             btnCombatir.setDisable(true);
             lblErrorEquipoVacio.setText("No hay ningún Pokémon en tu equipo");
