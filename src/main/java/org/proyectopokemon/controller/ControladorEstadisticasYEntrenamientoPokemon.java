@@ -43,6 +43,8 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     @FXML
     private Label lblVelocidad;
     @FXML
+    private Label lblExperiencia;
+    @FXML
     private Label lblNivel;
     @FXML
     private ImageView imageViewPokemon;
@@ -150,6 +152,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
         lblVitalidad.setText("Vitalidad: " + decfor.format(entrenamiento.getPokemonElegido().getVitalidad()));
         lblVelocidad.setText("Velocidad: " + decfor.format(entrenamiento.getPokemonElegido().getVelocidad()));
         lblNivel.setText("Nivel: " + entrenamiento.getPokemonElegido().getNivel());
+        lblExperiencia.setText("Experiencia: " + entrenamiento.getPokemonElegido().getExperiencia());
         imageViewPokemon.setImage(entrenamiento.getPokemonElegido().getImage());
         lblPokedolares.setText("Pokedólares: " + Entrenador.miEntrenador.getPokedollar());
         if (Entrenador.miEntrenador.getPokedollar() < 40) {
@@ -232,6 +235,7 @@ public class ControladorEstadisticasYEntrenamientoPokemon {
     public void subirNivel(){
         actualizarEstadisticas();
         entrenamiento.getPokemonElegido().subirNivel();
+        actualizarEstadisticas();
 
     }
 
