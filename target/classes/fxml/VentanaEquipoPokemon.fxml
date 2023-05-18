@@ -44,7 +44,7 @@
          <children>
             <Label fx:id="lblTuEquipo" alignment="CENTER" layoutX="291.0" layoutY="27.0" prefHeight="45.0" prefWidth="207.0" text="Tu equipo">
                <font>
-                  <Font size="30.0" />
+                  <Font name="System Bold" size="30.0" />
                </font>
             </Label>
             <Button fx:id="btnPokemon1" layoutX="67.0" layoutY="135.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="214.0" text="Vacío">
